@@ -17,6 +17,7 @@ These are the rules that are most often broken. The full versions are in the GUI
 - Follow the note structure in [section 4](GUIDELINE.md#4-anatomy-of-a-note) and the naming rules in [section 3](GUIDELINE.md#3-repository-structure-and-naming).
 - Do not invent facts, sources or version numbers. Cite primary sources.
 - Never add secrets, credentials or personal data.
+- Reflect every added, moved, renamed or deleted file in [ToC.md](ToC.md) and run `python3 scripts/check-toc.py`.
 - Stay within the scope described in [README.md](README.md#scope).
 
 ## Workflow
@@ -25,5 +26,5 @@ These are the rules that are most often broken. The full versions are in the GUI
 2. Check whether the topic already has a note, and extend it if so.
 3. Write or edit the material, following the note template.
 4. Run through the quality checklist in [section 10](GUIDELINE.md#10-quality-checklist), including the dash search.
-5. Update the relevant area `README.md` so the new note is listed.
+5. Update the relevant area `README.md` and `ToC.md` so the new note is listed.
 6. Report what changed, which sources were used and anything left unverified.

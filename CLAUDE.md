@@ -14,10 +14,11 @@ The import above loads [GUIDELINE.md](GUIDELINE.md), the single source of truth 
 - Explain each concept with a definition, an analogy, the mechanism, a concrete example and the boundaries.
 - Do not invent facts, sources or version numbers. Cite primary sources.
 - Never add secrets, credentials or personal data.
+- Reflect every added, moved, renamed or deleted file in `ToC.md`.
 - Stay within the scope described in [README.md](README.md#scope).
 
 ## Before finishing a task
 
 - Run the quality checklist in the GUIDELINE, including the search for em dashes and en dashes.
-- Make sure any new note is listed in its area `README.md`.
+- Make sure any new note is listed in its area `README.md` and in `ToC.md`, and run `python3 scripts/check-toc.py`.
 - Summarize what changed, which sources were used and what remains unverified.

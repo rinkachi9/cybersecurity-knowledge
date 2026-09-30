@@ -1,0 +1,184 @@
+# Table of contents
+
+Full tree of every file in the repository. Every added, moved, renamed or deleted file must be reflected here (see [GUIDELINE](GUIDELINE.md#3-repository-structure-and-naming)). Run `python3 scripts/check-toc.py` to verify.
+
+- **Repository root**
+  - [README.md](README.md): what the repository is and how to navigate it
+  - [GUIDELINE.md](GUIDELINE.md): rules for structure, note format, writing style and quality checks
+  - [AGENTS.md](AGENTS.md): instructions for AI agents
+  - [CLAUDE.md](CLAUDE.md): instructions for Claude Code
+  - [ToC.md](ToC.md): this file
+  - [Security.html](Security.html): original ClickUp export the notes were migrated from (kept until the migration is reviewed)
+  - **scripts/**
+    - [check-toc.py](scripts/check-toc.py): checks that ToC.md lists every file and that its links resolve
+- **foundations/**
+  - [README.md](foundations/README.md): Foundations entry point
+  - [security-overview.md](foundations/security-overview.md): Security overview - Definition, purposes, key concepts, types and importance of cybersecurity.
+  - [cia-triad.md](foundations/cia-triad.md): CIA Triad - Confidentiality, integrity and availability as the basic model of information security.
+  - [defense-in-depth.md](foundations/defense-in-depth.md): Defense in depth - Layering several security controls so that one failure does not lead to a full compromise.
+- **cryptography/**
+  - [README.md](cryptography/README.md): Cryptography entry point
+  - [public-key-infrastructure.md](cryptography/public-key-infrastructure.md): Public Key Infrastructure (PKI) - Roles, components, processes and best practices for issuing and managing digital certificates.
+  - **hashing/**
+    - [README.md](cryptography/hashing/README.md): entry point for hashing
+    - [hashing-algorithms.md](cryptography/hashing/hashing-algorithms.md): Hashing algorithms - What hashing is, its properties, how it differs from encryption and where it is used.
+    - [sha.md](cryptography/hashing/sha.md): SHA - The Secure Hash Algorithm family.
+    - [bcrypt.md](cryptography/hashing/bcrypt.md): Bcrypt - The bcrypt password hashing algorithm.
+    - [argon2.md](cryptography/hashing/argon2.md): Argon2 - The Argon2 password hashing function.
+- **identity-and-access/**
+  - [README.md](identity-and-access/README.md): Identity and access entry point
+  - [authentication-vs-authorization.md](identity-and-access/authentication-vs-authorization.md): Authentication vs Authorization - Side by side comparison of the two concepts.
+  - [authorization.md](identity-and-access/authorization.md): Authorization - Allowing or refusing access to resources after authentication.
+  - [authentication-methods.md](identity-and-access/authentication-methods.md): Authentication methods - Common ways of proving identity.
+  - [token-based-authentication-jwt.md](identity-and-access/token-based-authentication-jwt.md): Token-Based Authentication (JWT) - Signed tokens (JWT) as a way to verify identity.
+  - [jwt-vs-session.md](identity-and-access/jwt-vs-session.md): JWT vs Session - Stateless tokens compared with server-side sessions.
+  - [oauth.md](identity-and-access/oauth.md): OAuth - The OAuth delegated authorization protocol.
+  - [openid-connect.md](identity-and-access/openid-connect.md): OpenID Connect (OIDC) - The OpenID Connect identity layer on top of OAuth 2.0.
+- **threat-modeling/**
+  - [README.md](threat-modeling/README.md): Threat modeling entry point
+  - [threat-modeling.md](threat-modeling/threat-modeling.md): Threat Modeling - What threat modeling is, why it matters and how it differs from risk management.
+  - [methodologies.md](threat-modeling/methodologies.md): Threat modeling methodologies - Comparison of the main methodologies and their strengths and weaknesses.
+  - [stride.md](threat-modeling/stride.md): STRIDE - Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
+  - [attack-trees.md](threat-modeling/attack-trees.md): Attack Trees - Representing how an attacker can reach a goal as a tree of steps.
+  - [pasta.md](threat-modeling/pasta.md): Attack Simulation and Threat Analysis (PASTA) - Risk-centric, attacker-focused methodology.
+  - [trike.md](threat-modeling/trike.md): Trike - Risk-based methodology built around acceptable risk levels.
+  - [hybrid-threat-modeling-method.md](threat-modeling/hybrid-threat-modeling-method.md): Hybrid Threat Modeling Method (hTMM) - Combining several methodologies in one process.
+  - [security-cards.md](threat-modeling/security-cards.md): Security Cards - Card-based, collaborative threat discovery.
+- **vulnerability-management/**
+  - [README.md](vulnerability-management/README.md): Vulnerability management entry point
+  - [cve.md](vulnerability-management/cve.md): Common Vulnerabilities and Exposures (CVE) - The system that assigns identifiers to publicly known vulnerabilities.
+  - [nvd.md](vulnerability-management/nvd.md): National Vulnerability Database (NVD) - The U.S. National Vulnerability Database and how it enriches CVE records.
+  - [cvss.md](vulnerability-management/cvss.md): Common Vulnerability Scoring System (CVSS) - The Common Vulnerability Scoring System for rating severity.
+  - [cwe.md](vulnerability-management/cwe.md): MITRE CWE - The MITRE catalog of software and hardware weakness types.
+  - [zero-day-attack.md](vulnerability-management/zero-day-attack.md): Zero-Day Attack - Attacks that exploit a vulnerability unknown to the vendor.
+- **threat-intelligence/**
+  - [README.md](threat-intelligence/README.md): Threat intelligence entry point
+  - [threat-intelligence.md](threat-intelligence/threat-intelligence.md): Threat Intelligence (Threat Intel) - Lifecycle, types, sources and use of threat intelligence.
+  - [osint.md](threat-intelligence/osint.md): OSINT - Open-source intelligence: sources, tools and legal limits.
+  - [virustotal.md](threat-intelligence/virustotal.md): VirusTotal - The VirusTotal aggregation platform and its API.
+  - **mitre/**
+    - [README.md](threat-intelligence/mitre/README.md): entry point for mitre
+    - [mitre.md](threat-intelligence/mitre/mitre.md): MITRE - The MITRE organization and its main knowledge bases.
+    - [mitre-attack.md](threat-intelligence/mitre/mitre-attack.md): MITRE ATT&CK® - The ATT&CK knowledge base of adversary tactics and techniques.
+    - [mitre-capec.md](threat-intelligence/mitre/mitre-capec.md): MITRE CAPEC - The CAPEC catalog of attack patterns.
+    - [mitre-d3fend.md](threat-intelligence/mitre/mitre-d3fend.md): MITRE D3FEND - The D3FEND knowledge graph of defensive techniques.
+- **threats-and-attacks/**
+  - [README.md](threats-and-attacks/README.md): Threats and attacks entry point
+  - [threats-and-attacks-overview.md](threats-and-attacks/threats-and-attacks-overview.md): Threats & attacks - Threat classifications, categories, impact and defenses.
+  - [attack-categorization.md](threats-and-attacks/attack-categorization.md): Attack categorization - Ways to group attacks: by vector, technique, objective and actor.
+  - [user-based-attacks.md](threats-and-attacks/user-based-attacks.md): User-based attacks - Attacks that target users instead of software.
+  - **malware/**
+    - [README.md](threats-and-attacks/malware/README.md): entry point for malware
+    - [malware-definition-and-purpose.md](threats-and-attacks/malware/malware-definition-and-purpose.md): Malware definition and purpose - What malware is and what it is used for.
+    - [malware.md](threats-and-attacks/malware/malware.md): Malware - Classification, techniques, detection and prevention of malware.
+  - **social-engineering/**
+    - [README.md](threats-and-attacks/social-engineering/README.md): entry point for social engineering
+    - [psychology-of-cyberattacks.md](threats-and-attacks/social-engineering/psychology-of-cyberattacks.md): Psychology of cyberattacks - Psychological principles that attackers exploit and how to defend.
+    - [social-engineering.md](threats-and-attacks/social-engineering/social-engineering.md): Social engineering - Manipulating people instead of exploiting technical flaws.
+    - [phishing.md](threats-and-attacks/social-engineering/phishing.md): Phishing - Impersonating trusted senders to obtain information or actions.
+    - [spam.md](threats-and-attacks/social-engineering/spam.md): Spam - Mass unsolicited messages and their security impact.
+    - [impersonation.md](threats-and-attacks/social-engineering/impersonation.md): Impersonation - Pretending to be a trusted person, entity or role.
+    - [shoulder-surfing.md](threats-and-attacks/social-engineering/shoulder-surfing.md): Shoulder surfing - Watching a screen or keyboard to capture sensitive information.
+    - [tailgating.md](threats-and-attacks/social-engineering/tailgating.md): Tailgating - Following an authorized person into a restricted area.
+    - [dumpster-diving.md](threats-and-attacks/social-engineering/dumpster-diving.md): Dumpster diving - Searching discarded material for sensitive information.
+  - **web-attacks/**
+    - [README.md](threats-and-attacks/web-attacks/README.md): entry point for web attacks
+    - [web-based-attacks.md](threats-and-attacks/web-attacks/web-based-attacks.md): Web-based attacks - Attacks on web applications, servers and their users.
+    - [watering-hole-attack.md](threats-and-attacks/web-attacks/watering-hole-attack.md): Watering Hole Attack - Compromising a site that a target group visits.
+    - [drive-by-attack.md](threats-and-attacks/web-attacks/drive-by-attack.md): Drive-By Attack - Malware delivered simply by visiting a page.
+    - [typosquatting.md](threats-and-attacks/web-attacks/typosquatting.md): Typosquatting - Look-alike domains that exploit typing mistakes and homoglyphs.
+  - **credential-attacks/**
+    - [README.md](threats-and-attacks/credential-attacks/README.md): entry point for credential attacks
+    - [brute-force-attack.md](threats-and-attacks/credential-attacks/brute-force-attack.md): Brute Force Attack - Trying many combinations to guess credentials or keys.
+    - [password-spray.md](threats-and-attacks/credential-attacks/password-spray.md): Password Spray - Trying a few common passwords against many accounts.
+  - **attack-lifecycle/**
+    - [README.md](threats-and-attacks/attack-lifecycle/README.md): entry point for attack lifecycle
+    - [reconnaissance.md](threats-and-attacks/attack-lifecycle/reconnaissance.md): Reconnaissance - Collecting information about a target before an attack.
+    - [privilege-escalation.md](threats-and-attacks/attack-lifecycle/privilege-escalation.md): Privilege escalation - Gaining higher access than originally granted.
+- **application-security/**
+  - [README.md](application-security/README.md): Application security entry point
+  - **owasp/**
+    - [README.md](application-security/owasp/README.md): entry point for owasp
+    - [owasp.md](application-security/owasp/owasp.md): OWASP - The OWASP organization, its projects and how they fit together.
+    - [owasp-top-10.md](application-security/owasp/owasp-top-10.md): OWASP Top 10 - The list of the ten most critical web application security risks.
+  - **vulnerabilities/**
+    - [README.md](application-security/vulnerabilities/README.md): entry point for vulnerabilities
+    - [xss.md](application-security/vulnerabilities/xss.md): XSS - Cross-site scripting: types, impact and defenses.
+  - **testing/**
+    - [README.md](application-security/testing/README.md): entry point for testing
+    - [static-application-security-testing.md](application-security/testing/static-application-security-testing.md): Static Application Security Testing (SAST) - White-box analysis of source code without running it.
+    - [dynamic-application-security-testing.md](application-security/testing/dynamic-application-security-testing.md): Dynamic Application Security Testing (DAST) - Black-box testing of a running application.
+    - [software-composition-analysis.md](application-security/testing/software-composition-analysis.md): Software Composition Analysis (SCA) - Finding known-vulnerable open-source and third-party components.
+  - **supply-chain/**
+    - [README.md](application-security/supply-chain/README.md): entry point for supply chain
+    - [slsa.md](application-security/supply-chain/slsa.md): Supply-chain Levels for Software Artifacts (SLSA) - Supply-chain Levels for Software Artifacts: a framework for build integrity.
+- **defensive-operations/**
+  - [README.md](defensive-operations/README.md): Defensive operations entry point
+  - [security-operations-center.md](defensive-operations/security-operations-center.md): Security Operations Center (SOC) - Purpose, roles, technology and workflow of a SOC.
+  - [secops.md](defensive-operations/secops.md): SecOps - The collaboration of IT operations and security teams.
+  - [siem.md](defensive-operations/siem.md): SIEM - Security information and event management.
+  - [soar.md](defensive-operations/soar.md): SOAR - Security orchestration, automation and response.
+  - [sop.md](defensive-operations/sop.md): SOP - Standard operating procedures for repeatable analyst work.
+  - [red-blue-purple-teams.md](defensive-operations/red-blue-purple-teams.md): Red/Blue/Purple team - Roles of attacking, defending and collaborating teams.
+  - **detection/**
+    - [README.md](defensive-operations/detection/README.md): entry point for detection
+    - [ids.md](defensive-operations/detection/ids.md): Intrusion Detection System (IDS) - Intrusion detection systems.
+    - [ips.md](defensive-operations/detection/ips.md): Intrusion Prevention System (IPS) - Intrusion prevention systems.
+    - [false-positive-false-negative.md](defensive-operations/detection/false-positive-false-negative.md): False Negative / False Positive - Detection errors, their cost and how to balance them.
+    - [true-positive-true-negative.md](defensive-operations/detection/true-positive-true-negative.md): True Negative / True Positive - Correct detection outcomes and why they matter.
+- **governance-and-compliance/**
+  - [README.md](governance-and-compliance/README.md): Governance and compliance entry point
+  - **risk-management/**
+    - [README.md](governance-and-compliance/risk-management/README.md): entry point for risk management
+    - [information-risk-management.md](governance-and-compliance/risk-management/information-risk-management.md): Information Risk Management (IRM) - Risk as a decision-making discipline for information.
+    - [risk-management-framework.md](governance-and-compliance/risk-management/risk-management-framework.md): Risk Management Framework (RMF) - The NIST process for managing security and privacy risk over the system lifecycle.
+  - **frameworks/**
+    - [README.md](governance-and-compliance/frameworks/README.md): entry point for frameworks
+    - [nist-cybersecurity-framework.md](governance-and-compliance/frameworks/nist-cybersecurity-framework.md): Cybersecurity Framework (CSF) - The NIST CSF functions, categories and profiles.
+    - [security-controls.md](governance-and-compliance/frameworks/security-controls.md): Security controls - How the CSF functions translate into concrete controls.
+    - [cis-controls.md](governance-and-compliance/frameworks/cis-controls.md): Center for Internet Security (CIS) Controls Framework - The CIS Controls prioritized safeguards.
+    - [csa-cloud-controls-matrix.md](governance-and-compliance/frameworks/csa-cloud-controls-matrix.md): Cloud Security Alliance Cloud Controls Matrix (CSA CCM) - The CSA control framework for cloud computing.
+    - [google-security-and-resilience-framework.md](governance-and-compliance/frameworks/google-security-and-resilience-framework.md): Google Security and Resilience Framework (SRF) - The Google Cloud security and resilience framework.
+  - **standards/**
+    - [README.md](governance-and-compliance/standards/README.md): entry point for standards
+    - [iso-iec-27001.md](governance-and-compliance/standards/iso-iec-27001.md): ISO/IEC 27001 - The international standard for information security management systems.
+- **privacy-and-data-protection/**
+  - [README.md](privacy-and-data-protection/README.md): Privacy and data protection entry point
+  - [privacy-regulations-overview.md](privacy-and-data-protection/privacy-regulations-overview.md): Data protection and privacy regulations - What privacy regulations are and how they compare.
+  - [gdpr.md](privacy-and-data-protection/gdpr.md): General Data Protection Regulation (GDPR) - The European Union General Data Protection Regulation.
+  - [pipeda.md](privacy-and-data-protection/pipeda.md): Personal Information Protection and Electronic Documents Act (PIPEDA) - Canada federal private-sector privacy law.
+  - [hipaa.md](privacy-and-data-protection/hipaa.md): Health Insurance Portability and Accountability Act (HIPAA) - U.S. law protecting health information.
+  - [ftc-act.md](privacy-and-data-protection/ftc-act.md): Federal Trade Commission (FTC) Act - The Federal Trade Commission role in privacy and data security.
+  - [coppa.md](privacy-and-data-protection/coppa.md): Children’s Online Privacy Protection Rule (COPPA) - U.S. rules on online data collection from children.
+  - [glba.md](privacy-and-data-protection/glba.md): Gramm-Leach-Bliley Act (GLBA) - U.S. law on protecting customer financial information.
+  - [nist-privacy-framework.md](privacy-and-data-protection/nist-privacy-framework.md): NIST Privacy Framework - The NIST voluntary framework for managing privacy risk.
+- **ai-security/**
+  - [README.md](ai-security/README.md): AI security entry point
+  - [google-secure-ai-framework.md](ai-security/google-secure-ai-framework.md): Google’s Secure AI Framework (SAIF) - Google framework for securing AI and ML systems.
+- **cloud-and-infrastructure-security/**
+  - [README.md](cloud-and-infrastructure-security/README.md): Cloud and infrastructure security entry point
+  - [security-posture-management.md](cloud-and-infrastructure-security/security-posture-management.md): Security Posture Management (SPM) - Continuous measurement and improvement of security posture, including CSPM and related variants.
+- **operating-system-security/**
+  - [README.md](operating-system-security/README.md): Operating system security entry point
+  - **linux/**
+    - [README.md](operating-system-security/linux/README.md): entry point for linux
+    - [seccomp.md](operating-system-security/linux/seccomp.md): Seccomp - Restricting the system calls a Linux process can make.
+- **organizations-and-certifications/**
+  - [README.md](organizations-and-certifications/README.md): Organizations and certifications entry point
+  - [nist.md](organizations-and-certifications/nist.md): National Institute of Standards and Technology (NIST) - The National Institute of Standards and Technology and its publications.
+  - [sans.md](organizations-and-certifications/sans.md): SANS - The SANS Institute and its training and research.
+  - [mandiant.md](organizations-and-certifications/mandiant.md): Mandiant - Mandiant and its incident response and threat research.
+  - [isc2.md](organizations-and-certifications/isc2.md): International Information System Security Certification Consortium (ISC2) - ISC2 and its certifications.
+- **network-security/** (planned)
+  - [README.md](network-security/README.md): Network security entry point
+- **offensive-security/** (planned)
+  - [README.md](offensive-security/README.md): Offensive security entry point
+- **assets/**
+  - **application-security/**
+    - [xss-overview.png](assets/application-security/xss-overview.png)
+  - **foundations/**
+    - [cia-triad-overview.png](assets/foundations/cia-triad-overview.png)
+  - **identity-and-access/**
+    - [jwt-vs-session-comparison.png](assets/identity-and-access/jwt-vs-session-comparison.png)
+  - **organizations-and-certifications/**
+    - [nist-incident-response-planning.png](assets/organizations-and-certifications/nist-incident-response-planning.png)

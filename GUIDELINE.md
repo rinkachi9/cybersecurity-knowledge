@@ -53,21 +53,26 @@ The primary audience is the future version of the author. Write as if explaining
 Content is organized by knowledge area, and each area is a top level directory. The list of planned areas is in the [README](README.md#knowledge-areas).
 
 ```text
+ToC.md                  # full tree of every file in the repository
+assets/
+    <area>/             # images, diagram sources, media and other files used by notes
+scripts/
+    <area>/             # scripts and small tools referenced by notes (repository tooling sits in scripts/)
 <area>/
     README.md           # entry point: what the area covers, reading order, links to notes
     <topic>.md          # a single note
-    <topic>/            # optional, when a topic outgrows one file
+    <subarea>/          # optional, groups related notes
         README.md
-        <subtopic>.md
-    assets/             # images and diagrams used by notes in this area
+        <topic>.md
 ```
 
 Guidance:
 
-- **Prefer flat over deep.** Two levels below the repository root is usually enough. Add a level only when a directory has more than about twelve files.
+- **Prefer flat over deep.** Two levels below the repository root (area and subarea) is usually enough. Add a subarea when an area has more than about twelve files or when a group of notes clearly belongs together.
 - **One note, one main idea.** If a note needs a table of contents longer than about ten entries, it is probably several notes.
-- **Every area has a `README.md`.** It is the entry point, and it lists the notes in a recommended reading order with a one line description each.
-- **Keep assets close.** Images live in the `assets/` directory of the area that uses them, and are referenced with relative paths.
+- **Every area and subarea has a `README.md`.** It is the entry point, and it lists the notes in a recommended reading order with a one line description each. Areas that are planned but not written yet have a `README.md` that says so and lists planned topics.
+- **Keep media and scripts in the global directories.** Images, diagram sources, downloadable files and media go to `assets/<area>/`. Scripts go to `scripts/<area>/`. Notes reference them with relative paths. Never place them next to the notes.
+- **Keep `ToC.md` complete.** See [section 3.4](#34-table-of-contents).
 
 *Analogy.* Think of a library. Areas are sections, area READMEs are the catalog cards for a section, and notes are the books. A book that tries to cover an entire section belongs on several shelves.
 
@@ -77,8 +82,11 @@ Guidance:
 | --- | --- | --- |
 | Directories | lowercase, words separated by hyphens | `query-performance/` |
 | Note files | lowercase, hyphens, descriptive noun phrase, `.md` | `b-tree-indexes.md` |
-| Images | note name, then a short description | `b-tree-indexes-split.png` |
+| Images and media | note name, then a short description, stored in `assets/<area>/` | `assets/cryptography/pki-chain-of-trust.png` |
+| Diagram sources | same base name as the rendered image, source format as extension | `assets/cryptography/pki-chain-of-trust.drawio` |
+| Scripts | lowercase, hyphens, verb phrase, stored in `scripts/<area>/` | `scripts/network-security/parse-pcap-summary.py` |
 | Entry points | always `README.md` | `<area>/README.md` |
+| Table of contents | always `ToC.md` in the repository root | `ToC.md` |
 
 Names describe the content, not its status or origin. Avoid `notes.md`, `misc.md`, `new-draft-2.md` or dates in file names. Do not use spaces or uppercase letters, so that links and shell commands behave the same on every system.
 
@@ -88,6 +96,15 @@ Names describe the content, not its status or origin. Avoid `notes.md`, `misc.md
 - Link to a heading when you point at a specific part: `[isolation levels](transactions.md#isolation-levels)`.
 - Link text describes the target ("the section on isolation levels"), never "click here".
 - When a prerequisite is needed, link it in the note's front section instead of re-explaining it.
+
+### 3.4 Table of contents
+
+`ToC.md` in the repository root is the complete map of the repository. It is an indented tree with one entry for every file: root documents, area and subarea `README.md` files, notes, assets and scripts. Each entry is a relative link followed by a short description.
+
+- **Every change is reflected in `ToC.md`.** Adding, moving, renaming or deleting a note, an asset or a script updates `ToC.md` in the same change. Changing the title or purpose of a note updates its description there.
+- **Planned areas are marked.** An area that has only a `README.md` is marked `(planned)`.
+- **Verify before finishing.** Run `python3 scripts/check-toc.py` from the repository root. It reports files that are missing from `ToC.md` and links that no longer resolve.
+- **`ToC.md` is not a replacement for area READMEs.** The area README keeps the recommended reading order and the context. `ToC.md` keeps the complete list.
 
 ## 4. Anatomy of a note
 
@@ -139,6 +156,16 @@ Notes on the skeleton:
 - **Summary first.** A reader who only reads the summary must not come away with a wrong idea. Avoid teasers such as "we will see how this works".
 - **Motivation before mechanism.** People remember mechanisms better when they know what they were invented to fix.
 - **Practice is part of the note.** Retrieval practice is what turns reading into knowledge. Even three good questions are valuable.
+
+### 4.1 Migrated notes
+
+Notes that were migrated from an older source (currently `Security.html`) keep their original content and are brought up to the standard over time.
+
+- Front matter uses `level: unrated` and `last_verified: unverified` until the content has been reviewed against sources. Both values are allowed only for notes with `status: draft`.
+- The tag `migrated` and the field `migrated_from` record where the note came from. Remove the tag when the note has been reviewed.
+- Sections of the skeleton that the original did not have contain a single line that starts with `TODO:`. Replace it with real content, or delete the section if it does not apply.
+- Search for open gaps with `grep -rn "^TODO:" --include="*.md" .`.
+- The dash and emoji rules of [section 7](#7-writing-style) apply to migrated content as well. Dashes were replaced by hyphens and emoji by words during migration.
 
 ## 5. How to explain a concept
 
@@ -220,10 +247,19 @@ Notice the pattern: the definition is precise, the analogy explains the idea in 
 
 ### 6.2 Diagrams
 
-- Prefer text based diagrams (Mermaid or ASCII) so they are diffable and versioned with the note.
+- Prefer text based diagrams so they are diffable and versioned with the note. Use a fenced `mermaid` block for flows, sequences, state machines, attack trees, architectures and timelines. Use a fenced `text` block for ASCII diagrams such as trees and data layouts.
+- Mermaid renders on GitHub and in most editors. Keep each diagram small enough to read without zooming, and split it when it grows past about 15 nodes.
 - A diagram earns its place by showing something prose cannot: structure, flow over time, relationships. Do not add one for decoration.
-- Every diagram has a caption or a sentence before it saying what to look at.
-- If you use an image, keep the source file next to it and add descriptive alt text.
+- Every diagram has a caption or a sentence before it saying what to look at, and the same information is available in the surrounding text for readers who cannot see the image.
+- If you use an image, put it in `assets/<area>/`, keep its editable source (for example `.drawio`, `.excalidraw` or `.svg`) in the same directory, and add descriptive alt text.
+- Images taken from other people (vendor infographics, slides) are allowed only for personal study. Credit the author in the alt text or caption and prefer redrawing them as Mermaid or SVG when the note is reviewed.
+
+### 6.2.1 Scripts, files and media
+
+- **Scripts** go to `scripts/<area>/`. The note shows the relevant part and links to the full script. A script states its language and tool versions in a header comment, is self contained and says how to run it.
+- **Downloadable files** (checklists, configuration templates, exported rules, small datasets) go to `assets/<area>/`. Only files that are safe to publish belong here: no secrets, no real client or personal data, no live malware. Samples, captures and dumps are excluded by `.gitignore` on purpose.
+- **Large media** (video, large captures) is linked from a public source instead of being committed. If a large file is essential, discuss it first because it stays in the git history forever.
+- **Every asset and script** appears in `ToC.md`.
 
 ### 6.3 Tables
 
@@ -350,6 +386,7 @@ Run this list before marking a note as `reviewed`.
 - [ ] No secrets, personal data or confidential material.
 - [ ] File and directory names follow the naming rules.
 - [ ] The note is linked from its area `README.md`.
+- [ ] `ToC.md` reflects every added, moved, renamed or deleted file, and `python3 scripts/check-toc.py` passes.
 
 A quick way to check the dash rule from the repository root:
 
@@ -365,7 +402,7 @@ grep -rnP "\x{2013}|\x{2014}" --include="*.md" .
 - **Review cycle.** New notes start as `draft`. After checking them against sources they become `reviewed`. After they have been used and confirmed, they become `stable`.
 - **Refresh.** Revisit notes on fast moving topics regularly, update `last_verified` and fix what changed. Delete or rewrite content that is no longer true instead of leaving it with a warning.
 - **Refactor structure early.** When a note grows too large, split it. When two notes overlap, merge them or extract the shared part into its own note and link to it.
-- **Keep the index honest.** Every new note is added to its area `README.md` in the same commit.
+- **Keep the index honest.** Every new note is added to its area `README.md` and to `ToC.md` in the same commit. Every move, rename or deletion is reflected in both as well.
 
 ## 12. Working with AI agents
 
@@ -377,6 +414,7 @@ AI assistants are welcome collaborators. The rules are the same as for a human c
 - **Follow the style rules strictly.** In particular the ban on em dashes and en dashes, and the ban on filler language (see [section 7](#7-writing-style)).
 - **Stay in scope.** Do not add content unrelated to the request. Do not restructure the repository without being asked.
 - **Prefer editing to creating.** Extend an existing note when the topic already has a home. Create a new file only when the topic deserves its own note.
+- **Update `ToC.md` with every change.** Any file added, moved, renamed or deleted must be reflected in `ToC.md` before the task is finished (see [section 3.4](#34-table-of-contents)).
 - **Ask when a decision is unclear.** Structure, scope and naming decisions belong to the author.
 - **Never commit secrets or personal data,** and never run destructive git operations without explicit approval.
 - **Show your work.** When adding a note, summarize what was written, which sources were used and what remains unverified.
