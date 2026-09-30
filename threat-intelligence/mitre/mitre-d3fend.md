@@ -1,22 +1,10 @@
----
-title: MITRE D3FEND
-area: threat intelligence
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, mitre, d3fend]
-migrated_from: Security.html, page 48
----
-
 # MITRE D3FEND
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

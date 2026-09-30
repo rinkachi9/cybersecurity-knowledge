@@ -17,7 +17,7 @@ These are the rules that are most often broken. The full versions are in the GUI
 - Follow the note structure in [section 4](GUIDELINE.md#4-anatomy-of-a-note) and the naming rules in [section 3](GUIDELINE.md#3-repository-structure-and-naming).
 - Do not invent facts, sources or version numbers. Cite primary sources.
 - Never add secrets, credentials or personal data.
-- Reflect every added, moved, renamed or deleted file in [ToC.md](ToC.md) and run `python3 scripts/check-toc.py`.
+- Reflect every added, moved, renamed or deleted file in [ToC.md](ToC.md).
 - Stay within the scope described in [README.md](README.md#scope).
 
 ## Workflow

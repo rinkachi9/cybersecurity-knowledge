@@ -20,5 +20,5 @@ The import above loads [GUIDELINE.md](GUIDELINE.md), the single source of truth 
 ## Before finishing a task
 
 - Run the quality checklist in the GUIDELINE, including the search for em dashes and en dashes.
-- Make sure any new note is listed in its area `README.md` and in `ToC.md`, and run `python3 scripts/check-toc.py`.
+- Make sure any new note is listed in its area `README.md` and in `ToC.md`.
 - Summarize what changed, which sources were used and what remains unverified.

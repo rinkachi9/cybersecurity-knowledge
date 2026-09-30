@@ -1,6 +1,6 @@
 # Table of contents
 
-Full tree of every file in the repository. Every added, moved, renamed or deleted file must be reflected here (see [GUIDELINE](GUIDELINE.md#3-repository-structure-and-naming)). Run `python3 scripts/check-toc.py` to verify.
+Full tree of every file in the repository. Every added, moved, renamed or deleted file must be reflected here (see [GUIDELINE](GUIDELINE.md#3-repository-structure-and-naming)).
 
 - **Repository root**
   - [README.md](README.md): what the repository is and how to navigate it
@@ -9,8 +9,6 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - [CLAUDE.md](CLAUDE.md): instructions for Claude Code
   - [ToC.md](ToC.md): this file
   - [Security.html](Security.html): original ClickUp export the notes were migrated from (kept until the migration is reviewed)
-  - **scripts/**
-    - [check-toc.py](scripts/check-toc.py): checks that ToC.md lists every file and that its links resolve
 - **foundations/**
   - [README.md](foundations/README.md): Foundations entry point
   - [security-overview.md](foundations/security-overview.md): Security overview - Definition, purposes, key concepts, types and importance of cybersecurity.
@@ -29,21 +27,27 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - [README.md](identity-and-access/README.md): Identity and access entry point
   - [authentication-vs-authorization.md](identity-and-access/authentication-vs-authorization.md): Authentication vs Authorization - Side by side comparison of the two concepts.
   - [authorization.md](identity-and-access/authorization.md): Authorization - Allowing or refusing access to resources after authentication.
-  - [authentication-methods.md](identity-and-access/authentication-methods.md): Authentication methods - Common ways of proving identity.
-  - [token-based-authentication-jwt.md](identity-and-access/token-based-authentication-jwt.md): Token-Based Authentication (JWT) - Signed tokens (JWT) as a way to verify identity.
-  - [jwt-vs-session.md](identity-and-access/jwt-vs-session.md): JWT vs Session - Stateless tokens compared with server-side sessions.
-  - [oauth.md](identity-and-access/oauth.md): OAuth - The OAuth delegated authorization protocol.
-  - [openid-connect.md](identity-and-access/openid-connect.md): OpenID Connect (OIDC) - The OpenID Connect identity layer on top of OAuth 2.0.
+  - **authentication/**
+    - [README.md](identity-and-access/authentication/README.md): entry point for authentication
+    - [authentication-methods.md](identity-and-access/authentication/authentication-methods.md): Authentication methods - Common ways of proving identity.
+    - [token-based-authentication-jwt.md](identity-and-access/authentication/token-based-authentication-jwt.md): Token-Based Authentication (JWT) - Signed tokens (JWT) as a way to verify identity.
+    - [jwt-vs-session.md](identity-and-access/authentication/jwt-vs-session.md): JWT vs Session - Stateless tokens compared with server-side sessions.
+  - **protocols/**
+    - [README.md](identity-and-access/protocols/README.md): entry point for protocols
+    - [oauth.md](identity-and-access/protocols/oauth.md): OAuth - The OAuth delegated authorization protocol.
+    - [openid-connect.md](identity-and-access/protocols/openid-connect.md): OpenID Connect (OIDC) - The OpenID Connect identity layer on top of OAuth 2.0.
 - **threat-modeling/**
   - [README.md](threat-modeling/README.md): Threat modeling entry point
   - [threat-modeling.md](threat-modeling/threat-modeling.md): Threat Modeling - What threat modeling is, why it matters and how it differs from risk management.
   - [methodologies.md](threat-modeling/methodologies.md): Threat modeling methodologies - Comparison of the main methodologies and their strengths and weaknesses.
-  - [stride.md](threat-modeling/stride.md): STRIDE - Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
-  - [attack-trees.md](threat-modeling/attack-trees.md): Attack Trees - Representing how an attacker can reach a goal as a tree of steps.
-  - [pasta.md](threat-modeling/pasta.md): Attack Simulation and Threat Analysis (PASTA) - Risk-centric, attacker-focused methodology.
-  - [trike.md](threat-modeling/trike.md): Trike - Risk-based methodology built around acceptable risk levels.
-  - [hybrid-threat-modeling-method.md](threat-modeling/hybrid-threat-modeling-method.md): Hybrid Threat Modeling Method (hTMM) - Combining several methodologies in one process.
-  - [security-cards.md](threat-modeling/security-cards.md): Security Cards - Card-based, collaborative threat discovery.
+  - **methods/**
+    - [README.md](threat-modeling/methods/README.md): entry point for methods
+    - [stride.md](threat-modeling/methods/stride.md): STRIDE - Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
+    - [attack-trees.md](threat-modeling/methods/attack-trees.md): Attack Trees - Representing how an attacker can reach a goal as a tree of steps.
+    - [pasta.md](threat-modeling/methods/pasta.md): Attack Simulation and Threat Analysis (PASTA) - Risk-centric, attacker-focused methodology.
+    - [trike.md](threat-modeling/methods/trike.md): Trike - Risk-based methodology built around acceptable risk levels.
+    - [hybrid-threat-modeling-method.md](threat-modeling/methods/hybrid-threat-modeling-method.md): Hybrid Threat Modeling Method (hTMM) - Combining several methodologies in one process.
+    - [security-cards.md](threat-modeling/methods/security-cards.md): Security Cards - Card-based, collaborative threat discovery.
 - **vulnerability-management/**
   - [README.md](vulnerability-management/README.md): Vulnerability management entry point
   - [cve.md](vulnerability-management/cve.md): Common Vulnerabilities and Exposures (CVE) - The system that assigns identifiers to publicly known vulnerabilities.
@@ -114,12 +118,14 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [slsa.md](application-security/supply-chain/slsa.md): Supply-chain Levels for Software Artifacts (SLSA) - Supply-chain Levels for Software Artifacts: a framework for build integrity.
 - **defensive-operations/**
   - [README.md](defensive-operations/README.md): Defensive operations entry point
-  - [security-operations-center.md](defensive-operations/security-operations-center.md): Security Operations Center (SOC) - Purpose, roles, technology and workflow of a SOC.
-  - [secops.md](defensive-operations/secops.md): SecOps - The collaboration of IT operations and security teams.
-  - [siem.md](defensive-operations/siem.md): SIEM - Security information and event management.
-  - [soar.md](defensive-operations/soar.md): SOAR - Security orchestration, automation and response.
-  - [sop.md](defensive-operations/sop.md): SOP - Standard operating procedures for repeatable analyst work.
-  - [red-blue-purple-teams.md](defensive-operations/red-blue-purple-teams.md): Red/Blue/Purple team - Roles of attacking, defending and collaborating teams.
+  - **operations/**
+    - [README.md](defensive-operations/operations/README.md): entry point for operations
+    - [security-operations-center.md](defensive-operations/operations/security-operations-center.md): Security Operations Center (SOC) - Purpose, roles, technology and workflow of a SOC.
+    - [secops.md](defensive-operations/operations/secops.md): SecOps - The collaboration of IT operations and security teams.
+    - [siem.md](defensive-operations/operations/siem.md): SIEM - Security information and event management.
+    - [soar.md](defensive-operations/operations/soar.md): SOAR - Security orchestration, automation and response.
+    - [sop.md](defensive-operations/operations/sop.md): SOP - Standard operating procedures for repeatable analyst work.
+    - [red-blue-purple-teams.md](defensive-operations/operations/red-blue-purple-teams.md): Red/Blue/Purple team - Roles of attacking, defending and collaborating teams.
   - **detection/**
     - [README.md](defensive-operations/detection/README.md): entry point for detection
     - [ids.md](defensive-operations/detection/ids.md): Intrusion Detection System (IDS) - Intrusion detection systems.
@@ -144,14 +150,16 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [iso-iec-27001.md](governance-and-compliance/standards/iso-iec-27001.md): ISO/IEC 27001 - The international standard for information security management systems.
 - **privacy-and-data-protection/**
   - [README.md](privacy-and-data-protection/README.md): Privacy and data protection entry point
-  - [privacy-regulations-overview.md](privacy-and-data-protection/privacy-regulations-overview.md): Data protection and privacy regulations - What privacy regulations are and how they compare.
-  - [gdpr.md](privacy-and-data-protection/gdpr.md): General Data Protection Regulation (GDPR) - The European Union General Data Protection Regulation.
-  - [pipeda.md](privacy-and-data-protection/pipeda.md): Personal Information Protection and Electronic Documents Act (PIPEDA) - Canada federal private-sector privacy law.
-  - [hipaa.md](privacy-and-data-protection/hipaa.md): Health Insurance Portability and Accountability Act (HIPAA) - U.S. law protecting health information.
-  - [ftc-act.md](privacy-and-data-protection/ftc-act.md): Federal Trade Commission (FTC) Act - The Federal Trade Commission role in privacy and data security.
-  - [coppa.md](privacy-and-data-protection/coppa.md): Children’s Online Privacy Protection Rule (COPPA) - U.S. rules on online data collection from children.
-  - [glba.md](privacy-and-data-protection/glba.md): Gramm-Leach-Bliley Act (GLBA) - U.S. law on protecting customer financial information.
   - [nist-privacy-framework.md](privacy-and-data-protection/nist-privacy-framework.md): NIST Privacy Framework - The NIST voluntary framework for managing privacy risk.
+  - **regulations/**
+    - [README.md](privacy-and-data-protection/regulations/README.md): entry point for regulations
+    - [privacy-regulations-overview.md](privacy-and-data-protection/regulations/privacy-regulations-overview.md): Data protection and privacy regulations - What privacy regulations are and how they compare.
+    - [gdpr.md](privacy-and-data-protection/regulations/gdpr.md): General Data Protection Regulation (GDPR) - The European Union General Data Protection Regulation.
+    - [pipeda.md](privacy-and-data-protection/regulations/pipeda.md): Personal Information Protection and Electronic Documents Act (PIPEDA) - Canada federal private-sector privacy law.
+    - [hipaa.md](privacy-and-data-protection/regulations/hipaa.md): Health Insurance Portability and Accountability Act (HIPAA) - U.S. law protecting health information.
+    - [ftc-act.md](privacy-and-data-protection/regulations/ftc-act.md): Federal Trade Commission (FTC) Act - The Federal Trade Commission role in privacy and data security.
+    - [coppa.md](privacy-and-data-protection/regulations/coppa.md): Children’s Online Privacy Protection Rule (COPPA) - U.S. rules on online data collection from children.
+    - [glba.md](privacy-and-data-protection/regulations/glba.md): Gramm-Leach-Bliley Act (GLBA) - U.S. law on protecting customer financial information.
 - **ai-security/**
   - [README.md](ai-security/README.md): AI security entry point
   - [google-secure-ai-framework.md](ai-security/google-secure-ai-framework.md): Google’s Secure AI Framework (SAIF) - Google framework for securing AI and ML systems.
@@ -163,12 +171,14 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - **linux/**
     - [README.md](operating-system-security/linux/README.md): entry point for linux
     - [seccomp.md](operating-system-security/linux/seccomp.md): Seccomp - Restricting the system calls a Linux process can make.
-- **organizations-and-certifications/**
-  - [README.md](organizations-and-certifications/README.md): Organizations and certifications entry point
-  - [nist.md](organizations-and-certifications/nist.md): National Institute of Standards and Technology (NIST) - The National Institute of Standards and Technology and its publications.
-  - [sans.md](organizations-and-certifications/sans.md): SANS - The SANS Institute and its training and research.
-  - [mandiant.md](organizations-and-certifications/mandiant.md): Mandiant - Mandiant and its incident response and threat research.
-  - [isc2.md](organizations-and-certifications/isc2.md): International Information System Security Certification Consortium (ISC2) - ISC2 and its certifications.
+- **organizations/**
+  - [README.md](organizations/README.md): Organizations entry point
+  - [nist.md](organizations/nist.md): National Institute of Standards and Technology (NIST) - The National Institute of Standards and Technology and its publications.
+  - [sans.md](organizations/sans.md): SANS - The SANS Institute and its training and research.
+  - [mandiant.md](organizations/mandiant.md): Mandiant - Mandiant and its incident response and threat research.
+- **certifications/**
+  - [README.md](certifications/README.md): Certifications entry point
+  - [isc2.md](certifications/isc2.md): International Information System Security Certification Consortium (ISC2) - ISC2 and its certifications.
 - **network-security/** (planned)
   - [README.md](network-security/README.md): Network security entry point
 - **offensive-security/** (planned)
@@ -180,5 +190,5 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [cia-triad-overview.png](assets/foundations/cia-triad-overview.png)
   - **identity-and-access/**
     - [jwt-vs-session-comparison.png](assets/identity-and-access/jwt-vs-session-comparison.png)
-  - **organizations-and-certifications/**
-    - [nist-incident-response-planning.png](assets/organizations-and-certifications/nist-incident-response-planning.png)
+  - **organizations/**
+    - [nist-incident-response-planning.png](assets/organizations/nist-incident-response-planning.png)

@@ -1,22 +1,10 @@
----
-title: MITRE ATT&CK®
-area: threat intelligence
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, mitre, attack]
-migrated_from: Security.html, page 45
----
-
 # MITRE ATT&CK®
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

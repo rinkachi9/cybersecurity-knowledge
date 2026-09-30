@@ -1,22 +1,10 @@
----
-title: Threat Intelligence (Threat Intel)
-area: threat intelligence
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated]
-migrated_from: Security.html, page 12
----
-
 # Threat Intelligence (Threat Intel)
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

@@ -1,22 +1,8 @@
----
-title: OWASP
-area: application security
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, owasp]
-migrated_from: Security.html, page 24
----
-
 # OWASP
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
-
-## Motivation
-
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

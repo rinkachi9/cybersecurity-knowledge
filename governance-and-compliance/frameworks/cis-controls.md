@@ -1,22 +1,10 @@
----
-title: Center for Internet Security (CIS) Controls Framework
-area: governance and compliance
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, cis, controls]
-migrated_from: Security.html, page 42
----
-
 # Center for Internet Security (CIS) Controls Framework
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

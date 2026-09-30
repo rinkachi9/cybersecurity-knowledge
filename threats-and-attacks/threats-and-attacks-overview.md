@@ -1,22 +1,10 @@
----
-title: Threats & attacks
-area: threats and attacks
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated]
-migrated_from: Security.html, page 65
----
-
 # Threats & attacks
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## Introduction
 

@@ -1,22 +1,10 @@
----
-title: NIST Privacy Framework
-area: privacy and data protection
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, nist, privacy]
-migrated_from: Security.html, page 43
----
-
 # NIST Privacy Framework
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

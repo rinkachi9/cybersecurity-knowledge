@@ -1,22 +1,10 @@
----
-title: Google’s Secure AI Framework (SAIF)
-area: ai security
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, saif, google]
-migrated_from: Security.html, page 38
----
-
 # Google’s Secure AI Framework (SAIF)
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

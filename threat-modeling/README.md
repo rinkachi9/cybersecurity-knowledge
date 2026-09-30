@@ -6,12 +6,19 @@ How to think about what can go wrong in a system, and the main methodologies for
 
 - [Threat Modeling](threat-modeling.md): What threat modeling is, why it matters and how it differs from risk management.
 - [Threat modeling methodologies](methodologies.md): Comparison of the main methodologies and their strengths and weaknesses.
-- [STRIDE](stride.md): Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
-- [Attack Trees](attack-trees.md): Representing how an attacker can reach a goal as a tree of steps.
-- [Attack Simulation and Threat Analysis (PASTA)](pasta.md): Risk-centric, attacker-focused methodology.
-- [Trike](trike.md): Risk-based methodology built around acceptable risk levels.
-- [Hybrid Threat Modeling Method (hTMM)](hybrid-threat-modeling-method.md): Combining several methodologies in one process.
-- [Security Cards](security-cards.md): Card-based, collaborative threat discovery.
+
+### Methods
+
+Individual threat modeling methods.
+
+Entry point: [methods](methods/README.md).
+
+- [STRIDE](methods/stride.md): Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
+- [Attack Trees](methods/attack-trees.md): Representing how an attacker can reach a goal as a tree of steps.
+- [Attack Simulation and Threat Analysis (PASTA)](methods/pasta.md): Risk-centric, attacker-focused methodology.
+- [Trike](methods/trike.md): Risk-based methodology built around acceptable risk levels.
+- [Hybrid Threat Modeling Method (hTMM)](methods/hybrid-threat-modeling-method.md): Combining several methodologies in one process.
+- [Security Cards](methods/security-cards.md): Card-based, collaborative threat discovery.
 
 ## Planned topics
 

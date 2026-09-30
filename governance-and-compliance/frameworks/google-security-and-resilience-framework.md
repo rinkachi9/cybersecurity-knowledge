@@ -1,22 +1,10 @@
----
-title: Google Security and Resilience Framework (SRF)
-area: governance and compliance
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, google, srf]
-migrated_from: Security.html, page 39
----
-
 # Google Security and Resilience Framework (SRF)
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

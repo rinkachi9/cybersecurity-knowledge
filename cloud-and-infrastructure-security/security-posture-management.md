@@ -1,22 +1,10 @@
----
-title: Security Posture Management (SPM)
-area: cloud and infrastructure security
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, spm, cspm]
-migrated_from: Security.html, page 22
----
-
 # Security Posture Management (SPM)
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

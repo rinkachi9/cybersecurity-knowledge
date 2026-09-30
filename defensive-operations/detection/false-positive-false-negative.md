@@ -1,13 +1,3 @@
----
-title: False Negative / False Positive
-area: defensive operations
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, detection, metrics]
-migrated_from: Security.html, page 7
----
-
 # False Negative / False Positive
 
 ## Summary
@@ -18,9 +8,7 @@ TODO: write two to four plain language sentences that say what this is and why i
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

@@ -64,7 +64,8 @@ The content is organized into the areas below. Each area has a `README.md` with 
 | [AI security](ai-security/README.md) | Security of AI and ML systems. |
 | [Cloud and infrastructure security](cloud-and-infrastructure-security/README.md) | Security posture management, and later shared responsibility, hardening, secrets, container and Kubernetes security. |
 | [Operating system security](operating-system-security/README.md) | Operating system mechanisms such as seccomp on Linux. |
-| [Organizations and certifications](organizations-and-certifications/README.md) | NIST, SANS, Mandiant and ISC2. |
+| [Organizations](organizations/README.md) | NIST, SANS and Mandiant. |
+| [Certifications](certifications/README.md) | ISC2 and its certifications. |
 | [Network security](network-security/README.md) (planned) | Protocols, segmentation, firewalls, VPNs, traffic analysis. |
 | [Offensive security](offensive-security/README.md) (planned) | Penetration testing methodology, exploitation concepts, red team tradecraft (authorized contexts only). |
 
@@ -91,8 +92,7 @@ The layout will grow with the content. The current shape is:
 |-- AGENTS.md          # instructions for AI agents, points to GUIDELINE.md
 |-- CLAUDE.md          # instructions for Claude Code, points to GUIDELINE.md
 |-- .gitignore
-|-- assets/<area>/     # images, diagram sources, media and downloadable files
-|-- scripts/<area>/    # scripts and tools referenced by notes (repository tooling is in scripts/)
+|-- assets/<area>/     # images, diagram sources, media and downloadable files (scripts stay with their topic)
 `-- <area>/            # one directory per knowledge area (see GUIDELINE.md)
     |-- README.md      # entry point and reading order for the area
     |-- <topic>.md     # individual notes
@@ -118,4 +118,4 @@ This repository is one of a family of knowledge bases. Topics that belong elsewh
 
 ## Status
 
-The structure and rules are in place. The first batch of notes was migrated from an older HTML export and is marked `status: draft` with `TODO:` markers where the standard in the GUIDELINE is not yet met (see [migrated notes](GUIDELINE.md#41-migrated-notes)). Content is being added and reviewed area by area.
+The structure and rules are in place. The first batch of notes was migrated from an older HTML export and has `TODO:` markers where the standard in the GUIDELINE is not yet met (see [migrated notes](GUIDELINE.md#41-migrated-notes)). Content is being added and reviewed area by area.

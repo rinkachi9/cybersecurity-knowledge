@@ -56,14 +56,15 @@ Content is organized by knowledge area, and each area is a top level directory. 
 ToC.md                  # full tree of every file in the repository
 assets/
     <area>/             # images, diagram sources, media and other files used by notes
-scripts/
-    <area>/             # scripts and small tools referenced by notes (repository tooling sits in scripts/)
 <area>/
     README.md           # entry point: what the area covers, reading order, links to notes
     <topic>.md          # a single note
     <subarea>/          # optional, groups related notes
         README.md
         <topic>.md
+        <topic>/        # optional, when a topic has its own scripts or files
+            README.md   # the note itself
+            scripts/    # scripts that belong to this topic only
 ```
 
 Guidance:
@@ -71,7 +72,7 @@ Guidance:
 - **Prefer flat over deep.** Two levels below the repository root (area and subarea) is usually enough. Add a subarea when an area has more than about twelve files or when a group of notes clearly belongs together.
 - **One note, one main idea.** If a note needs a table of contents longer than about ten entries, it is probably several notes.
 - **Every area and subarea has a `README.md`.** It is the entry point, and it lists the notes in a recommended reading order with a one line description each. Areas that are planned but not written yet have a `README.md` that says so and lists planned topics.
-- **Keep media and scripts in the global directories.** Images, diagram sources, downloadable files and media go to `assets/<area>/`. Scripts go to `scripts/<area>/`. Notes reference them with relative paths. Never place them next to the notes.
+- **Media goes to `assets/<area>/`, scripts stay with their topic.** Images, diagram sources, downloadable files and media go to `assets/<area>/`. A script lives next to the material it belongs to: when a topic gets scripts, the note becomes a directory `<topic>/` with `README.md` (the note) and a `scripts/` directory. There is no global `scripts/` directory.
 - **Keep `ToC.md` complete.** See [section 3.4](#34-table-of-contents).
 
 *Analogy.* Think of a library. Areas are sections, area READMEs are the catalog cards for a section, and notes are the books. A book that tries to cover an entire section belongs on several shelves.
@@ -84,7 +85,7 @@ Guidance:
 | Note files | lowercase, hyphens, descriptive noun phrase, `.md` | `b-tree-indexes.md` |
 | Images and media | note name, then a short description, stored in `assets/<area>/` | `assets/cryptography/pki-chain-of-trust.png` |
 | Diagram sources | same base name as the rendered image, source format as extension | `assets/cryptography/pki-chain-of-trust.drawio` |
-| Scripts | lowercase, hyphens, verb phrase, stored in `scripts/<area>/` | `scripts/network-security/parse-pcap-summary.py` |
+| Scripts | lowercase, hyphens, verb phrase, stored in the `scripts/` directory of their topic | `network-security/pcap-analysis/scripts/parse-pcap-summary.py` |
 | Entry points | always `README.md` | `<area>/README.md` |
 | Table of contents | always `ToC.md` in the repository root | `ToC.md` |
 
@@ -103,23 +104,14 @@ Names describe the content, not its status or origin. Avoid `notes.md`, `misc.md
 
 - **Every change is reflected in `ToC.md`.** Adding, moving, renaming or deleting a note, an asset or a script updates `ToC.md` in the same change. Changing the title or purpose of a note updates its description there.
 - **Planned areas are marked.** An area that has only a `README.md` is marked `(planned)`.
-- **Verify before finishing.** Run `python3 scripts/check-toc.py` from the repository root. It reports files that are missing from `ToC.md` and links that no longer resolve.
+- **Verify before finishing.** Compare `ToC.md` with the output of `git ls-files --cached --others --exclude-standard` and check that every link resolves.
 - **`ToC.md` is not a replacement for area READMEs.** The area README keeps the recommended reading order and the context. `ToC.md` keeps the complete list.
 
 ## 4. Anatomy of a note
 
-Every note follows the same skeleton, so a reader always knows where to look. Sections that do not apply may be dropped, but their order stays.
+Every note follows the same skeleton, so a reader always knows where to look. Sections that do not apply may be dropped, but their order stays. Notes have no front matter: a note starts with its title.
 
 ```markdown
----
-title: <Human readable title>
-area: <area name>
-level: beginner | intermediate | advanced
-status: draft | reviewed | stable
-last_verified: YYYY-MM-DD
-tags: [tag-one, tag-two]
----
-
 # <Title>
 
 ## Summary
@@ -127,9 +119,6 @@ Two to four sentences in plain language. What is this, and why should the reader
 
 ## Prerequisites
 Links to notes the reader should know first. State the assumed knowledge.
-
-## Motivation
-The problem this topic solves. What goes wrong without it?
 
 ## Core concepts
 Precise definitions, the mechanism, the vocabulary. Build from simple to complex.
@@ -152,19 +141,18 @@ Annotated links to primary sources, one sentence on why each is worth reading.
 
 Notes on the skeleton:
 
-- **Front matter** allows filtering and later automation. `status` moves from `draft` to `reviewed` (checked against sources) to `stable` (used and confirmed in practice). `last_verified` is the last date the content was checked against its sources.
+- **No metadata block.** The directory tells the area, the title is the first line, and open gaps are marked with `TODO:` lines.
 - **Summary first.** A reader who only reads the summary must not come away with a wrong idea. Avoid teasers such as "we will see how this works".
 - **Motivation before mechanism.** People remember mechanisms better when they know what they were invented to fix.
 - **Practice is part of the note.** Retrieval practice is what turns reading into knowledge. Even three good questions are valuable.
 
 ### 4.1 Migrated notes
 
-Notes that were migrated from an older source (currently `Security.html`) keep their original content and are brought up to the standard over time.
+Notes that were migrated from an older source (`Security.html`) keep their original content and are brought up to the standard over time.
 
-- Front matter uses `level: unrated` and `last_verified: unverified` until the content has been reviewed against sources. Both values are allowed only for notes with `status: draft`.
-- The tag `migrated` and the field `migrated_from` record where the note came from. Remove the tag when the note has been reviewed.
 - Sections of the skeleton that the original did not have contain a single line that starts with `TODO:`. Replace it with real content, or delete the section if it does not apply.
-- Search for open gaps with `grep -rn "^TODO:" --include="*.md" .`.
+- Search for open gaps with `grep -rn "^TODO:" --include="*.md" .`. A note without `TODO:` lines has met the skeleton, but still has to be checked against sources (see [section 8](#8-sources-references-and-verification)).
+- Content that was migrated has not been verified against sources.
 - The dash and emoji rules of [section 7](#7-writing-style) apply to migrated content as well. Dashes were replaced by hyphens and emoji by words during migration.
 
 ## 5. How to explain a concept
@@ -256,7 +244,7 @@ Notice the pattern: the definition is precise, the analogy explains the idea in 
 
 ### 6.2.1 Scripts, files and media
 
-- **Scripts** go to `scripts/<area>/`. The note shows the relevant part and links to the full script. A script states its language and tool versions in a header comment, is self contained and says how to run it.
+- **Scripts** live in a `scripts/` directory next to the topic they belong to (see [section 3.1](#31-layout)). The note shows the relevant part and links to the full script. A script states its language and tool versions in a header comment, is self contained and says how to run it.
 - **Downloadable files** (checklists, configuration templates, exported rules, small datasets) go to `assets/<area>/`. Only files that are safe to publish belong here: no secrets, no real client or personal data, no live malware. Samples, captures and dumps are excluded by `.gitignore` on purpose.
 - **Large media** (video, large captures) is linked from a public source instead of being committed. If a large file is essential, discuss it first because it stays in the git history forever.
 - **Every asset and script** appears in `ToC.md`.
@@ -335,7 +323,7 @@ Text produced by language models has recognizable habits. Remove them, whether y
 - **Prefer primary sources.** Specifications, official documentation, original papers and source code beat blog posts and videos. Use secondary sources to find primary ones.
 - **Cite what you use.** Put links in the "Further reading" section, or inline for a specific claim. Include enough to find the source if the link dies: title, author or organization, year.
 - **Write in your own words.** Summaries are paraphrased. Quote only when the exact wording matters, keep quotes short, and mark them clearly.
-- **Record the date.** For anything that changes over time (versions, prices, limits, recommendations), record the `last_verified` date in the front matter and the version in the text.
+- **Record the date.** For anything that changes over time (versions, prices, limits, recommendations), write the version and the date it was checked in the text, for example "Checked against NIST CSF 2.0, 2026-09".
 - **Separate fact, interpretation and opinion.** Mark opinions as opinions ("In my experience", "I prefer this because").
 - **Check claims that sound too good.** Reproduce numbers when you can. Look for a second source for anything surprising.
 
@@ -386,7 +374,7 @@ Run this list before marking a note as `reviewed`.
 - [ ] No secrets, personal data or confidential material.
 - [ ] File and directory names follow the naming rules.
 - [ ] The note is linked from its area `README.md`.
-- [ ] `ToC.md` reflects every added, moved, renamed or deleted file, and `python3 scripts/check-toc.py` passes.
+- [ ] `ToC.md` reflects every added, moved, renamed or deleted file, and its links resolve.
 
 A quick way to check the dash rule from the repository root:
 
@@ -399,8 +387,8 @@ grep -rnP "\x{2013}|\x{2014}" --include="*.md" .
 - **Small, focused commits.** One note or one logical change per commit. Explain the reason in the message.
 - **Commit message format.** A short imperative subject in English, for example `Add note on B-tree indexes`. Add a body when the reason is not obvious.
 - **Branching.** Use short lived branches for larger additions. Small edits can go directly to the main branch.
-- **Review cycle.** New notes start as `draft`. After checking them against sources they become `reviewed`. After they have been used and confirmed, they become `stable`.
-- **Refresh.** Revisit notes on fast moving topics regularly, update `last_verified` and fix what changed. Delete or rewrite content that is no longer true instead of leaving it with a warning.
+- **Review cycle.** New notes contain `TODO:` lines until the skeleton is filled. After that, check the content against sources and record what was checked in the text.
+- **Refresh.** Revisit notes on fast moving topics regularly, update the recorded check date and fix what changed. Delete or rewrite content that is no longer true instead of leaving it with a warning.
 - **Refactor structure early.** When a note grows too large, split it. When two notes overlap, merge them or extract the shared part into its own note and link to it.
 - **Keep the index honest.** Every new note is added to its area `README.md` and to `ToC.md` in the same commit. Every move, rename or deletion is reflected in both as well.
 

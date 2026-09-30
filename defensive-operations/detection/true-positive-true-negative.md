@@ -1,22 +1,10 @@
----
-title: True Negative / True Positive
-area: defensive operations
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, detection, metrics]
-migrated_from: Security.html, page 8
----
-
 # True Negative / True Positive
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

@@ -4,12 +4,18 @@ Running security day to day: monitoring, detection, response and the teams and p
 
 ## Notes
 
-- [Security Operations Center (SOC)](security-operations-center.md): Purpose, roles, technology and workflow of a SOC.
-- [SecOps](secops.md): The collaboration of IT operations and security teams.
-- [SIEM](siem.md): Security information and event management.
-- [SOAR](soar.md): Security orchestration, automation and response.
-- [SOP](sop.md): Standard operating procedures for repeatable analyst work.
-- [Red/Blue/Purple team](red-blue-purple-teams.md): Roles of attacking, defending and collaborating teams.
+### Operations
+
+Teams, technology and procedures of security operations.
+
+Entry point: [operations](operations/README.md).
+
+- [Security Operations Center (SOC)](operations/security-operations-center.md): Purpose, roles, technology and workflow of a SOC.
+- [SecOps](operations/secops.md): The collaboration of IT operations and security teams.
+- [SIEM](operations/siem.md): Security information and event management.
+- [SOAR](operations/soar.md): Security orchestration, automation and response.
+- [SOP](operations/sop.md): Standard operating procedures for repeatable analyst work.
+- [Red/Blue/Purple team](operations/red-blue-purple-teams.md): Roles of attacking, defending and collaborating teams.
 
 ### Detection
 

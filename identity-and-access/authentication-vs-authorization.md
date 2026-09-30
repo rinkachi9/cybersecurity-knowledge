@@ -1,13 +1,3 @@
----
-title: Authentication vs Authorization
-area: identity and access
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, authentication, authorization]
-migrated_from: Security.html, page 99
----
-
 # Authentication vs Authorization
 
 ## Summary
@@ -18,9 +8,7 @@ TODO: write two to four plain language sentences that say what this is and why i
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## Introduction
 

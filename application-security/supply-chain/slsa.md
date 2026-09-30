@@ -1,22 +1,10 @@
----
-title: Supply-chain Levels for Software Artifacts (SLSA)
-area: application security
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, slsa, supply-chain]
-migrated_from: Security.html, page 37
----
-
 # Supply-chain Levels for Software Artifacts (SLSA)
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

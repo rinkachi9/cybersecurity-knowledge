@@ -1,18 +1,6 @@
----
-title: MITRE CAPEC
-area: threat intelligence
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, mitre, capec]
-migrated_from: Security.html, page 46
----
-
 # MITRE CAPEC
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 

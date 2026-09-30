@@ -1,22 +1,10 @@
----
-title: ISO/IEC 27001
-area: governance and compliance
-level: unrated
-status: draft
-last_verified: unverified
-tags: [migrated, iso, isms]
-migrated_from: Security.html, page 25
----
-
 # ISO/IEC 27001
 
 ## Prerequisites
 
 TODO: link the notes a reader should know first and state the assumed knowledge.
 
-## Motivation
 
-TODO: describe the problem this topic solves and what goes wrong without it.
 
 ## What it is?
 
