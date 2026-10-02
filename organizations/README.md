@@ -4,7 +4,7 @@ Institutions that shape the field: standards bodies, training and research organ
 
 ## Notes
 
-- [National Institute of Standards and Technology (NIST)](nist.md): The National Institute of Standards and Technology and its publications.
+- [National Institute of Standards and Technology (NIST)](nist.md): The agency, its role, publication series and how to read the status of a NIST document.
 - [SANS](sans.md): The SANS Institute and its training and research.
 - [Mandiant](mandiant.md): Mandiant and its incident response and threat research.
 

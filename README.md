@@ -92,7 +92,7 @@ The layout will grow with the content. The current shape is:
 |-- AGENTS.md          # instructions for AI agents, points to GUIDELINE.md
 |-- CLAUDE.md          # instructions for Claude Code, points to GUIDELINE.md
 |-- .gitignore
-|-- assets/<area>/     # images, diagram sources, media and downloadable files (scripts stay with their topic)
+|-- _assets/<area>/     # images, diagram sources, media and downloadable files (scripts stay with their topic)
 `-- <area>/            # one directory per knowledge area (see GUIDELINE.md)
     |-- README.md      # entry point and reading order for the area
     |-- <topic>.md     # individual notes

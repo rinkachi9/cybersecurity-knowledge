@@ -5,7 +5,7 @@ Core ideas that the rest of the repository builds on: what cybersecurity is, the
 ## Notes
 
 - [Security overview](security-overview.md): Definition, purposes, key concepts, types and importance of cybersecurity.
-- [CIA Triad](cia-triad.md): Confidentiality, integrity and availability as the basic model of information security.
+- [CIA triad](cia-triad/README.md): Confidentiality, integrity and availability as the basic model of information security, with definitions, each property in depth, categorization, threat mapping and worked examples.
 - [Defense in depth](defense-in-depth.md): Layering several security controls so that one failure does not lead to a full compromise.
 
 ## Planned topics

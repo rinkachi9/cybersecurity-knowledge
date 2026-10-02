@@ -1,0 +1,12 @@
+criterion,weight_or_gate,what_it_measures,how_to_test_in_the_poc,evidence_to_record,tool_a,tool_b,tool_c,notes
+detection_coverage,25,Share of seeded misconfigurations found,Seed the 24 cases in cspm-poc-seeded-misconfigurations.csv in a sandbox. Count findings per case,Recall by cloud and by risk class,,,,
+false_positive_rate,15,Findings that are wrong or irrelevant,"Review every finding on the sandbox plus a sample of 50 from a real, non-production account",Precision and a list of rules that need tuning,,,,
+time_to_detect,10,Minutes from change to finding,"Change 10 settings, record the time until each finding appears","Median and worst case, per cloud",,,,
+context_prioritization,15,"Does ranking use exposure, identity and data context","Build 3 toxic combinations (open port + admin role, public bucket + PII tag, ...). Check their rank",Rank of each seeded combination in the list,,,,
+custom_rule_effort,10,Effort to write and test an organization-specific rule,"Write the same 3 custom rules in the tool's language, including a negative test","Time, lines, ability to test before enabling",,,,
+connector_least_privilege,10,Permissions the connector needs,Read the role or template. Compare with the features you use. Check external ID or federation,"Permission list, write access needed or not",,,,
+integration_workflow,10,"Ticketing, SIEM, API, IaC pipeline, ownership mapping","Push findings to your ticket system and SIEM, call the API, run IaC scan in CI",Working integrations and gaps,,,,
+cost_predictability,5,Does the pricing model scale predictably,"Model cost at 2x and 5x the estate for the unit the vendor charges (resources, credits, checks, workloads)",Cost model with assumptions,,,,
+coverage_of_clouds_and_services,gate,Does it cover the clouds and services you use,List your top 30 services per cloud and check documented support,Support matrix with gaps,,,,
+data_handling,gate,"What configuration data leaves your environment, where it is stored and for how long","Request the data flow, retention and regional processing description",Documented statement and contract terms,,,,
+exit_and_export,gate,"Can you export rules, findings and history",Export all rules and 90 days of findings in a machine-readable format,Export files and a plan to reuse,,,,

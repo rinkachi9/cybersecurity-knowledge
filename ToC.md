@@ -12,7 +12,12 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
 - **foundations/**
   - [README.md](foundations/README.md): Foundations entry point
   - [security-overview.md](foundations/security-overview.md): Security overview - Definition, purposes, key concepts, types and importance of cybersecurity.
-  - [cia-triad.md](foundations/cia-triad.md): CIA Triad - Confidentiality, integrity and availability as the basic model of information security.
+  - **cia-triad/**
+    - [README.md](foundations/cia-triad/README.md): CIA triad - Definitions, each property in depth, formal models, FIPS 199 categorization, threat mapping, three worked examples.
+    - **scripts/**
+      - [verify-hash-chain-log.py](foundations/cia-triad/scripts/verify-hash-chain-log.py): Tamper-evident hash chain log and the role of an external anchor.
+      - [compute-availability.py](foundations/cia-triad/scripts/compute-availability.py): Availability arithmetic, nines, series and parallel composition, correlated failure.
+      - [categorize-system.py](foundations/cia-triad/scripts/categorize-system.py): FIPS 199 high-water mark categorization and baseline impact level.
   - [defense-in-depth.md](foundations/defense-in-depth.md): Defense in depth - Layering several security controls so that one failure does not lead to a full compromise.
 - **cryptography/**
   - [README.md](cryptography/README.md): Cryptography entry point
@@ -103,7 +108,8 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - [README.md](application-security/README.md): Application security entry point
   - **owasp/**
     - [README.md](application-security/owasp/README.md): entry point for owasp
-    - [owasp.md](application-security/owasp/owasp.md): OWASP - The OWASP organization, its projects and how they fit together.
+    - [owasp.md](application-security/owasp/owasp.md): OWASP - The OWASP foundation, its flagship projects and how they fit together.
+    - [owasp-security-principles.md](application-security/owasp/owasp-security-principles.md): OWASP security principles - The 16 design principles of the OWASP Developer Guide, with mappings, a tested example and a review checklist.
     - [owasp-top-10.md](application-security/owasp/owasp-top-10.md): OWASP Top 10 - The list of the ten most critical web application security risks.
   - **vulnerabilities/**
     - [README.md](application-security/vulnerabilities/README.md): entry point for vulnerabilities
@@ -116,6 +122,7 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - **supply-chain/**
     - [README.md](application-security/supply-chain/README.md): entry point for supply chain
     - [slsa.md](application-security/supply-chain/slsa.md): Supply-chain Levels for Software Artifacts (SLSA) - Supply-chain Levels for Software Artifacts: a framework for build integrity.
+    - [nist-secure-software-development-framework.md](application-security/supply-chain/nist-secure-software-development-framework.md): NIST Secure Software Development Framework (SSDF) - SP 800-218 practices and tasks for secure software development.
 - **defensive-operations/**
   - [README.md](defensive-operations/README.md): Defensive operations entry point
   - **operations/**
@@ -126,6 +133,12 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [soar.md](defensive-operations/operations/soar.md): SOAR - Security orchestration, automation and response.
     - [sop.md](defensive-operations/operations/sop.md): SOP - Standard operating procedures for repeatable analyst work.
     - [red-blue-purple-teams.md](defensive-operations/operations/red-blue-purple-teams.md): Red/Blue/Purple team - Roles of attacking, defending and collaborating teams.
+    - **nist-incident-response/**
+      - [README.md](defensive-operations/operations/nist-incident-response/README.md): NIST incident response lifecycle (SP 800-61) - The full Rev. 3 and Rev. 2 lifecycle, decision points and three worked examples (easy, medium, expert).
+      - **scripts/**
+        - [triage-phishing-email.py](defensive-operations/operations/nist-incident-response/scripts/triage-phishing-email.py): Easy example, triage of a reported phishing email.
+        - [correlate-incident-timeline.py](defensive-operations/operations/nist-incident-response/scripts/correlate-incident-timeline.py): Medium example, timeline correlation with clock offsets.
+        - [compute-cloud-containment-closure.py](defensive-operations/operations/nist-incident-response/scripts/compute-cloud-containment-closure.py): Expert example, identity closure and containment plan.
   - **detection/**
     - [README.md](defensive-operations/detection/README.md): entry point for detection
     - [ids.md](defensive-operations/detection/ids.md): Intrusion Detection System (IDS) - Intrusion detection systems.
@@ -137,10 +150,17 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - **risk-management/**
     - [README.md](governance-and-compliance/risk-management/README.md): entry point for risk management
     - [information-risk-management.md](governance-and-compliance/risk-management/information-risk-management.md): Information Risk Management (IRM) - Risk as a decision-making discipline for information.
-    - [risk-management-framework.md](governance-and-compliance/risk-management/risk-management-framework.md): Risk Management Framework (RMF) - The NIST process for managing security and privacy risk over the system lifecycle.
+    - [risk-management-framework.md](governance-and-compliance/risk-management/risk-management-framework.md): NIST Risk Management Framework (RMF) - SP 800-37 Rev. 2: seven steps, 47 tasks and the authorizing official's risk decision.
   - **frameworks/**
     - [README.md](governance-and-compliance/frameworks/README.md): entry point for frameworks
-    - [nist-cybersecurity-framework.md](governance-and-compliance/frameworks/nist-cybersecurity-framework.md): Cybersecurity Framework (CSF) - The NIST CSF functions, categories and profiles.
+    - [nist-frameworks-overview.md](governance-and-compliance/frameworks/nist-frameworks-overview.md): NIST frameworks and key publications - Map of the NIST framework family and which document answers which question.
+    - **nist-sp-800-53/**
+      - [README.md](governance-and-compliance/frameworks/nist-sp-800-53/README.md): NIST SP 800-53 security and privacy controls - Catalog, families, baselines, tailoring, assessment, numbers and worked examples.
+      - **scripts/**
+        - [count-baselines.py](governance-and-compliance/frameworks/nist-sp-800-53/scripts/count-baselines.py): Controls per family and baseline from NIST OSCAL data.
+        - [render-control.py](governance-and-compliance/frameworks/nist-sp-800-53/scripts/render-control.py): Print a control, its parameters and enhancements with baseline membership.
+        - [tailor-baseline.py](governance-and-compliance/frameworks/nist-sp-800-53/scripts/tailor-baseline.py): Tailoring a baseline as data (designation, additions, parameters).
+    - [nist-cybersecurity-framework.md](governance-and-compliance/frameworks/nist-cybersecurity-framework.md): NIST Cybersecurity Framework (CSF) - The CSF 2.0 Core, Profiles, Tiers, a worked gap analysis and a Profile template.
     - [security-controls.md](governance-and-compliance/frameworks/security-controls.md): Security controls - How the CSF functions translate into concrete controls.
     - [cis-controls.md](governance-and-compliance/frameworks/cis-controls.md): Center for Internet Security (CIS) Controls Framework - The CIS Controls prioritized safeguards.
     - [csa-cloud-controls-matrix.md](governance-and-compliance/frameworks/csa-cloud-controls-matrix.md): Cloud Security Alliance Cloud Controls Matrix (CSA CCM) - The CSA control framework for cloud computing.
@@ -150,7 +170,7 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [iso-iec-27001.md](governance-and-compliance/standards/iso-iec-27001.md): ISO/IEC 27001 - The international standard for information security management systems.
 - **privacy-and-data-protection/**
   - [README.md](privacy-and-data-protection/README.md): Privacy and data protection entry point
-  - [nist-privacy-framework.md](privacy-and-data-protection/nist-privacy-framework.md): NIST Privacy Framework - The NIST voluntary framework for managing privacy risk.
+  - [nist-privacy-framework.md](privacy-and-data-protection/nist-privacy-framework.md): NIST Privacy Framework - Privacy risk, the five Functions of version 1.0, Profiles and Tiers, with a data minimization example.
   - **regulations/**
     - [README.md](privacy-and-data-protection/regulations/README.md): entry point for regulations
     - [privacy-regulations-overview.md](privacy-and-data-protection/regulations/privacy-regulations-overview.md): Data protection and privacy regulations - What privacy regulations are and how they compare.
@@ -163,9 +183,14 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
 - **ai-security/**
   - [README.md](ai-security/README.md): AI security entry point
   - [google-secure-ai-framework.md](ai-security/google-secure-ai-framework.md): Google’s Secure AI Framework (SAIF) - Google framework for securing AI and ML systems.
+  - [nist-ai-risk-management-framework.md](ai-security/nist-ai-risk-management-framework.md): NIST AI Risk Management Framework (AI RMF) - Govern, Map, Measure and Manage for trustworthy AI.
 - **cloud-and-infrastructure-security/**
   - [README.md](cloud-and-infrastructure-security/README.md): Cloud and infrastructure security entry point
   - [security-posture-management.md](cloud-and-infrastructure-security/security-posture-management.md): Security Posture Management (SPM) - Continuous measurement and improvement of security posture, including CSPM and related variants.
+  - [nist-zero-trust-architecture.md](cloud-and-infrastructure-security/nist-zero-trust-architecture.md): NIST zero trust architecture (SP 800-207) - Tenets, logical components, trust algorithms and threats.
+  - [cloud-security-posture-management.md](cloud-and-infrastructure-security/cloud-security-posture-management.md): Cloud security posture management (CSPM) - Mechanism, rules, prioritization, drift, native services, operations and a working mini engine.
+  - [multicloud-cspm.md](cloud-and-infrastructure-security/multicloud-cspm.md): Multicloud CSPM - Hierarchies, normalization, architecture patterns, connectors, operating model and a normalization example.
+  - [cspm-tools.md](cloud-and-infrastructure-security/cspm-tools.md): CSPM tools - Prisma Cloud and Cortex Cloud, CrowdStrike Falcon Cloud Security, Orca, Check Point CloudGuard and Netskope, with a PoC method.
 - **operating-system-security/**
   - [README.md](operating-system-security/README.md): Operating system security entry point
   - **linux/**
@@ -173,7 +198,7 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
     - [seccomp.md](operating-system-security/linux/seccomp.md): Seccomp - Restricting the system calls a Linux process can make.
 - **organizations/**
   - [README.md](organizations/README.md): Organizations entry point
-  - [nist.md](organizations/nist.md): National Institute of Standards and Technology (NIST) - The National Institute of Standards and Technology and its publications.
+  - [nist.md](organizations/nist.md): National Institute of Standards and Technology (NIST) - The agency, its role, publication series and how to read the status of a NIST document.
   - [sans.md](organizations/sans.md): SANS - The SANS Institute and its training and research.
   - [mandiant.md](organizations/mandiant.md): Mandiant - Mandiant and its incident response and threat research.
 - **certifications/**
@@ -183,12 +208,36 @@ Full tree of every file in the repository. Every added, moved, renamed or delete
   - [README.md](network-security/README.md): Network security entry point
 - **offensive-security/** (planned)
   - [README.md](offensive-security/README.md): Offensive security entry point
-- **assets/**
+- **_assets/**
+  - **ai-security/**
+    - [nist-ai-rmf-core-functions.png](_assets/ai-security/nist-ai-rmf-core-functions.png): AI RMF Core functions (NIST AI 100-1, Fig. 5).
+    - [nist-ai-rmf-trustworthy-characteristics.png](_assets/ai-security/nist-ai-rmf-trustworthy-characteristics.png): Characteristics of trustworthy AI (NIST AI 100-1, Fig. 4).
   - **application-security/**
-    - [xss-overview.png](assets/application-security/xss-overview.png)
+    - [xss-overview.png](_assets/application-security/xss-overview.png)
+    - [owasp-security-principles-map.svg](_assets/application-security/owasp-security-principles-map.svg): The 16 OWASP principles grouped into four questions (original drawing).
+    - [owasp-security-principles-design-review.csv](_assets/application-security/owasp-security-principles-design-review.csv): Design review checklist with one question per principle.
+  - **cloud-and-infrastructure-security/**
+    - [cspm-poc-scorecard.csv](_assets/cloud-and-infrastructure-security/cspm-poc-scorecard.csv): Weighted scorecard with gates for a CSPM proof of concept.
+    - [cspm-poc-seeded-misconfigurations.csv](_assets/cloud-and-infrastructure-security/cspm-poc-seeded-misconfigurations.csv): 24 seeded misconfigurations for a CSPM proof of concept.
+  - **defensive-operations/**
+    - [nist-sp-800-61r3-lifecycle.png](_assets/defensive-operations/nist-sp-800-61r3-lifecycle.png): Incident response life cycle model based on CSF 2.0 Functions (NIST SP 800-61 Rev. 3, Fig. 2).
   - **foundations/**
-    - [cia-triad-overview.png](assets/foundations/cia-triad-overview.png)
+    - [cia-triad-overview.png](_assets/foundations/cia-triad-overview.png)
+    - [cia-triad-controls-and-failures.svg](_assets/foundations/cia-triad-controls-and-failures.svg): CIA triad with failures and controls (original drawing).
+  - **governance-and-compliance/**
+    - [nist-csf-2-core-structure.png](_assets/governance-and-compliance/nist-csf-2-core-structure.png): CSF Core structure (NIST CSWP 29, Fig. 1).
+    - [nist-csf-2-functions-wheel.png](_assets/governance-and-compliance/nist-csf-2-functions-wheel.png): CSF Functions wheel (NIST CSWP 29, Fig. 2).
+    - [nist-csf-2-profile-steps.png](_assets/governance-and-compliance/nist-csf-2-profile-steps.png): Steps for creating a Profile (NIST CSWP 29, Fig. 3).
+    - [nist-csf-2-tiers.png](_assets/governance-and-compliance/nist-csf-2-tiers.png): CSF Tiers (NIST CSWP 29, Fig. 4).
+    - [nist-csf-2-risk-communication.png](_assets/governance-and-compliance/nist-csf-2-risk-communication.png): Risk communication flow (NIST CSWP 29, Fig. 5).
+    - [nist-csf-2-cybersecurity-privacy-risk.png](_assets/governance-and-compliance/nist-csf-2-cybersecurity-privacy-risk.png): Cybersecurity and privacy risk relationship (NIST CSWP 29, Fig. 6).
+    - [nist-csf-2-profile-template.csv](_assets/governance-and-compliance/nist-csf-2-profile-template.csv): All 106 CSF 2.0 Subcategories as a Profile worksheet.
+    - [nist-rmf-multilevel-risk-management.png](_assets/governance-and-compliance/nist-rmf-multilevel-risk-management.png): Three-level risk management approach (NIST SP 800-37 Rev. 2, Fig. 1).
+    - [nist-rmf-steps.png](_assets/governance-and-compliance/nist-rmf-steps.png): The seven RMF steps (NIST SP 800-37 Rev. 2, Fig. 2).
+    - [nist-sp-800-53-rev5-control-index.csv](_assets/governance-and-compliance/nist-sp-800-53-rev5-control-index.csv): Index of the 300 active SP 800-53 Rev. 5.2.0 base controls with baseline membership.
   - **identity-and-access/**
-    - [jwt-vs-session-comparison.png](assets/identity-and-access/jwt-vs-session-comparison.png)
+    - [jwt-vs-session-comparison.png](_assets/identity-and-access/jwt-vs-session-comparison.png)
   - **organizations/**
-    - [nist-incident-response-planning.png](assets/organizations/nist-incident-response-planning.png)
+    - [nist-incident-response-planning.png](_assets/organizations/nist-incident-response-planning.png)
+  - **privacy-and-data-protection/**
+    - [nist-privacy-framework-privacy-to-organizational-risk.png](_assets/privacy-and-data-protection/nist-privacy-framework-privacy-to-organizational-risk.png): Privacy risk to organizational risk (NIST Privacy Framework 1.0, Fig. 3).

@@ -54,7 +54,7 @@ Content is organized by knowledge area, and each area is a top level directory. 
 
 ```text
 ToC.md                  # full tree of every file in the repository
-assets/
+_assets/
     <area>/             # images, diagram sources, media and other files used by notes
 <area>/
     README.md           # entry point: what the area covers, reading order, links to notes
@@ -72,7 +72,7 @@ Guidance:
 - **Prefer flat over deep.** Two levels below the repository root (area and subarea) is usually enough. Add a subarea when an area has more than about twelve files or when a group of notes clearly belongs together.
 - **One note, one main idea.** If a note needs a table of contents longer than about ten entries, it is probably several notes.
 - **Every area and subarea has a `README.md`.** It is the entry point, and it lists the notes in a recommended reading order with a one line description each. Areas that are planned but not written yet have a `README.md` that says so and lists planned topics.
-- **Media goes to `assets/<area>/`, scripts stay with their topic.** Images, diagram sources, downloadable files and media go to `assets/<area>/`. A script lives next to the material it belongs to: when a topic gets scripts, the note becomes a directory `<topic>/` with `README.md` (the note) and a `scripts/` directory. There is no global `scripts/` directory.
+- **Media goes to `_assets/<area>/`, scripts stay with their topic.** Images, diagram sources, downloadable files and media go to `_assets/<area>/`. A script lives next to the material it belongs to: when a topic gets scripts, the note becomes a directory `<topic>/` with `README.md` (the note) and a `scripts/` directory. There is no global `scripts/` directory.
 - **Keep `ToC.md` complete.** See [section 3.4](#34-table-of-contents).
 
 *Analogy.* Think of a library. Areas are sections, area READMEs are the catalog cards for a section, and notes are the books. A book that tries to cover an entire section belongs on several shelves.
@@ -83,8 +83,8 @@ Guidance:
 | --- | --- | --- |
 | Directories | lowercase, words separated by hyphens | `query-performance/` |
 | Note files | lowercase, hyphens, descriptive noun phrase, `.md` | `b-tree-indexes.md` |
-| Images and media | note name, then a short description, stored in `assets/<area>/` | `assets/cryptography/pki-chain-of-trust.png` |
-| Diagram sources | same base name as the rendered image, source format as extension | `assets/cryptography/pki-chain-of-trust.drawio` |
+| Images and media | note name, then a short description, stored in `_assets/<area>/` | `_assets/cryptography/pki-chain-of-trust.png` |
+| Diagram sources | same base name as the rendered image, source format as extension | `_assets/cryptography/pki-chain-of-trust.drawio` |
 | Scripts | lowercase, hyphens, verb phrase, stored in the `scripts/` directory of their topic | `network-security/pcap-analysis/scripts/parse-pcap-summary.py` |
 | Entry points | always `README.md` | `<area>/README.md` |
 | Table of contents | always `ToC.md` in the repository root | `ToC.md` |
@@ -239,13 +239,13 @@ Notice the pattern: the definition is precise, the analogy explains the idea in 
 - Mermaid renders on GitHub and in most editors. Keep each diagram small enough to read without zooming, and split it when it grows past about 15 nodes.
 - A diagram earns its place by showing something prose cannot: structure, flow over time, relationships. Do not add one for decoration.
 - Every diagram has a caption or a sentence before it saying what to look at, and the same information is available in the surrounding text for readers who cannot see the image.
-- If you use an image, put it in `assets/<area>/`, keep its editable source (for example `.drawio`, `.excalidraw` or `.svg`) in the same directory, and add descriptive alt text.
+- If you use an image, put it in `_assets/<area>/`, keep its editable source (for example `.drawio`, `.excalidraw` or `.svg`) in the same directory, and add descriptive alt text.
 - Images taken from other people (vendor infographics, slides) are allowed only for personal study. Credit the author in the alt text or caption and prefer redrawing them as Mermaid or SVG when the note is reviewed.
 
 ### 6.2.1 Scripts, files and media
 
 - **Scripts** live in a `scripts/` directory next to the topic they belong to (see [section 3.1](#31-layout)). The note shows the relevant part and links to the full script. A script states its language and tool versions in a header comment, is self contained and says how to run it.
-- **Downloadable files** (checklists, configuration templates, exported rules, small datasets) go to `assets/<area>/`. Only files that are safe to publish belong here: no secrets, no real client or personal data, no live malware. Samples, captures and dumps are excluded by `.gitignore` on purpose.
+- **Downloadable files** (checklists, configuration templates, exported rules, small datasets) go to `_assets/<area>/`. Only files that are safe to publish belong here: no secrets, no real client or personal data, no live malware. Samples, captures and dumps are excluded by `.gitignore` on purpose.
 - **Large media** (video, large captures) is linked from a public source instead of being committed. If a large file is essential, discuss it first because it stays in the git history forever.
 - **Every asset and script** appears in `ToC.md`.
 

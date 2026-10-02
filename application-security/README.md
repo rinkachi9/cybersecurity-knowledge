@@ -10,7 +10,8 @@ OWASP material.
 
 Entry point: [owasp](owasp/README.md).
 
-- [OWASP](owasp/owasp.md): The OWASP organization, its projects and how they fit together.
+- [OWASP](owasp/owasp.md): The OWASP foundation, its flagship projects and how they fit together.
+- [OWASP security principles](owasp/owasp-security-principles.md): The 16 design principles of the OWASP Developer Guide.
 - [OWASP Top 10](owasp/owasp-top-10.md): The list of the ten most critical web application security risks.
 
 ### Vulnerabilities

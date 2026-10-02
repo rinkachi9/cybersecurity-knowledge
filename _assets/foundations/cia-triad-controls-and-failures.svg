@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+  <title id="t">CIA triad: properties, failures and controls</title>
+  <desc id="d">A triangle with confidentiality at the top, integrity at the bottom left and availability at the bottom right. Each corner has a box listing the question it answers, a typical failure and typical controls. The centre reads information security objective.</desc>
+  <rect width="960" height="640" fill="#ffffff"/>
+  <polygon points="480,70 300,400 660,400" fill="#f4f6fb" stroke="#33415c" stroke-width="3"/>
+  <circle cx="480" cy="70" r="34" fill="#1d4e89"/><text x="480" y="82" text-anchor="middle" font-size="34" font-weight="700" fill="#ffffff">C</text>
+  <circle cx="300" cy="400" r="34" fill="#2a7f62"/><text x="300" y="412" text-anchor="middle" font-size="34" font-weight="700" fill="#ffffff">I</text>
+  <circle cx="660" cy="400" r="34" fill="#a5472a"/><text x="660" y="412" text-anchor="middle" font-size="34" font-weight="700" fill="#ffffff">A</text>
+  <text x="480" y="270" text-anchor="middle" font-size="18" font-weight="700" fill="#33415c">Information</text>
+  <text x="480" y="294" text-anchor="middle" font-size="18" font-weight="700" fill="#33415c">security</text>
+  <text x="480" y="318" text-anchor="middle" font-size="18" font-weight="700" fill="#33415c">objectives</text>
+
+  <g font-size="14" fill="#1b1b1b">
+    <rect x="560" y="30" width="370" height="150" rx="8" fill="#e8f0fa" stroke="#1d4e89" stroke-width="2"/>
+    <text x="574" y="54" font-size="16" font-weight="700" fill="#1d4e89">Confidentiality: who may see it?</text>
+    <text x="574" y="78">Failure: disclosure to the wrong party</text>
+    <text x="574" y="98">Example: stolen customer database</text>
+    <text x="574" y="124" font-weight="700">Controls</text>
+    <text x="574" y="144">Encryption, access control, classification,</text>
+    <text x="574" y="164">MFA, data loss prevention</text>
+
+    <rect x="20" y="440" width="440" height="180" rx="8" fill="#e6f4ee" stroke="#2a7f62" stroke-width="2"/>
+    <text x="34" y="464" font-size="16" font-weight="700" fill="#2a7f62">Integrity: is it still correct and authentic?</text>
+    <text x="34" y="488">Failure: unauthorized or accidental change</text>
+    <text x="34" y="508">Example: altered payment account number</text>
+    <text x="34" y="534" font-weight="700">Controls</text>
+    <text x="34" y="554">Hashes, HMAC, digital signatures, input validation,</text>
+    <text x="34" y="574">version control, change management, audit logs,</text>
+    <text x="34" y="594">write-once backups</text>
+
+    <rect x="500" y="440" width="440" height="180" rx="8" fill="#fbece6" stroke="#a5472a" stroke-width="2"/>
+    <text x="514" y="464" font-size="16" font-weight="700" fill="#a5472a">Availability: can authorized users use it now?</text>
+    <text x="514" y="488">Failure: outage, denial of service, ransomware</text>
+    <text x="514" y="508">Example: DDoS on a public DNS provider</text>
+    <text x="514" y="534" font-weight="700">Controls</text>
+    <text x="514" y="554">Redundancy, backups with tested restore, capacity</text>
+    <text x="514" y="574">planning, rate limiting, DDoS mitigation, patching,</text>
+    <text x="514" y="594">disaster recovery with defined RTO and RPO</text>
+  </g>
+  <text x="30" y="40" font-size="13" fill="#555555">Definitions follow 44 U.S.C. 3542 as quoted in NIST FIPS 199.</text>
+  <text x="30" y="60" font-size="13" fill="#555555">Original drawing for this repository.</text>
+</svg>

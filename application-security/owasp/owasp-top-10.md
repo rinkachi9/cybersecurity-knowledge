@@ -43,6 +43,8 @@ Each item in the Top 10 includes:
 
 ## Vulnerabilities
 
+TODO: this table is the 2021 list. The current edition is OWASP Top 10:2025, see [OWASP](owasp.md#owasp-top-102025) for the updated list.
+
 | # | Name | Summary |
 | --- | --- | --- |
 | **A01** | **Broken Access Control** | Users can access data or functions without proper authorization. |

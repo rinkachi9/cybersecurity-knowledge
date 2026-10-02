@@ -5,6 +5,7 @@ Security of artificial intelligence and machine learning systems.
 ## Notes
 
 - [Google’s Secure AI Framework (SAIF)](google-secure-ai-framework.md): Google framework for securing AI and ML systems.
+- [NIST AI Risk Management Framework (AI RMF)](nist-ai-risk-management-framework.md): Govern, Map, Measure and Manage for trustworthy AI.
 
 ## Planned topics
 

@@ -40,7 +40,7 @@ Here’s how it works:
 4. For every subsequent request, the browser sends the cookie with the JWT.
 5. The server verifies the JWT using the secret private key and extracts the user info.
 
-![Comparison of session-based and JWT-based authentication flows, with a table: sessions need separate storage, are easy to invalidate and scale with the session store; JWTs need no separate storage, are not easy to invalidate and scale easily. Image credit: ByteByteGo.](../../assets/identity-and-access/jwt-vs-session-comparison.png)
+![Comparison of session-based and JWT-based authentication flows, with a table: sessions need separate storage, are easy to invalidate and scale with the session store; JWTs need no separate storage, are not easy to invalidate and scale easily. Image credit: ByteByteGo.](../../_assets/identity-and-access/jwt-vs-session-comparison.png)
 
 ## Worked example
 

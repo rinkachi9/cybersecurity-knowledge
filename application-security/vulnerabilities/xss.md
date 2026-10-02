@@ -14,7 +14,7 @@ TODO: link the notes a reader should know first and state the assumed knowledge.
 
 Cross-Site Scripting (XSS) is a prevalent security vulnerability that occurs when malicious scripts are injected into web pages, typically through improperly sanitized input fields. This vulnerability allows attackers to execute scripts in a victim's browser, potentially compromising data and system integrity.
 
-![Infographic on cross-site scripting (XSS): reflected XSS, stored XSS, an example attack flow and four mitigations (implement CSP, input sanitization, escaping output, HTTP-only cookies). Image credit: ByteByteGo.](../../assets/application-security/xss-overview.png)
+![Infographic on cross-site scripting (XSS): reflected XSS, stored XSS, an example attack flow and four mitigations (implement CSP, input sanitization, escaping output, HTTP-only cookies). Image credit: ByteByteGo.](../../_assets/application-security/xss-overview.png)
 
 ## Occurrence
 

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+  <title id="t">OWASP security principles grouped by purpose</title>
+  <desc id="d">Sixteen security principles from the OWASP Developer Guide arranged in four groups: start secure, limit what a compromise can reach, assume failure, and keep it understandable.</desc>
+  <rect width="1000" height="620" fill="#ffffff"/>
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#222222">OWASP Developer Guide principles, grouped by the question they answer</text>
+  <g font-size="14" fill="#1b1b1b">
+    <rect x="20" y="64" width="225" height="470" rx="8" fill="#e8f0fa" stroke="#1d4e89" stroke-width="2"/>
+    <text x="132" y="92" text-anchor="middle" font-size="16" font-weight="700" fill="#1d4e89">Where does security start?</text>
+    <rect x="34" y="112" width="197" height="64" rx="6" fill="#ffffff" stroke="#1d4e89"/><text x="132" y="138" text-anchor="middle" font-weight="700">Security by design</text><text x="132" y="158" text-anchor="middle" font-size="12">requirements first</text>
+    <rect x="34" y="190" width="197" height="64" rx="6" fill="#ffffff" stroke="#1d4e89"/><text x="132" y="216" text-anchor="middle" font-weight="700">Security by default</text><text x="132" y="236" text-anchor="middle" font-size="12">restrictive out of the box</text>
+    <rect x="34" y="268" width="197" height="64" rx="6" fill="#ffffff" stroke="#1d4e89"/><text x="132" y="294" text-anchor="middle" font-weight="700">Leverage existing</text><text x="132" y="312" text-anchor="middle" font-weight="700">components</text>
+    <rect x="34" y="346" width="197" height="64" rx="6" fill="#ffffff" stroke="#1d4e89"/><text x="132" y="372" text-anchor="middle" font-weight="700">No security guarantee</text><text x="132" y="392" text-anchor="middle" font-size="12">raise cost, cut reward</text>
+
+    <rect x="260" y="64" width="225" height="470" rx="8" fill="#e6f4ee" stroke="#2a7f62" stroke-width="2"/>
+    <text x="372" y="92" text-anchor="middle" font-size="16" font-weight="700" fill="#2a7f62">What can a breach reach?</text>
+    <rect x="274" y="112" width="197" height="64" rx="6" fill="#ffffff" stroke="#2a7f62"/><text x="372" y="138" text-anchor="middle" font-weight="700">Least privilege</text><text x="372" y="158" text-anchor="middle" font-size="12">minimum rights, minimum time</text>
+    <rect x="274" y="190" width="197" height="64" rx="6" fill="#ffffff" stroke="#2a7f62"/><text x="372" y="216" text-anchor="middle" font-weight="700">Compartmentalize</text><text x="372" y="236" text-anchor="middle" font-size="12">need-to-know boundaries</text>
+    <rect x="274" y="268" width="197" height="64" rx="6" fill="#ffffff" stroke="#2a7f62"/><text x="372" y="294" text-anchor="middle" font-weight="700">Separation of duties</text><text x="372" y="314" text-anchor="middle" font-size="12">two conditions per task</text>
+    <rect x="274" y="346" width="197" height="64" rx="6" fill="#ffffff" stroke="#2a7f62"/><text x="372" y="372" text-anchor="middle" font-weight="700">Least common</text><text x="372" y="390" text-anchor="middle" font-weight="700">mechanism</text>
+    <rect x="274" y="424" width="197" height="64" rx="6" fill="#ffffff" stroke="#2a7f62"/><text x="372" y="450" text-anchor="middle" font-weight="700">Complete mediation</text><text x="372" y="470" text-anchor="middle" font-size="12">check every request</text>
+
+    <rect x="500" y="64" width="225" height="470" rx="8" fill="#fbece6" stroke="#a5472a" stroke-width="2"/>
+    <text x="612" y="92" text-anchor="middle" font-size="16" font-weight="700" fill="#a5472a">What if a control fails?</text>
+    <rect x="514" y="112" width="197" height="64" rx="6" fill="#ffffff" stroke="#a5472a"/><text x="612" y="138" text-anchor="middle" font-weight="700">Defense in depth</text><text x="612" y="158" text-anchor="middle" font-size="12">independent layers</text>
+    <rect x="514" y="190" width="197" height="64" rx="6" fill="#ffffff" stroke="#a5472a"/><text x="612" y="216" text-anchor="middle" font-weight="700">Fail safe</text><text x="612" y="236" text-anchor="middle" font-size="12">errors end in a secure state</text>
+    <rect x="514" y="268" width="197" height="64" rx="6" fill="#ffffff" stroke="#a5472a"/><text x="612" y="294" text-anchor="middle" font-weight="700">Secure the weakest link</text><text x="612" y="314" text-anchor="middle" font-size="12">fix the biggest risk first</text>
+
+    <rect x="740" y="64" width="240" height="470" rx="8" fill="#f3eefa" stroke="#6b4fa0" stroke-width="2"/>
+    <text x="860" y="92" text-anchor="middle" font-size="16" font-weight="700" fill="#6b4fa0">Can people run it correctly?</text>
+    <rect x="754" y="112" width="212" height="64" rx="6" fill="#ffffff" stroke="#6b4fa0"/><text x="860" y="138" text-anchor="middle" font-weight="700">Economy of mechanism</text><text x="860" y="158" text-anchor="middle" font-size="12">keep it simple</text>
+    <rect x="754" y="190" width="212" height="64" rx="6" fill="#ffffff" stroke="#6b4fa0"/><text x="860" y="216" text-anchor="middle" font-weight="700">Open design</text><text x="860" y="236" text-anchor="middle" font-size="12">secrets are keys, not designs</text>
+    <rect x="754" y="268" width="212" height="64" rx="6" fill="#ffffff" stroke="#6b4fa0"/><text x="860" y="294" text-anchor="middle" font-weight="700">Psychological</text><text x="860" y="312" text-anchor="middle" font-weight="700">acceptability</text>
+    <rect x="754" y="346" width="212" height="64" rx="6" fill="#ffffff" stroke="#6b4fa0"/><text x="860" y="372" text-anchor="middle" font-weight="700">Usability and</text><text x="860" y="390" text-anchor="middle" font-weight="700">manageability</text>
+  </g>
+  <text x="20" y="566" font-size="13" fill="#444444">The principle names are those of the OWASP Developer Guide (Principles of security). The grouping into four questions is this repository's own.</text>
+  <text x="20" y="588" font-size="13" fill="#444444">Eight of the principles (economy of mechanism, fail-safe defaults, complete mediation, open design, separation of privilege,</text>
+  <text x="20" y="606" font-size="13" fill="#444444">least privilege, least common mechanism, psychological acceptability) come from Saltzer and Schroeder, 1975. Original drawing.</text>
+</svg>
