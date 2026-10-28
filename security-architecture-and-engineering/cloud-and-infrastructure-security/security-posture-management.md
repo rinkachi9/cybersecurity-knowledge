@@ -2,7 +2,11 @@
 
 ## Prerequisites
 
-TODO: link the notes a reader should know first and state the assumed knowledge.
+- [CIA triad](../../security-and-risk-management/foundations/cia-triad/README.md): posture findings are failures of confidentiality, integrity or availability waiting to happen.
+- [Defense in depth](../design-principles/defense-in-depth.md): posture management checks that the layers are configured as designed.
+- Basic knowledge of cloud accounts, IAM and containers.
+
+The variants of posture management have their own notes: [CSPM](cloud-security-posture-management.md), [multicloud CSPM](multicloud-cspm.md), [CSPM tools](cspm-tools.md) and [KSPM](kubernetes-security-posture-management/README.md). This note is the umbrella and the vocabulary.
 
 
 
@@ -119,9 +123,11 @@ Security Posture Management evolved across environments:
 #### Container & Kubernetes → KSPM
 
 - Cluster hardening
-- Pod security policies
+- Pod Security Standards and Pod Security Admission (which replaced the removed PodSecurityPolicy API)
 - RBAC misconfiguration
 - Image provenance
+
+The full treatment is in [Kubernetes security posture management](kubernetes-security-posture-management/README.md).
 
 #### Code & Pipeline → SSPM / DSPM / CIEM
 
@@ -427,16 +433,48 @@ For modern cybersecurity and DevSecOps specialists, mastering Security Posture M
 
 ## Worked example
 
-TODO: add a concrete, reproducible example that walks through the idea end to end.
+One week in a company with an AWS account and a Kubernetes cluster produces two findings. The example routes them through the posture variants to show what each one sees and what none of them sees alone.
+
+| Finding | Seen by | Rule that fires | What is missing without the other variant |
+| --- | --- | --- | --- |
+| Object storage bucket `reports-prod` allows public read | CSPM | Public access not blocked (see [CSPM](cloud-security-posture-management.md)) | DSPM tells whether the bucket holds personal data and so how serious it is |
+| Pod `etl-7` runs privileged with a `cluster-admin` service account, behind a public load balancer | KSPM | Baseline violation plus a wildcard RBAC grant (see [KSPM](kubernetes-security-posture-management/README.md)) | CIEM shows that the node role can also write to the bucket above, which joins the two findings into one path |
+
+The two findings alone are two tickets in two queues. Joined, they are one attack path: internet to pod, pod to node, node role to bucket. Prioritization by context gives the pod finding the higher urgency and it explains why the bucket matters even though nothing reaches it from outside today. The tested KSPM script in the [KSPM note](kubernetes-security-posture-management/README.md#worked-example) shows the same "toxic combination" idea in code.
 
 ## Trade offs and when to use it
 
-TODO: cover benefits, costs, alternatives and the situations where this is the wrong choice.
+**Benefits.** One view of how cloud, cluster, identity and data configuration drift from policy. A continuous replacement for periodic audits. Evidence for compliance.
+
+**Costs and limits.**
+
+- Posture tools see configuration, not behavior. They do not detect an attacker who uses a valid credential.
+- Read access to everything is itself a risk and needs to be controlled.
+- Findings volume exceeds fixing capacity, so prioritization by context and ownership is the real work.
+- Platforms bundle variants (CSPM, CIEM, DSPM, KSPM) under the CNAPP label, and the coverage of each differs by vendor. See [CSPM tools](cspm-tools.md) for a documented comparison method.
+
+**Alternatives and companions.** Preventive controls (policy as code, admission control, service control policies) stop bad configurations from being created. Runtime detection covers what posture cannot. Use posture management as the detective layer in a defense in depth design.
+
+**When it is the wrong investment.** A small environment with a handful of resources and strong preventive controls may need only the native tools of the provider.
 
 ## Practice
 
-TODO: add questions or small exercises, with answers or hints at the bottom.
+1. Which posture variant would detect each of these: a public storage bucket, a role with `*:*` permissions, a privileged pod, a database column with unencrypted card numbers?
+2. Why is a posture finding not the same as a vulnerability finding?
+3. Why does posture management need both preventive and detective controls?
+4. Explain why two separate findings can form one attack path, with the example from the worked example.
+
+**Answers and hints**
+
+1. CSPM, CIEM, KSPM and DSPM in that order. The role with wildcard permissions can also be a CSPM finding when the platform bundles identity checks.
+2. A vulnerability is a flaw in software with an identifier (see [CVE](../../security-operations/vulnerability-management/cve.md)). A posture finding is a setting that deviates from policy.
+3. Prevention stops new bad configurations. Detection finds old ones and changes made outside the controlled path.
+4. The pod can reach the node, the node role can write to the bucket, so reading the finding in one queue misses the path.
 
 ## Further reading
 
-TODO: add annotated links to primary sources.
+- [CSPM](cloud-security-posture-management.md): the sources for the cloud variant, including provider and vendor documentation.
+- [KSPM](kubernetes-security-posture-management/README.md): Kubernetes documentation, NIST SP 800-190 and CIS benchmark sources.
+- [CSA Cloud Controls Matrix](../../security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md) and [NIST SP 800-53](../../security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md) for the control vocabulary.
+
+TODO: verify the maturity model, the metrics and the platform categories in the sections above against primary sources. They were migrated from an earlier source and are not checked.

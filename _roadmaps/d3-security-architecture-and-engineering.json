@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "id": "d3-security-architecture-and-engineering",
+  "title": "Domain 3: Security architecture and engineering",
+  "description": "Secure design, cryptography, operating systems, cloud and Kubernetes posture, AI and components (CISSP sections 3.1 to 3.10).",
+  "nodes": [
+    {
+      "id": "design",
+      "title": "Design principles",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "did",
+      "title": "Defense in depth",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "models",
+      "title": "Security models (planned)",
+      "group": "Security architecture and engineering",
+      "description": "Planned. CISSP section 3.2: Bell-LaPadula, Biba.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "crypto",
+      "title": "Cryptography",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hash",
+      "title": "Hashing algorithms",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/README.md",
+        "security-architecture-and-engineering/cryptography/hashing/hashing-algorithms.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sha",
+      "title": "SHA",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/sha.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pw-hash",
+      "title": "Password hashing",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/bcrypt.md",
+        "security-architecture-and-engineering/cryptography/hashing/argon2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pki",
+      "title": "Public key infrastructure",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "os",
+      "title": "Operating system security",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "linux",
+      "title": "Linux",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "seccomp",
+      "title": "seccomp",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/seccomp.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud and infrastructure security",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "spm",
+      "title": "Security posture management",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cspm",
+      "title": "CSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "multicloud",
+      "title": "Multicloud CSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cspm-tools",
+      "title": "CSPM tools",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "kspm",
+      "title": "KSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ai",
+      "title": "AI security",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/ai-security/README.md",
+        "security-architecture-and-engineering/ai-security/google-secure-ai-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "components",
+      "title": "Component security",
+      "group": "Security architecture and engineering",
+      "description": "Planned: hardware and firmware security.",
+      "documentation": [
+        "security-architecture-and-engineering/component-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zta",
+      "title": "Zero trust (Domain 4)",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "design",
+      "to": "did",
+      "type": "next"
+    },
+    {
+      "from": "design",
+      "to": "models",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "crypto",
+      "type": "branch"
+    },
+    {
+      "from": "crypto",
+      "to": "hash",
+      "type": "next"
+    },
+    {
+      "from": "hash",
+      "to": "sha",
+      "type": "next"
+    },
+    {
+      "from": "sha",
+      "to": "pw-hash",
+      "type": "next"
+    },
+    {
+      "from": "crypto",
+      "to": "pki",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "os",
+      "type": "branch"
+    },
+    {
+      "from": "os",
+      "to": "linux",
+      "type": "next"
+    },
+    {
+      "from": "linux",
+      "to": "seccomp",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "cloud",
+      "type": "branch"
+    },
+    {
+      "from": "cloud",
+      "to": "spm",
+      "type": "next"
+    },
+    {
+      "from": "spm",
+      "to": "cspm",
+      "type": "next"
+    },
+    {
+      "from": "cspm",
+      "to": "multicloud",
+      "type": "next"
+    },
+    {
+      "from": "multicloud",
+      "to": "cspm-tools",
+      "type": "next"
+    },
+    {
+      "from": "spm",
+      "to": "kspm",
+      "type": "next"
+    },
+    {
+      "from": "seccomp",
+      "to": "kspm",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "ai",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "components",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "zta",
+      "type": "branch"
+    }
+  ]
+}

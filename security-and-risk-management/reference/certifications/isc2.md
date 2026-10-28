@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-TODO: link the notes a reader should know first and state the assumed knowledge.
+General familiarity with security work is enough. The CISSP is covered in depth in [Certified Information Systems Security Professional (CISSP)](cissp.md) and [CISSP security domains](cissp-security-domains.md).
 
 
 
@@ -106,6 +106,8 @@ The **flagship certification**.
 - Security engineering
 
 #### CISSP Domains (8 Domains)
+
+The domain names below come from the exam outline effective April 15, 2024. Weights, the 62 sections and the mapping to this repository are in [CISSP security domains](cissp-security-domains.md). Exam format and experience rules are in [CISSP](cissp.md).
 
 1. Security and Risk Management
 2. Asset Security
@@ -340,18 +342,10 @@ For anyone aiming to become:
 
 ISC2 knowledge is **essential for understanding the full security landscape**.
 
-## Worked example
-
-TODO: add a concrete, reproducible example that walks through the idea end to end.
-
-## Trade offs and when to use it
-
-TODO: cover benefits, costs, alternatives and the situations where this is the wrong choice.
-
-## Practice
-
-TODO: add questions or small exercises, with answers or hints at the bottom.
-
 ## Further reading
 
-TODO: add annotated links to primary sources.
+- ISC2, [CISSP certification](https://www.isc2.org/certifications/cissp): current status of the flagship certification.
+- ISC2, [Code of Ethics](https://www.isc2.org/ethics): the preamble and four canons that every certification holder agrees to.
+- ISC2, *CISSP Certification Exam Outline*, effective April 15, 2024: the primary source for the domain list, see [CISSP security domains](cissp-security-domains.md).
+
+TODO: verify the claims about the other ISC2 certifications (CC, SSCP, CCSP, CSSLP, CGRC), the comparison with other certification bodies and the career statements above against ISC2 pages. This note was migrated and only the CISSP facts were checked.

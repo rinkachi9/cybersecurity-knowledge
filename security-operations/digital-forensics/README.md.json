@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "security-operations.digital-forensics",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "security-operations",
+      "digital-forensics"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "id": "d8-software-development-security",
+  "title": "Domain 8: Software development security",
+  "description": "Secure development lifecycle, application weaknesses, application testing and software supply chain (CISSP sections 8.1 to 8.5).",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Software development security",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/README.md",
+        "software-development-security/application-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "owasp",
+      "title": "OWASP",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/README.md",
+        "software-development-security/application-security/owasp/owasp.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/"
+      ]
+    },
+    {
+      "id": "principles",
+      "title": "OWASP security principles",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-security-principles.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "top10",
+      "title": "OWASP Top 10",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-top-10.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/Top10/"
+      ]
+    },
+    {
+      "id": "vulns",
+      "title": "Application vulnerabilities",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "xss",
+      "title": "Cross-site scripting",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/xss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "testing",
+      "title": "Application security testing",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sast",
+      "title": "SAST",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/static-application-security-testing.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "dast",
+      "title": "DAST",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/dynamic-application-security-testing.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sca",
+      "title": "SCA",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/software-composition-analysis.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply",
+      "title": "Software supply chain",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ssdf",
+      "title": "NIST SSDF",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/nist-secure-software-development-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "slsa",
+      "title": "SLSA",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/slsa.md"
+      ],
+      "externalSources": [
+        "https://slsa.dev/"
+      ]
+    },
+    {
+      "id": "cwe",
+      "title": "CWE (Domain 7)",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cwe.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "k8s",
+      "title": "Container and cluster configuration (Domain 3)",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "owasp",
+      "type": "next"
+    },
+    {
+      "from": "owasp",
+      "to": "principles",
+      "type": "next"
+    },
+    {
+      "from": "principles",
+      "to": "top10",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "vulns",
+      "type": "next"
+    },
+    {
+      "from": "vulns",
+      "to": "xss",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "testing",
+      "type": "branch"
+    },
+    {
+      "from": "testing",
+      "to": "sast",
+      "type": "next"
+    },
+    {
+      "from": "sast",
+      "to": "dast",
+      "type": "next"
+    },
+    {
+      "from": "testing",
+      "to": "sca",
+      "type": "branch"
+    },
+    {
+      "from": "sca",
+      "to": "supply",
+      "type": "next"
+    },
+    {
+      "from": "supply",
+      "to": "ssdf",
+      "type": "next"
+    },
+    {
+      "from": "supply",
+      "to": "slsa",
+      "type": "branch"
+    },
+    {
+      "from": "vulns",
+      "to": "cwe",
+      "type": "branch"
+    },
+    {
+      "from": "slsa",
+      "to": "k8s",
+      "type": "branch"
+    }
+  ]
+}

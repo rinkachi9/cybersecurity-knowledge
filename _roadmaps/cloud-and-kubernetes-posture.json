@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "id": "cloud-and-kubernetes-posture",
+  "title": "Cloud and Kubernetes posture management",
+  "description": "From posture management concepts to CSPM, multicloud, commercial tools and KSPM, with the frameworks that supply the rules.",
+  "nodes": [
+    {
+      "id": "cia",
+      "title": "CIA triad",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "did",
+      "title": "Defense in depth",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "spm",
+      "title": "Security posture management",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cspm",
+      "title": "CSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "multicloud",
+      "title": "Multicloud CSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tools",
+      "title": "CSPM tools",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "seccomp",
+      "title": "Linux seccomp",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/seccomp.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "kspm",
+      "title": "KSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sp800-53",
+      "title": "NIST SP 800-53",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ccm",
+      "title": "CSA Cloud Controls Matrix",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zta",
+      "title": "Zero trust",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ir",
+      "title": "Cloud incident response example",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cia",
+      "to": "did",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "spm",
+      "type": "next"
+    },
+    {
+      "from": "spm",
+      "to": "cspm",
+      "type": "next"
+    },
+    {
+      "from": "cspm",
+      "to": "multicloud",
+      "type": "next"
+    },
+    {
+      "from": "multicloud",
+      "to": "tools",
+      "type": "next"
+    },
+    {
+      "from": "spm",
+      "to": "seccomp",
+      "type": "branch"
+    },
+    {
+      "from": "seccomp",
+      "to": "kspm",
+      "type": "next"
+    },
+    {
+      "from": "cspm",
+      "to": "sp800-53",
+      "type": "branch"
+    },
+    {
+      "from": "cspm",
+      "to": "ccm",
+      "type": "branch"
+    },
+    {
+      "from": "spm",
+      "to": "zta",
+      "type": "branch"
+    },
+    {
+      "from": "tools",
+      "to": "ir",
+      "type": "branch"
+    }
+  ]
+}

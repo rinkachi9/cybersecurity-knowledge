@@ -7,6 +7,7 @@ Security of cloud platforms, containers and infrastructure.
 - [Security Posture Management (SPM)](security-posture-management.md): Continuous measurement and improvement of security posture, including CSPM and related variants.
 - [Cloud security posture management (CSPM)](cloud-security-posture-management.md): Continuous configuration assessment of cloud environments, from mechanism to operations.
 - [Multicloud CSPM](multicloud-cspm.md): CSPM across AWS, Azure and Google Cloud, normalization and operating model.
+- [Kubernetes security posture management (KSPM)](kubernetes-security-posture-management/README.md): Configuration posture of Kubernetes clusters: Pod Security Standards, RBAC, network policy, benchmarks, tools and a tested evaluation script.
 - [CSPM tools](cspm-tools.md): Prisma Cloud and Cortex Cloud, CrowdStrike Falcon Cloud Security, Orca, Check Point CloudGuard and Netskope, with a comparison method.
 
 ## Related area
@@ -19,7 +20,7 @@ These topics are not written yet. They are listed so the scope of the area is vi
 
 - Shared responsibility model
 - IAM in cloud platforms
-- Container and Kubernetes security
+- Container image and runtime security
 - Secrets management
 - Infrastructure as code security
 

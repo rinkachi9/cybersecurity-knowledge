@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "d4-communication-and-network-security",
+  "title": "Domain 4: Communication and network security",
+  "description": "Network architecture, components and secure channels (CISSP sections 4.1 to 4.3). Zero trust is written, the rest is planned.",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Network security overview",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/README.md",
+        "communication-and-network-security/network-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zta",
+      "title": "NIST zero trust architecture",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/207/final"
+      ]
+    },
+    {
+      "id": "models",
+      "title": "OSI and TCP/IP models (planned)",
+      "group": "Communication and network security",
+      "description": "Planned. CISSP section 4.1.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "protocols",
+      "title": "Secure protocols: IPsec, SSH, TLS (planned)",
+      "group": "Communication and network security",
+      "description": "Planned. CISSP section 4.1.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "segmentation",
+      "title": "Segmentation and micro-segmentation (planned)",
+      "group": "Communication and network security",
+      "description": "Planned. CISSP section 4.1.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "components",
+      "title": "Network components and NAC (planned)",
+      "group": "Communication and network security",
+      "description": "Planned. CISSP section 4.2.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "channels",
+      "title": "Secure communication channels and remote access (planned)",
+      "group": "Communication and network security",
+      "description": "Planned. CISSP section 4.3.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "pki",
+      "title": "PKI and TLS trust",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ids",
+      "title": "Network detection (Domain 7)",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/ids.md",
+        "security-operations/defensive-operations/detection/ips.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "zta",
+      "type": "next"
+    },
+    {
+      "from": "start",
+      "to": "models",
+      "type": "branch"
+    },
+    {
+      "from": "models",
+      "to": "protocols",
+      "type": "next"
+    },
+    {
+      "from": "protocols",
+      "to": "segmentation",
+      "type": "next"
+    },
+    {
+      "from": "segmentation",
+      "to": "zta",
+      "type": "branch"
+    },
+    {
+      "from": "segmentation",
+      "to": "components",
+      "type": "next"
+    },
+    {
+      "from": "components",
+      "to": "channels",
+      "type": "next"
+    },
+    {
+      "from": "protocols",
+      "to": "pki",
+      "type": "branch"
+    },
+    {
+      "from": "components",
+      "to": "ids",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "id": "d6-security-assessment-and-testing",
+  "title": "Domain 6: Security assessment and testing",
+  "description": "Assessment strategy, control testing, audits and reporting (CISSP sections 6.1 to 6.5). Most topics are planned or live in other domains.",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Assessment and testing overview",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "teams",
+      "title": "Red, blue and purple teams",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/red-blue-purple-teams.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "offensive",
+      "title": "Offensive security",
+      "group": "Security assessment and testing",
+      "description": "Planned: penetration testing methodology, always authorized.",
+      "documentation": [
+        "security-assessment-and-testing/offensive-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "strategy",
+      "title": "Assessment and audit strategies (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned. CISSP sections 6.1 and 6.5.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "vuln",
+      "title": "Vulnerability assessment (Domain 7)",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sast",
+      "title": "Application security testing (Domain 8)",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/README.md",
+        "software-development-security/application-security/testing/static-application-security-testing.md",
+        "software-development-security/application-security/testing/dynamic-application-security-testing.md",
+        "software-development-security/application-security/testing/software-composition-analysis.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cspm",
+      "title": "Configuration assessment (Domain 3)",
+      "group": "Security architecture and engineering",
+      "description": "Continuous control testing of cloud and cluster configuration.",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md",
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "reporting",
+      "title": "Analyzing results and reporting (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned. CISSP section 6.4.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "detection-quality",
+      "title": "Detection quality metrics (Domain 7)",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/false-positive-false-negative.md",
+        "security-operations/defensive-operations/detection/true-positive-true-negative.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "teams",
+      "type": "next"
+    },
+    {
+      "from": "teams",
+      "to": "offensive",
+      "type": "next"
+    },
+    {
+      "from": "start",
+      "to": "strategy",
+      "type": "branch"
+    },
+    {
+      "from": "strategy",
+      "to": "vuln",
+      "type": "branch"
+    },
+    {
+      "from": "strategy",
+      "to": "sast",
+      "type": "branch"
+    },
+    {
+      "from": "strategy",
+      "to": "cspm",
+      "type": "branch"
+    },
+    {
+      "from": "strategy",
+      "to": "reporting",
+      "type": "next"
+    },
+    {
+      "from": "reporting",
+      "to": "detection-quality",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "id": "d7-security-operations",
+  "title": "Domain 7: Security operations",
+  "description": "Investigations, monitoring, incident management, vulnerability management and recovery (CISSP sections 7.1 to 7.15).",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Security operations overview",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "threats",
+      "title": "Threats and attacks",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/README.md",
+        "security-operations/threats-and-attacks/threats-and-attacks-overview.md",
+        "security-operations/threats-and-attacks/attack-categorization.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "lifecycle",
+      "title": "Attack lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/README.md",
+        "security-operations/threats-and-attacks/attack-lifecycle/reconnaissance.md",
+        "security-operations/threats-and-attacks/attack-lifecycle/privilege-escalation.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "malware",
+      "title": "Malware",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/malware/README.md",
+        "security-operations/threats-and-attacks/malware/malware-definition-and-purpose.md",
+        "security-operations/threats-and-attacks/malware/malware.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "web",
+      "title": "Web-based attacks",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/web-attacks/README.md",
+        "security-operations/threats-and-attacks/web-attacks/web-based-attacks.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "web-more",
+      "title": "Drive-by, typosquatting, watering hole",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/web-attacks/drive-by-attack.md",
+        "security-operations/threats-and-attacks/web-attacks/typosquatting.md",
+        "security-operations/threats-and-attacks/web-attacks/watering-hole-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ti",
+      "title": "Threat intelligence",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/README.md",
+        "security-operations/threat-intelligence/threat-intelligence.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "osint",
+      "title": "OSINT and VirusTotal",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/osint.md",
+        "security-operations/threat-intelligence/virustotal.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "mitre",
+      "title": "MITRE",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/README.md",
+        "security-operations/threat-intelligence/mitre/mitre.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/"
+      ]
+    },
+    {
+      "id": "attack",
+      "title": "ATT&CK",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "capec-d3fend",
+      "title": "CAPEC and D3FEND",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-capec.md",
+        "security-operations/threat-intelligence/mitre/mitre-d3fend.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vuln",
+      "title": "Vulnerability management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cve",
+      "title": "CVE and NVD",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cve.md",
+        "security-operations/vulnerability-management/nvd.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cwe",
+      "title": "CWE",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cwe.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cvss",
+      "title": "CVSS",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cvss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zero-day",
+      "title": "Zero-day attacks",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/zero-day-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "defense",
+      "title": "Defensive operations",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "detection",
+      "title": "Detection",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/README.md",
+        "security-operations/defensive-operations/detection/ids.md",
+        "security-operations/defensive-operations/detection/ips.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "quality",
+      "title": "Detection errors and outcomes",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/true-positive-true-negative.md",
+        "security-operations/defensive-operations/detection/false-positive-false-negative.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "soc",
+      "title": "Security operations center",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/README.md",
+        "security-operations/defensive-operations/operations/security-operations-center.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "siem",
+      "title": "SIEM",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/siem.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "soar",
+      "title": "SOAR",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/soar.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "procedures",
+      "title": "SecOps and SOPs",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/secops.md",
+        "security-operations/defensive-operations/operations/sop.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ir",
+      "title": "NIST incident response lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ]
+    },
+    {
+      "id": "forensics",
+      "title": "Digital forensics",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/digital-forensics/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "custody",
+      "title": "Chain of custody",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc3227",
+        "https://csrc.nist.gov/pubs/sp/800/86/final"
+      ]
+    },
+    {
+      "id": "dr",
+      "title": "Backup, recovery and continuity (planned)",
+      "group": "Security operations",
+      "description": "Planned. CISSP sections 7.10 to 7.13.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "change",
+      "title": "Change and configuration management (planned)",
+      "group": "Security operations",
+      "description": "Planned. CISSP sections 7.3 and 7.9.",
+      "documentation": [],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "threats",
+      "type": "next"
+    },
+    {
+      "from": "threats",
+      "to": "lifecycle",
+      "type": "next"
+    },
+    {
+      "from": "threats",
+      "to": "malware",
+      "type": "branch"
+    },
+    {
+      "from": "threats",
+      "to": "web",
+      "type": "branch"
+    },
+    {
+      "from": "web",
+      "to": "web-more",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "ti",
+      "type": "next"
+    },
+    {
+      "from": "ti",
+      "to": "osint",
+      "type": "branch"
+    },
+    {
+      "from": "ti",
+      "to": "mitre",
+      "type": "branch"
+    },
+    {
+      "from": "mitre",
+      "to": "attack",
+      "type": "next"
+    },
+    {
+      "from": "mitre",
+      "to": "capec-d3fend",
+      "type": "branch"
+    },
+    {
+      "from": "ti",
+      "to": "vuln",
+      "type": "next"
+    },
+    {
+      "from": "vuln",
+      "to": "cve",
+      "type": "next"
+    },
+    {
+      "from": "cve",
+      "to": "cwe",
+      "type": "next"
+    },
+    {
+      "from": "cve",
+      "to": "cvss",
+      "type": "next"
+    },
+    {
+      "from": "cvss",
+      "to": "zero-day",
+      "type": "next"
+    },
+    {
+      "from": "vuln",
+      "to": "defense",
+      "type": "next"
+    },
+    {
+      "from": "defense",
+      "to": "detection",
+      "type": "next"
+    },
+    {
+      "from": "detection",
+      "to": "quality",
+      "type": "next"
+    },
+    {
+      "from": "defense",
+      "to": "soc",
+      "type": "branch"
+    },
+    {
+      "from": "soc",
+      "to": "siem",
+      "type": "next"
+    },
+    {
+      "from": "siem",
+      "to": "soar",
+      "type": "next"
+    },
+    {
+      "from": "soc",
+      "to": "procedures",
+      "type": "branch"
+    },
+    {
+      "from": "soar",
+      "to": "ir",
+      "type": "next"
+    },
+    {
+      "from": "ir",
+      "to": "forensics",
+      "type": "next"
+    },
+    {
+      "from": "forensics",
+      "to": "custody",
+      "type": "next"
+    },
+    {
+      "from": "ir",
+      "to": "dr",
+      "type": "branch"
+    },
+    {
+      "from": "defense",
+      "to": "change",
+      "type": "branch"
+    }
+  ]
+}

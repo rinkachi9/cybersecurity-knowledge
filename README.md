@@ -51,13 +51,13 @@ The eight top level content directories use the eight domains in the [ISC2 CISSP
 
 | CISSP domain | Repository section | Current material |
 | --- | --- | --- |
-| 1. Security and Risk Management | [Security and risk management](security-and-risk-management/README.md) | Foundations, governance, risk, threat modeling, awareness, privacy law and reference material. |
+| 1. Security and Risk Management | [Security and risk management](security-and-risk-management/README.md) | Foundations, governance, risk, threat modeling, awareness, privacy law and reference material, including the CISSP and its domains. |
 | 2. Asset Security | [Asset security](asset-security/README.md) | Privacy and data protection, with asset lifecycle topics planned. |
 | 3. Security Architecture and Engineering | [Security architecture and engineering](security-architecture-and-engineering/README.md) | Design principles, cryptography, cloud, operating systems, secure AI architecture and planned component security. |
 | 4. Communication and Network Security | [Communication and network security](communication-and-network-security/README.md) | Zero trust architecture, with more network topics planned. |
 | 5. Identity and Access Management | [Identity and access management](identity-and-access-management/README.md) | Authentication, authorization, identity protocols and credential attacks. |
 | 6. Security Assessment and Testing | [Security assessment and testing](security-assessment-and-testing/README.md) | Team exercises and planned assessment methods. |
-| 7. Security Operations | [Security operations](security-operations/README.md) | Monitoring, response, threat intelligence, vulnerability management and attack patterns. |
+| 7. Security Operations | [Security operations](security-operations/README.md) | Monitoring, response, digital forensics, threat intelligence, vulnerability management and attack patterns. |
 | 8. Software Development Security | [Software development security](software-development-security/README.md) | Application security, software testing and supply chain security. |
 
 ## Taxonomy
@@ -77,7 +77,7 @@ The existing material maps into the domains as follows:
 | SOC, detection, incident response, threat intelligence, vulnerability management and attack patterns | [Security Operations](security-operations/README.md) | The notes support monitoring, investigation, response and maintenance. |
 | OWASP, application weaknesses, SAST, DAST, SCA and software supply chains | [Software Development Security](software-development-security/README.md) | The notes focus on the software development lifecycle and application testing. |
 
-Organizations and certifications live in [Domain 1 reference material](security-and-risk-management/reference/README.md). They are supporting context, not an additional CISSP domain. No dedicated notes yet cover asset classification, general security audits, network protocols, digital forensics or disaster recovery. These are visible as planned topics instead of placeholder notes.
+Organizations and certifications live in [Domain 1 reference material](security-and-risk-management/reference/README.md). They are supporting context, not an additional CISSP domain. No dedicated notes yet cover asset classification, general security audits, network protocols, disaster recovery or most of digital forensics (only chain of custody is covered). These are visible as planned topics instead of placeholder notes.
 
 ## Full table of contents
 
@@ -100,7 +100,7 @@ Organizations and certifications live in [Domain 1 reference material](security-
 |-- INSTRUCTIONS.md                 # Librarian OS integration guide
 |-- librarian-os.json               # eight Librarian OS entry points
 |-- ToC.md                          # complete file tree
-|-- _roadmaps/                      # learning paths for Librarian OS
+|-- _roadmaps/                      # main roadmap, one sub-roadmap per domain (d1 to d8) and thematic roadmaps
 |-- _assets/<domain>/               # media and downloadable files
 `-- <cissp-domain>/                 # one of the eight CISSP domains
     |-- README.md                   # domain entry point and reading order

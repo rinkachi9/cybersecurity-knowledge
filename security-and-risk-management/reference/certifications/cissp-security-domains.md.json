@@ -1,0 +1,29 @@
+{
+  "node": {
+    "id": "reference.certifications.cissp-security-domains",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "security-and-risk-management",
+      "reference",
+      "certifications",
+      "cissp",
+      "domains"
+    ]
+  },
+  "links": [
+    {
+      "to": "reference.certifications.cissp",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "related"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "id": "d2-asset-security",
+  "title": "Domain 2: Asset security",
+  "description": "Classification, handling, ownership, data lifecycle and data protection (CISSP sections 2.1 to 2.6). Most topics are planned.",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Asset security overview",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy and data protection",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/privacy-and-data-protection/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "nist-pf",
+      "title": "NIST Privacy Framework",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/privacy-and-data-protection/nist-privacy-framework.md"
+      ],
+      "externalSources": [
+        "https://www.nist.gov/privacy-framework"
+      ]
+    },
+    {
+      "id": "privacy-law",
+      "title": "Privacy regulations (Domain 1)",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/README.md",
+        "security-and-risk-management/privacy-regulations/gdpr.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cia",
+      "title": "CIA triad and FIPS 199 categorization",
+      "group": "Security and risk management",
+      "description": "Classification starts from impact ratings. The FIPS 199 section of this note is the formal bridge.",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "classification",
+      "title": "Information and asset classification (planned)",
+      "group": "Asset security",
+      "description": "Planned. CISSP sections 2.1 to 2.3.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "lifecycle",
+      "title": "Data lifecycle, retention and destruction (planned)",
+      "group": "Asset security",
+      "description": "Planned. CISSP sections 2.4 and 2.5.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "controls",
+      "title": "Data security controls: DLP, DRM, CASB (planned)",
+      "group": "Asset security",
+      "description": "Planned. CISSP section 2.6.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence handling (Domain 7)",
+      "group": "Security operations",
+      "description": "Evidence has its own handling and retention rules.",
+      "documentation": [
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "privacy",
+      "type": "next"
+    },
+    {
+      "from": "privacy",
+      "to": "nist-pf",
+      "type": "next"
+    },
+    {
+      "from": "privacy",
+      "to": "privacy-law",
+      "type": "branch"
+    },
+    {
+      "from": "start",
+      "to": "cia",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "classification",
+      "type": "next"
+    },
+    {
+      "from": "classification",
+      "to": "lifecycle",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "controls",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "evidence",
+      "type": "branch"
+    }
+  ]
+}

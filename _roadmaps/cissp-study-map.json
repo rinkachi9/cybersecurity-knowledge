@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "id": "cissp-study-map",
+  "title": "CISSP study map",
+  "description": "One path through the CISSP: the credential, the domains and the notes that serve each domain. Use the d1 to d8 roadmaps for the full content of a domain.",
+  "nodes": [
+    {
+      "id": "cissp",
+      "title": "CISSP certification",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/cissp.md"
+      ],
+      "externalSources": [
+        "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf"
+      ]
+    },
+    {
+      "id": "domains",
+      "title": "CISSP security domains",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/cissp-security-domains.md"
+      ],
+      "externalSources": [
+        "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf"
+      ]
+    },
+    {
+      "id": "d1",
+      "title": "D1: concepts, governance, risk (16%)",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md",
+        "security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md",
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d1-law",
+      "title": "D1: privacy and law",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/privacy-regulations-overview.md",
+        "security-and-risk-management/privacy-regulations/gdpr.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d1-tm",
+      "title": "D1: threat modeling",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/threat-modeling.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d2",
+      "title": "D2: asset security (10%)",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/privacy-and-data-protection/nist-privacy-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d3",
+      "title": "D3: architecture and cryptography (13%)",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md",
+        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d3-cloud",
+      "title": "D3: cloud and Kubernetes",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md",
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d4",
+      "title": "D4: network security (13%)",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d5",
+      "title": "D5: identity and access (13%)",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication-vs-authorization.md",
+        "identity-and-access-management/identity-and-access/protocols/oauth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d6",
+      "title": "D6: assessment and testing (12%)",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/red-blue-purple-teams.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d7",
+      "title": "D7: security operations (13%)",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md",
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d8",
+      "title": "D8: software development security (10%)",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-top-10.md",
+        "software-development-security/application-security/testing/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cissp",
+      "to": "domains",
+      "type": "next"
+    },
+    {
+      "from": "domains",
+      "to": "d1",
+      "type": "branch"
+    },
+    {
+      "from": "d1",
+      "to": "d1-law",
+      "type": "next"
+    },
+    {
+      "from": "d1-law",
+      "to": "d1-tm",
+      "type": "next"
+    },
+    {
+      "from": "domains",
+      "to": "d2",
+      "type": "branch"
+    },
+    {
+      "from": "domains",
+      "to": "d3",
+      "type": "branch"
+    },
+    {
+      "from": "d3",
+      "to": "d3-cloud",
+      "type": "next"
+    },
+    {
+      "from": "domains",
+      "to": "d4",
+      "type": "branch"
+    },
+    {
+      "from": "domains",
+      "to": "d5",
+      "type": "branch"
+    },
+    {
+      "from": "domains",
+      "to": "d6",
+      "type": "branch"
+    },
+    {
+      "from": "domains",
+      "to": "d7",
+      "type": "branch"
+    },
+    {
+      "from": "domains",
+      "to": "d8",
+      "type": "branch"
+    }
+  ]
+}

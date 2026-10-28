@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "id": "incident-response-and-forensics",
+  "title": "Incident response and forensics",
+  "description": "Detect, respond, preserve evidence and learn. Combines monitoring, the NIST lifecycle and chain of custody.",
+  "nodes": [
+    {
+      "id": "cia",
+      "title": "CIA triad",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attacks",
+      "title": "Attack lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attack",
+      "title": "MITRE ATT&CK",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-attack.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/"
+      ]
+    },
+    {
+      "id": "detection",
+      "title": "Detection",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "siem",
+      "title": "SIEM",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/siem.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "soc",
+      "title": "SOC",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/security-operations-center.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "soar",
+      "title": "SOAR and SOPs",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/soar.md",
+        "security-operations/defensive-operations/operations/sop.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ir",
+      "title": "NIST incident response lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ]
+    },
+    {
+      "id": "hash",
+      "title": "Hashing for integrity",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/sha.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "custody",
+      "title": "Chain of custody",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc3227"
+      ]
+    },
+    {
+      "id": "laws",
+      "title": "Privacy and breach notification law",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/privacy-regulations-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud posture",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cia",
+      "to": "attacks",
+      "type": "next"
+    },
+    {
+      "from": "attacks",
+      "to": "attack",
+      "type": "next"
+    },
+    {
+      "from": "attack",
+      "to": "detection",
+      "type": "next"
+    },
+    {
+      "from": "detection",
+      "to": "siem",
+      "type": "next"
+    },
+    {
+      "from": "siem",
+      "to": "soc",
+      "type": "next"
+    },
+    {
+      "from": "soc",
+      "to": "soar",
+      "type": "next"
+    },
+    {
+      "from": "soar",
+      "to": "ir",
+      "type": "next"
+    },
+    {
+      "from": "ir",
+      "to": "hash",
+      "type": "branch"
+    },
+    {
+      "from": "hash",
+      "to": "custody",
+      "type": "next"
+    },
+    {
+      "from": "ir",
+      "to": "laws",
+      "type": "branch"
+    },
+    {
+      "from": "detection",
+      "to": "cloud",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "version": 1,
+  "id": "d1-security-and-risk-management",
+  "title": "Domain 1: Security and risk management",
+  "description": "Security concepts, governance, risk, threat modeling, awareness and privacy law (CISSP sections 1.1 to 1.12).",
+  "nodes": [
+    {
+      "id": "foundations",
+      "title": "Security overview",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/README.md",
+        "security-and-risk-management/foundations/security-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cia",
+      "title": "CIA triad",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/fips/199/final"
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance and compliance",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "nist-overview",
+      "title": "NIST frameworks overview",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/README.md",
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-frameworks-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "csf",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md"
+      ],
+      "externalSources": [
+        "https://www.nist.gov/cyberframework"
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Security controls",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/security-controls.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sp800-53",
+      "title": "NIST SP 800-53",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ]
+    },
+    {
+      "id": "cis",
+      "title": "CIS Controls",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/cis-controls.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ccm",
+      "title": "CSA Cloud Controls Matrix",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md"
+      ],
+      "externalSources": [
+        "https://cloudsecurityalliance.org/research/cloud-controls-matrix"
+      ]
+    },
+    {
+      "id": "google",
+      "title": "Google security and resilience framework",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/google-security-and-resilience-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "iso27001",
+      "title": "ISO/IEC 27001",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/standards/README.md",
+        "security-and-risk-management/governance-and-compliance/standards/iso-iec-27001.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ai-rmf",
+      "title": "NIST AI risk management framework",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "risk",
+      "title": "Risk management",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/risk-management/README.md",
+        "security-and-risk-management/governance-and-compliance/risk-management/information-risk-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "rmf",
+      "title": "NIST risk management framework",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm",
+      "title": "Threat modeling",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/README.md",
+        "security-and-risk-management/threat-modeling/threat-modeling.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm-methods",
+      "title": "Methodologies",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methodologies.md",
+        "security-and-risk-management/threat-modeling/methods/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "stride",
+      "title": "STRIDE",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/stride.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pasta",
+      "title": "PASTA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/pasta.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "trike",
+      "title": "Trike",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/trike.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attack-trees",
+      "title": "Attack trees",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/attack-trees.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hybrid",
+      "title": "Hybrid threat modeling method",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/hybrid-threat-modeling-method.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cards",
+      "title": "Security cards",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/security-cards.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "awareness",
+      "title": "Security awareness",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/README.md",
+        "security-and-risk-management/security-awareness/user-based-attacks.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "social",
+      "title": "Social engineering",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/README.md",
+        "security-and-risk-management/security-awareness/social-engineering/social-engineering.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "psychology",
+      "title": "Psychology of cyberattacks",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/psychology-of-cyberattacks.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "phishing",
+      "title": "Phishing and spam",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/phishing.md",
+        "security-and-risk-management/security-awareness/social-engineering/spam.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "physical-se",
+      "title": "Physical social engineering",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/impersonation.md",
+        "security-and-risk-management/security-awareness/social-engineering/tailgating.md",
+        "security-and-risk-management/security-awareness/social-engineering/shoulder-surfing.md",
+        "security-and-risk-management/security-awareness/social-engineering/dumpster-diving.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "privacy-law",
+      "title": "Privacy regulations overview",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/README.md",
+        "security-and-risk-management/privacy-regulations/privacy-regulations-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "gdpr",
+      "title": "GDPR",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/gdpr.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hipaa",
+      "title": "HIPAA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/hipaa.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "glba",
+      "title": "GLBA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/glba.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pipeda",
+      "title": "PIPEDA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/pipeda.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "coppa",
+      "title": "COPPA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/coppa.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ftc",
+      "title": "FTC Act",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/ftc-act.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "reference",
+      "title": "Reference: organizations and certifications",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/README.md",
+        "security-and-risk-management/reference/organizations/README.md",
+        "security-and-risk-management/reference/organizations/nist.md",
+        "security-and-risk-management/reference/organizations/sans.md",
+        "security-and-risk-management/reference/organizations/mandiant.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "isc2",
+      "title": "ISC2",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/README.md",
+        "security-and-risk-management/reference/certifications/isc2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cissp",
+      "title": "CISSP",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/cissp.md"
+      ],
+      "externalSources": [
+        "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf"
+      ]
+    },
+    {
+      "id": "cissp-domains",
+      "title": "CISSP security domains",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/cissp-security-domains.md"
+      ],
+      "externalSources": [
+        "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf"
+      ]
+    },
+    {
+      "id": "bcp",
+      "title": "Business continuity requirements (planned)",
+      "group": "Security and risk management",
+      "description": "Planned. CISSP section 1.7: business impact analysis and external dependencies.",
+      "documentation": [],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "foundations",
+      "to": "cia",
+      "type": "next"
+    },
+    {
+      "from": "cia",
+      "to": "governance",
+      "type": "branch"
+    },
+    {
+      "from": "governance",
+      "to": "nist-overview",
+      "type": "next"
+    },
+    {
+      "from": "nist-overview",
+      "to": "csf",
+      "type": "next"
+    },
+    {
+      "from": "csf",
+      "to": "controls",
+      "type": "next"
+    },
+    {
+      "from": "controls",
+      "to": "sp800-53",
+      "type": "next"
+    },
+    {
+      "from": "controls",
+      "to": "cis",
+      "type": "branch"
+    },
+    {
+      "from": "controls",
+      "to": "ccm",
+      "type": "branch"
+    },
+    {
+      "from": "controls",
+      "to": "google",
+      "type": "branch"
+    },
+    {
+      "from": "governance",
+      "to": "iso27001",
+      "type": "branch"
+    },
+    {
+      "from": "nist-overview",
+      "to": "ai-rmf",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "risk",
+      "type": "branch"
+    },
+    {
+      "from": "risk",
+      "to": "rmf",
+      "type": "next"
+    },
+    {
+      "from": "rmf",
+      "to": "sp800-53",
+      "type": "next"
+    },
+    {
+      "from": "cia",
+      "to": "tm",
+      "type": "branch"
+    },
+    {
+      "from": "tm",
+      "to": "tm-methods",
+      "type": "next"
+    },
+    {
+      "from": "tm-methods",
+      "to": "stride",
+      "type": "next"
+    },
+    {
+      "from": "tm-methods",
+      "to": "pasta",
+      "type": "branch"
+    },
+    {
+      "from": "tm-methods",
+      "to": "trike",
+      "type": "branch"
+    },
+    {
+      "from": "tm-methods",
+      "to": "attack-trees",
+      "type": "branch"
+    },
+    {
+      "from": "tm-methods",
+      "to": "hybrid",
+      "type": "branch"
+    },
+    {
+      "from": "tm-methods",
+      "to": "cards",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "awareness",
+      "type": "branch"
+    },
+    {
+      "from": "awareness",
+      "to": "social",
+      "type": "next"
+    },
+    {
+      "from": "social",
+      "to": "psychology",
+      "type": "next"
+    },
+    {
+      "from": "social",
+      "to": "phishing",
+      "type": "branch"
+    },
+    {
+      "from": "social",
+      "to": "physical-se",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "privacy-law",
+      "type": "branch"
+    },
+    {
+      "from": "privacy-law",
+      "to": "gdpr",
+      "type": "next"
+    },
+    {
+      "from": "privacy-law",
+      "to": "hipaa",
+      "type": "branch"
+    },
+    {
+      "from": "privacy-law",
+      "to": "glba",
+      "type": "branch"
+    },
+    {
+      "from": "privacy-law",
+      "to": "pipeda",
+      "type": "branch"
+    },
+    {
+      "from": "privacy-law",
+      "to": "coppa",
+      "type": "branch"
+    },
+    {
+      "from": "privacy-law",
+      "to": "ftc",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "reference",
+      "type": "branch"
+    },
+    {
+      "from": "reference",
+      "to": "isc2",
+      "type": "next"
+    },
+    {
+      "from": "isc2",
+      "to": "cissp",
+      "type": "next"
+    },
+    {
+      "from": "cissp",
+      "to": "cissp-domains",
+      "type": "next"
+    },
+    {
+      "from": "risk",
+      "to": "bcp",
+      "type": "branch"
+    }
+  ]
+}

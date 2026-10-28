@@ -34,8 +34,8 @@ These topics are not written yet. They are listed so the scope of the area is vi
 
 - Logging strategy
 - Detection engineering and Sigma rules
-- Incident response
-- Digital forensics
 - Endpoint detection and response
+
+Incident response is covered by the [NIST incident response lifecycle](operations/nist-incident-response/README.md). Evidence handling has its own area: [digital forensics](../digital-forensics/README.md).
 
 Back to the [table of contents](../../ToC.md).

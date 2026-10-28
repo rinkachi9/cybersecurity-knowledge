@@ -1,0 +1,31 @@
+{
+  "node": {
+    "id": "security-operations.digital-forensics.chain-of-custody",
+    "kind": "index",
+    "status": "draft",
+    "level": "advanced",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "digital-forensics",
+      "chain-of-custody"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.hashing.sha",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.nist-incident-response",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-operations"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "id": "d5-identity-and-access-management",
+  "title": "Domain 5: Identity and access management",
+  "description": "Identification, authentication, authorization, federation and credential attacks (CISSP sections 5.1 to 5.6).",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Identity and access",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/README.md",
+        "identity-and-access-management/identity-and-access/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "authn-authz",
+      "title": "Authentication versus authorization",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication-vs-authorization.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "authn",
+      "title": "Authentication",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication/README.md",
+        "identity-and-access-management/identity-and-access/authentication/authentication-methods.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "jwt",
+      "title": "Token-based authentication (JWT)",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication/token-based-authentication-jwt.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "jwt-session",
+      "title": "JWT versus session",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication/jwt-vs-session.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "authz",
+      "title": "Authorization",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authorization.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "protocols",
+      "title": "Identity protocols",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/protocols/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "oauth",
+      "title": "OAuth",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/protocols/oauth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "oidc",
+      "title": "OpenID Connect",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/protocols/openid-connect.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hashing",
+      "title": "Credential storage",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/bcrypt.md",
+        "security-architecture-and-engineering/cryptography/hashing/argon2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attacks",
+      "title": "Credential attacks",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "brute",
+      "title": "Brute force",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/brute-force-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "spray",
+      "title": "Password spray",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/password-spray.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pam",
+      "title": "Privileged access and provisioning lifecycle (planned)",
+      "group": "Identity and access management",
+      "description": "Planned. CISSP section 5.5.",
+      "documentation": [],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "authn-authz",
+      "type": "next"
+    },
+    {
+      "from": "authn-authz",
+      "to": "authn",
+      "type": "next"
+    },
+    {
+      "from": "authn",
+      "to": "jwt",
+      "type": "next"
+    },
+    {
+      "from": "jwt",
+      "to": "jwt-session",
+      "type": "next"
+    },
+    {
+      "from": "authn-authz",
+      "to": "authz",
+      "type": "branch"
+    },
+    {
+      "from": "authz",
+      "to": "protocols",
+      "type": "branch"
+    },
+    {
+      "from": "protocols",
+      "to": "oauth",
+      "type": "next"
+    },
+    {
+      "from": "oauth",
+      "to": "oidc",
+      "type": "next"
+    },
+    {
+      "from": "authn",
+      "to": "hashing",
+      "type": "branch"
+    },
+    {
+      "from": "hashing",
+      "to": "attacks",
+      "type": "branch"
+    },
+    {
+      "from": "attacks",
+      "to": "brute",
+      "type": "next"
+    },
+    {
+      "from": "brute",
+      "to": "spray",
+      "type": "next"
+    },
+    {
+      "from": "authz",
+      "to": "pam",
+      "type": "branch"
+    }
+  ]
+}

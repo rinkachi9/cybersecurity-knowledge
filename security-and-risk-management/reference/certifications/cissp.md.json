@@ -1,0 +1,24 @@
+{
+  "node": {
+    "id": "reference.certifications.cissp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "security-and-risk-management",
+      "reference",
+      "certifications",
+      "cissp"
+    ]
+  },
+  "links": [
+    {
+      "to": "reference.certifications.isc2",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

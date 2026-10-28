@@ -32,6 +32,17 @@ The primary audience is the future version of the author. Write as if explaining
 
 **Depth over breadth.** A note that explains one idea thoroughly is worth more than five that name-drop ten. Cover a topic completely before moving on: what it is, why it exists, how it works, when to use it, when not to use it, and how it fails.
 
+**Expert level, always.** Every topic in this repository is written at expert level, not as an introduction. The layered structure (plain summary first) serves newcomers, but the note as a whole must still hold up for a practitioner who already works in the field. A note is at expert level when it meets all of these conditions:
+
+- It is checked against the primary sources (standard, specification, official documentation, vendor documentation for products), and the version and check date are recorded.
+- It goes at least one level below the surface: internal mechanism, data structures, protocol fields, control text, decision criteria, not only definitions.
+- It covers edge cases, failure modes, limits, costs and the situations where the approach is wrong.
+- It contains at least one worked example with real, reproducible values, and the code or script in it was run.
+- It links related notes in other domains, so the topic is placed in context instead of floating alone.
+- What could not be verified is marked in the text. A gap that is marked is acceptable. A gap that is hidden is not.
+
+A short note is allowed only when the topic is small. A topic is never short because the author stopped early. Migrated notes that do not meet this bar are tracked with `TODO:` lines until they do (see [section 4.1](#41-migrated-notes)).
+
 **Explain the why, not only the what.** Facts without reasons are trivia. For every rule, tool or technique, state the problem it solves. A reader who understands the problem can reconstruct the solution and can tell when it does not apply.
 
 *Example.* "Use parameterized queries" is a rule. "Parameterized queries keep data and code separate, so input can never change the structure of the statement" is understanding.
@@ -379,6 +390,12 @@ Run this list before marking a note as `reviewed`.
 - [ ] Common mistakes are listed with their fixes.
 - [ ] Versions and dates are recorded where relevant.
 
+**Expert level**
+
+- [ ] The note meets every condition of "Expert level, always" in [section 2](#2-core-principles).
+- [ ] A practitioner could use it to make a decision, not only to learn the vocabulary.
+- [ ] Vendor and product claims come from vendor documentation and are labeled as vendor statements.
+
 **Accuracy**
 
 - [ ] Claims are backed by sources, and the sources are linked.
@@ -421,6 +438,7 @@ grep -rnP "\x{2013}|\x{2014}" --include="*.md" .
 AI assistants are welcome collaborators. The rules are the same as for a human contributor, and the human author remains responsible for correctness.
 
 - **Read this file first.** `AGENTS.md` and `CLAUDE.md` point here. This GUIDELINE is the only place where conventions are defined.
+- **Write at expert level.** Do not hand in an introduction when the topic deserves depth. Download and read the primary sources, run the code, and record what was checked and what was not.
 - **Do not invent facts.** If a detail is uncertain, say so in the note or leave it out. Never fabricate citations, version numbers, benchmarks or quotes.
 - **Verify before writing.** Use primary sources for claims, and record them.
 - **Follow the style rules strictly.** In particular the ban on em dashes and en dashes, and the ban on filler language (see [section 7](#7-writing-style)).

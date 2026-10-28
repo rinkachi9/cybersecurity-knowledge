@@ -51,7 +51,18 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [owasp-security-principles-map.svg](_assets/software-development-security/application-security/owasp-security-principles-map.svg): The 16 OWASP principles grouped into four questions (original drawing).
       - [xss-overview.png](_assets/software-development-security/application-security/xss-overview.png): Asset: xss overview.
 - **_roadmaps/**
-  - [cybersecurity.json](_roadmaps/cybersecurity.json): Repository file.
+  - [cissp-study-map.json](_roadmaps/cissp-study-map.json): CISSP study map: the credential, the eight domains and the notes that serve each.
+  - [cloud-and-kubernetes-posture.json](_roadmaps/cloud-and-kubernetes-posture.json): Thematic roadmap: posture management, CSPM, tools and KSPM.
+  - [cybersecurity.json](_roadmaps/cybersecurity.json): Main roadmap: common foundations and one hub per CISSP domain.
+  - [d1-security-and-risk-management.json](_roadmaps/d1-security-and-risk-management.json): Sub-roadmap for Domain 1.
+  - [d2-asset-security.json](_roadmaps/d2-asset-security.json): Sub-roadmap for Domain 2.
+  - [d3-security-architecture-and-engineering.json](_roadmaps/d3-security-architecture-and-engineering.json): Sub-roadmap for Domain 3.
+  - [d4-communication-and-network-security.json](_roadmaps/d4-communication-and-network-security.json): Sub-roadmap for Domain 4.
+  - [d5-identity-and-access-management.json](_roadmaps/d5-identity-and-access-management.json): Sub-roadmap for Domain 5.
+  - [d6-security-assessment-and-testing.json](_roadmaps/d6-security-assessment-and-testing.json): Sub-roadmap for Domain 6.
+  - [d7-security-operations.json](_roadmaps/d7-security-operations.json): Sub-roadmap for Domain 7.
+  - [d8-software-development-security.json](_roadmaps/d8-software-development-security.json): Sub-roadmap for Domain 8.
+  - [incident-response-and-forensics.json](_roadmaps/incident-response-and-forensics.json): Thematic roadmap: detection, NIST incident response and chain of custody.
 - **security-and-risk-management/**
   - [README.md](security-and-risk-management/README.md): Security and risk management - This CISSP domain covers security concepts, governance, law, risk, threat modeling and security awareness. It also covers business continuity requirements. The notes b...
   - [README.md.json](security-and-risk-management/README.md.json): Librarian OS metadata for README.md.
@@ -129,6 +140,10 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **certifications/**
       - [README.md](security-and-risk-management/reference/certifications/README.md): Certifications - Professional security certifications and the bodies that issue them.
       - [README.md.json](security-and-risk-management/reference/certifications/README.md.json): Librarian OS metadata for README.md.
+      - [cissp-security-domains.md](security-and-risk-management/reference/certifications/cissp-security-domains.md): CISSP security domains - The eight domains, weights and 62 sections of the CISSP outline, with the location of each topic in this repository.
+      - [cissp-security-domains.md.json](security-and-risk-management/reference/certifications/cissp-security-domains.md.json): Librarian OS metadata for cissp-security-domains.md.
+      - [cissp.md](security-and-risk-management/reference/certifications/cissp.md): Certified Information Systems Security Professional (CISSP) - Exam format, experience rules, ethics and how the credential relates to others.
+      - [cissp.md.json](security-and-risk-management/reference/certifications/cissp.md.json): Librarian OS metadata for cissp.md.
       - [isc2.md](security-and-risk-management/reference/certifications/isc2.md): International Information System Security Certification Consortium (ISC2) - ISC2 and its certifications.
       - [isc2.md.json](security-and-risk-management/reference/certifications/isc2.md.json): Librarian OS metadata for isc2.md.
     - **organizations/**
@@ -209,6 +224,11 @@ Full tree of every file in the repository. Every file has a link and a short des
     - [cloud-security-posture-management.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md.json): Librarian OS metadata for cloud-security-posture-management.md.
     - [cspm-tools.md](security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md): CSPM tools - Prisma Cloud and Cortex Cloud, CrowdStrike Falcon Cloud Security, Orca, Check Point CloudGuard and Netskope, with a PoC method.
     - [cspm-tools.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md.json): Librarian OS metadata for cspm-tools.md.
+    - **kubernetes-security-posture-management/**
+      - [README.md](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md): Kubernetes security posture management (KSPM) - Configuration posture of Kubernetes clusters: Pod Security Standards, RBAC, network policy, benchmarks, tools and a tested evaluation script.
+      - [README.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [evaluate-cluster-posture.py](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/scripts/evaluate-cluster-posture.py): Synthetic cluster snapshot evaluated against Pod Security Standards, RBAC and namespace rules, with toxic combinations and drift.
     - [multicloud-cspm.md](security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md): Multicloud CSPM - Hierarchies, normalization, architecture patterns, connectors, operating model and a normalization example.
     - [multicloud-cspm.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md.json): Librarian OS metadata for multicloud-cspm.md.
     - [security-posture-management.md](security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md): Security Posture Management (SPM) - Continuous measurement and improvement of security posture, including CSPM and related variants.
@@ -331,6 +351,14 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [soar.md.json](security-operations/defensive-operations/operations/soar.md.json): Librarian OS metadata for soar.md.
       - [sop.md](security-operations/defensive-operations/operations/sop.md): SOP - Standard operating procedures for repeatable analyst work.
       - [sop.md.json](security-operations/defensive-operations/operations/sop.md.json): Librarian OS metadata for sop.md.
+  - **digital-forensics/**
+    - [README.md](security-operations/digital-forensics/README.md): Digital forensics - Collecting, preserving and examining digital evidence so that findings can be trusted.
+    - [README.md.json](security-operations/digital-forensics/README.md.json): Librarian OS metadata for README.md.
+    - **chain-of-custody/**
+      - [README.md](security-operations/digital-forensics/chain-of-custody/README.md): Chain of custody - The documented record of who held evidence and what they did with it, with order of volatility, acquisition, integrity checks, legal context and a tested custody log.
+      - [README.md.json](security-operations/digital-forensics/chain-of-custody/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [custody-log.py](security-operations/digital-forensics/chain-of-custody/scripts/custody-log.py): Hash-chained custody log with checks for tampering, missing transfers and changed evidence.
   - **threat-intelligence/**
     - [README.md](security-operations/threat-intelligence/README.md): Threat intelligence - Collecting and using information about adversaries, plus the MITRE knowledge bases used to describe attacker and defender behavior.
     - [README.md.json](security-operations/threat-intelligence/README.md.json): Librarian OS metadata for README.md.
