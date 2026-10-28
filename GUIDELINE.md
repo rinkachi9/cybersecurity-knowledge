@@ -110,6 +110,28 @@ For a topic that fits several domains, choose the home by its central mechanism 
 
 When moving a note, preserve its sidecar `node.id` so existing typed relations remain valid. Update `node.tags`, `map.group`, the area READMEs, relative links, assets and `ToC.md` to match the new location. A sidecar id may therefore differ from the current file path. Before applying a future ISC2 outline, compare the new scope with this mapping and document any change in the README; do not rename folders merely because an exam weight changes.
 
+### 3.1.2 Complete the path (scaffold rule)
+
+Every note has a path that starts at one of the eight CISSP domain directories: `<domain>/<subarea>/<optional deeper subarea>/<note>`. The path must exist in full before a note is placed at its end. If a note is added at a path where an ancestor directory is missing, the same change creates every missing ancestor as a *scaffold*. A scaffold is structure only. Do not write the missing content, do not add example notes and do not add placeholder text.
+
+This keeps the placement stable: the subarea a topic belongs to exists from the first note on, so later notes do not force moves. It also keeps the domain tree complete from the root to every note.
+
+A scaffold directory contains:
+
+1. `README.md` with exactly these parts, in this order:
+   - the title (`# <Area name>`) and one sentence on what the area covers,
+   - a line `Status: scaffold.`,
+   - `## Scope`: what belongs here and what belongs elsewhere (with relative links to the home of the excluded topics),
+   - `## CISSP sections`: the numbered sections of the current ISC2 outline that this area serves, for example `7.8`,
+   - `## Notes`: links to the notes that exist (at least the one that triggered the scaffold),
+   - `## To complete`: a checklist of what is still missing before the status can change, for example the introduction, the reading order, the planned topics and the sidecar relations,
+   - a `Back to` link to the parent `README.md`.
+2. `README.md.json`: the sidecar with `kind: index`, `status: draft`, a unique `order` among its siblings, tags and `map.group` set to the domain directory.
+3. An entry in the parent `README.md` (reading order or notes list) and in `ToC.md`.
+4. A node in the roadmap of the domain (see [section 3.5](#35-roadmaps)) when the scaffold is a learning topic.
+
+The `Status: scaffold.` line and the `To complete` section are removed when the README meets the standard of an area README (introduction, reading order with one line per note, planned topics). An area with `Status: scaffold.` is allowed to exist in the repository, a note placed under it is not allowed to lack its ancestors.
+
 ### 3.2 Naming
 
 | Item | Convention | Example |
@@ -141,6 +163,18 @@ This repository also lists every `.md.json` sidecar. Librarian OS `npm run toc` 
 - **Planned areas are marked.** An area that has only a `README.md` is marked `(planned)`.
 - **Verify before finishing.** Compare `ToC.md` with the output of `git ls-files --cached --others --exclude-standard` and check that every link resolves.
 - **`ToC.md` is not a replacement for area READMEs.** The area README keeps the recommended reading order and the context. `ToC.md` keeps the complete list.
+
+### 3.5 Roadmaps
+
+The roadmaps in `_roadmaps/` follow the notes. When a topic is written, it is reflected in the roadmaps in the same change, not later.
+
+- **Domain roadmap.** Add the note to the roadmap of its domain (`d1` to `d8`) as a node. If the roadmap already has a planned node for the topic (a node with no `documentation`), turn it into the real node and keep its `id`, because local progress is keyed by roadmap id and node id.
+- **Path roadmaps.** Add the note to every path roadmap where it fits (for example offensive, defensive, purple team, incident response and forensics, GRC, application security, cloud, architecture, CISSP). A note that fits no path stays only in its domain roadmap.
+- **Main roadmap.** Change `cybersecurity.json` only when a new path or a new domain hub is created.
+- **Scaffolds.** A scaffold that is a learning topic gets a node with a description that starts with `Planned.` until its notes exist.
+- **Edges.** Use `next` for a sequence and `branch` for a thematic split. Keep the graph acyclic, and link every new node to an existing one.
+- **References.** `documentation` lists repository-relative Markdown paths that exist. `externalSources` lists HTTPS primary sources that the note itself cites.
+- **Check.** Run `npm run check` in Librarian OS. A roadmap with an unknown path, an unknown node in an edge, a duplicate id or a cycle is an error.
 
 ## 4. Anatomy of a note
 
@@ -416,6 +450,8 @@ Run this list before marking a note as `reviewed`.
 - [ ] File and directory names follow the naming rules.
 - [ ] The note is linked from its area `README.md`.
 - [ ] `ToC.md` reflects every added, moved, renamed or deleted file, and its links resolve.
+- [ ] Every ancestor directory of the note exists with a `README.md`, a sidecar and a `ToC.md` entry (scaffold rule, [section 3.1.2](#312-complete-the-path-scaffold-rule)).
+- [ ] The note is a node in the roadmap of its domain and in every fitting path roadmap ([section 3.5](#35-roadmaps)).
 
 A quick way to check the dash rule from the repository root:
 
@@ -444,6 +480,8 @@ AI assistants are welcome collaborators. The rules are the same as for a human c
 - **Follow the style rules strictly.** In particular the ban on em dashes and en dashes, and the ban on filler language (see [section 7](#7-writing-style)).
 - **Stay in scope.** Do not add content unrelated to the request. Do not restructure the repository without being asked.
 - **Prefer editing to creating.** Extend an existing note when the topic already has a home. Create a new file only when the topic deserves its own note.
+- **Complete the path.** Create every missing ancestor directory as a scaffold, structure only, before placing a note (see [section 3.1.2](#312-complete-the-path-scaffold-rule)).
+- **Update the roadmaps with every topic.** A written topic becomes a roadmap node in the same change (see [section 3.5](#35-roadmaps)).
 - **Update `ToC.md` with every change.** Any file added, moved, renamed or deleted must be reflected in `ToC.md` before the task is finished (see [section 3.4](#34-table-of-contents)).
 - **Ask when a decision is unclear.** Structure, scope and naming decisions belong to the author.
 - **Never commit secrets or personal data,** and never run destructive git operations without explicit approval.

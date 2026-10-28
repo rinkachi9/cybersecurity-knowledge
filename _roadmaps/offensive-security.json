@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "id": "offensive-security",
+  "title": "Offensive security path",
+  "description": "The attacker view, for labs, CTFs, written-permission penetration tests and defensive research only. Few offensive notes exist yet, so several nodes are planned. Every note ends with detection and mitigation.",
+  "nodes": [
+    {
+      "id": "legal",
+      "title": "Authorization and rules of engagement",
+      "group": "Security assessment and testing",
+      "description": "Offensive work needs a lab, a CTF or written permission. Read the scope statement first.",
+      "documentation": [
+        "security-assessment-and-testing/offensive-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "teams",
+      "title": "Red, blue and purple teams",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/red-blue-purple-teams.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm",
+      "title": "Think like an attacker: attack trees and STRIDE",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/attack-trees.md",
+        "security-and-risk-management/threat-modeling/methods/stride.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "lifecycle",
+      "title": "Attack lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "recon",
+      "title": "Reconnaissance",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/reconnaissance.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "osint",
+      "title": "OSINT",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/osint.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vuln",
+      "title": "Finding weaknesses: CVE, CWE, CVSS",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cve.md",
+        "security-operations/vulnerability-management/cwe.md",
+        "security-operations/vulnerability-management/cvss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zero-day",
+      "title": "Zero-day attacks",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/zero-day-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "web",
+      "title": "Web attacks",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/web-attacks/README.md",
+        "security-operations/threats-and-attacks/web-attacks/web-based-attacks.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "xss",
+      "title": "Cross-site scripting",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/xss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "top10",
+      "title": "OWASP Top 10",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-top-10.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/Top10/"
+      ]
+    },
+    {
+      "id": "web-test",
+      "title": "Web application testing (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "cred",
+      "title": "Credential attacks",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/README.md",
+        "identity-and-access-management/credential-attacks/brute-force-attack.md",
+        "identity-and-access-management/credential-attacks/password-spray.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pw-hash",
+      "title": "Why password hashing matters",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/argon2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ad",
+      "title": "Active Directory attacks (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "se",
+      "title": "Social engineering",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/README.md",
+        "security-and-risk-management/security-awareness/social-engineering/phishing.md",
+        "security-and-risk-management/security-awareness/social-engineering/impersonation.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "malware",
+      "title": "Malware",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/malware/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "privesc",
+      "title": "Privilege escalation",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/privilege-escalation.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "post",
+      "title": "Post-exploitation concepts (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "supply",
+      "title": "Software supply chain attacks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "web-delivery",
+      "title": "Drive-by, typosquatting, watering hole",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/web-attacks/drive-by-attack.md",
+        "security-operations/threats-and-attacks/web-attacks/typosquatting.md",
+        "security-operations/threats-and-attacks/web-attacks/watering-hole-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attack",
+      "title": "MITRE ATT&CK and CAPEC",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-attack.md",
+        "security-operations/threat-intelligence/mitre/mitre-capec.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/"
+      ]
+    },
+    {
+      "id": "report",
+      "title": "Reporting (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned. Findings, risk rating and remediation advice.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "defense",
+      "title": "Defense: what to detect and fix",
+      "group": "Security operations",
+      "description": "Every attack note ends with detection and mitigation. Continue with the defensive path.",
+      "documentation": [
+        "security-operations/defensive-operations/detection/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vectors",
+      "title": "Attack vectors",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-vectors/README.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/tactics/TA0001/"
+      ]
+    },
+    {
+      "id": "apt",
+      "title": "Advanced persistent threats",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/advanced-persistent-threats/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "bec",
+      "title": "Business email compromise",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/business-email-compromise/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "crypto",
+      "title": "Cryptographic attacks",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply-attacks",
+      "title": "Supply-chain attacks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "adv-ai",
+      "title": "Adversarial artificial intelligence",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "legal",
+      "to": "teams",
+      "type": "next"
+    },
+    {
+      "from": "teams",
+      "to": "tm",
+      "type": "next"
+    },
+    {
+      "from": "tm",
+      "to": "lifecycle",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "recon",
+      "type": "next"
+    },
+    {
+      "from": "recon",
+      "to": "osint",
+      "type": "branch"
+    },
+    {
+      "from": "recon",
+      "to": "vuln",
+      "type": "next"
+    },
+    {
+      "from": "vuln",
+      "to": "zero-day",
+      "type": "next"
+    },
+    {
+      "from": "vuln",
+      "to": "web",
+      "type": "branch"
+    },
+    {
+      "from": "web",
+      "to": "xss",
+      "type": "next"
+    },
+    {
+      "from": "xss",
+      "to": "top10",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "web-test",
+      "type": "next"
+    },
+    {
+      "from": "vuln",
+      "to": "cred",
+      "type": "branch"
+    },
+    {
+      "from": "cred",
+      "to": "pw-hash",
+      "type": "next"
+    },
+    {
+      "from": "cred",
+      "to": "ad",
+      "type": "next"
+    },
+    {
+      "from": "recon",
+      "to": "se",
+      "type": "branch"
+    },
+    {
+      "from": "lifecycle",
+      "to": "malware",
+      "type": "branch"
+    },
+    {
+      "from": "malware",
+      "to": "privesc",
+      "type": "next"
+    },
+    {
+      "from": "privesc",
+      "to": "post",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "supply",
+      "type": "branch"
+    },
+    {
+      "from": "web",
+      "to": "web-delivery",
+      "type": "branch"
+    },
+    {
+      "from": "lifecycle",
+      "to": "attack",
+      "type": "branch"
+    },
+    {
+      "from": "post",
+      "to": "report",
+      "type": "next"
+    },
+    {
+      "from": "report",
+      "to": "defense",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "vectors",
+      "type": "branch"
+    },
+    {
+      "from": "attack",
+      "to": "apt",
+      "type": "branch"
+    },
+    {
+      "from": "se",
+      "to": "bec",
+      "type": "branch"
+    },
+    {
+      "from": "pw-hash",
+      "to": "crypto",
+      "type": "branch"
+    },
+    {
+      "from": "supply",
+      "to": "supply-attacks",
+      "type": "branch"
+    },
+    {
+      "from": "malware",
+      "to": "adv-ai",
+      "type": "branch"
+    }
+  ]
+}

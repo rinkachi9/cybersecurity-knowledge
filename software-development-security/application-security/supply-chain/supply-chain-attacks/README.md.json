@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "software-security.application-security.supply-chain.supply-chain-attacks",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "software-development-security",
+      "supply-chain",
+      "attacks"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.supply-chain.slsa",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.supply-chain.nist-secure-software-development-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.testing.software-composition-analysis",
+      "rel": "prerequisite"
+    }
+  ]
+}

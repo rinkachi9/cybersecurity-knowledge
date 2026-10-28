@@ -100,7 +100,7 @@ Organizations and certifications live in [Domain 1 reference material](security-
 |-- INSTRUCTIONS.md                 # Librarian OS integration guide
 |-- librarian-os.json               # eight Librarian OS entry points
 |-- ToC.md                          # complete file tree
-|-- _roadmaps/                      # main roadmap, one sub-roadmap per domain (d1 to d8) and thematic roadmaps
+|-- _roadmaps/                      # main roadmap, domain roadmaps (d1 to d8) and paths by role (offensive, defensive, purple team, DFIR, GRC, appsec, cloud, architecture, CISSP)
 |-- _assets/<domain>/               # media and downloadable files
 `-- <cissp-domain>/                 # one of the eight CISSP domains
     |-- README.md                   # domain entry point and reading order

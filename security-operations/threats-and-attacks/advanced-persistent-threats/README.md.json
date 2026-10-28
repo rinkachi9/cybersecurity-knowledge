@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.advanced-persistent-threats",
+    "kind": "index",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "apt"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.threat-intelligence.mitre.mitre-attack",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-vectors",
+      "rel": "prerequisite"
+    }
+  ]
+}

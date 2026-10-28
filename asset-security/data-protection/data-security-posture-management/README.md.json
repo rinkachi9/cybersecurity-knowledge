@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "asset-security.data-protection.data-security-posture-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "asset-security",
+      "data-protection",
+      "dspm"
+    ]
+  },
+  "map": {
+    "group": "asset-security"
+  },
+  "links": [
+    {
+      "to": "asset-security.data-protection.data-loss-prevention",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.cloud-security-posture-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "asset-security.asset-management",
+      "rel": "prerequisite"
+    }
+  ]
+}

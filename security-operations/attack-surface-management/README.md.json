@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "security-operations.attack-surface-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "security-operations",
+      "attack-surface-management"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

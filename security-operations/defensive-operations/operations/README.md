@@ -6,7 +6,7 @@ Teams, technology and procedures of security operations.
 
 - [Security Operations Center (SOC)](security-operations-center.md): Purpose, roles, technology and workflow of a SOC.
 - [SecOps](secops.md): The collaboration of IT operations and security teams.
-- [SIEM](siem.md): Security information and event management.
+- [SIEM](siem.md): Pipeline from collection to alerting, detection approaches, SP 800-53 AU controls and a tested normalization and correlation example.
 - [SOAR](soar.md): Security orchestration, automation and response.
 - [SOP](sop.md): Standard operating procedures for repeatable analyst work.
 - [NIST incident response lifecycle (SP 800-61)](nist-incident-response/README.md): The full Rev. 3 and Rev. 2 lifecycle with decision points and three worked incidents (easy, medium, expert).

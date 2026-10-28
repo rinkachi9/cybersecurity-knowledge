@@ -71,10 +71,13 @@
     },
     {
       "id": "controls",
-      "title": "Data security controls: DLP, DRM, CASB (planned)",
+      "title": "Data protection: DLP and DSPM",
       "group": "Asset security",
-      "description": "Planned. CISSP section 2.6.",
-      "documentation": [],
+      "documentation": [
+        "asset-security/data-protection/README.md",
+        "asset-security/data-protection/data-loss-prevention/README.md",
+        "asset-security/data-protection/data-security-posture-management/README.md"
+      ],
       "externalSources": []
     },
     {
@@ -84,6 +87,15 @@
       "description": "Evidence has its own handling and retention rules.",
       "documentation": [
         "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "asset-mgmt",
+      "title": "Asset management",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/asset-management/README.md"
       ],
       "externalSources": []
     }
@@ -110,11 +122,6 @@
       "type": "branch"
     },
     {
-      "from": "cia",
-      "to": "classification",
-      "type": "next"
-    },
-    {
       "from": "classification",
       "to": "lifecycle",
       "type": "next"
@@ -128,6 +135,16 @@
       "from": "lifecycle",
       "to": "evidence",
       "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "asset-mgmt",
+      "type": "next"
+    },
+    {
+      "from": "asset-mgmt",
+      "to": "classification",
+      "type": "next"
     }
   ]
 }

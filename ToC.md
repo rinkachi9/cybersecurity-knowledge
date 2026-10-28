@@ -51,6 +51,7 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [owasp-security-principles-map.svg](_assets/software-development-security/application-security/owasp-security-principles-map.svg): The 16 OWASP principles grouped into four questions (original drawing).
       - [xss-overview.png](_assets/software-development-security/application-security/xss-overview.png): Asset: xss overview.
 - **_roadmaps/**
+  - [appsec-and-devsecops.json](_roadmaps/appsec-and-devsecops.json): Path: application security and DevSecOps.
   - [cissp-study-map.json](_roadmaps/cissp-study-map.json): CISSP study map: the credential, the eight domains and the notes that serve each.
   - [cloud-and-kubernetes-posture.json](_roadmaps/cloud-and-kubernetes-posture.json): Thematic roadmap: posture management, CSPM, tools and KSPM.
   - [cybersecurity.json](_roadmaps/cybersecurity.json): Main roadmap: common foundations and one hub per CISSP domain.
@@ -62,7 +63,12 @@ Full tree of every file in the repository. Every file has a link and a short des
   - [d6-security-assessment-and-testing.json](_roadmaps/d6-security-assessment-and-testing.json): Sub-roadmap for Domain 6.
   - [d7-security-operations.json](_roadmaps/d7-security-operations.json): Sub-roadmap for Domain 7.
   - [d8-software-development-security.json](_roadmaps/d8-software-development-security.json): Sub-roadmap for Domain 8.
+  - [defensive-security.json](_roadmaps/defensive-security.json): Path: defensive security (blue team).
+  - [grc-and-privacy.json](_roadmaps/grc-and-privacy.json): Path: governance, risk, compliance and privacy.
   - [incident-response-and-forensics.json](_roadmaps/incident-response-and-forensics.json): Thematic roadmap: detection, NIST incident response and chain of custody.
+  - [offensive-security.json](_roadmaps/offensive-security.json): Path: offensive security, authorized contexts only.
+  - [purple-team.json](_roadmaps/purple-team.json): Path: purple team, attack and detection side by side.
+  - [security-architecture-path.json](_roadmaps/security-architecture-path.json): Path: security architecture and engineering.
 - **security-and-risk-management/**
   - [README.md](security-and-risk-management/README.md): Security and risk management - This CISSP domain covers security concepts, governance, law, risk, threat modeling and security awareness. It also covers business continuity requirements. The notes b...
   - [README.md.json](security-and-risk-management/README.md.json): Librarian OS metadata for README.md.
@@ -202,8 +208,26 @@ Full tree of every file in the repository. Every file has a link and a short des
     - [threat-modeling.md](security-and-risk-management/threat-modeling/threat-modeling.md): Threat Modeling - What threat modeling is, why it matters and how it differs from risk management.
     - [threat-modeling.md.json](security-and-risk-management/threat-modeling/threat-modeling.md.json): Librarian OS metadata for threat-modeling.md.
 - **asset-security/**
-  - [README.md](asset-security/README.md): Asset security - This CISSP domain covers the classification, ownership, handling, retention and lifecycle of information and other assets. The current material focuses on privacy and...
+  - [README.md](asset-security/README.md): Asset security - This CISSP domain covers the classification, ownership, handling, retention and lifecycle of information and other assets. The current material covers asset management, data protection (DLP and DSPM) and privacy; classification and data lifecycle topics remain to be written.
   - [README.md.json](asset-security/README.md.json): Librarian OS metadata for README.md.
+  - **asset-management/**
+    - [README.md](asset-security/asset-management/README.md): Asset management - Inventory, ownership, criticality and lifecycle of assets, with the NIST CSF ID.AM outcomes and a tested reconciliation script.
+    - [README.md.json](asset-security/asset-management/README.md.json): Librarian OS metadata for README.md.
+    - **scripts/**
+      - [reconcile-inventory.py](asset-security/asset-management/scripts/reconcile-inventory.py): Reconciles five synthetic asset sources and reports shadow assets, ghost records, ownerless assets and end-of-life software.
+  - **data-protection/**
+    - [README.md](asset-security/data-protection/README.md): Data protection - Controls that protect information according to its classification (scaffold).
+    - [README.md.json](asset-security/data-protection/README.md.json): Librarian OS metadata for README.md.
+    - **data-loss-prevention/**
+      - [README.md](asset-security/data-protection/data-loss-prevention/README.md): Data loss prevention (DLP) - Detection methods, channels, rollout and a tested comparison of naive and validated detectors.
+      - [README.md.json](asset-security/data-protection/data-loss-prevention/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [dlp-detectors.py](asset-security/data-protection/data-loss-prevention/scripts/dlp-detectors.py): Luhn and IBAN validated detectors with keyword proximity, precision and recall on a labeled corpus.
+    - **data-security-posture-management/**
+      - [README.md](asset-security/data-protection/data-security-posture-management/README.md): Data security posture management (DSPM) - Data discovery, sampling, exposure and risk ranking for cloud and SaaS data.
+      - [README.md.json](asset-security/data-protection/data-security-posture-management/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [dspm-sampling-risk.py](asset-security/data-protection/data-security-posture-management/scripts/dspm-sampling-risk.py): Simulation of sampled sensitive data discovery and a data store risk ranking.
   - **privacy-and-data-protection/**
     - [README.md](asset-security/privacy-and-data-protection/README.md): Privacy and data protection - Privacy frameworks and data protection concepts that help identify and manage risks to personal information.
     - [README.md.json](asset-security/privacy-and-data-protection/README.md.json): Librarian OS metadata for README.md.
@@ -215,6 +239,11 @@ Full tree of every file in the repository. Every file has a link and a short des
   - **ai-security/**
     - [README.md](security-architecture-and-engineering/ai-security/README.md): AI security - Security of artificial intelligence and machine learning systems.
     - [README.md.json](security-architecture-and-engineering/ai-security/README.md.json): Librarian OS metadata for README.md.
+    - **adversarial-machine-learning/**
+      - [README.md](security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md): Adversarial artificial intelligence - The NIST AI 100-2 E2025 taxonomy, four toy attacks and defenses.
+      - [README.md.json](security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [aml-toy-attacks.py](security-architecture-and-engineering/ai-security/adversarial-machine-learning/scripts/aml-toy-attacks.py): Evasion, label flipping, model extraction and membership inference on a toy logistic regression.
     - [google-secure-ai-framework.md](security-architecture-and-engineering/ai-security/google-secure-ai-framework.md): Google’s Secure AI Framework (SAIF) - Google framework for securing AI and ML systems.
     - [google-secure-ai-framework.md.json](security-architecture-and-engineering/ai-security/google-secure-ai-framework.md.json): Librarian OS metadata for google-secure-ai-framework.md.
   - **cloud-and-infrastructure-security/**
@@ -239,6 +268,11 @@ Full tree of every file in the repository. Every file has a link and a short des
   - **cryptography/**
     - [README.md](security-architecture-and-engineering/cryptography/README.md): Cryptography - Cryptographic building blocks and the infrastructure around them.
     - [README.md.json](security-architecture-and-engineering/cryptography/README.md.json): Librarian OS metadata for README.md.
+    - **cryptographic-attacks/**
+      - [README.md](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md): Cryptographic attacks - Attacks by attacker knowledge and by weakness place, with five tested toy demonstrations.
+      - [README.md.json](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [crypto-attack-demos.py](security-architecture-and-engineering/cryptography/cryptographic-attacks/scripts/crypto-attack-demos.py): Frequency analysis, known plaintext, keystream reuse, birthday collision and timing leak on toy parameters.
     - **hashing/**
       - [README.md](security-architecture-and-engineering/cryptography/hashing/README.md): Hashing - Hash functions and password hashing.
       - [README.md.json](security-architecture-and-engineering/cryptography/hashing/README.md.json): Librarian OS metadata for README.md.
@@ -317,6 +351,22 @@ Full tree of every file in the repository. Every file has a link and a short des
 - **security-operations/**
   - [README.md](security-operations/README.md): Security operations - This CISSP domain covers monitoring, investigations, incident response, vulnerability management, recovery and the operation of security controls. Threat intelligence...
   - [README.md.json](security-operations/README.md.json): Librarian OS metadata for README.md.
+  - **attack-surface-management/**
+    - [README.md](security-operations/attack-surface-management/README.md): Attack surface management - Discovery and monitoring of exposed assets (scaffold).
+    - [README.md.json](security-operations/attack-surface-management/README.md.json): Librarian OS metadata for README.md.
+    - **cloud-attack-surface-management/**
+      - [README.md](security-operations/attack-surface-management/cloud-attack-surface-management/README.md): Cloud attack surface management (CASM) - Outside-in discovery of cloud and internet exposure with a tested discovery script.
+      - [README.md.json](security-operations/attack-surface-management/cloud-attack-surface-management/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [discover-surface.py](security-operations/attack-surface-management/cloud-attack-surface-management/scripts/discover-surface.py): Seed-based discovery over synthetic DNS, certificates and ports with dangling record detection.
+  - **configuration-management/**
+    - [README.md](security-operations/configuration-management/README.md): Configuration management - Baselines, secure configuration and drift (scaffold).
+    - [README.md.json](security-operations/configuration-management/README.md.json): Librarian OS metadata for README.md.
+    - **secure-configuration/**
+      - [README.md](security-operations/configuration-management/secure-configuration/README.md): Secure configuration - Baselines, benchmarks, SCAP, exceptions and drift, with a tested checker.
+      - [README.md.json](security-operations/configuration-management/secure-configuration/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [check-baseline.py](security-operations/configuration-management/secure-configuration/scripts/check-baseline.py): Miniature baseline checker with exceptions that expire and drift detection by fingerprint.
   - **defensive-operations/**
     - [README.md](security-operations/defensive-operations/README.md): Defensive operations - Running security day to day: monitoring, detection, response and the teams and procedures behind them.
     - [README.md.json](security-operations/defensive-operations/README.md.json): Librarian OS metadata for README.md.
@@ -345,7 +395,7 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [secops.md.json](security-operations/defensive-operations/operations/secops.md.json): Librarian OS metadata for secops.md.
       - [security-operations-center.md](security-operations/defensive-operations/operations/security-operations-center.md): Security Operations Center (SOC) - Purpose, roles, technology and workflow of a SOC.
       - [security-operations-center.md.json](security-operations/defensive-operations/operations/security-operations-center.md.json): Librarian OS metadata for security-operations-center.md.
-      - [siem.md](security-operations/defensive-operations/operations/siem.md): SIEM - Security information and event management.
+      - [siem.md](security-operations/defensive-operations/operations/siem.md): Security information and event management (SIEM) - Pipeline from collection to alerting, detection approaches, SP 800-53 AU controls and a tested normalization and correlation example.
       - [siem.md.json](security-operations/defensive-operations/operations/siem.md.json): Librarian OS metadata for siem.md.
       - [soar.md](security-operations/defensive-operations/operations/soar.md): SOAR - Security orchestration, automation and response.
       - [soar.md.json](security-operations/defensive-operations/operations/soar.md.json): Librarian OS metadata for soar.md.
@@ -382,6 +432,11 @@ Full tree of every file in the repository. Every file has a link and a short des
   - **threats-and-attacks/**
     - [README.md](security-operations/threats-and-attacks/README.md): Threats and attacks - Kinds of threats and the attack techniques behind them. Notes describe how attacks work so that defenders can recognize and stop them. Practical exercises belong in a...
     - [README.md.json](security-operations/threats-and-attacks/README.md.json): Librarian OS metadata for README.md.
+    - **advanced-persistent-threats/**
+      - [README.md](security-operations/threats-and-attacks/advanced-persistent-threats/README.md): Advanced persistent threats (APTs) - The NIST definition, campaign structure, APT29 and Volt Typhoon, hunting analytics.
+      - [README.md.json](security-operations/threats-and-attacks/advanced-persistent-threats/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [apt-hunting-signals.py](security-operations/threats-and-attacks/advanced-persistent-threats/scripts/apt-hunting-signals.py): Beacon interval analysis and living-off-the-land command line rules on synthetic telemetry.
     - [attack-categorization.md](security-operations/threats-and-attacks/attack-categorization.md): Attack categorization - Ways to group attacks: by vector, technique, objective and actor.
     - [attack-categorization.md.json](security-operations/threats-and-attacks/attack-categorization.md.json): Librarian OS metadata for attack-categorization.md.
     - **attack-lifecycle/**
@@ -391,6 +446,16 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [privilege-escalation.md.json](security-operations/threats-and-attacks/attack-lifecycle/privilege-escalation.md.json): Librarian OS metadata for privilege-escalation.md.
       - [reconnaissance.md](security-operations/threats-and-attacks/attack-lifecycle/reconnaissance.md): Reconnaissance - Collecting information about a target before an attack.
       - [reconnaissance.md.json](security-operations/threats-and-attacks/attack-lifecycle/reconnaissance.md.json): Librarian OS metadata for reconnaissance.md.
+    - **attack-vectors/**
+      - [README.md](security-operations/threats-and-attacks/attack-vectors/README.md): Attack vectors - Entry routes, the ATT&CK Initial Access catalog and the CVSS Attack Vector metric, with an exposure script.
+      - [README.md.json](security-operations/threats-and-attacks/attack-vectors/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [vector-exposure.py](security-operations/threats-and-attacks/attack-vectors/scripts/vector-exposure.py): Groups synthetic findings by CVSS Attack Vector and by entry path.
+    - **business-email-compromise/**
+      - [README.md](security-operations/threats-and-attacks/business-email-compromise/README.md): Business email compromise (BEC) - Payment fraud through email, IC3 2024 figures, controls and detection signals.
+      - [README.md.json](security-operations/threats-and-attacks/business-email-compromise/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [bec-signals.py](security-operations/threats-and-attacks/business-email-compromise/scripts/bec-signals.py): Lookalike domain, mailbox rule and payment-change callback checks on synthetic data.
     - **malware/**
       - [README.md](security-operations/threats-and-attacks/malware/README.md): Malware - Malicious software.
       - [README.md.json](security-operations/threats-and-attacks/malware/README.md.json): Librarian OS metadata for README.md.
@@ -422,6 +487,11 @@ Full tree of every file in the repository. Every file has a link and a short des
     - [cwe.md.json](security-operations/vulnerability-management/cwe.md.json): Librarian OS metadata for cwe.md.
     - [nvd.md](security-operations/vulnerability-management/nvd.md): National Vulnerability Database (NVD) - The U.S. National Vulnerability Database and how it enriches CVE records.
     - [nvd.md.json](security-operations/vulnerability-management/nvd.md.json): Librarian OS metadata for nvd.md.
+    - **vulnerability-remediation/**
+      - [README.md](security-operations/vulnerability-management/vulnerability-remediation/README.md): Vulnerability remediation - Prioritization with KEV, EPSS and exposure, service levels, verification and a tested queue comparison.
+      - [README.md.json](security-operations/vulnerability-management/vulnerability-remediation/README.md.json): Librarian OS metadata for README.md.
+      - **scripts/**
+        - [prioritize-remediation.py](security-operations/vulnerability-management/vulnerability-remediation/scripts/prioritize-remediation.py): Compares a CVSS-only queue with a risk-based queue and checks service levels.
     - [zero-day-attack.md](security-operations/vulnerability-management/zero-day-attack.md): Zero-Day Attack - Attacks that exploit a vulnerability unknown to the vendor.
     - [zero-day-attack.md.json](security-operations/vulnerability-management/zero-day-attack.md.json): Librarian OS metadata for zero-day-attack.md.
 - **software-development-security/**
@@ -446,6 +516,11 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [nist-secure-software-development-framework.md.json](software-development-security/application-security/supply-chain/nist-secure-software-development-framework.md.json): Librarian OS metadata for nist-secure-software-development-framework.md.
       - [slsa.md](software-development-security/application-security/supply-chain/slsa.md): Supply-chain Levels for Software Artifacts (SLSA) - Supply-chain Levels for Software Artifacts: a framework for build integrity.
       - [slsa.md.json](software-development-security/application-security/supply-chain/slsa.md.json): Librarian OS metadata for slsa.md.
+      - **supply-chain-attacks/**
+        - [README.md](software-development-security/application-security/supply-chain/supply-chain-attacks/README.md): Supply-chain attacks - Attack paths, the SolarWinds and xz cases, controls and three tested checks.
+        - [README.md.json](software-development-security/application-security/supply-chain/supply-chain-attacks/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [supply-chain-checks.py](software-development-security/application-security/supply-chain/supply-chain-attacks/scripts/supply-chain-checks.py): Dependency confusion, typosquat distance and lockfile hash checks on a synthetic index.
     - **testing/**
       - [README.md](software-development-security/application-security/testing/README.md): Testing - Automated security testing approaches.
       - [README.md.json](software-development-security/application-security/testing/README.md.json): Librarian OS metadata for README.md.

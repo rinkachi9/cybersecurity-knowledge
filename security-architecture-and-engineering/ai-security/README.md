@@ -5,6 +5,7 @@ Security of artificial intelligence and machine learning systems.
 ## Notes
 
 - [Google’s Secure AI Framework (SAIF)](google-secure-ai-framework.md): Google framework for securing AI and ML systems.
+- [Adversarial artificial intelligence](adversarial-machine-learning/README.md): The NIST AI 100-2 E2025 taxonomy, four toy attacks and defenses.
 
 ## Related area
 
@@ -14,10 +15,9 @@ Security of artificial intelligence and machine learning systems.
 
 These topics are not written yet. They are listed so the scope of the area is visible.
 
-- Prompt injection
+- Prompt injection defenses in depth
 - Model supply chain
-- Data poisoning
-- Model extraction
+- Secure machine learning pipelines
 - OWASP guidance for LLM applications
 
 Back to the [table of contents](../../ToC.md).

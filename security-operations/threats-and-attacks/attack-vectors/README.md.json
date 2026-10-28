@@ -1,0 +1,26 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.attack-vectors",
+    "kind": "index",
+    "status": "draft",
+    "order": 9,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "attack-vectors"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  },
+  "links": [
+    {
+      "to": "organizational-security.vulnerability-management.cvss",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-categorization",
+      "rel": "prerequisite"
+    }
+  ]
+}

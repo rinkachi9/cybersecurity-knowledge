@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "asset-security.data-protection",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "asset-security",
+      "data-protection"
+    ]
+  },
+  "map": {
+    "group": "asset-security"
+  }
+}

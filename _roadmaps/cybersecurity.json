@@ -2,7 +2,7 @@
   "version": 1,
   "id": "cybersecurity",
   "title": "Cybersecurity roadmap",
-  "description": "Start with the common foundations, then pick a CISSP domain. Each domain has its own sub-roadmap file (d1 to d8). Three thematic roadmaps cross domains: CISSP study map, cloud and Kubernetes posture, incident response and forensics.",
+  "description": "Start with the common foundations, then pick a CISSP domain. Two kinds of sub-roadmaps follow: domain roadmaps (d1 to d8) and paths by role or approach that cross domains (offensive, defensive, purple team, incident response and forensics, GRC, application security, cloud, architecture, CISSP).",
   "nodes": [
     {
       "id": "start",
@@ -145,6 +145,78 @@
         "software-development-security/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "p-offensive",
+      "title": "Path: offensive security",
+      "group": "Paths by role",
+      "description": "Sub-roadmap offensive-security: Attacker view for authorized testing: attack lifecycle, web and credential attacks, ATT&CK, reporting.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-defensive",
+      "title": "Path: defensive security (blue team)",
+      "group": "Paths by role",
+      "description": "Sub-roadmap defensive-security: Detection, SOC, SIEM, response, hardening and intelligence.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-purple",
+      "title": "Path: purple team",
+      "group": "Paths by role",
+      "description": "Sub-roadmap purple-team: Attack and detection side by side, mapped to ATT&CK and D3FEND.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-dfir",
+      "title": "Path: incident response and forensics",
+      "group": "Paths by role",
+      "description": "Sub-roadmap incident-response-and-forensics: Detect, respond, preserve evidence.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-grc",
+      "title": "Path: governance, risk and compliance",
+      "group": "Paths by role",
+      "description": "Sub-roadmap grc-and-privacy: Frameworks, risk, controls, privacy law, certifications.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-appsec",
+      "title": "Path: application security and DevSecOps",
+      "group": "Paths by role",
+      "description": "Sub-roadmap appsec-and-devsecops: OWASP, testing, supply chain.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-cloud",
+      "title": "Path: cloud and Kubernetes security",
+      "group": "Paths by role",
+      "description": "Sub-roadmap cloud-and-kubernetes-posture: CSPM, KSPM, tools, frameworks.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-architecture",
+      "title": "Path: security architecture and engineering",
+      "group": "Paths by role",
+      "description": "Sub-roadmap security-architecture-path: Design principles, cryptography, zero trust, identity.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "p-cissp",
+      "title": "Path: CISSP study map",
+      "group": "Paths by role",
+      "description": "Sub-roadmap cissp-study-map: The credential and its eight domains.",
+      "documentation": [],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -211,6 +283,51 @@
     {
       "from": "threat-modeling",
       "to": "d8",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-offensive",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-defensive",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-purple",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-dfir",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-grc",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-appsec",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-cloud",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-architecture",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "p-cissp",
       "type": "branch"
     }
   ]

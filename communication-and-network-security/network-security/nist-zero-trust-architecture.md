@@ -115,6 +115,15 @@ How the tenets connect to controls and outcomes:
 | 5 Posture monitoring | CM-8 system component inventory (control from memory), `ID.AM-01`, `ID.AM-02`, `DE.CM-09` |
 | 7 Collect information | AU family, SI-4 system monitoring, `DE.AE-03` |
 
+### Maturity models and cloud-native guidance
+
+Two documents extend SP 800-207 for implementation (checked 2026-10).
+
+- **CISA Zero Trust Maturity Model, version 2.0.** The CISA page describes version 2.0 as aligned with OMB memorandum M-22-09 (January 2022). The model has five pillars and three cross-cutting capabilities, and four maturity stages: Traditional, Initial, Advanced and Optimal, each with an example architecture per pillar. The page I could read does not name the pillars and capabilities (they are in the downloadable PDF, which I did not read), so I do not list them here. The stages give a way to state progress as a per-pillar assessment instead of a single yes or no.
+- **NIST SP 800-207A**, *A Zero Trust Architecture Model for Access Control in Cloud-Native Applications in Multi-Cloud Environments* (September 2023, by Chandramouli and Butcher). It builds on SP 800-207 and moves the focus from network controls such as IP addresses and subnets to identity: policies based on application and service identities together with user identities and network parameters, enforced by a platform of API gateways, sidecar proxies and identity infrastructure (the abstract names SPIFFE), whether services run on premises or across clouds. Read it for microservice and Kubernetes environments, see also [KSPM](../../security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md).
+
+TODO: read the CISA ZTMM v2.0 PDF and list the five pillars, the three cross-cutting capabilities and the criteria for each stage.
+
 ## Worked example
 
 The scenario: Example Corp (`example.com`) wants to see how a policy engine's trust algorithm behaves for two resources: a wiki (low sensitivity) and a payroll system (high). The toy engine below implements a criteria-based and a score-based algorithm, and keeps per-user state for a contextual factor. It is a teaching model, not a product design. Tested with Python 3.10.12, standard library only.
@@ -249,3 +258,5 @@ Hints and answers:
 - NIST, SP 800-207, Zero Trust Architecture (August 2020). The primary source for the tenets, logical components, trust algorithm, scenarios and threats: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf
 - NIST, SP 800-53 Rev. 5 control families AC, IA, SC and SI, which carry the control form of the tenets: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
 - NIST, The NIST Cybersecurity Framework (CSF) 2.0 (2024), outcomes in PR.AA and PR.IR: https://doi.org/10.6028/NIST.CSWP.29
+- NIST, SP 800-207A (September 2023), the cloud-native and multi-cloud companion: https://csrc.nist.gov/pubs/sp/800/207/a/final (abstract read)
+- CISA, Zero Trust Maturity Model Version 2.0, the maturity stages and pillars: https://www.cisa.gov/zero-trust-maturity-model (stages read, pillars not read)

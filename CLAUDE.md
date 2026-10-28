@@ -15,6 +15,8 @@ The import above loads [GUIDELINE.md](GUIDELINE.md), the single source of truth 
 - Do not invent facts, sources or version numbers. Cite primary sources.
 - Never add secrets, credentials or personal data.
 - Reflect every added, moved, renamed or deleted file in `ToC.md`.
+- Reflect every written topic in the `_roadmaps/` files (domain roadmap and fitting paths).
+- Create every missing ancestor directory as a scaffold before placing a note (GUIDELINE 3.1.2).
 - Stay within the scope described in [README.md](README.md#scope).
 
 ## Before finishing a task

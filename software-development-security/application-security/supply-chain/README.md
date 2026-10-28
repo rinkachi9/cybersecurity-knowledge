@@ -6,5 +6,6 @@ Software supply chain integrity.
 
 - [Supply-chain Levels for Software Artifacts (SLSA)](slsa.md): Supply-chain Levels for Software Artifacts: a framework for build integrity.
 - [NIST Secure Software Development Framework (SSDF)](nist-secure-software-development-framework.md): SP 800-218 practices for secure software development and release.
+- [Supply-chain attacks](supply-chain-attacks/README.md): Attack paths, the SolarWinds and xz cases, controls and three tested checks.
 
 Back to [Application security](../README.md).

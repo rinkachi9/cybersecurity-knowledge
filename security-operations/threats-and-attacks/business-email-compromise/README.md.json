@@ -1,0 +1,26 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.business-email-compromise",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "bec"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  },
+  "links": [
+    {
+      "to": "human-security.social-engineering.phishing",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "human-security.social-engineering.impersonation",
+      "rel": "prerequisite"
+    }
+  ]
+}

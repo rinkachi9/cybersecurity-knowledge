@@ -146,6 +146,17 @@
         "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "supply-attacks",
+      "title": "Supply-chain attacks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/techniques/T1195/"
+      ]
     }
   ],
   "edges": [
@@ -218,6 +229,11 @@
       "from": "slsa",
       "to": "k8s",
       "type": "branch"
+    },
+    {
+      "from": "supply",
+      "to": "supply-attacks",
+      "type": "next"
     }
   ]
 }

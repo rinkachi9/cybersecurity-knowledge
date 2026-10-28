@@ -1,0 +1,26 @@
+{
+  "node": {
+    "id": "asset-security.data-protection.data-loss-prevention",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "asset-security",
+      "data-protection",
+      "dlp"
+    ]
+  },
+  "map": {
+    "group": "asset-security"
+  },
+  "links": [
+    {
+      "to": "asset-security.asset-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.hashing.hashing-algorithms",
+      "rel": "prerequisite"
+    }
+  ]
+}

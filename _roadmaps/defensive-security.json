@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "id": "defensive-security",
+  "title": "Defensive security path (blue team)",
+  "description": "Prevent, detect, respond and recover. Starts with design principles, then monitoring, the SOC, response and intelligence.",
+  "nodes": [
+    {
+      "id": "cia",
+      "title": "CIA triad",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "did",
+      "title": "Defense in depth",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zta",
+      "title": "Zero trust",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "harden",
+      "title": "Hardening: seccomp and cloud posture",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/seccomp.md",
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vm",
+      "title": "Vulnerability management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/README.md",
+        "security-operations/vulnerability-management/cvss.md",
+        "security-operations/vulnerability-management/nvd.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm",
+      "title": "Threat modeling",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/threat-modeling.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "awareness",
+      "title": "Security awareness",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ids",
+      "title": "IDS and IPS",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/ids.md",
+        "security-operations/defensive-operations/detection/ips.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "quality",
+      "title": "Detection quality: TP, FP, TN, FN",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/true-positive-true-negative.md",
+        "security-operations/defensive-operations/detection/false-positive-false-negative.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "siem",
+      "title": "SIEM",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/siem.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "logging",
+      "title": "Logging strategy (planned)",
+      "group": "Security operations",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "det-eng",
+      "title": "Detection engineering and Sigma (planned)",
+      "group": "Security operations",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "edr",
+      "title": "Endpoint detection and response (planned)",
+      "group": "Security operations",
+      "description": "Planned.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "soc",
+      "title": "Security operations center",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/security-operations-center.md",
+        "security-operations/defensive-operations/operations/secops.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "soar",
+      "title": "SOAR and SOPs",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/soar.md",
+        "security-operations/defensive-operations/operations/sop.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ir",
+      "title": "NIST incident response lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ]
+    },
+    {
+      "id": "custody",
+      "title": "Chain of custody",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ti",
+      "title": "Threat intelligence",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/README.md",
+        "security-operations/threat-intelligence/threat-intelligence.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "d3fend",
+      "title": "MITRE D3FEND and ATT&CK",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-d3fend.md",
+        "security-operations/threat-intelligence/mitre/mitre-attack.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "virustotal",
+      "title": "VirusTotal",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/virustotal.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "purple",
+      "title": "Purple team",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/red-blue-purple-teams.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "assets",
+      "title": "Asset management",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/asset-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "config",
+      "title": "Secure configuration",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/configuration-management/README.md",
+        "security-operations/configuration-management/secure-configuration/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "remediation",
+      "title": "Vulnerability remediation",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/vulnerability-remediation/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "casm",
+      "title": "Cloud attack surface management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/attack-surface-management/README.md",
+        "security-operations/attack-surface-management/cloud-attack-surface-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "data-protection",
+      "title": "DLP and DSPM",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/data-protection/README.md",
+        "asset-security/data-protection/data-loss-prevention/README.md",
+        "asset-security/data-protection/data-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vectors",
+      "title": "Attack vectors",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-vectors/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "apt",
+      "title": "Advanced persistent threats",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/advanced-persistent-threats/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "bec",
+      "title": "Business email compromise",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/business-email-compromise/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cia",
+      "to": "did",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "zta",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "harden",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "vm",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "tm",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "awareness",
+      "type": "branch"
+    },
+    {
+      "from": "zta",
+      "to": "ids",
+      "type": "next"
+    },
+    {
+      "from": "ids",
+      "to": "quality",
+      "type": "next"
+    },
+    {
+      "from": "quality",
+      "to": "siem",
+      "type": "next"
+    },
+    {
+      "from": "siem",
+      "to": "logging",
+      "type": "branch"
+    },
+    {
+      "from": "siem",
+      "to": "det-eng",
+      "type": "next"
+    },
+    {
+      "from": "det-eng",
+      "to": "edr",
+      "type": "branch"
+    },
+    {
+      "from": "siem",
+      "to": "soc",
+      "type": "next"
+    },
+    {
+      "from": "soc",
+      "to": "soar",
+      "type": "next"
+    },
+    {
+      "from": "soar",
+      "to": "ir",
+      "type": "next"
+    },
+    {
+      "from": "ir",
+      "to": "custody",
+      "type": "next"
+    },
+    {
+      "from": "soc",
+      "to": "ti",
+      "type": "branch"
+    },
+    {
+      "from": "ti",
+      "to": "d3fend",
+      "type": "branch"
+    },
+    {
+      "from": "ti",
+      "to": "virustotal",
+      "type": "branch"
+    },
+    {
+      "from": "d3fend",
+      "to": "purple",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "assets",
+      "type": "branch"
+    },
+    {
+      "from": "harden",
+      "to": "config",
+      "type": "next"
+    },
+    {
+      "from": "vm",
+      "to": "remediation",
+      "type": "next"
+    },
+    {
+      "from": "vm",
+      "to": "casm",
+      "type": "branch"
+    },
+    {
+      "from": "harden",
+      "to": "data-protection",
+      "type": "branch"
+    },
+    {
+      "from": "tm",
+      "to": "vectors",
+      "type": "branch"
+    },
+    {
+      "from": "ti",
+      "to": "apt",
+      "type": "branch"
+    },
+    {
+      "from": "awareness",
+      "to": "bec",
+      "type": "branch"
+    }
+  ]
+}

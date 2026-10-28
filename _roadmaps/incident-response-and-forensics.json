@@ -118,6 +118,51 @@
         "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "apt",
+      "title": "Advanced persistent threats",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/advanced-persistent-threats/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "bec",
+      "title": "Business email compromise",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/business-email-compromise/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "vectors",
+      "title": "Attack vectors",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-vectors/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "remediation",
+      "title": "Vulnerability remediation",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/vulnerability-remediation/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply-attacks",
+      "title": "Supply-chain attacks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
+      ],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -174,6 +219,31 @@
     {
       "from": "detection",
       "to": "cloud",
+      "type": "branch"
+    },
+    {
+      "from": "attack",
+      "to": "apt",
+      "type": "branch"
+    },
+    {
+      "from": "attacks",
+      "to": "bec",
+      "type": "branch"
+    },
+    {
+      "from": "attacks",
+      "to": "vectors",
+      "type": "branch"
+    },
+    {
+      "from": "ir",
+      "to": "remediation",
+      "type": "branch"
+    },
+    {
+      "from": "ir",
+      "to": "supply-attacks",
       "type": "branch"
     }
   ]

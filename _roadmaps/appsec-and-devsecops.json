@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "id": "appsec-and-devsecops",
+  "title": "Application security and DevSecOps path",
+  "description": "Secure design, application weaknesses, testing in the pipeline and the software supply chain.",
+  "nodes": [
+    {
+      "id": "principles",
+      "title": "OWASP security principles",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-security-principles.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm",
+      "title": "Threat modeling",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/threat-modeling.md",
+        "security-and-risk-management/threat-modeling/methods/stride.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "top10",
+      "title": "OWASP Top 10",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-top-10.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/Top10/"
+      ]
+    },
+    {
+      "id": "xss",
+      "title": "Cross-site scripting",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/xss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cwe",
+      "title": "CWE",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cwe.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "authn",
+      "title": "Authentication and sessions",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication/jwt-vs-session.md",
+        "identity-and-access-management/identity-and-access/authentication/token-based-authentication-jwt.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "oauth",
+      "title": "OAuth and OpenID Connect",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/protocols/oauth.md",
+        "identity-and-access-management/identity-and-access/protocols/openid-connect.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hash",
+      "title": "Password hashing",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/bcrypt.md",
+        "security-architecture-and-engineering/cryptography/hashing/argon2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sast",
+      "title": "SAST",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/static-application-security-testing.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "dast",
+      "title": "DAST",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/dynamic-application-security-testing.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sca",
+      "title": "SCA",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/software-composition-analysis.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ssdf",
+      "title": "NIST SSDF",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/nist-secure-software-development-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "slsa",
+      "title": "SLSA",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/slsa.md"
+      ],
+      "externalSources": [
+        "https://slsa.dev/"
+      ]
+    },
+    {
+      "id": "cve",
+      "title": "CVE, NVD and CVSS",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/cve.md",
+        "security-operations/vulnerability-management/nvd.md",
+        "security-operations/vulnerability-management/cvss.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "k8s",
+      "title": "Cluster configuration: KSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "seccomp",
+      "title": "seccomp",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/seccomp.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply-attacks",
+      "title": "Supply-chain attacks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "crypto",
+      "title": "Cryptographic attacks",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "remediation",
+      "title": "Vulnerability remediation",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/vulnerability-remediation/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "principles",
+      "to": "tm",
+      "type": "next"
+    },
+    {
+      "from": "tm",
+      "to": "top10",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "xss",
+      "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "cwe",
+      "type": "branch"
+    },
+    {
+      "from": "top10",
+      "to": "authn",
+      "type": "branch"
+    },
+    {
+      "from": "authn",
+      "to": "oauth",
+      "type": "next"
+    },
+    {
+      "from": "authn",
+      "to": "hash",
+      "type": "branch"
+    },
+    {
+      "from": "xss",
+      "to": "sast",
+      "type": "next"
+    },
+    {
+      "from": "sast",
+      "to": "dast",
+      "type": "next"
+    },
+    {
+      "from": "dast",
+      "to": "sca",
+      "type": "next"
+    },
+    {
+      "from": "sca",
+      "to": "ssdf",
+      "type": "next"
+    },
+    {
+      "from": "ssdf",
+      "to": "slsa",
+      "type": "next"
+    },
+    {
+      "from": "sca",
+      "to": "cve",
+      "type": "branch"
+    },
+    {
+      "from": "slsa",
+      "to": "k8s",
+      "type": "branch"
+    },
+    {
+      "from": "k8s",
+      "to": "seccomp",
+      "type": "branch"
+    },
+    {
+      "from": "slsa",
+      "to": "supply-attacks",
+      "type": "next"
+    },
+    {
+      "from": "hash",
+      "to": "crypto",
+      "type": "branch"
+    },
+    {
+      "from": "cve",
+      "to": "remediation",
+      "type": "next"
+    }
+  ]
+}

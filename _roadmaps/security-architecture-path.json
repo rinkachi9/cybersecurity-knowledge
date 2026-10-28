@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "id": "security-architecture-path",
+  "title": "Security architecture and engineering path",
+  "description": "Design for security: principles, cryptography, trust, identity, operating system isolation, cloud and AI.",
+  "nodes": [
+    {
+      "id": "cia",
+      "title": "CIA triad",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "did",
+      "title": "Defense in depth",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "models",
+      "title": "Security models (planned)",
+      "group": "Security architecture and engineering",
+      "description": "Planned. CISSP section 3.2.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "hash",
+      "title": "Hashing and SHA",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/hashing-algorithms.md",
+        "security-architecture-and-engineering/cryptography/hashing/sha.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pki",
+      "title": "Public key infrastructure",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "zta",
+      "title": "Zero trust architecture",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "iam",
+      "title": "Identity and access",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/authentication-vs-authorization.md",
+        "identity-and-access-management/identity-and-access/authorization.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "oidc",
+      "title": "OAuth and OpenID Connect",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/protocols/oauth.md",
+        "identity-and-access-management/identity-and-access/protocols/openid-connect.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "os",
+      "title": "Operating system isolation: seccomp",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/operating-system-security/linux/seccomp.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud posture: SPM and CSPM",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md",
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "k8s",
+      "title": "Kubernetes posture",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ai",
+      "title": "AI system security",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/ai-security/google-secure-ai-framework.md",
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "components",
+      "title": "Component security (planned)",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/component-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "tm",
+      "title": "Threat modeling",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/threat-modeling.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "controls",
+      "title": "Control selection: SP 800-53",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "crypto-attacks",
+      "title": "Cryptographic attacks",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "adv-ai",
+      "title": "Adversarial AI",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "assets",
+      "title": "Asset management",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/asset-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "config",
+      "title": "Secure configuration",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/configuration-management/README.md",
+        "security-operations/configuration-management/secure-configuration/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cia",
+      "to": "did",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "models",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "hash",
+      "type": "branch"
+    },
+    {
+      "from": "hash",
+      "to": "pki",
+      "type": "next"
+    },
+    {
+      "from": "pki",
+      "to": "zta",
+      "type": "next"
+    },
+    {
+      "from": "zta",
+      "to": "iam",
+      "type": "next"
+    },
+    {
+      "from": "iam",
+      "to": "oidc",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "os",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "cloud",
+      "type": "branch"
+    },
+    {
+      "from": "cloud",
+      "to": "k8s",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "ai",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "components",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "tm",
+      "type": "branch"
+    },
+    {
+      "from": "tm",
+      "to": "controls",
+      "type": "next"
+    },
+    {
+      "from": "pki",
+      "to": "crypto-attacks",
+      "type": "next"
+    },
+    {
+      "from": "ai",
+      "to": "adv-ai",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "assets",
+      "type": "branch"
+    },
+    {
+      "from": "cloud",
+      "to": "config",
+      "type": "branch"
+    }
+  ]
+}

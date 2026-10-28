@@ -1,0 +1,25 @@
+{
+  "node": {
+    "id": "asset-security.asset-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "asset-security",
+      "asset-management"
+    ]
+  },
+  "map": {
+    "group": "asset-security"
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-cybersecurity-framework",
+      "rel": "prerequisite"
+    }
+  ]
+}

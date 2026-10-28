@@ -12,7 +12,7 @@ Entry point: [operations](operations/README.md).
 
 - [Security Operations Center (SOC)](operations/security-operations-center.md): Purpose, roles, technology and workflow of a SOC.
 - [SecOps](operations/secops.md): The collaboration of IT operations and security teams.
-- [SIEM](operations/siem.md): Security information and event management.
+- [SIEM](operations/siem.md): Pipeline from collection to alerting, detection approaches, SP 800-53 AU controls and a tested normalization and correlation example.
 - [SOAR](operations/soar.md): Security orchestration, automation and response.
 - [SOP](operations/sop.md): Standard operating procedures for repeatable analyst work.
 - [Red/Blue/Purple team](../../security-assessment-and-testing/red-blue-purple-teams.md): Roles of attacking, defending and collaborating teams.

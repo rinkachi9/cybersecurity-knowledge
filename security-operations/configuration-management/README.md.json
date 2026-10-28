@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "security-operations.configuration-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "security-operations",
+      "configuration-management"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

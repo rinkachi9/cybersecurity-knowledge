@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "security-operations.attack-surface-management.cloud-attack-surface-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "attack-surface-management",
+      "casm"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  },
+  "links": [
+    {
+      "to": "asset-security.asset-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.cloud-security-posture-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-vectors",
+      "rel": "prerequisite"
+    }
+  ]
+}

@@ -61,7 +61,10 @@
       "title": "D2: asset security (10%)",
       "group": "Asset security",
       "documentation": [
-        "asset-security/privacy-and-data-protection/nist-privacy-framework.md"
+        "asset-security/privacy-and-data-protection/nist-privacy-framework.md",
+        "asset-security/asset-management/README.md",
+        "asset-security/data-protection/data-loss-prevention/README.md",
+        "asset-security/data-protection/data-security-posture-management/README.md"
       ],
       "externalSources": []
     },
@@ -71,7 +74,8 @@
       "group": "Security architecture and engineering",
       "documentation": [
         "security-architecture-and-engineering/design-principles/defense-in-depth.md",
-        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md"
+        "security-architecture-and-engineering/cryptography/public-key-infrastructure.md",
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
       ],
       "externalSources": []
     },
@@ -119,7 +123,13 @@
       "group": "Security operations",
       "documentation": [
         "security-operations/defensive-operations/operations/nist-incident-response/README.md",
-        "security-operations/digital-forensics/chain-of-custody/README.md"
+        "security-operations/digital-forensics/chain-of-custody/README.md",
+        "security-operations/threats-and-attacks/advanced-persistent-threats/README.md",
+        "security-operations/threats-and-attacks/business-email-compromise/README.md",
+        "security-operations/threats-and-attacks/attack-vectors/README.md",
+        "security-operations/vulnerability-management/vulnerability-remediation/README.md",
+        "security-operations/attack-surface-management/cloud-attack-surface-management/README.md",
+        "security-operations/configuration-management/secure-configuration/README.md"
       ],
       "externalSources": []
     },
@@ -129,7 +139,8 @@
       "group": "Software development security",
       "documentation": [
         "software-development-security/application-security/owasp/owasp-top-10.md",
-        "software-development-security/application-security/testing/README.md"
+        "software-development-security/application-security/testing/README.md",
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
       ],
       "externalSources": []
     }

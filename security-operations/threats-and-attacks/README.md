@@ -6,6 +6,9 @@ Kinds of threats and the attack techniques behind them. Notes describe how attac
 
 - [Threats & attacks](threats-and-attacks-overview.md): Threat classifications, categories, impact and defenses.
 - [Attack categorization](attack-categorization.md): Ways to group attacks: by vector, technique, objective and actor.
+- [Attack vectors](attack-vectors/README.md): Entry routes, the ATT&CK Initial Access catalog and the CVSS Attack Vector metric, with an exposure script.
+- [Advanced persistent threats (APTs)](advanced-persistent-threats/README.md): The NIST definition, campaign structure, APT29 and Volt Typhoon, hunting analytics.
+- [Business email compromise (BEC)](business-email-compromise/README.md): Payment fraud through email, IC3 2024 figures, controls and detection signals.
 
 ### Malware
 
@@ -44,10 +47,11 @@ These topics are not written yet. They are listed so the scope of the area is vi
 - Man-in-the-middle
 - Ransomware case studies
 - Insider threats in depth
-- Supply chain attacks
 - Lateral movement
 
 ## Related area
+
+[Supply-chain attacks](../../software-development-security/application-security/supply-chain/supply-chain-attacks/README.md) have their home in software development security.
 
 [Security awareness](../../security-and-risk-management/security-awareness/README.md) covers social engineering and user based attacks. [Identity and access management](../../identity-and-access-management/credential-attacks/README.md) covers credential attacks.
 

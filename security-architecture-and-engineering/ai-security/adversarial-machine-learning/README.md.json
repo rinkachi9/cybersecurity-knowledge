@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "software-security.ai-security.adversarial-machine-learning",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-architecture-and-engineering",
+      "ai-security",
+      "adversarial-ai"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  },
+  "links": [
+    {
+      "to": "software-security.ai-security.google-secure-ai-framework",
+      "rel": "related"
+    },
+    {
+      "to": "software-security.ai-security.nist-ai-risk-management-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "id": "purple-team",
+  "title": "Purple team path",
+  "description": "Attack behavior and detection side by side. Each step pairs a technique with how it is described (ATT&CK), detected and mitigated (D3FEND).",
+  "nodes": [
+    {
+      "id": "teams",
+      "title": "Red, blue and purple teams",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "security-assessment-and-testing/red-blue-purple-teams.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "attack",
+      "title": "MITRE ATT&CK",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-attack.md"
+      ],
+      "externalSources": [
+        "https://attack.mitre.org/"
+      ]
+    },
+    {
+      "id": "d3fend",
+      "title": "MITRE D3FEND",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-d3fend.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "capec",
+      "title": "CAPEC",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/mitre/mitre-capec.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "lifecycle",
+      "title": "Attack lifecycle",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-lifecycle/README.md",
+        "security-operations/threats-and-attacks/attack-lifecycle/reconnaissance.md",
+        "security-operations/threats-and-attacks/attack-lifecycle/privilege-escalation.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cred",
+      "title": "Credential attacks and detection",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "quality",
+      "title": "Measuring detection",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/false-positive-false-negative.md",
+        "security-operations/defensive-operations/detection/true-positive-true-negative.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "siem",
+      "title": "SIEM",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/siem.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ir",
+      "title": "Incident response",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/nist-incident-response/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "breach-sim",
+      "title": "Breach and attack simulation (planned)",
+      "group": "Security assessment and testing",
+      "description": "Planned. CISSP section 6.2.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "vectors",
+      "title": "Attack vectors",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/attack-vectors/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "apt",
+      "title": "Advanced persistent threats",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/advanced-persistent-threats/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "bec",
+      "title": "Business email compromise",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/business-email-compromise/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "teams",
+      "to": "attack",
+      "type": "next"
+    },
+    {
+      "from": "attack",
+      "to": "d3fend",
+      "type": "next"
+    },
+    {
+      "from": "attack",
+      "to": "capec",
+      "type": "branch"
+    },
+    {
+      "from": "attack",
+      "to": "lifecycle",
+      "type": "branch"
+    },
+    {
+      "from": "lifecycle",
+      "to": "cred",
+      "type": "next"
+    },
+    {
+      "from": "d3fend",
+      "to": "quality",
+      "type": "next"
+    },
+    {
+      "from": "quality",
+      "to": "siem",
+      "type": "next"
+    },
+    {
+      "from": "siem",
+      "to": "ir",
+      "type": "next"
+    },
+    {
+      "from": "quality",
+      "to": "breach-sim",
+      "type": "branch"
+    },
+    {
+      "from": "lifecycle",
+      "to": "vectors",
+      "type": "branch"
+    },
+    {
+      "from": "attack",
+      "to": "apt",
+      "type": "branch"
+    },
+    {
+      "from": "cred",
+      "to": "bec",
+      "type": "branch"
+    }
+  ]
+}

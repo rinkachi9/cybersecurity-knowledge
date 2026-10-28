@@ -1,0 +1,26 @@
+{
+  "node": {
+    "id": "data-security.cryptography.cryptographic-attacks",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "cryptographic-attacks"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  },
+  "links": [
+    {
+      "to": "data-security.cryptography.hashing.hashing-algorithms",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.public-key-infrastructure",
+      "rel": "prerequisite"
+    }
+  ]
+}

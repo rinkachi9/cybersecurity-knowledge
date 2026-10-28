@@ -111,6 +111,53 @@
         "security-operations/defensive-operations/operations/nist-incident-response/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "dspm",
+      "title": "DSPM",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/data-protection/data-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "dlp",
+      "title": "DLP",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/data-protection/data-loss-prevention/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "casm",
+      "title": "Cloud attack surface management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/attack-surface-management/README.md",
+        "security-operations/attack-surface-management/cloud-attack-surface-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "config",
+      "title": "Secure configuration",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/configuration-management/README.md",
+        "security-operations/configuration-management/secure-configuration/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "assets",
+      "title": "Asset management",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/asset-management/README.md"
+      ],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -167,6 +214,31 @@
     {
       "from": "tools",
       "to": "ir",
+      "type": "branch"
+    },
+    {
+      "from": "tools",
+      "to": "dspm",
+      "type": "branch"
+    },
+    {
+      "from": "dspm",
+      "to": "dlp",
+      "type": "next"
+    },
+    {
+      "from": "tools",
+      "to": "casm",
+      "type": "branch"
+    },
+    {
+      "from": "spm",
+      "to": "config",
+      "type": "branch"
+    },
+    {
+      "from": "cia",
+      "to": "assets",
       "type": "branch"
     }
   ]

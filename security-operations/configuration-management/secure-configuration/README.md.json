@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "security-operations.configuration-management.secure-configuration",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "configuration-management",
+      "secure-configuration"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  },
+  "links": [
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.security-controls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.cis-controls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "asset-security.asset-management",
+      "rel": "prerequisite"
+    }
+  ]
+}

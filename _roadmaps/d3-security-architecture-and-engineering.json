@@ -186,6 +186,26 @@
         "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "crypto-attacks",
+      "title": "Cryptographic attacks",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "adv-ai",
+      "title": "Adversarial artificial intelligence",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+      ]
     }
   ],
   "edges": [
@@ -288,6 +308,16 @@
       "from": "did",
       "to": "zta",
       "type": "branch"
+    },
+    {
+      "from": "pki",
+      "to": "crypto-attacks",
+      "type": "next"
+    },
+    {
+      "from": "ai",
+      "to": "adv-ai",
+      "type": "next"
     }
   ]
 }

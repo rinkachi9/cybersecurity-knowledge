@@ -12,5 +12,19 @@
   },
   "map": {
     "group": "security-operations"
-  }
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.operations.security-operations-center",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.false-positive-false-negative",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.soar",
+      "rel": "related"
+    }
+  ]
 }

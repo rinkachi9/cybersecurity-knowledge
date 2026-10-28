@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "id": "grc-and-privacy",
+  "title": "Governance, risk, compliance and privacy path",
+  "description": "Frameworks, risk management, control catalogs, privacy law and the professional credentials around them.",
+  "nodes": [
+    {
+      "id": "cia",
+      "title": "CIA triad and categorization",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "risk",
+      "title": "Information risk management",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/risk-management/README.md",
+        "security-and-risk-management/governance-and-compliance/risk-management/information-risk-management.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "rmf",
+      "title": "NIST risk management framework",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "csf",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md"
+      ],
+      "externalSources": [
+        "https://www.nist.gov/cyberframework"
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Security controls",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/security-controls.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "sp800-53",
+      "title": "NIST SP 800-53",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cis",
+      "title": "CIS Controls",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/cis-controls.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "iso",
+      "title": "ISO/IEC 27001",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/standards/iso-iec-27001.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ccm",
+      "title": "CSA Cloud Controls Matrix",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "ai",
+      "title": "AI risk: NIST AI RMF and Google SAIF",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md",
+        "security-architecture-and-engineering/ai-security/google-secure-ai-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "law",
+      "title": "Privacy regulations",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/README.md",
+        "security-and-risk-management/privacy-regulations/privacy-regulations-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "gdpr",
+      "title": "GDPR",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/gdpr.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "us-law",
+      "title": "HIPAA, GLBA, COPPA, FTC Act, PIPEDA",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/privacy-regulations/hipaa.md",
+        "security-and-risk-management/privacy-regulations/glba.md",
+        "security-and-risk-management/privacy-regulations/coppa.md",
+        "security-and-risk-management/privacy-regulations/ftc-act.md",
+        "security-and-risk-management/privacy-regulations/pipeda.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "pf",
+      "title": "NIST Privacy Framework",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/privacy-and-data-protection/nist-privacy-framework.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence and investigations: chain of custody",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/digital-forensics/chain-of-custody/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "orgs",
+      "title": "Standards bodies",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/organizations/nist.md",
+        "security-and-risk-management/reference/organizations/sans.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cissp",
+      "title": "CISSP and its domains",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/reference/certifications/cissp.md",
+        "security-and-risk-management/reference/certifications/cissp-security-domains.md"
+      ],
+      "externalSources": [
+        "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf"
+      ]
+    },
+    {
+      "id": "bcp",
+      "title": "Business continuity (planned)",
+      "group": "Security and risk management",
+      "description": "Planned. CISSP section 1.7.",
+      "documentation": [],
+      "externalSources": []
+    },
+    {
+      "id": "assets",
+      "title": "Asset management",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/asset-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "data-protection",
+      "title": "DLP and DSPM",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/data-protection/README.md",
+        "asset-security/data-protection/data-loss-prevention/README.md",
+        "asset-security/data-protection/data-security-posture-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "config",
+      "title": "Secure configuration",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/configuration-management/README.md",
+        "security-operations/configuration-management/secure-configuration/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply-attacks",
+      "title": "Supply-chain risk: attacks and controls",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "cia",
+      "to": "risk",
+      "type": "next"
+    },
+    {
+      "from": "risk",
+      "to": "rmf",
+      "type": "next"
+    },
+    {
+      "from": "rmf",
+      "to": "csf",
+      "type": "next"
+    },
+    {
+      "from": "csf",
+      "to": "controls",
+      "type": "next"
+    },
+    {
+      "from": "controls",
+      "to": "sp800-53",
+      "type": "next"
+    },
+    {
+      "from": "controls",
+      "to": "cis",
+      "type": "branch"
+    },
+    {
+      "from": "controls",
+      "to": "iso",
+      "type": "branch"
+    },
+    {
+      "from": "controls",
+      "to": "ccm",
+      "type": "branch"
+    },
+    {
+      "from": "csf",
+      "to": "ai",
+      "type": "branch"
+    },
+    {
+      "from": "risk",
+      "to": "law",
+      "type": "branch"
+    },
+    {
+      "from": "law",
+      "to": "gdpr",
+      "type": "next"
+    },
+    {
+      "from": "law",
+      "to": "us-law",
+      "type": "branch"
+    },
+    {
+      "from": "gdpr",
+      "to": "pf",
+      "type": "next"
+    },
+    {
+      "from": "law",
+      "to": "evidence",
+      "type": "branch"
+    },
+    {
+      "from": "csf",
+      "to": "orgs",
+      "type": "branch"
+    },
+    {
+      "from": "orgs",
+      "to": "cissp",
+      "type": "next"
+    },
+    {
+      "from": "risk",
+      "to": "bcp",
+      "type": "branch"
+    },
+    {
+      "from": "risk",
+      "to": "assets",
+      "type": "branch"
+    },
+    {
+      "from": "pf",
+      "to": "data-protection",
+      "type": "next"
+    },
+    {
+      "from": "controls",
+      "to": "config",
+      "type": "branch"
+    },
+    {
+      "from": "risk",
+      "to": "supply-attacks",
+      "type": "branch"
+    }
+  ]
+}

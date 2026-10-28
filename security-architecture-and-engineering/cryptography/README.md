@@ -5,6 +5,7 @@ Cryptographic building blocks and the infrastructure around them.
 ## Notes
 
 - [Public Key Infrastructure (PKI)](public-key-infrastructure.md): Roles, components, processes and best practices for issuing and managing digital certificates.
+- [Cryptographic attacks](cryptographic-attacks/README.md): Attacks by attacker knowledge and by weakness place, with five tested toy demonstrations.
 
 ### Hashing
 
