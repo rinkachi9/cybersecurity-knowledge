@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance.frameworks.csa-cloud-controls-matrix",
+    "kind": "note",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "frameworks"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

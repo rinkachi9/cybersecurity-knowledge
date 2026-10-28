@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "software-security.application-security.supply-chain.slsa",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "supply-chain"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

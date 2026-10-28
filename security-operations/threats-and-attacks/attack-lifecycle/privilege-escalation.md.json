@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle.privilege-escalation",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "attack-lifecycle"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

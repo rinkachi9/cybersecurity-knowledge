@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "project": {
+    "name": "Cybersecurity Knowledge",
+    "description": "A personal knowledge base about defending systems, understanding attackers and building secure software and infrastructure.",
+    "language": "en"
+  },
+  "entryPoints": [
+    { "path": "security-and-risk-management" },
+    { "path": "asset-security" },
+    { "path": "security-architecture-and-engineering" },
+    { "path": "communication-and-network-security" },
+    { "path": "identity-and-access-management" },
+    { "path": "security-assessment-and-testing" },
+    { "path": "security-operations" },
+    { "path": "software-development-security" }
+  ],
+  "toc": { "file": "ToC.md", "check": true },
+  "rules": { "requireSidecars": true, "noLongDashes": true }
+}

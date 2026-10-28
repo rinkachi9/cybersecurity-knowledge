@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.cryptography.hashing.sha",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "hashing"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

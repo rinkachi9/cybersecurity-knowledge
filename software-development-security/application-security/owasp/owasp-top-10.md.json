@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "software-security.application-security.owasp.owasp-top-10",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "owasp"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

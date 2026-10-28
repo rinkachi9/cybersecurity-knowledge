@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "reference",
+    "kind": "index",
+    "status": "draft",
+    "tags": [
+      "security-and-risk-management",
+      "reference"
+    ],
+    "order": 6
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

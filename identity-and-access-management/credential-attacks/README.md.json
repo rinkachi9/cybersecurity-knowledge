@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "human-security.credential-attacks",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "identity-and-access-management",
+      "credential-attacks"
+    ]
+  },
+  "map": {
+    "group": "identity-and-access-management"
+  }
+}

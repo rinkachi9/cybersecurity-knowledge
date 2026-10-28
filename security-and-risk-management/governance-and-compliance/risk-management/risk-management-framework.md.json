@@ -1,0 +1,34 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance.risk-management.risk-management-framework",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "risk-management"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.risk-management.information-risk-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-cybersecurity-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-sp-800-53",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

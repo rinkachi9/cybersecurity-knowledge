@@ -1,0 +1,37 @@
+{
+  "node": {
+    "id": "system-security.cloud-and-infrastructure-security.nist-zero-trust-architecture",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "data-security.identity-and-access.authentication-vs-authorization",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authorization",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp-security-principles",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.security-posture-management",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "software-security.application-security.supply-chain",
+    "kind": "index",
+    "status": "draft",
+    "order": 11,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "supply-chain"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

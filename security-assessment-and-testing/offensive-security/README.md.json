@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.offensive-security",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-assessment-and-testing",
+      "offensive-security"
+    ]
+  },
+  "map": {
+    "group": "security-assessment-and-testing"
+  }
+}

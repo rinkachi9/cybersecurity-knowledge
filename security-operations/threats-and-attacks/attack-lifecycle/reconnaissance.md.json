@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle.reconnaissance",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "attack-lifecycle"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

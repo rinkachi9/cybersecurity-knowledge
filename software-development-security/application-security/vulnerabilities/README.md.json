@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "software-security.application-security.vulnerabilities",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "vulnerabilities"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

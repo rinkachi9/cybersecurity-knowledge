@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance.frameworks.security-controls",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "frameworks"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "organizational-security.threat-intelligence.mitre.mitre-capec",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-operations",
+      "threat-intelligence",
+      "mitre"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

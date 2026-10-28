@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.operations.soar",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "operations"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

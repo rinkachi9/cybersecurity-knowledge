@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.identity-and-access.authentication.jwt-vs-session",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "identity-and-access-management",
+      "identity-and-access",
+      "authentication"
+    ]
+  },
+  "map": {
+    "group": "identity-and-access-management"
+  }
+}

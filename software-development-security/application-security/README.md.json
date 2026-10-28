@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "software-security.application-security",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "software-development-security",
+      "application-security"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

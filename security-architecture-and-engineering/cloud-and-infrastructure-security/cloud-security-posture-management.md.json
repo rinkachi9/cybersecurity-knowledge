@@ -1,0 +1,41 @@
+{
+  "node": {
+    "id": "system-security.cloud-and-infrastructure-security.cloud-security-posture-management",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cloud-and-infrastructure-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.cloud-and-infrastructure-security.security-posture-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp-security-principles",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.csa-cloud-controls-matrix",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-sp-800-53",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

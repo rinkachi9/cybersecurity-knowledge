@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.web-attacks.drive-by-attack",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "web-attacks"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

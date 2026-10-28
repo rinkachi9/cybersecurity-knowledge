@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threat-modeling",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-and-risk-management",
+      "threat-modeling"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

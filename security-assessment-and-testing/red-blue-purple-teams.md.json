@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.operations.red-blue-purple-teams",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-assessment-and-testing"
+    ]
+  },
+  "map": {
+    "group": "security-assessment-and-testing"
+  }
+}

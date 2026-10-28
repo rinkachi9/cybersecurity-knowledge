@@ -1,0 +1,47 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.operations.nist-incident-response",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "operations",
+      "nist-incident-response"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.operations.security-operations-center",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.siem",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.soar",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.sop",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-cybersecurity-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.false-positive-false-negative",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-operations"
+  }
+}

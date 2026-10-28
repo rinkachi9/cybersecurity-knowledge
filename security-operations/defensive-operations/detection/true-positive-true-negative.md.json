@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.detection.true-positive-true-negative",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "detection"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "node": {
+    "id": "software-security.ai-security.nist-ai-risk-management-framework",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "frameworks"
+    ]
+  },
+  "links": [
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-cybersecurity-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-frameworks-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.risk-management.information-risk-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.ai-security.google-secure-ai-framework",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

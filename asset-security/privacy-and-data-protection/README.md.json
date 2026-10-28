@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "societal-security.privacy-and-data-protection",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "asset-security",
+      "privacy-and-data-protection"
+    ]
+  },
+  "map": {
+    "group": "asset-security"
+  }
+}

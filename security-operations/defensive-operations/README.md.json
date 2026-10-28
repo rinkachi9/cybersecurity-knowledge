@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-operations",
+      "defensive-operations"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

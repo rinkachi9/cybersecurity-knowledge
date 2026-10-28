@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.web-attacks",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "web-attacks"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

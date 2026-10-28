@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle",
+    "kind": "index",
+    "status": "draft",
+    "order": 11,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "attack-lifecycle"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

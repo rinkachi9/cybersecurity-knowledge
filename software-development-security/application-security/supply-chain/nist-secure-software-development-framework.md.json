@@ -1,0 +1,42 @@
+{
+  "node": {
+    "id": "software-security.application-security.supply-chain.nist-secure-software-development-framework",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "supply-chain"
+    ]
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.supply-chain.slsa",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp-security-principles",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.testing.software-composition-analysis",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.testing.static-application-security-testing",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.testing.dynamic-application-security-testing",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

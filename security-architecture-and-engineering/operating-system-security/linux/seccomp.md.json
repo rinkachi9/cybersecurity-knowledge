@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "system-security.operating-system-security.linux.seccomp",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-architecture-and-engineering",
+      "operating-system-security",
+      "linux"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

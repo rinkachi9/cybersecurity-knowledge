@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threats-and-attacks.web-attacks.typosquatting",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-operations",
+      "threats-and-attacks",
+      "web-attacks"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

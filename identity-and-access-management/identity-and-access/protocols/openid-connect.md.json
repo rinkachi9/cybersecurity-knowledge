@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.identity-and-access.protocols.openid-connect",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "identity-and-access-management",
+      "identity-and-access",
+      "protocols"
+    ]
+  },
+  "map": {
+    "group": "identity-and-access-management"
+  }
+}

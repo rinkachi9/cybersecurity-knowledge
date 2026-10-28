@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "human-security.user-based-attacks",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "security-awareness"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

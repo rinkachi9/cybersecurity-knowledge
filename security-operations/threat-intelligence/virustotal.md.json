@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "organizational-security.threat-intelligence.virustotal",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-operations",
+      "threat-intelligence"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

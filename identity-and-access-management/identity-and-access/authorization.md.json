@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "data-security.identity-and-access.authorization",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "identity-and-access-management",
+      "identity-and-access"
+    ]
+  },
+  "map": {
+    "group": "identity-and-access-management"
+  }
+}

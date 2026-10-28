@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.foundations.security-overview",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "foundations"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

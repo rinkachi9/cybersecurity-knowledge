@@ -1,0 +1,29 @@
+{
+  "node": {
+    "id": "system-security.cloud-and-infrastructure-security.cspm-tools",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cloud-and-infrastructure-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.cloud-and-infrastructure-security.cloud-security-posture-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.multicloud-cspm",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.security-posture-management",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

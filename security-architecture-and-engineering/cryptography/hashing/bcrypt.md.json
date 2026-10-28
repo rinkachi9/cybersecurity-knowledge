@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.cryptography.hashing.bcrypt",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "hashing"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

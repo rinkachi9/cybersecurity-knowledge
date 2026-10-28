@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "system-security.cloud-and-infrastructure-security.security-posture-management",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cloud-and-infrastructure-security"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

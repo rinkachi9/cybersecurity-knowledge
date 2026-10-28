@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "software-security.application-security.testing.software-composition-analysis",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "testing"
+    ]
+  },
+  "map": {
+    "group": "software-development-security"
+  }
+}

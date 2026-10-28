@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance.frameworks.google-security-and-resilience-framework",
+    "kind": "note",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "frameworks"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "node": {
+    "id": "software-security.application-security.owasp.owasp-security-principles",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "owasp"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authorization",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authentication-vs-authorization",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

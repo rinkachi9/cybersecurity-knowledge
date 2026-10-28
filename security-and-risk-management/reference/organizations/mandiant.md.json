@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "reference.organizations.mandiant",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "security-and-risk-management",
+      "reference",
+      "organizations"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

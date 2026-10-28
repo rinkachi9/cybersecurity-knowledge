@@ -50,7 +50,7 @@ The primary audience is the future version of the author. Write as if explaining
 
 ### 3.1 Layout
 
-Content is organized by knowledge area, and each area is a top level directory. The list of planned areas is in the [README](README.md#knowledge-areas).
+The eight top level content directories match the domains in the [ISC2 CISSP Certification Exam Outline, effective April 15, 2024](https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf). This is the public domain outline for the CISSP common body of knowledge. It is a certification content outline, not an ISO taxonomy or a prescribed file tree. The [README](README.md#taxonomy) explains the mapping of existing notes. Checked against the ISC2 outline in October 2026; ISC2 has announced a new outline effective April 15, 2027.
 
 ```text
 ToC.md                  # full tree of every file in the repository
@@ -58,7 +58,9 @@ _assets/
     <area>/             # images, diagram sources, media and other files used by notes
 <area>/
     README.md           # entry point: what the area covers, reading order, links to notes
+    README.md.json      # Librarian OS metadata for the entry point
     <topic>.md          # a single note
+    <topic>.md.json     # Librarian OS metadata for the note
     <subarea>/          # optional, groups related notes
         README.md
         <topic>.md
@@ -74,8 +76,28 @@ Guidance:
 - **Every area and subarea has a `README.md`.** It is the entry point, and it lists the notes in a recommended reading order with a one line description each. Areas that are planned but not written yet have a `README.md` that says so and lists planned topics.
 - **Media goes to `_assets/<area>/`, scripts stay with their topic.** Images, diagram sources, downloadable files and media go to `_assets/<area>/`. A script lives next to the material it belongs to: when a topic gets scripts, the note becomes a directory `<topic>/` with `README.md` (the note) and a `scripts/` directory. There is no global `scripts/` directory.
 - **Keep `ToC.md` complete.** See [section 3.4](#34-table-of-contents).
+- **Keep sidecars with notes.** Every Markdown file inside a Librarian OS entry point has a `.md.json` sidecar. [INSTRUCTIONS.md](INSTRUCTIONS.md#step-3-optional-add-sidecars) defines the schema. Use `draft` until the note passes the quality checklist. Add relations or sources only when the Markdown supports them.
 
 *Analogy.* Think of a library. Areas are sections, area READMEs are the catalog cards for a section, and notes are the books. A book that tries to cover an entire section belongs on several shelves.
+
+### 3.1.1 CISSP domain placement
+
+Use these eight directories as the only top level content areas. Keep a `README.md` and its sidecar in every domain, including domains with only planned topics. Classify a note by the main question it answers, using the current [ISC2 CISSP Certification Exam Outline](https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf) for domain scope.
+
+| Domain and directory | Primary home for |
+| --- | --- |
+| 1. `security-and-risk-management/` | Security concepts, governance, policies, law, risk, threat modeling, business continuity requirements and security awareness. Privacy regulations belong here. Supporting notes on organizations and certifications live in `reference/` inside this domain. |
+| 2. `asset-security/` | Information and asset classification, ownership, handling, data lifecycle, retention and data protection. Put privacy frameworks here when the note primarily explains protection of personal information. |
+| 3. `security-architecture-and-engineering/` | Secure design principles, security models, cryptography, system architecture, cloud, operating system and component security. AI system security lives here when the focus is design or architecture. |
+| 4. `communication-and-network-security/` | Network architecture, components, protocols, secure channels, segmentation and access to networked resources. The zero trust architecture note has its home here. |
+| 5. `identity-and-access-management/` | Identification, authentication, authorization, federation, account lifecycle and credential attack methods used to explain control failures. |
+| 6. `security-assessment-and-testing/` | Assessment strategies, audits, penetration testing, red and blue team exercises, control tests, evidence and reporting. |
+| 7. `security-operations/` | Monitoring, detection, investigation, incident response, threat intelligence, vulnerability and patch management, recovery and operational attack analysis. |
+| 8. `software-development-security/` | Secure development, coding, application weaknesses, application testing and software supply chains. SAST, DAST and SCA stay here because their notes explain the software development lifecycle; link to them from Domain 6. |
+
+For a topic that fits several domains, choose the home by its central mechanism and learning goal. Add relative links from related domain READMEs or notes. Do not copy the explanation into several folders. Place reference material that is not itself a domain topic under the closest relevant domain and say why in its README. Do not create a ninth top level content area to hold overlaps.
+
+When moving a note, preserve its sidecar `node.id` so existing typed relations remain valid. Update `node.tags`, `map.group`, the area READMEs, relative links, assets and `ToC.md` to match the new location. A sidecar id may therefore differ from the current file path. Before applying a future ISC2 outline, compare the new scope with this mapping and document any change in the README; do not rename folders merely because an exam weight changes.
 
 ### 3.2 Naming
 
@@ -83,9 +105,9 @@ Guidance:
 | --- | --- | --- |
 | Directories | lowercase, words separated by hyphens | `query-performance/` |
 | Note files | lowercase, hyphens, descriptive noun phrase, `.md` | `b-tree-indexes.md` |
-| Images and media | note name, then a short description, stored in `_assets/<area>/` | `_assets/cryptography/pki-chain-of-trust.png` |
-| Diagram sources | same base name as the rendered image, source format as extension | `_assets/cryptography/pki-chain-of-trust.drawio` |
-| Scripts | lowercase, hyphens, verb phrase, stored in the `scripts/` directory of their topic | `network-security/pcap-analysis/scripts/parse-pcap-summary.py` |
+| Images and media | note name, then a short description, stored in `_assets/<area>/` | `_assets/security-architecture-and-engineering/cryptography/pki-chain-of-trust.png` |
+| Diagram sources | same base name as the rendered image, source format as extension | `_assets/security-architecture-and-engineering/cryptography/pki-chain-of-trust.drawio` |
+| Scripts | lowercase, hyphens, verb phrase, stored in the `scripts/` directory of their topic | `communication-and-network-security/network-security/pcap-analysis/scripts/parse-pcap-summary.py` |
 | Entry points | always `README.md` | `<area>/README.md` |
 | Table of contents | always `ToC.md` in the repository root | `ToC.md` |
 
@@ -101,6 +123,8 @@ Names describe the content, not its status or origin. Avoid `notes.md`, `misc.md
 ### 3.4 Table of contents
 
 `ToC.md` in the repository root is the complete map of the repository. It is an indented tree with one entry for every file: root documents, area and subarea `README.md` files, notes, assets and scripts. Each entry is a relative link followed by a short description.
+
+This repository also lists every `.md.json` sidecar. Librarian OS `npm run toc` omits sidecars, so update the table of contents after using that command. The `toc.check` validator does not require sidecar entries; this guideline does.
 
 - **Every change is reflected in `ToC.md`.** Adding, moving, renaming or deleting a note, an asset or a script updates `ToC.md` in the same change. Changing the title or purpose of a note updates its description there.
 - **Planned areas are marked.** An area that has only a `README.md` is marked `(planned)`.

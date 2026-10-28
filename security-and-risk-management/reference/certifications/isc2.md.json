@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "reference.certifications.isc2",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "reference",
+      "certifications"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

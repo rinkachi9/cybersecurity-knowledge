@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.identity-and-access.authentication.authentication-methods",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "identity-and-access-management",
+      "identity-and-access",
+      "authentication"
+    ]
+  },
+  "map": {
+    "group": "identity-and-access-management"
+  }
+}

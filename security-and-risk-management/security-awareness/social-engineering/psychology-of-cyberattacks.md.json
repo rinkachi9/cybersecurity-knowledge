@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "human-security.social-engineering.psychology-of-cyberattacks",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "security-awareness",
+      "social-engineering"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

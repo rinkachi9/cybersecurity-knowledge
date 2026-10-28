@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "id": "cybersecurity",
+  "title": "Cybersecurity learning paths",
+  "description": "Start with security concepts, then follow the CISSP domain branches that match your work. Paths can be explored in any order.",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "Start with security",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/README.md",
+        "security-and-risk-management/foundations/security-overview.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cia",
+      "title": "Confidentiality, integrity, availability",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/foundations/cia-triad/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "layers",
+      "title": "Defense in depth",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/design-principles/defense-in-depth.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "threats",
+      "title": "Understand threats",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "threat-modeling",
+      "title": "Model threats",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/README.md",
+        "security-and-risk-management/threat-modeling/threat-modeling.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "data",
+      "title": "Architecture and cryptography",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/README.md",
+        "security-architecture-and-engineering/cryptography/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "hashing",
+      "title": "Hashing and credentials",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/hashing/README.md",
+        "security-architecture-and-engineering/cryptography/hashing/argon2.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "identity",
+      "title": "Identity and access",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/identity-and-access/README.md",
+        "identity-and-access-management/identity-and-access/authentication-vs-authorization.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "software",
+      "title": "Software development security",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/README.md",
+        "software-development-security/application-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "owasp",
+      "title": "Web application risks",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/owasp/owasp-top-10.md",
+        "software-development-security/application-security/vulnerabilities/xss.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/Top10/"
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Security testing",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/testing/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "supply-chain",
+      "title": "Software supply chain",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/supply-chain/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "systems",
+      "title": "Security architecture and engineering",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/README.md",
+        "security-architecture-and-engineering/operating-system-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud and infrastructure",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cloud-and-infrastructure-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "operations",
+      "title": "Defensive operations",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/README.md",
+        "security-operations/defensive-operations/operations/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "detection",
+      "title": "Detection and response",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/detection/README.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+      ]
+    },
+    {
+      "id": "human",
+      "title": "Security awareness",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/README.md",
+        "security-and-risk-management/security-awareness/social-engineering/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "credentials",
+      "title": "Credential attacks",
+      "group": "Identity and access management",
+      "documentation": [
+        "identity-and-access-management/credential-attacks/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "organization",
+      "title": "Security and risk management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "governance",
+      "title": "Governance and compliance",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/governance-and-compliance/README.md"
+      ],
+      "externalSources": [
+        "https://www.nist.gov/cyberframework"
+      ]
+    },
+    {
+      "id": "vulnerability",
+      "title": "Vulnerability management",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/vulnerability-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "intelligence",
+      "title": "Threat intelligence",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threat-intelligence/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "privacy",
+      "title": "Asset security and privacy",
+      "group": "Asset security",
+      "documentation": [
+        "asset-security/README.md",
+        "asset-security/privacy-and-data-protection/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "connections",
+      "title": "Communication and network security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "components",
+      "title": "Component security",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/component-security/README.md"
+      ],
+      "externalSources": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "cia",
+      "type": "next"
+    },
+    {
+      "from": "cia",
+      "to": "layers",
+      "type": "next"
+    },
+    {
+      "from": "layers",
+      "to": "threats",
+      "type": "next"
+    },
+    {
+      "from": "threats",
+      "to": "threat-modeling",
+      "type": "next"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "data",
+      "type": "next"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "software",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "systems",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "human",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "organization",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "privacy",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "connections",
+      "type": "branch"
+    },
+    {
+      "from": "threat-modeling",
+      "to": "components",
+      "type": "branch"
+    },
+    {
+      "from": "data",
+      "to": "hashing",
+      "type": "next"
+    },
+    {
+      "from": "hashing",
+      "to": "identity",
+      "type": "next"
+    },
+    {
+      "from": "software",
+      "to": "owasp",
+      "type": "next"
+    },
+    {
+      "from": "owasp",
+      "to": "testing",
+      "type": "next"
+    },
+    {
+      "from": "testing",
+      "to": "supply-chain",
+      "type": "next"
+    },
+    {
+      "from": "systems",
+      "to": "cloud",
+      "type": "next"
+    },
+    {
+      "from": "cloud",
+      "to": "operations",
+      "type": "next"
+    },
+    {
+      "from": "operations",
+      "to": "detection",
+      "type": "next"
+    },
+    {
+      "from": "human",
+      "to": "credentials",
+      "type": "next"
+    },
+    {
+      "from": "organization",
+      "to": "governance",
+      "type": "next"
+    },
+    {
+      "from": "governance",
+      "to": "vulnerability",
+      "type": "next"
+    },
+    {
+      "from": "vulnerability",
+      "to": "intelligence",
+      "type": "next"
+    }
+  ]
+}

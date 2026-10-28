@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "software-security.ai-security",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "security-architecture-and-engineering",
+      "ai-security"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

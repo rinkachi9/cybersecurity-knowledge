@@ -1,0 +1,22 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.foundations.cia-triad",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-and-risk-management",
+      "foundations",
+      "cia-triad"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.security-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

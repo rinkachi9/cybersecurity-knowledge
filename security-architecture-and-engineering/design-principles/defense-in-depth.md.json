@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.foundations.defense-in-depth",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-architecture-and-engineering",
+      "design-principles"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "security-architecture-and-engineering.design-principles",
+    "kind": "index",
+    "status": "draft",
+    "tags": [
+      "security-architecture-and-engineering",
+      "design-principles"
+    ],
+    "order": 1
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

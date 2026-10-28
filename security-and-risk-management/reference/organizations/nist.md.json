@@ -1,0 +1,22 @@
+{
+  "node": {
+    "id": "reference.organizations.nist",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "reference",
+      "organizations"
+    ]
+  },
+  "links": [
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-frameworks-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

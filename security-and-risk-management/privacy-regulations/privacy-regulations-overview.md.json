@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "societal-security.privacy-and-data-protection.regulations.privacy-regulations-overview",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-and-risk-management",
+      "privacy-regulations"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

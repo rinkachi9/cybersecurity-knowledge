@@ -1,0 +1,31 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance.frameworks.nist-sp-800-53",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance",
+      "frameworks",
+      "nist-sp-800-53"
+    ]
+  },
+  "links": [
+    {
+      "to": "organizational-security.governance-and-compliance.risk-management.risk-management-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.security-controls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

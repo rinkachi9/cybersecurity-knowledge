@@ -1,0 +1,30 @@
+{
+  "node": {
+    "id": "software-security.application-security.owasp.owasp",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "owasp"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.security-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp-security-principles",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.operations.secops",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "operations"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

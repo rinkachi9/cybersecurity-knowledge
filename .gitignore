@@ -34,7 +34,9 @@ id_ed25519*
 *.pcapng
 *.cap
 samples/
-malware/
+**/malware/*
+!**/malware/*.md
+!**/malware/*.md.json
 loot/
 dumps/
 *.ovpn

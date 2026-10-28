@@ -1,0 +1,33 @@
+{
+  "node": {
+    "id": "societal-security.privacy-and-data-protection.nist-privacy-framework",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "asset-security",
+      "privacy-and-data-protection"
+    ]
+  },
+  "links": [
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.nist-cybersecurity-framework",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "societal-security.privacy-and-data-protection.regulations.privacy-regulations-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "societal-security.privacy-and-data-protection.regulations.gdpr",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "asset-security"
+  }
+}

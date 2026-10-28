@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "organizational-security.threat-intelligence.mitre",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-operations",
+      "threat-intelligence",
+      "mitre"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

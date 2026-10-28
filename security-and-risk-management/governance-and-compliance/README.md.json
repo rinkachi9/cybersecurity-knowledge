@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "organizational-security.governance-and-compliance",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "security-and-risk-management",
+      "governance-and-compliance"
+    ]
+  },
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

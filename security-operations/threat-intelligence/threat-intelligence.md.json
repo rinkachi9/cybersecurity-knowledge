@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "organizational-security.threat-intelligence.threat-intelligence",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "threat-intelligence"
+    ]
+  },
+  "map": {
+    "group": "security-operations"
+  }
+}

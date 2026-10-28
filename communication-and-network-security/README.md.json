@@ -1,0 +1,25 @@
+{
+  "node": {
+    "id": "communication-and-network-security",
+    "kind": "index",
+    "status": "draft",
+    "tags": [
+      "communication-and-network-security"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  },
+  "sources": [
+    {
+      "key": "cissp-exam-outline-2024",
+      "type": "documentation",
+      "title": "CISSP Certification Exam Outline",
+      "publisher": "ISC2",
+      "year": 2024,
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+      "verified": true,
+      "checked": "2026-10"
+    }
+  ]
+}
