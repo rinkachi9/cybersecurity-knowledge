@@ -1,0 +1,42 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.wireless.bluetooth-and-short-range",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "wireless"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.ot-and-iot.iot-network-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-121-rev-2-guide-to-bluetooth-security",
+      "type": "standard",
+      "title": "NIST SP 800-121 Rev. 2, Guide to Bluetooth Security",
+      "url": "https://doi.org/10.6028/NIST.SP.800-121r2",
+      "verified": false
+    },
+    {
+      "key": "bluetooth-sig-security-documentation",
+      "type": "documentation",
+      "title": "Bluetooth SIG security documentation",
+      "url": "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

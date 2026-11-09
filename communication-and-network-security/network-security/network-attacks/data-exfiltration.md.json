@@ -1,0 +1,54 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.data-exfiltration",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.traffic-filtering.egress-filtering",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-tunneling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-exfiltration-tactic-ta0010-exfiltrati",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Exfiltration tactic (TA0010), Exfiltration Over Alternative Protocol (T1048), Exfiltration Over C2 Channel (T1041)",
+      "url": "https://attack.mitre.org/tactics/TA0010/",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-137-information-security-continuous-mo",
+      "type": "standard",
+      "title": "NIST SP 800-137, Information Security Continuous Monitoring, for the monitoring foundation",
+      "url": "https://doi.org/10.6028/NIST.SP.800-137",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

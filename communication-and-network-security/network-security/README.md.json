@@ -9,9 +9,6 @@
       "network-security"
     ]
   },
-  "map": {
-    "group": "communication-and-network-security"
-  },
   "sources": [
     {
       "key": "cissp-exam-outline-2024",
@@ -23,5 +20,8 @@
       "verified": true,
       "checked": "2026-10"
     }
-  ]
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
 }

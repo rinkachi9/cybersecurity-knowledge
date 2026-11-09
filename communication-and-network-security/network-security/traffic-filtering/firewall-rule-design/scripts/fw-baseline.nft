@@ -1,0 +1,56 @@
+#!/usr/sbin/nft -f
+# nftables 1.0.2 (Linux 6.8). Load in the lab firewall: ip netns exec fw nft -f fw-baseline.nft
+# Check syntax only: nft -c -f fw-baseline.nft
+#
+# Baseline policy for the "fw" node of the network security lab: the outside LAN 192.0.2.0/24
+# may reach the web server 198.51.100.20 on TCP 443, one admin host may use SSH, and nothing
+# else crosses. The firewall itself accepts SSH only from the admin host.
+# Design rules applied: default deny in every direction, explicit allow list, state tracking
+# so replies need no rules, invalid packets dropped early, rate-limited logging of drops.
+
+flush ruleset
+
+define OUTSIDE_IF = "eth0"
+define INSIDE_IF  = "eth1"
+define WEB_SERVER = 198.51.100.20
+define ADMIN_HOST = 192.0.2.10
+
+table inet filter {
+    set web_ports {
+        type inet_service
+        elements = { 443 }
+    }
+
+    chain input {
+        type filter hook input priority filter; policy drop;
+        # Must come before the established rule: conntrack marks follow-up echo requests with
+        # the same ICMP identifier as "established", so a later limit would never see them.
+        icmp type echo-request limit rate over 5/second burst 10 packets drop
+        ct state established,related accept
+        ct state invalid drop
+        iifname "lo" accept
+        # ICMP errors (needed for path MTU discovery) and rate-limited echo
+        ip protocol icmp icmp type { destination-unreachable, time-exceeded, parameter-problem } accept
+        icmp type echo-request accept
+        ip saddr $ADMIN_HOST tcp dport 22 ct state new accept comment "management from admin host only"
+        limit rate 10/minute log prefix "fw-input-drop: " level info
+    }
+
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+        ct state established,related accept
+        ct state invalid drop
+        # Anti-spoofing: packets entering from outside must not claim an inside source
+        iifname $OUTSIDE_IF ip saddr 198.51.100.0/24 drop
+        iifname $OUTSIDE_IF oifname $INSIDE_IF ip daddr $WEB_SERVER tcp dport @web_ports ct state new accept comment "public web"
+        iifname $OUTSIDE_IF oifname $INSIDE_IF ip saddr $ADMIN_HOST ip daddr $WEB_SERVER tcp dport 22 ct state new accept comment "admin ssh"
+        # The server may only start connections to the DNS resolver, nothing else (egress filtering)
+        iifname $INSIDE_IF ip saddr $WEB_SERVER ip daddr 192.0.2.53 udp dport 53 ct state new accept comment "server dns"
+        limit rate 10/minute log prefix "fw-forward-drop: " level info
+        counter comment "dropped by default policy"
+    }
+
+    chain output {
+        type filter hook output priority filter; policy accept;
+    }
+}

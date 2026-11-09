@@ -1,0 +1,49 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations.attack-surface-by-layer",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-1122-requirements-for-internet-hosts-1989-for",
+      "type": "standard",
+      "title": "RFC 1122, Requirements for Internet Hosts (1989), for the TCP/IP layer model as specified",
+      "url": "https://www.rfc-editor.org/rfc/rfc1122",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-215-guide-to-a-secure-enterprise-netwo",
+      "type": "standard",
+      "title": "NIST SP 800-215, Guide to a Secure Enterprise Network Landscape (2022)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-215",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-the-network-platform-matrix-for-techn",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, the Network platform matrix, for techniques grouped by effect",
+      "url": "https://attack.mitre.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

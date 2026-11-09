@@ -8,9 +8,9 @@ Checked against NIST SP 800-207 (August 2020), 2026-10. Later NIST guidance on z
 
 ## Prerequisites
 
-- [Authentication vs authorization](../../identity-and-access-management/identity-and-access/authentication-vs-authorization.md) and [authorization](../../identity-and-access-management/identity-and-access/authorization.md): zero trust is mostly continuous, per-request authorization.
-- [Defense in depth](../../security-architecture-and-engineering/design-principles/defense-in-depth.md) and [OWASP security principles](../../software-development-security/application-security/owasp/owasp-security-principles.md): least privilege and complete mediation are the core ideas.
-- [Security posture management](../../security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md): asset and configuration state feeds the access decision.
+- [Authentication vs authorization](../../../identity-and-access-management/identity-and-access/authentication-vs-authorization.md) and [authorization](../../../identity-and-access-management/identity-and-access/authorization.md): zero trust is mostly continuous, per-request authorization.
+- [Defense in depth](../../../security-architecture-and-engineering/design-principles/defense-in-depth.md) and [OWASP security principles](../../../software-development-security/application-security/owasp/owasp-security-principles.md): least privilege and complete mediation are the core ideas.
+- [Security posture management](../../../security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md): asset and configuration state feeds the access decision.
 
 ## Core concepts
 
@@ -62,7 +62,7 @@ The diagram shows the model from SP 800-207, section 3: the policy decision poin
 | Policy administrator (PA) | Executes the decision. Establishes or shuts down the communication path, and generates session-specific authentication tokens or credentials. Tied closely to the PE, and in some products combined with it |
 | Policy enforcement point (PEP) | Enables, monitors and terminates connections between a subject and a resource. May be one component or split into a client-side agent and a resource-side gateway, or a portal |
 
-Data sources that support the decision include a continuous diagnostics and mitigation (CDM) system for asset state, industry compliance systems, threat intelligence feeds, network and system activity logs ([SIEM](../../security-operations/defensive-operations/operations/siem.md)), data access policies, enterprise PKI, ID management and security information.
+Data sources that support the decision include a continuous diagnostics and mitigation (CDM) system for asset state, industry compliance systems, threat intelligence feeds, network and system activity logs ([SIEM](../../../security-operations/defensive-operations/operations/siem.md)), data access policies, enterprise PKI, ID management and security information.
 
 ### The trust algorithm
 
@@ -103,7 +103,7 @@ Section 5 lists the threats associated with a ZTA itself. Zero trust moves the t
 
 ### Zero trust and the RMF
 
-The final chapter of SP 800-207 discusses how a ZTA interacts with existing federal guidance, including the [NIST Risk Management Framework](../../security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md), the Privacy Framework and federal ICAM architecture. For a reader outside government the practical point is that zero trust is an architecture you assess and authorize like any other system, and its components (PE, PA, PEP, data sources) need to be inside the system boundary and categorized at the highest impact of the resources they protect. The categorization advice is this note's reading, not a quotation from NIST.
+The final chapter of SP 800-207 discusses how a ZTA interacts with existing federal guidance, including the [NIST Risk Management Framework](../../../security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md), the Privacy Framework and federal ICAM architecture. For a reader outside government the practical point is that zero trust is an architecture you assess and authorize like any other system, and its components (PE, PA, PEP, data sources) need to be inside the system boundary and categorized at the highest impact of the resources they protect. The categorization advice is this note's reading, not a quotation from NIST.
 
 How the tenets connect to controls and outcomes:
 
@@ -120,7 +120,7 @@ How the tenets connect to controls and outcomes:
 Two documents extend SP 800-207 for implementation (checked 2026-10).
 
 - **CISA Zero Trust Maturity Model, version 2.0.** The CISA page describes version 2.0 as aligned with OMB memorandum M-22-09 (January 2022). The model has five pillars and three cross-cutting capabilities, and four maturity stages: Traditional, Initial, Advanced and Optimal, each with an example architecture per pillar. The page I could read does not name the pillars and capabilities (they are in the downloadable PDF, which I did not read), so I do not list them here. The stages give a way to state progress as a per-pillar assessment instead of a single yes or no.
-- **NIST SP 800-207A**, *A Zero Trust Architecture Model for Access Control in Cloud-Native Applications in Multi-Cloud Environments* (September 2023, by Chandramouli and Butcher). It builds on SP 800-207 and moves the focus from network controls such as IP addresses and subnets to identity: policies based on application and service identities together with user identities and network parameters, enforced by a platform of API gateways, sidecar proxies and identity infrastructure (the abstract names SPIFFE), whether services run on premises or across clouds. Read it for microservice and Kubernetes environments, see also [KSPM](../../security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md).
+- **NIST SP 800-207A**, *A Zero Trust Architecture Model for Access Control in Cloud-Native Applications in Multi-Cloud Environments* (September 2023, by Chandramouli and Butcher). It builds on SP 800-207 and moves the focus from network controls such as IP addresses and subnets to identity: policies based on application and service identities together with user identities and network parameters, enforced by a platform of API gateways, sidecar proxies and identity infrastructure (the abstract names SPIFFE), whether services run on premises or across clouds. Read it for microservice and Kubernetes environments, see also [KSPM](../../../security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md).
 
 TODO: read the CISA ZTMM v2.0 PDF and list the five pillars, the three cross-cutting capabilities and the criteria for each stage.
 
@@ -203,7 +203,7 @@ What to notice:
 - Limits lateral movement: a compromised device or credential does not open the whole network.
 - Fits hybrid and cloud environments where there is no single perimeter.
 - Makes access decisions auditable (every decision is logged by the PE).
-- Aligns with least privilege and complete mediation, see [OWASP security principles](../../software-development-security/application-security/owasp/owasp-security-principles.md).
+- Aligns with least privilege and complete mediation, see [OWASP security principles](../../../software-development-security/application-security/owasp/owasp-security-principles.md).
 
 ### Costs and limits
 
@@ -218,9 +218,9 @@ What to notice:
 | Need | Option |
 | --- | --- |
 | Reduce lateral movement quickly | Network segmentation, as a first step toward micro-segmentation |
-| Strong identity | [Authentication methods](../../identity-and-access-management/identity-and-access/authentication/authentication-methods.md), [OAuth](../../identity-and-access-management/identity-and-access/protocols/oauth.md), [OpenID Connect](../../identity-and-access-management/identity-and-access/protocols/openid-connect.md) |
-| Cloud-specific posture | [Security posture management](../../security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md) |
-| Program-level view | [NIST CSF 2.0](../../security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md) outcomes such as PR.AA and PR.IR |
+| Strong identity | [Authentication methods](../../../identity-and-access-management/identity-and-access/authentication/authentication-methods.md), [OAuth](../../../identity-and-access-management/identity-and-access/protocols/oauth.md), [OpenID Connect](../../../identity-and-access-management/identity-and-access/protocols/openid-connect.md) |
+| Cloud-specific posture | [Security posture management](../../../security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md) |
+| Program-level view | [NIST CSF 2.0](../../../security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md) outcomes such as PR.AA and PR.IR |
 
 ## Common mistakes
 

@@ -54,7 +54,8 @@
       "title": "Zero trust architecture",
       "group": "Communication and network security",
       "documentation": [
-        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+        "communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md",
+        "communication-and-network-security/network-security/architecture/zero-trust-networking.md"
       ],
       "externalSources": []
     },
@@ -179,6 +180,49 @@
         "security-operations/configuration-management/secure-configuration/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "net-segmentation",
+      "title": "Security zones and segmentation",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/security-zones-and-dmz.md",
+        "communication-and-network-security/network-security/architecture/network-segmentation.md",
+        "communication-and-network-security/network-security/architecture/microsegmentation.md",
+        "communication-and-network-security/network-security/architecture/management-plane-security.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1",
+        "https://doi.org/10.6028/NIST.SP.800-215",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ]
+    },
+    {
+      "id": "secure-transport",
+      "title": "Secure transport: TLS, IPsec, VPNs and SSH",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/secure-transport/tls-in-network-security.md",
+        "communication-and-network-security/network-security/secure-transport/ipsec.md",
+        "communication-and-network-security/network-security/secure-transport/vpns.md",
+        "communication-and-network-security/network-security/secure-transport/ssh-security.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc6797",
+        "https://doi.org/10.6028/NIST.SP.800-52r2",
+        "https://www.rfc-editor.org/rfc/rfc9849"
+      ]
+    },
+    {
+      "id": "sase",
+      "title": "SASE and SSE",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/sase-and-sse.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
     }
   ],
   "edges": [
@@ -271,6 +315,26 @@
       "from": "cloud",
       "to": "config",
       "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "net-segmentation",
+      "type": "branch"
+    },
+    {
+      "from": "pki",
+      "to": "secure-transport",
+      "type": "branch"
+    },
+    {
+      "from": "net-segmentation",
+      "to": "zta",
+      "type": "branch"
+    },
+    {
+      "from": "zta",
+      "to": "sase",
+      "type": "next"
     }
   ]
 }

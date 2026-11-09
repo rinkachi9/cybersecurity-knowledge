@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.wireless.wireless-attacks",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "wireless"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.wireless.wifi-security-protocols",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.wireless.enterprise-wifi",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.man-in-the-middle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-adversary-in-the-middle",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Adversary-in-the-Middle",
+      "url": "https://attack.mitre.org/techniques/T1557/004/",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-97-establishing-wireless-robust-securi",
+      "type": "standard",
+      "title": "NIST SP 800-97, Establishing Wireless Robust Security Networks",
+      "url": "https://doi.org/10.6028/NIST.SP.800-97",
+      "verified": false
+    },
+    {
+      "key": "vanhoef-m-krack-and-later-wi-fi-attack-research",
+      "type": "documentation",
+      "title": "Vanhoef, M., KRACK and later Wi-Fi attack research",
+      "url": "https://www.krackattacks.com/",
+      "verified": false
+    },
+    {
+      "key": "wi-fi-alliance-wpa3-and-protected-management-frame",
+      "type": "documentation",
+      "title": "Wi-Fi Alliance, WPA3 and Protected Management Frames",
+      "url": "https://www.wi-fi.org/discover-wi-fi/security",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

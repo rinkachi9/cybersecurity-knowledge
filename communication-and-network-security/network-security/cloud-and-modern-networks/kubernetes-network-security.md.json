@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.cloud-and-modern-networks.kubernetes-network-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "cloud-and-modern-networks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.architecture.microsegmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.cloud-and-modern-networks.cloud-network-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kubernetes-networkpolicy-documentation",
+      "type": "documentation",
+      "title": "Kubernetes NetworkPolicy documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+      "verified": false
+    },
+    {
+      "key": "nsa-cisa-kubernetes-hardening-guide",
+      "type": "documentation",
+      "title": "NSA/CISA, Kubernetes Hardening Guide",
+      "url": "https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -100,7 +100,7 @@
       "id": "d4",
       "title": "Domain 4: Communication and network security",
       "group": "Communication and network security",
-      "description": "Sub-roadmap d4-communication-and-network-security: zero trust, with network topics planned.",
+      "description": "Sub-roadmap d4-communication-and-network-security: network foundations, protocols, segmentation, zero trust, filtering, secure transport, monitoring and operations.",
       "documentation": [
         "communication-and-network-security/README.md"
       ],

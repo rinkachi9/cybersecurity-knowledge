@@ -1,0 +1,32 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations.network-security-lab",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "sources": [
+    {
+      "key": "rfc-5737-ipv4-address-blocks-reserved-for-document",
+      "type": "standard",
+      "title": "RFC 5737, IPv4 Address Blocks Reserved for Documentation (2010)",
+      "url": "https://www.rfc-editor.org/rfc/rfc5737",
+      "verified": false
+    },
+    {
+      "key": "nftables-wiki-the-reference-for-the-firewall-synta",
+      "type": "documentation",
+      "title": "nftables wiki, the reference for the firewall syntax used in the lab",
+      "url": "https://wiki.nftables.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

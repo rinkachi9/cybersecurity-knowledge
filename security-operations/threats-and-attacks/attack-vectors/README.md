@@ -71,7 +71,7 @@ Three groupings are common and useful together.
 There are three moves, in order of effectiveness.
 
 1. **Remove it.** Close unused ports and services, retire unused applications, disable macros and autorun, remove stale accounts and VPN profiles. A vector that does not exist cannot be attacked.
-2. **Narrow it.** Put the service behind a gateway or zero trust access ([zero trust](../../../communication-and-network-security/network-security/nist-zero-trust-architecture.md)), restrict by identity and device, segment the network and add MFA.
+2. **Narrow it.** Put the service behind a gateway or zero trust access ([zero trust](../../../communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md)), restrict by identity and device, segment the network and add MFA.
 3. **Watch it.** Log and alert on the remaining vectors, patch them first and test them through [red, blue and purple team](../../../security-assessment-and-testing/red-blue-purple-teams.md) exercises.
 
 Use [asset management](../../../asset-security/asset-management/README.md) to find the vectors, because an unknown asset is an unmanaged vector, and attack surface management ([CASM](../../attack-surface-management/cloud-attack-surface-management/README.md)) to see them from the outside.

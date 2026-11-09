@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.email-transport-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-7208-spf-rfc-6376-dkim",
+      "type": "standard",
+      "title": "RFC 7208 (SPF), RFC 6376 (DKIM)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "verified": false
+    },
+    {
+      "key": "rfc-9989-dmarcbis-core-2026-with-rfc-9990-and-rfc",
+      "type": "standard",
+      "title": "RFC 9989 (DMARCbis core, 2026) with RFC 9990 and RFC 9991 (reporting), superseding RFC 7489",
+      "url": "https://www.rfc-editor.org/rfc/rfc9989",
+      "verified": false
+    },
+    {
+      "key": "rfc-8461-mta-sts-and-rfc-7672-dane-for-smtp",
+      "type": "standard",
+      "title": "RFC 8461 (MTA-STS) and RFC 7672 (DANE for SMTP)",
+      "url": "https://www.rfc-editor.org/rfc/rfc8461",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-177-rev-1-trustworthy-email",
+      "type": "standard",
+      "title": "NIST SP 800-177 Rev. 1, Trustworthy Email",
+      "url": "https://doi.org/10.6028/NIST.SP.800-177r1",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

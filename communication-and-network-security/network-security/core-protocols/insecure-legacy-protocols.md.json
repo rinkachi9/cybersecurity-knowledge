@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.insecure-legacy-protocols",
+    "kind": "note",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.network-scanning",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "microsoft-stop-using-smb1-guidance-to-remove-smbv1",
+      "type": "documentation",
+      "title": "Microsoft, Stop using SMB1 (guidance to remove SMBv1)",
+      "url": "https://techcommunity.microsoft.com/",
+      "verified": false
+    },
+    {
+      "key": "rfc-3411-3418-snmpv3-the-user-based-security-model",
+      "type": "standard",
+      "title": "RFC 3411-3418, SNMPv3 (the User-based Security Model and View-based Access Control)",
+      "url": "https://www.rfc-editor.org/rfc/rfc3414",
+      "verified": false
+    },
+    {
+      "key": "nsa-network-infrastructure-security-guide-2022-on",
+      "type": "documentation",
+      "title": "NSA, Network Infrastructure Security Guide (2022), on disabling insecure management protocols",
+      "url": "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

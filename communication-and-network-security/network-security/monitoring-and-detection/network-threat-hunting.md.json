@@ -1,0 +1,46 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.network-threat-hunting",
+    "kind": "note",
+    "status": "draft",
+    "order": 9,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.zeek",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.lateral-movement",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.data-exfiltration",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.threat-intelligence.mitre.mitre-attack",
+      "rel": "prerequisite"
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

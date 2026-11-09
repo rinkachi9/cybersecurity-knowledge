@@ -12,7 +12,7 @@ Security of cloud platforms, containers and infrastructure.
 
 ## Related area
 
-[NIST zero trust architecture](../../communication-and-network-security/network-security/nist-zero-trust-architecture.md) is listed under communication and network security because it defines access to networked resources.
+[NIST zero trust architecture](../../communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md) is listed under communication and network security because it defines access to networked resources.
 
 ## Planned topics
 

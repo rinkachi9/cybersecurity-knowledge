@@ -1,0 +1,47 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.architecture.sase-and-sse",
+    "kind": "note",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "architecture"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.architecture.zero-trust-networking",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.vpns",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.traffic-filtering.proxies-and-secure-web-gateways",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-security-controls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.cloud-and-modern-networks.sd-wan-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-207-zero-trust-architecture-for-the-zt",
+      "type": "standard",
+      "title": "NIST SP 800-207, Zero Trust Architecture, for the ZTNA component",
+      "url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

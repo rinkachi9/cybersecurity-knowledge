@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.architecture",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "architecture"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.link-layer.network-access-control-8021x",
+    "kind": "note",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "link-layer"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.link-layer.switch-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authentication.authentication-methods",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authentication-vs-authorization",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.wireless.enterprise-wifi",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ieee-802-1x-port-based-network-access-control",
+      "type": "standard",
+      "title": "IEEE 802.1X, Port-Based Network Access Control",
+      "url": "https://standards.ieee.org/",
+      "verified": false
+    },
+    {
+      "key": "rfc-3748-extensible-authentication-protocol-eap-an",
+      "type": "standard",
+      "title": "RFC 3748, Extensible Authentication Protocol (EAP), and RFC 5216, EAP-TLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc5216",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-97-establishing-wireless-robust-securi",
+      "type": "standard",
+      "title": "NIST SP 800-97, Establishing Wireless Robust Security Networks (802.11i), for 802.1X in wireless",
+      "url": "https://doi.org/10.6028/NIST.SP.800-97",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -184,6 +184,17 @@
         "security-operations/vulnerability-management/vulnerability-remediation/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "waf",
+      "title": "Web application firewalls",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1"
+      ]
     }
   ],
   "edges": [
@@ -276,6 +287,11 @@
       "from": "cve",
       "to": "remediation",
       "type": "next"
+    },
+    {
+      "from": "top10",
+      "to": "waf",
+      "type": "branch"
     }
   ]
 }

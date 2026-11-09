@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.traffic-filtering",
+    "kind": "index",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "traffic-filtering"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

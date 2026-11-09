@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.wireless",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "wireless"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

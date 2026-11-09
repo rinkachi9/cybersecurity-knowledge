@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.link-layer.dhcp-attacks",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "link-layer"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.link-layer.switch-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-2131-dynamic-host-configuration-protocol-1997",
+      "type": "standard",
+      "title": "RFC 2131, Dynamic Host Configuration Protocol (1997)",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-adversary-in-the-middle",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Adversary-in-the-Middle",
+      "url": "https://attack.mitre.org/techniques/T1557/003/",
+      "verified": false
+    },
+    {
+      "key": "nsa-network-infrastructure-security-guide-2022",
+      "type": "documentation",
+      "title": "NSA, Network Infrastructure Security Guide (2022)",
+      "url": "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

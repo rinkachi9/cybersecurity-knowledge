@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.traffic-filtering.web-application-firewalls",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "traffic-filtering"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.traffic-filtering.firewalls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.owasp.owasp-top-10",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "software-security.application-security.vulnerabilities.xss",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-web-application-firewall-and-the-owasp-core",
+      "type": "documentation",
+      "title": "OWASP, Web Application Firewall and the OWASP Core Rule Set",
+      "url": "https://owasp.org/www-project-modsecurity-core-rule-set/",
+      "verified": false
+    },
+    {
+      "key": "owasp-top-10-the-vulnerability-classes-wafs-target",
+      "type": "documentation",
+      "title": "OWASP Top 10, the vulnerability classes WAFs target",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-41-rev-1-for-firewall-context",
+      "type": "standard",
+      "title": "NIST SP 800-41 Rev. 1 for firewall context",
+      "url": "https://doi.org/10.6028/NIST.SP.800-41r1",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

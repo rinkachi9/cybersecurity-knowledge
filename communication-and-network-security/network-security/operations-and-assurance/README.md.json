@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.operations-and-assurance",
+    "kind": "index",
+    "status": "draft",
+    "order": 13,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "operations-and-assurance"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

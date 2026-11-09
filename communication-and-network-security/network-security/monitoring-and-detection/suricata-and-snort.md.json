@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.suricata-and-snort",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.detection.ids",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.ips",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.network-scanning",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "suricata-documentation-and-rule-format",
+      "type": "documentation",
+      "title": "Suricata documentation and rule format",
+      "url": "https://docs.suricata.io/",
+      "verified": false
+    },
+    {
+      "key": "snort-3-documentation-and-the-talos-ruleset",
+      "type": "documentation",
+      "title": "Snort 3 documentation and the Talos ruleset",
+      "url": "https://www.snort.org/",
+      "verified": false
+    },
+    {
+      "key": "emerging-threats-open-ruleset",
+      "type": "documentation",
+      "title": "Emerging Threats open ruleset",
+      "url": "https://rules.emergingthreats.net/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

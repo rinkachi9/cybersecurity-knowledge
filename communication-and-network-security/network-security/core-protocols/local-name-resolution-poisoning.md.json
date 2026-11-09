@@ -1,0 +1,46 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.local-name-resolution-poisoning",
+    "kind": "note",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-adversary-in-the-middle",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Adversary-in-the-Middle",
+      "url": "https://attack.mitre.org/techniques/T1557/001/",
+      "verified": false
+    },
+    {
+      "key": "rfc-4795-llmnr-and-rfc-6762-mdns",
+      "type": "standard",
+      "title": "RFC 4795 (LLMNR) and RFC 6762 (mDNS)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6762",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-3552-guidelines-for-writing-rfc-text-on-securi",
+      "type": "standard",
+      "title": "RFC 3552, Guidelines for Writing RFC Text on Security Considerations (2003)",
+      "url": "https://www.rfc-editor.org/rfc/rfc3552",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-189-border-gateway-protocol-security-a",
+      "type": "standard",
+      "title": "NIST SP 800-189, Border Gateway Protocol Security and Resilience (Rev. 1 initial public draft, 2025), for the routing add-ons",
+      "url": "https://csrc.nist.gov/pubs/sp/800/189/r1/ipd",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

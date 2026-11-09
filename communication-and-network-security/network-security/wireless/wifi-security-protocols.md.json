@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.wireless.wifi-security-protocols",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "wireless"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.wireless.enterprise-wifi",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.wireless.wireless-attacks",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ieee-802-11-standard-and-the-wi-fi-alliance-wpa3-s",
+      "type": "documentation",
+      "title": "IEEE 802.11 standard and the Wi-Fi Alliance WPA3 specification",
+      "url": "https://www.wi-fi.org/discover-wi-fi/security",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-97-establishing-wireless-robust-securi",
+      "type": "standard",
+      "title": "NIST SP 800-97, Establishing Wireless Robust Security Networks (802.11i)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-97",
+      "verified": false
+    },
+    {
+      "key": "vanhoef-m-and-piessens-f-key-reinstallation-attack",
+      "type": "documentation",
+      "title": "Vanhoef, M. and Piessens, F., \"Key Reinstallation Attacks\" (KRACK, 2017)",
+      "url": "https://www.krackattacks.com/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

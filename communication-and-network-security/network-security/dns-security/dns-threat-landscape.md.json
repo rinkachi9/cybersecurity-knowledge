@@ -1,0 +1,49 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "dns-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-81r3-secure-domain-name-system-dns-dep",
+      "type": "standard",
+      "title": "NIST SP 800-81r3, Secure Domain Name System (DNS) Deployment Guide (final, March 2026)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-81r3",
+      "verified": false
+    },
+    {
+      "key": "rfc-5452-measures-for-making-dns-more-resilient-ag",
+      "type": "standard",
+      "title": "RFC 5452, Measures for Making DNS More Resilient against Forged Answers (2009), the post-Kaminsky guidance",
+      "url": "https://www.rfc-editor.org/rfc/rfc5452",
+      "verified": false
+    },
+    {
+      "key": "us-cert-cisa-alert-ta14-017a-udp-based-amplificati",
+      "type": "documentation",
+      "title": "US-CERT (CISA) Alert TA14-017A, UDP-Based Amplification Attacks (DNS amplification factor)",
+      "url": "https://www.cisa.gov/news-events/alerts/2014/01/17/udp-based-amplification-attacks",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

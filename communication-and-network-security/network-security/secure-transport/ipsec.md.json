@@ -1,0 +1,49 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport.ipsec",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.public-key-infrastructure",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-4301-security-architecture-for-the-internet-pr",
+      "type": "standard",
+      "title": "RFC 4301, Security Architecture for the Internet Protocol (IPsec)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4301",
+      "verified": false
+    },
+    {
+      "key": "rfc-7296-internet-key-exchange-protocol-version-2",
+      "type": "standard",
+      "title": "RFC 7296, Internet Key Exchange Protocol Version 2 (IKEv2)",
+      "url": "https://www.rfc-editor.org/rfc/rfc7296",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-77-rev-1-guide-to-ipsec-vpns-2020",
+      "type": "standard",
+      "title": "NIST SP 800-77 Rev. 1, Guide to IPsec VPNs (2020)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-77r1",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

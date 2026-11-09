@@ -2,7 +2,7 @@
   "version": 1,
   "id": "d4-communication-and-network-security",
   "title": "Domain 4: Communication and network security",
-  "description": "Network architecture, components and secure channels (CISSP sections 4.1 to 4.3). Zero trust is written, the rest is planned.",
+  "description": "Network architecture, components and secure channels (CISSP sections 4.1 to 4.3): from the network threat model and protocols to segmentation, zero trust, filtering, secure transport, monitoring and network incident response.",
   "nodes": [
     {
       "id": "start",
@@ -15,55 +15,429 @@
       "externalSources": []
     },
     {
-      "id": "zta",
-      "title": "NIST zero trust architecture",
+      "id": "foundations",
+      "title": "Network threat model and controls",
       "group": "Communication and network security",
       "documentation": [
-        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+        "communication-and-network-security/network-security/foundations/README.md",
+        "communication-and-network-security/network-security/foundations/network-threat-model.md",
+        "communication-and-network-security/network-security/foundations/protocol-design-weaknesses.md",
+        "communication-and-network-security/network-security/foundations/network-security-controls.md",
+        "communication-and-network-security/network-security/foundations/network-security-lab/README.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-207",
+        "https://www.rfc-editor.org/rfc/rfc3552",
+        "https://www.rfc-editor.org/rfc/rfc7258"
+      ]
+    },
+    {
+      "id": "models",
+      "title": "OSI and TCP/IP models: attack surface by layer",
+      "group": "Communication and network security",
+      "description": "CISSP section 4.1.",
+      "documentation": [
+        "communication-and-network-security/network-security/foundations/attack-surface-by-layer.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc1122",
+        "https://doi.org/10.6028/NIST.SP.800-215"
+      ]
+    },
+    {
+      "id": "components",
+      "title": "Network components: switches, NAC and device hardening",
+      "group": "Communication and network security",
+      "description": "CISSP section 4.2.",
+      "documentation": [
+        "communication-and-network-security/network-security/link-layer/README.md",
+        "communication-and-network-security/network-security/link-layer/switch-security.md",
+        "communication-and-network-security/network-security/link-layer/network-access-control-8021x.md",
+        "communication-and-network-security/network-security/operations-and-assurance/network-device-hardening.md"
+      ],
+      "externalSources": [
+        "https://standards.ieee.org/",
+        "https://www.rfc-editor.org/rfc/rfc5216",
+        "https://doi.org/10.6028/NIST.SP.800-97"
+      ]
+    },
+    {
+      "id": "l2-attacks",
+      "title": "Link layer attacks",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/link-layer/arp-spoofing/README.md",
+        "communication-and-network-security/network-security/link-layer/mac-flooding.md",
+        "communication-and-network-security/network-security/link-layer/vlan-hopping.md",
+        "communication-and-network-security/network-security/link-layer/dhcp-attacks.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc826",
+        "https://standards.ieee.org/",
+        "https://www.rfc-editor.org/rfc/rfc2131"
+      ]
+    },
+    {
+      "id": "core-protocols",
+      "title": "IP, TCP, ICMP and IPv6 security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/core-protocols/README.md",
+        "communication-and-network-security/network-security/core-protocols/ip-spoofing-and-source-validation.md",
+        "communication-and-network-security/network-security/core-protocols/tcp-attacks.md",
+        "communication-and-network-security/network-security/core-protocols/icmp-security.md",
+        "communication-and-network-security/network-security/core-protocols/ipv6-security.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc2827",
+        "https://www.rfc-editor.org/rfc/rfc3704",
+        "https://www.rfc-editor.org/rfc/rfc9293"
+      ]
+    },
+    {
+      "id": "routing-and-legacy",
+      "title": "BGP, name resolution, legacy protocols and email transport",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/core-protocols/bgp-security.md",
+        "communication-and-network-security/network-security/core-protocols/local-name-resolution-poisoning.md",
+        "communication-and-network-security/network-security/core-protocols/insecure-legacy-protocols.md",
+        "communication-and-network-security/network-security/core-protocols/email-transport-security.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc4271",
+        "https://csrc.nist.gov/pubs/sp/800/189/r1/ipd",
+        "https://www.rfc-editor.org/rfc/rfc6811"
+      ]
+    },
+    {
+      "id": "dns",
+      "title": "DNS security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/dns-security/README.md",
+        "communication-and-network-security/network-security/dns-security/dns-threat-landscape.md",
+        "communication-and-network-security/network-security/dns-security/dnssec.md",
+        "communication-and-network-security/network-security/dns-security/encrypted-dns.md",
+        "communication-and-network-security/network-security/dns-security/protective-dns.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-81r3",
+        "https://www.rfc-editor.org/rfc/rfc5452",
+        "https://www.rfc-editor.org/rfc/rfc4033"
+      ]
+    },
+    {
+      "id": "dns-tunneling",
+      "title": "DNS tunneling",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/dns-security/dns-tunneling/README.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-81r3"
+      ]
+    },
+    {
+      "id": "wireless",
+      "title": "Wi-Fi security protocols and enterprise Wi-Fi",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/wireless/README.md",
+        "communication-and-network-security/network-security/wireless/wifi-security-protocols.md",
+        "communication-and-network-security/network-security/wireless/enterprise-wifi.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-97",
+        "https://www.rfc-editor.org/rfc/rfc5216"
+      ]
+    },
+    {
+      "id": "wireless-attacks",
+      "title": "Wireless and Bluetooth attacks",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/wireless/wireless-attacks.md",
+        "communication-and-network-security/network-security/wireless/bluetooth-and-short-range.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-97",
+        "https://doi.org/10.6028/NIST.SP.800-121r2"
+      ]
+    },
+    {
+      "id": "protocols",
+      "title": "Secure protocols: TLS, IPsec, SSH",
+      "group": "Communication and network security",
+      "description": "CISSP section 4.1.",
+      "documentation": [
+        "communication-and-network-security/network-security/secure-transport/README.md",
+        "communication-and-network-security/network-security/secure-transport/tls-in-network-security.md",
+        "communication-and-network-security/network-security/secure-transport/ipsec.md",
+        "communication-and-network-security/network-security/secure-transport/ssh-security.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc6797",
+        "https://doi.org/10.6028/NIST.SP.800-52r2",
+        "https://www.rfc-editor.org/rfc/rfc9849"
+      ]
+    },
+    {
+      "id": "tls-inspection",
+      "title": "TLS inspection",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/secure-transport/tls-inspection.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "channels",
+      "title": "Secure communication channels and remote access",
+      "group": "Communication and network security",
+      "description": "CISSP section 4.3. Voice and collaboration channels and third-party connectivity are still planned.",
+      "documentation": [
+        "communication-and-network-security/network-security/secure-transport/vpns.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-77r1",
+        "https://doi.org/10.6028/NIST.SP.800-113",
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
+    },
+    {
+      "id": "zones",
+      "title": "Security zones and DMZ",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/security-zones-and-dmz.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1",
+        "https://doi.org/10.6028/NIST.SP.800-215"
+      ]
+    },
+    {
+      "id": "segmentation",
+      "title": "Segmentation and micro-segmentation",
+      "group": "Communication and network security",
+      "description": "CISSP section 4.1.",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/README.md",
+        "communication-and-network-security/network-security/architecture/network-segmentation.md",
+        "communication-and-network-security/network-security/architecture/microsegmentation.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-215",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
+    },
+    {
+      "id": "mgmt-plane",
+      "title": "Management plane security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/management-plane-security.md"
+      ],
+      "externalSources": [
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ]
+    },
+    {
+      "id": "zta",
+      "title": "Zero trust architecture and zero-trust networking",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md",
+        "communication-and-network-security/network-security/architecture/zero-trust-networking.md"
       ],
       "externalSources": [
         "https://csrc.nist.gov/pubs/sp/800/207/final"
       ]
     },
     {
-      "id": "models",
-      "title": "OSI and TCP/IP models (planned)",
+      "id": "sase",
+      "title": "SASE and SSE",
       "group": "Communication and network security",
-      "description": "Planned. CISSP section 4.1.",
-      "documentation": [],
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/sase-and-sse.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
+    },
+    {
+      "id": "firewalls",
+      "title": "Firewalls and rule design",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/traffic-filtering/README.md",
+        "communication-and-network-security/network-security/traffic-filtering/firewalls.md",
+        "communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/README.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1"
+      ]
+    },
+    {
+      "id": "egress",
+      "title": "Egress filtering, proxies and secure web gateways",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/traffic-filtering/egress-filtering.md",
+        "communication-and-network-security/network-security/traffic-filtering/proxies-and-secure-web-gateways.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc2827",
+        "https://doi.org/10.6028/NIST.SP.800-215"
+      ]
+    },
+    {
+      "id": "waf",
+      "title": "Web application firewalls",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1"
+      ]
+    },
+    {
+      "id": "attacks",
+      "title": "Man-in-the-middle and network scanning",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/README.md",
+        "communication-and-network-security/network-security/network-attacks/man-in-the-middle.md",
+        "communication-and-network-security/network-security/network-attacks/network-scanning.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc6797"
+      ]
+    },
+    {
+      "id": "post-compromise",
+      "title": "Lateral movement, command and control, exfiltration",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/lateral-movement.md",
+        "communication-and-network-security/network-security/network-attacks/command-and-control-traffic.md",
+        "communication-and-network-security/network-security/network-attacks/data-exfiltration.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-137"
+      ]
+    },
+    {
+      "id": "dos",
+      "title": "Denial of service",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/README.md",
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/denial-of-service.md",
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/syn-flood.md",
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/icmp-flood.md",
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/ping-of-death.md",
+        "communication-and-network-security/network-security/network-attacks/denial-of-service/distributed-denial-of-service.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc4987",
+        "https://www.rfc-editor.org/rfc/rfc2827",
+        "https://www.rfc-editor.org/rfc/rfc2644"
+      ]
+    },
+    {
+      "id": "nsm",
+      "title": "Network security monitoring, packets and flows",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/README.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/README.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-137",
+        "https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-pcapng",
+        "https://www.rfc-editor.org/rfc/rfc7011"
+      ]
+    },
+    {
+      "id": "nids",
+      "title": "Zeek, Suricata and Snort",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/zeek.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md"
+      ],
       "externalSources": []
     },
     {
-      "id": "protocols",
-      "title": "Secure protocols: IPsec, SSH, TLS (planned)",
+      "id": "encrypted-analysis",
+      "title": "Encrypted traffic analysis and beaconing detection",
       "group": "Communication and network security",
-      "description": "Planned. CISSP section 4.1.",
-      "documentation": [],
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/encrypted-traffic-analysis.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/README.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc9849"
+      ]
+    },
+    {
+      "id": "ndr-hunting",
+      "title": "NDR, threat hunting and deception",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md"
+      ],
       "externalSources": []
     },
     {
-      "id": "segmentation",
-      "title": "Segmentation and micro-segmentation (planned)",
+      "id": "cloud-networks",
+      "title": "Cloud, Kubernetes and SD-WAN networks",
       "group": "Communication and network security",
-      "description": "Planned. CISSP section 4.1.",
-      "documentation": [],
-      "externalSources": []
+      "documentation": [
+        "communication-and-network-security/network-security/cloud-and-modern-networks/README.md",
+        "communication-and-network-security/network-security/cloud-and-modern-networks/cloud-network-security.md",
+        "communication-and-network-security/network-security/cloud-and-modern-networks/kubernetes-network-security.md",
+        "communication-and-network-security/network-security/cloud-and-modern-networks/sd-wan-security.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
     },
     {
-      "id": "components",
-      "title": "Network components and NAC (planned)",
+      "id": "ot-iot",
+      "title": "OT and IoT network security",
       "group": "Communication and network security",
-      "description": "Planned. CISSP section 4.2.",
-      "documentation": [],
-      "externalSources": []
+      "documentation": [
+        "communication-and-network-security/network-security/ot-and-iot/README.md",
+        "communication-and-network-security/network-security/ot-and-iot/ot-network-security.md",
+        "communication-and-network-security/network-security/ot-and-iot/iot-network-security.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-82r3",
+        "https://doi.org/10.6028/NIST.SP.800-213"
+      ]
     },
     {
-      "id": "channels",
-      "title": "Secure communication channels and remote access (planned)",
+      "id": "assurance",
+      "title": "Network security assessment and incident response",
       "group": "Communication and network security",
-      "description": "Planned. CISSP section 4.3.",
-      "documentation": [],
-      "externalSources": []
+      "documentation": [
+        "communication-and-network-security/network-security/operations-and-assurance/README.md",
+        "communication-and-network-security/network-security/operations-and-assurance/network-security-assessment.md",
+        "communication-and-network-security/network-security/operations-and-assurance/network-incident-response.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-115",
+        "https://doi.org/10.6028/NIST.SP.800-86"
+      ]
     },
     {
       "id": "pki",
@@ -88,38 +462,123 @@
   "edges": [
     {
       "from": "start",
-      "to": "zta",
+      "to": "foundations",
       "type": "next"
     },
     {
-      "from": "start",
+      "from": "foundations",
       "to": "models",
-      "type": "branch"
+      "type": "next"
     },
     {
       "from": "models",
-      "to": "protocols",
-      "type": "next"
-    },
-    {
-      "from": "protocols",
-      "to": "segmentation",
-      "type": "next"
-    },
-    {
-      "from": "segmentation",
-      "to": "zta",
-      "type": "branch"
-    },
-    {
-      "from": "segmentation",
       "to": "components",
       "type": "next"
     },
     {
       "from": "components",
+      "to": "l2-attacks",
+      "type": "next"
+    },
+    {
+      "from": "wireless",
+      "to": "wireless-attacks",
+      "type": "next"
+    },
+    {
+      "from": "models",
+      "to": "core-protocols",
+      "type": "next"
+    },
+    {
+      "from": "core-protocols",
+      "to": "routing-and-legacy",
+      "type": "next"
+    },
+    {
+      "from": "dns",
+      "to": "dns-tunneling",
+      "type": "next"
+    },
+    {
+      "from": "protocols",
+      "to": "tls-inspection",
+      "type": "next"
+    },
+    {
+      "from": "protocols",
       "to": "channels",
       "type": "next"
+    },
+    {
+      "from": "zones",
+      "to": "segmentation",
+      "type": "next"
+    },
+    {
+      "from": "segmentation",
+      "to": "mgmt-plane",
+      "type": "next"
+    },
+    {
+      "from": "segmentation",
+      "to": "zta",
+      "type": "next"
+    },
+    {
+      "from": "zta",
+      "to": "sase",
+      "type": "next"
+    },
+    {
+      "from": "firewalls",
+      "to": "egress",
+      "type": "next"
+    },
+    {
+      "from": "egress",
+      "to": "waf",
+      "type": "next"
+    },
+    {
+      "from": "attacks",
+      "to": "post-compromise",
+      "type": "next"
+    },
+    {
+      "from": "nsm",
+      "to": "nids",
+      "type": "next"
+    },
+    {
+      "from": "nids",
+      "to": "encrypted-analysis",
+      "type": "next"
+    },
+    {
+      "from": "encrypted-analysis",
+      "to": "ndr-hunting",
+      "type": "next"
+    },
+    {
+      "from": "ndr-hunting",
+      "to": "assurance",
+      "type": "next"
+    },
+    {
+      "from": "components",
+      "to": "wireless",
+      "type": "branch"
+    },
+    {
+      "from": "core-protocols",
+      "to": "dns",
+      "type": "branch"
+    },
+    {
+      "from": "models",
+      "to": "protocols",
+      "type": "branch"
     },
     {
       "from": "protocols",
@@ -127,8 +586,58 @@
       "type": "branch"
     },
     {
-      "from": "components",
+      "from": "foundations",
+      "to": "zones",
+      "type": "branch"
+    },
+    {
+      "from": "channels",
+      "to": "zta",
+      "type": "branch"
+    },
+    {
+      "from": "segmentation",
+      "to": "firewalls",
+      "type": "branch"
+    },
+    {
+      "from": "foundations",
+      "to": "attacks",
+      "type": "branch"
+    },
+    {
+      "from": "attacks",
+      "to": "dos",
+      "type": "branch"
+    },
+    {
+      "from": "post-compromise",
+      "to": "nsm",
+      "type": "branch"
+    },
+    {
+      "from": "foundations",
+      "to": "nsm",
+      "type": "branch"
+    },
+    {
+      "from": "nids",
       "to": "ids",
+      "type": "branch"
+    },
+    {
+      "from": "segmentation",
+      "to": "cloud-networks",
+      "type": "branch"
+    },
+    {
+      "from": "segmentation",
+      "to": "ot-iot",
+      "type": "branch"
+    },
+    {
+      "from": "firewalls",
+      "to": "assurance",
       "type": "branch"
     }
   ]

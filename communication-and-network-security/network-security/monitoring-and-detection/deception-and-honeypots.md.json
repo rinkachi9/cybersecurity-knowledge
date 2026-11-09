@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.deception-and-honeypots",
+    "kind": "note",
+    "status": "draft",
+    "order": 10,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.lateral-movement",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.network-scanning",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-engage-formerly-mitre-shield-the-adversary-e",
+      "type": "documentation",
+      "title": "MITRE Engage (formerly MITRE Shield), the adversary-engagement and deception knowledge base",
+      "url": "https://engage.mitre.org/",
+      "verified": false
+    },
+    {
+      "key": "the-honeynet-project-research-and-tools-for-honeyp",
+      "type": "documentation",
+      "title": "The Honeynet Project, research and tools for honeypots",
+      "url": "https://www.honeynet.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

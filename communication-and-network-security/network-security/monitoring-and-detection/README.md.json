@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection",
+    "kind": "index",
+    "status": "draft",
+    "order": 10,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

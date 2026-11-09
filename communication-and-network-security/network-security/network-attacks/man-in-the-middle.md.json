@@ -1,0 +1,42 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.man-in-the-middle",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-adversary-in-the-middle-t1557-and-its",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Adversary-in-the-Middle (T1557) and its sub-techniques",
+      "url": "https://attack.mitre.org/techniques/T1557/",
+      "verified": false
+    },
+    {
+      "key": "rfc-6797-http-strict-transport-security",
+      "type": "standard",
+      "title": "RFC 6797, HTTP Strict Transport Security",
+      "url": "https://www.rfc-editor.org/rfc/rfc6797",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.denial-of-service.denial-of-service",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "us-cert-cisa-alert-ta14-017a-udp-based-amplificati",
+      "type": "documentation",
+      "title": "US-CERT (CISA) Alert TA14-017A, UDP-Based Amplification Attacks, with the amplification-factor table (last revised 2019)",
+      "url": "https://www.cisa.gov/news-events/alerts/2014/01/17/udp-based-amplification-attacks",
+      "verified": false
+    },
+    {
+      "key": "rfc-4987-tcp-syn-flooding-attacks-and-common-mitig",
+      "type": "standard",
+      "title": "RFC 4987, TCP SYN Flooding Attacks and Common Mitigations (2007)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4987",
+      "verified": false
+    },
+    {
+      "key": "bcp-38-rfc-2827-network-ingress-filtering-2000-the",
+      "type": "standard",
+      "title": "BCP 38 / RFC 2827, Network Ingress Filtering (2000), the source-validation defense against reflection",
+      "url": "https://www.rfc-editor.org/rfc/rfc2827",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-network-denial-of-service-t1498-and-e",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Network Denial of Service (T1498) and Endpoint Denial of Service (T1499)",
+      "url": "https://attack.mitre.org/techniques/T1498/",
+      "verified": false
+    },
+    {
+      "key": "cisa-understanding-and-responding-to-distributed-d",
+      "type": "documentation",
+      "title": "CISA, Understanding and Responding to Distributed Denial-of-Service Attacks (joint guidance)",
+      "url": "https://www.cisa.gov/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

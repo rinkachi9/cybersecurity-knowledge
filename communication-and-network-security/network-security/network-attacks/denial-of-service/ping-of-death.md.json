@@ -1,0 +1,45 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.denial-of-service.ping-of-death",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.denial-of-service",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-791-internet-protocol-1981-section-on-fragment",
+      "type": "standard",
+      "title": "RFC 791, Internet Protocol (1981), section on fragmentation and reassembly, and the 16-bit total-length field",
+      "url": "https://www.rfc-editor.org/rfc/rfc791",
+      "verified": false
+    },
+    {
+      "key": "rfc-1858-security-considerations-for-ip-fragment-f",
+      "type": "standard",
+      "title": "RFC 1858, Security Considerations for IP Fragment Filtering (1995), on tiny and overlapping fragments",
+      "url": "https://www.rfc-editor.org/rfc/rfc1858",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-endpoint-denial-of-service-t1499",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Endpoint Denial of Service (T1499)",
+      "url": "https://attack.mitre.org/techniques/T1499/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

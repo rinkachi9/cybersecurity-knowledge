@@ -288,6 +288,79 @@
         "security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "net-recon",
+      "title": "Network scanning",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/network-scanning.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "mitm",
+      "title": "Man-in-the-middle and link layer attacks",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/man-in-the-middle.md",
+        "communication-and-network-security/network-security/link-layer/arp-spoofing/README.md",
+        "communication-and-network-security/network-security/link-layer/vlan-hopping.md",
+        "communication-and-network-security/network-security/link-layer/dhcp-attacks.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc6797",
+        "https://www.rfc-editor.org/rfc/rfc826",
+        "https://standards.ieee.org/"
+      ]
+    },
+    {
+      "id": "name-poisoning",
+      "title": "Local name resolution poisoning",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/core-protocols/local-name-resolution-poisoning.md"
+      ],
+      "externalSources": [
+        "https://www.rfc-editor.org/rfc/rfc6762"
+      ]
+    },
+    {
+      "id": "wifi-attacks",
+      "title": "Wireless attacks",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/wireless/wireless-attacks.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-97"
+      ]
+    },
+    {
+      "id": "net-post",
+      "title": "Lateral movement, C2 and exfiltration over the network",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/lateral-movement.md",
+        "communication-and-network-security/network-security/network-attacks/command-and-control-traffic.md",
+        "communication-and-network-security/network-security/network-attacks/data-exfiltration.md",
+        "communication-and-network-security/network-security/dns-security/dns-tunneling/README.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-137",
+        "https://doi.org/10.6028/NIST.SP.800-81r3"
+      ]
+    },
+    {
+      "id": "net-assessment",
+      "title": "Network security assessment",
+      "group": "Security assessment and testing",
+      "documentation": [
+        "communication-and-network-security/network-security/operations-and-assurance/network-security-assessment.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-115"
+      ]
     }
   ],
   "edges": [
@@ -434,6 +507,36 @@
     {
       "from": "malware",
       "to": "adv-ai",
+      "type": "branch"
+    },
+    {
+      "from": "recon",
+      "to": "net-recon",
+      "type": "branch"
+    },
+    {
+      "from": "net-recon",
+      "to": "mitm",
+      "type": "branch"
+    },
+    {
+      "from": "mitm",
+      "to": "name-poisoning",
+      "type": "branch"
+    },
+    {
+      "from": "mitm",
+      "to": "wifi-attacks",
+      "type": "branch"
+    },
+    {
+      "from": "privesc",
+      "to": "net-post",
+      "type": "branch"
+    },
+    {
+      "from": "net-recon",
+      "to": "net-assessment",
       "type": "branch"
     }
   ]

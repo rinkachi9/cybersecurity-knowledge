@@ -27,7 +27,8 @@
       "title": "Zero trust",
       "group": "Communication and network security",
       "documentation": [
-        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+        "communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md",
+        "communication-and-network-security/network-security/architecture/zero-trust-networking.md"
       ],
       "externalSources": []
     },
@@ -276,6 +277,72 @@
         "security-operations/threats-and-attacks/business-email-compromise/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "segmentation",
+      "title": "Network segmentation and microsegmentation",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/architecture/security-zones-and-dmz.md",
+        "communication-and-network-security/network-security/architecture/network-segmentation.md",
+        "communication-and-network-security/network-security/architecture/microsegmentation.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1",
+        "https://doi.org/10.6028/NIST.SP.800-215",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+      ]
+    },
+    {
+      "id": "firewalls",
+      "title": "Firewalls and egress filtering",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/traffic-filtering/firewalls.md",
+        "communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/README.md",
+        "communication-and-network-security/network-security/traffic-filtering/egress-filtering.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-41r1",
+        "https://www.rfc-editor.org/rfc/rfc2827"
+      ]
+    },
+    {
+      "id": "pdns",
+      "title": "Protective DNS",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/dns-security/protective-dns.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-81r3"
+      ]
+    },
+    {
+      "id": "nsm",
+      "title": "Network security monitoring",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/zeek.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-137",
+        "https://www.rfc-editor.org/rfc/rfc7011"
+      ]
+    },
+    {
+      "id": "ndr",
+      "title": "NDR, network threat hunting and deception",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md"
+      ],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -417,6 +484,36 @@
     {
       "from": "awareness",
       "to": "bec",
+      "type": "branch"
+    },
+    {
+      "from": "did",
+      "to": "segmentation",
+      "type": "branch"
+    },
+    {
+      "from": "segmentation",
+      "to": "firewalls",
+      "type": "branch"
+    },
+    {
+      "from": "firewalls",
+      "to": "pdns",
+      "type": "branch"
+    },
+    {
+      "from": "zta",
+      "to": "nsm",
+      "type": "branch"
+    },
+    {
+      "from": "nsm",
+      "to": "ids",
+      "type": "branch"
+    },
+    {
+      "from": "nsm",
+      "to": "ndr",
       "type": "branch"
     }
   ]

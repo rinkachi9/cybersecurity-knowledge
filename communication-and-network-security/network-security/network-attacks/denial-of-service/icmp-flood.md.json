@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.denial-of-service.icmp-flood",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.denial-of-service",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.icmp-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-2644-bcp-34-changing-the-default-for-directed",
+      "type": "standard",
+      "title": "RFC 2644 / BCP 34, Changing the Default for Directed Broadcasts in Routers (1999)",
+      "url": "https://www.rfc-editor.org/rfc/rfc2644",
+      "verified": false
+    },
+    {
+      "key": "rfc-4890-recommendations-for-filtering-icmpv6-mess",
+      "type": "standard",
+      "title": "RFC 4890, Recommendations for Filtering ICMPv6 Messages in Firewalls (2007), the IPv6 analogue of \"do not blanket-drop ICMP\"",
+      "url": "https://www.rfc-editor.org/rfc/rfc4890",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-network-denial-of-service",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Network Denial of Service",
+      "url": "https://attack.mitre.org/techniques/T1498/002/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

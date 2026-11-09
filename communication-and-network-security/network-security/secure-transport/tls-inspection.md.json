@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport.tls-inspection",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.public-key-infrastructure",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "us-cert-alert-ta17-075a-https-interception-weakens",
+      "type": "documentation",
+      "title": "US-CERT Alert TA17-075A, HTTPS Interception Weakens TLS Security (2017)",
+      "url": "https://www.cisa.gov/news-events/alerts/2017/03/16/https-interception-weakens-tls-security",
+      "verified": false
+    },
+    {
+      "key": "nsa-managing-risk-from-tls-inspection-2019",
+      "type": "documentation",
+      "title": "NSA, Managing Risk from TLS Inspection (2019)",
+      "url": "https://media.defense.gov/2019/Nov/18/2002212783/-1/-1/0/MANAGING%20RISK%20FROM%20TLS%20INSPECTION.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

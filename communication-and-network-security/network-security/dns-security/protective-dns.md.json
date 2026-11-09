@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.dns-security.protective-dns",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "dns-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.encrypted-dns",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.threat-intelligence.threat-intelligence",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nsa-cisa-selecting-a-protective-dns-service-2021",
+      "type": "documentation",
+      "title": "NSA/CISA, Selecting a Protective DNS Service (2021)",
+      "url": "https://media.defense.gov/2021/Mar/03/2002593055/-1/-1/1/CSI_Selecting-Protective-DNS_UOO11765221.PDF",
+      "verified": false
+    },
+    {
+      "key": "uk-ncsc-protective-dns-service-documentation-and-r",
+      "type": "documentation",
+      "title": "UK NCSC, Protective DNS service documentation and rationale",
+      "url": "https://www.ncsc.gov.uk/",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-81r3-secure-dns-deployment-guide-2026",
+      "type": "standard",
+      "title": "NIST SP 800-81r3, Secure DNS Deployment Guide (2026)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-81r3",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

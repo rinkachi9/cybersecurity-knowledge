@@ -1,0 +1,47 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.lateral-movement",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.microsegmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle.privilege-escalation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "human-security.credential-attacks",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-lateral-movement-tactic-ta0008-and-re",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Lateral Movement tactic (TA0008) and Remote Services (T1021)",
+      "url": "https://attack.mitre.org/tactics/TA0008/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

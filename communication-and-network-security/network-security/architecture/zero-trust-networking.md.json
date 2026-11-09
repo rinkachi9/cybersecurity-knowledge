@@ -1,0 +1,54 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.architecture.zero-trust-networking",
+    "kind": "note",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "architecture"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.cloud-and-infrastructure-security.nist-zero-trust-architecture",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.microsegmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.vpns",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-207-zero-trust-architecture-2020-the-a",
+      "type": "standard",
+      "title": "NIST SP 800-207, Zero Trust Architecture (2020), the authoritative model",
+      "url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "verified": false
+    },
+    {
+      "key": "cisa-zero-trust-maturity-model",
+      "type": "documentation",
+      "title": "CISA, Zero Trust Maturity Model",
+      "url": "https://www.cisa.gov/zero-trust-maturity-model",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -124,6 +124,45 @@
         "security-operations/threats-and-attacks/business-email-compromise/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "net-hunting",
+      "title": "Network threat hunting",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "c2-beaconing",
+      "title": "C2 traffic and beaconing detection",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/command-and-control-traffic.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "dns-tunnel",
+      "title": "DNS tunneling and its detector",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/dns-security/dns-tunneling/README.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-81r3"
+      ]
+    },
+    {
+      "id": "lateral",
+      "title": "Lateral movement on the network",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/network-attacks/lateral-movement.md"
+      ],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -185,6 +224,26 @@
     {
       "from": "cred",
       "to": "bec",
+      "type": "branch"
+    },
+    {
+      "from": "attack",
+      "to": "net-hunting",
+      "type": "branch"
+    },
+    {
+      "from": "net-hunting",
+      "to": "c2-beaconing",
+      "type": "next"
+    },
+    {
+      "from": "c2-beaconing",
+      "to": "dns-tunnel",
+      "type": "next"
+    },
+    {
+      "from": "lifecycle",
+      "to": "lateral",
       "type": "branch"
     }
   ]

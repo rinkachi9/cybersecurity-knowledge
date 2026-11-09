@@ -1,0 +1,10 @@
+# id,action,source,destination,protocol,port  (first match wins, "any" matches everything)
+10,allow,any,198.51.100.20/32,tcp,443
+20,allow,192.0.2.0/24,198.51.100.0/24,tcp,22
+30,deny,192.0.2.66/32,198.51.100.20/32,tcp,22
+40,allow,192.0.2.10/32,198.51.100.20/32,tcp,22
+50,allow,any,198.51.100.0/24,tcp,1-65535
+60,allow,any,198.51.100.30/32,tcp,3389
+70,allow,192.0.2.0/25,198.51.100.40/32,udp,53
+80,deny,192.0.2.0/24,198.51.100.40/32,udp,53
+90,deny,any,any,any,any

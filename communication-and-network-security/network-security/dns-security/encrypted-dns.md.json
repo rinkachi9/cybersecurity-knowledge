@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.dns-security.encrypted-dns",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "dns-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dnssec",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-7858-dot-rfc-8484-doh-rfc-9250-doq",
+      "type": "standard",
+      "title": "RFC 7858 (DoT), RFC 8484 (DoH), RFC 9250 (DoQ)",
+      "url": "https://www.rfc-editor.org/rfc/rfc8484",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-81r3-secure-dns-deployment-guide-2026",
+      "type": "standard",
+      "title": "NIST SP 800-81r3, Secure DNS Deployment Guide (2026), on recursive-resolver confidentiality and query minimization",
+      "url": "https://doi.org/10.6028/NIST.SP.800-81r3",
+      "verified": false
+    },
+    {
+      "key": "rfc-9462-9463-discovery-of-designated-resolvers-dd",
+      "type": "standard",
+      "title": "RFC 9462/9463, Discovery of Designated Resolvers (DDR) and network-provisioned resolvers",
+      "url": "https://www.rfc-editor.org/rfc/rfc9462",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

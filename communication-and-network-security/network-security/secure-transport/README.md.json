@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

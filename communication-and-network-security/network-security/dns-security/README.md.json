@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.dns-security",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "dns-security"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

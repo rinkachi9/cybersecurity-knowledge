@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "links": [
+    {
+      "to": "data-security.cryptography",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.public-key-infrastructure",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-6797-http-strict-transport-security-hsts",
+      "type": "standard",
+      "title": "RFC 6797, HTTP Strict Transport Security (HSTS)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6797",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-52-rev-2-guidelines-for-tls-implementa",
+      "type": "standard",
+      "title": "NIST SP 800-52 Rev. 2, Guidelines for TLS Implementations",
+      "url": "https://doi.org/10.6028/NIST.SP.800-52r2",
+      "verified": false
+    },
+    {
+      "key": "ca-browser-forum-ballot-sc-081-certificate-validit",
+      "type": "documentation",
+      "title": "CA/Browser Forum ballot SC-081 (certificate validity reductions)",
+      "url": "https://cabforum.org/",
+      "verified": false
+    },
+    {
+      "key": "rfc-9849-tls-encrypted-client-hello-2026-for-hidin",
+      "type": "standard",
+      "title": "RFC 9849, TLS Encrypted Client Hello (2026), for hiding SNI",
+      "url": "https://www.rfc-editor.org/rfc/rfc9849",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

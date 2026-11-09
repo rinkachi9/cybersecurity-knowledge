@@ -1,0 +1,47 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.operations-and-assurance.network-incident-response",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "operations-and-assurance"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.operations.nist-incident-response",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.management-plane-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-61-rev-3-2025-and-sp-800-86-guide-to-i",
+      "type": "standard",
+      "title": "NIST SP 800-61 Rev. 3 (2025) and SP 800-86, Guide to Integrating Forensic Techniques into Incident Response",
+      "url": "https://doi.org/10.6028/NIST.SP.800-86",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

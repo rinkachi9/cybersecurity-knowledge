@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations.network-security-controls",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.attack-surface-by-layer",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.governance-and-compliance.frameworks.security-controls",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-cybersecurity-framework-2-0-2024-the-protect",
+      "type": "standard",
+      "title": "NIST Cybersecurity Framework 2.0 (2024), the Protect, Detect, Respond functions",
+      "url": "https://doi.org/10.6028/NIST.CSWP.29",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-53-rev-5-control-families-sc-si-and-ac",
+      "type": "standard",
+      "title": "NIST SP 800-53 Rev. 5, control families SC, SI and AC",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-215-guide-to-a-secure-enterprise-netwo",
+      "type": "standard",
+      "title": "NIST SP 800-215, Guide to a Secure Enterprise Network Landscape (2022)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-215",
+      "verified": false
+    },
+    {
+      "key": "mitre-d3fend-defensive-technique-knowledge-graph",
+      "type": "documentation",
+      "title": "MITRE D3FEND, defensive technique knowledge graph",
+      "url": "https://d3fend.mitre.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.network-scanning",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threats-and-attacks.attack-lifecycle.reconnaissance",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.tcp-attacks",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.packet-capture-analysis",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nmap-reference-guide-and-the-book-nmap-network-sca",
+      "type": "documentation",
+      "title": "Nmap reference guide and the book Nmap Network Scanning (Lyon)",
+      "url": "https://nmap.org/book/",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-network-service-discovery-t1046-and-a",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Network Service Discovery (T1046) and Active Scanning (T1595)",
+      "url": "https://attack.mitre.org/techniques/T1046/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

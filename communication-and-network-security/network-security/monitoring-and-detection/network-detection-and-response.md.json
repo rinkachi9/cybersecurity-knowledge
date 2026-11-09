@@ -1,0 +1,55 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.network-detection-and-response",
+    "kind": "note",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.ids",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.ips",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.siem",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.soar",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.encrypted-traffic-analysis",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.beaconing-detection",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-for-mapping-ndr-detections-to-adversa",
+      "type": "documentation",
+      "title": "MITRE ATT&CK for mapping NDR detections to adversary techniques",
+      "url": "https://attack.mitre.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

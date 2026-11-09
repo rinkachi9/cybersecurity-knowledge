@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.denial-of-service.distributed-denial-of-service",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.denial-of-service",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.syn-flood",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.icmp-flood",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cisa-understanding-and-responding-to-distributed-d",
+      "type": "documentation",
+      "title": "CISA, Understanding and Responding to Distributed Denial-of-Service Attacks (joint CISA, FBI, MS-ISAC guidance)",
+      "url": "https://www.cisa.gov/resources-tools/resources/understanding-and-responding-distributed-denial-service-attacks",
+      "verified": false
+    },
+    {
+      "key": "antonakakis-m-et-al-understanding-the-mirai-botnet",
+      "type": "paper",
+      "title": "Antonakakis, M. et al., \"Understanding the Mirai Botnet\", USENIX Security 2017, on the IoT botnet behind record attacks",
+      "url": "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/antonakakis",
+      "verified": false
+    },
+    {
+      "key": "us-cert-cisa-alert-ta14-017a-udp-based-amplificati",
+      "type": "documentation",
+      "title": "US-CERT (CISA) Alert TA14-017A, UDP-Based Amplification Attacks",
+      "url": "https://www.cisa.gov/news-events/alerts/2014/01/17/udp-based-amplification-attacks",
+      "verified": false
+    },
+    {
+      "key": "bcp-38-rfc-2827-network-ingress-filtering",
+      "type": "standard",
+      "title": "BCP 38 / RFC 2827, Network Ingress Filtering",
+      "url": "https://www.rfc-editor.org/rfc/rfc2827",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-network-denial-of-service-t1498",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Network Denial of Service (T1498)",
+      "url": "https://attack.mitre.org/techniques/T1498/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

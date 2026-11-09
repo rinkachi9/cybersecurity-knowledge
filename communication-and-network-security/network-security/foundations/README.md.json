@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

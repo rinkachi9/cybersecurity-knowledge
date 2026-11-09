@@ -1,0 +1,46 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.zeek",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.packet-capture-analysis",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.encrypted-traffic-analysis",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "zeek-documentation-and-the-log-reference",
+      "type": "documentation",
+      "title": "Zeek documentation and the log reference",
+      "url": "https://docs.zeek.org/",
+      "verified": false
+    },
+    {
+      "key": "zeek-conn-log-fields",
+      "type": "documentation",
+      "title": "Zeek `conn.log` fields",
+      "url": "https://docs.zeek.org/en/master/logs/conn.html",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

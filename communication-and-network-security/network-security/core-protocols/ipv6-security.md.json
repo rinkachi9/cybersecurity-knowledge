@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.ipv6-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.icmp-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.link-layer.dhcp-attacks",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.link-layer.arp-spoofing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-8200-internet-protocol-version-6",
+      "type": "standard",
+      "title": "RFC 8200, Internet Protocol, Version 6",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200",
+      "verified": false
+    },
+    {
+      "key": "rfc-4861-neighbor-discovery-for-ipv6-and-rfc-4862",
+      "type": "standard",
+      "title": "RFC 4861, Neighbor Discovery for IPv6, and RFC 4862, SLAAC",
+      "url": "https://www.rfc-editor.org/rfc/rfc4861",
+      "verified": false
+    },
+    {
+      "key": "rfc-6105-ipv6-router-advertisement-guard",
+      "type": "standard",
+      "title": "RFC 6105, IPv6 Router Advertisement Guard",
+      "url": "https://www.rfc-editor.org/rfc/rfc6105",
+      "verified": false
+    },
+    {
+      "key": "rfc-4890-filtering-icmpv6-messages-in-firewalls",
+      "type": "standard",
+      "title": "RFC 4890, Filtering ICMPv6 Messages in Firewalls",
+      "url": "https://www.rfc-editor.org/rfc/rfc4890",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-119-guidelines-for-the-secure-deployme",
+      "type": "standard",
+      "title": "NIST SP 800-119, Guidelines for the Secure Deployment of IPv6",
+      "url": "https://doi.org/10.6028/NIST.SP.800-119",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

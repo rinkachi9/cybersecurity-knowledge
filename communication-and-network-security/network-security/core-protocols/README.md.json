@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

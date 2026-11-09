@@ -99,7 +99,7 @@
       "title": "Zero trust",
       "group": "Communication and network security",
       "documentation": [
-        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+        "communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md"
       ],
       "externalSources": []
     },
@@ -156,6 +156,26 @@
       "group": "Asset security",
       "documentation": [
         "asset-security/asset-management/README.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "cloud-network",
+      "title": "Cloud network security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/cloud-and-modern-networks/cloud-network-security.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
+    },
+    {
+      "id": "k8s-network",
+      "title": "Kubernetes network security",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/cloud-and-modern-networks/kubernetes-network-security.md"
       ],
       "externalSources": []
     }
@@ -239,6 +259,16 @@
     {
       "from": "cia",
       "to": "assets",
+      "type": "branch"
+    },
+    {
+      "from": "cspm",
+      "to": "cloud-network",
+      "type": "branch"
+    },
+    {
+      "from": "kspm",
+      "to": "k8s-network",
       "type": "branch"
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.operations-and-assurance.network-security-assessment",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "operations-and-assurance"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.network-scanning",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.traffic-filtering.firewall-rule-design",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "organizational-security.vulnerability-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-115-technical-guide-to-information-sec",
+      "type": "standard",
+      "title": "NIST SP 800-115, Technical Guide to Information Security Testing and Assessment",
+      "url": "https://doi.org/10.6028/NIST.SP.800-115",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

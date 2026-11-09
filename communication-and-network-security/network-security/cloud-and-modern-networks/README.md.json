@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.cloud-and-modern-networks",
+    "kind": "index",
+    "status": "draft",
+    "order": 11,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "cloud-and-modern-networks"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

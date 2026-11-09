@@ -183,7 +183,7 @@
       "title": "Zero trust (Domain 4)",
       "group": "Communication and network security",
       "documentation": [
-        "communication-and-network-security/network-security/nist-zero-trust-architecture.md"
+        "communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md"
       ],
       "externalSources": []
     },

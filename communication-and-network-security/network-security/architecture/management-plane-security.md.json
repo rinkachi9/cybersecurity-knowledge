@@ -1,0 +1,54 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.architecture.management-plane-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "architecture"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.security-zones-and-dmz",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.ssh-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.insecure-legacy-protocols",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nsa-network-infrastructure-security-guide-2022-ext",
+      "type": "documentation",
+      "title": "NSA, Network Infrastructure Security Guide (2022), extensive management-plane guidance",
+      "url": "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-53-rev-5-controls-ac-17-remote-access",
+      "type": "standard",
+      "title": "NIST SP 800-53 Rev. 5, controls AC-17 (Remote Access) and the SC family",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

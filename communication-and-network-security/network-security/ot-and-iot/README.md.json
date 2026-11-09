@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.ot-and-iot",
+    "kind": "index",
+    "status": "draft",
+    "order": 12,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "ot-and-iot"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

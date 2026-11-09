@@ -1,0 +1,47 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.beaconing-detection",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.traffic-filtering.egress-filtering",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.protective-dns",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-tunneling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.encrypted-traffic-analysis",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-command-and-control-tactic-ta0011-app",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Command and Control tactic (TA0011), Application Layer Protocol (T1071), Protocol Tunneling (T1572)",
+      "url": "https://attack.mitre.org/tactics/TA0011/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

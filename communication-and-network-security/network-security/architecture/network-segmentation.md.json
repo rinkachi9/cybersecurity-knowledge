@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.architecture.network-segmentation",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "architecture"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.security-zones-and-dmz",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-215-guide-to-a-secure-enterprise-netwo",
+      "type": "standard",
+      "title": "NIST SP 800-215, Guide to a Secure Enterprise Network Landscape (2022)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-215",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-53-rev-5-control-sc-7-boundary-protect",
+      "type": "standard",
+      "title": "NIST SP 800-53 Rev. 5, control SC-7 Boundary Protection",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "verified": false
+    },
+    {
+      "key": "nsa-network-infrastructure-security-guide-2022",
+      "type": "documentation",
+      "title": "NSA, Network Infrastructure Security Guide (2022)",
+      "url": "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

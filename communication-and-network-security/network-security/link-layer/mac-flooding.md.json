@@ -1,0 +1,42 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.link-layer.mac-flooding",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "link-layer"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.link-layer.switch-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.attack-surface-by-layer",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-network-sniffing-t1040",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Network Sniffing (T1040)",
+      "url": "https://attack.mitre.org/techniques/T1040/",
+      "verified": false
+    },
+    {
+      "key": "nsa-network-infrastructure-security-guide-2022-acc",
+      "type": "documentation",
+      "title": "NSA, Network Infrastructure Security Guide (2022), access-layer hardening",
+      "url": "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

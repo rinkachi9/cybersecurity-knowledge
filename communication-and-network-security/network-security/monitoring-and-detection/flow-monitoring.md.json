@@ -1,0 +1,35 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.packet-capture-analysis",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-7011-specification-of-the-ip-flow-information",
+      "type": "standard",
+      "title": "RFC 7011, Specification of the IP Flow Information Export (IPFIX) Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc7011",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

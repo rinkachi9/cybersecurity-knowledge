@@ -1,0 +1,75 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport.vpns",
+    "kind": "note",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.ipsec",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.secure-transport.tls-in-network-security",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.zero-trust-networking",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-77-rev-1-guide-to-ipsec-vpns-2020",
+      "type": "standard",
+      "title": "NIST SP 800-77 Rev. 1, Guide to IPsec VPNs (2020)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-77r1",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-113-guide-to-ssl-vpns",
+      "type": "standard",
+      "title": "NIST SP 800-113, Guide to SSL VPNs",
+      "url": "https://doi.org/10.6028/NIST.SP.800-113",
+      "verified": false
+    },
+    {
+      "key": "nsa-cisa-selecting-and-hardening-remote-access-vpn",
+      "type": "documentation",
+      "title": "NSA/CISA, Selecting and Hardening Remote Access VPN Solutions (2021)",
+      "url": "https://media.defense.gov/2021/Sep/28/2002863184/-1/-1/0/CSI_SELECTING-HARDENING-REMOTE-ACCESS-VPNS-20210928.PDF",
+      "verified": false
+    },
+    {
+      "key": "wireguard-protocol-and-whitepaper",
+      "type": "documentation",
+      "title": "WireGuard protocol and whitepaper",
+      "url": "https://www.wireguard.com/papers/wireguard.pdf",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-207-zero-trust-architecture-for-the-zt",
+      "type": "standard",
+      "title": "NIST SP 800-207, Zero Trust Architecture, for the ZTNA alternative",
+      "url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

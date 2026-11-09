@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.secure-transport.ssh-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "secure-transport"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.identity-and-access.authentication.authentication-methods",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.insecure-legacy-protocols",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-4251-4254-the-ssh-protocol-architecture-and-co",
+      "type": "standard",
+      "title": "RFC 4251-4254, the SSH protocol architecture and components",
+      "url": "https://www.rfc-editor.org/rfc/rfc4251",
+      "verified": false
+    },
+    {
+      "key": "openssh-release-notes-especially-10-0-post-quantum",
+      "type": "documentation",
+      "title": "OpenSSH release notes, especially 10.0 (post-quantum default)",
+      "url": "https://www.openssh.com/releasenotes.html",
+      "verified": false
+    },
+    {
+      "key": "nist-ir-7966-security-of-interactive-and-automated",
+      "type": "standard",
+      "title": "NIST IR 7966, Security of Interactive and Automated Access Management Using Secure Shell (SSH), on key management",
+      "url": "https://doi.org/10.6028/NIST.IR.7966",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

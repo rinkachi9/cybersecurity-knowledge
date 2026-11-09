@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.beaconing-detection",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-command-and-control-tactic-ta0011-and",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Command and Control tactic (TA0011) and Application Layer Protocol (T1071)",
+      "url": "https://attack.mitre.org/tactics/TA0011/",
+      "verified": false
+    },
+    {
+      "key": "active-countermeasures-rita-real-intelligence-thre",
+      "type": "documentation",
+      "title": "Active Countermeasures, RITA (Real Intelligence Threat Analytics), an open-source beacon analyzer",
+      "url": "https://www.activecountermeasures.com/free-tools/rita/",
+      "verified": false
+    },
+    {
+      "key": "zeek-conn-log-documentation-the-real-world-source",
+      "type": "documentation",
+      "title": "Zeek `conn.log` documentation, the real-world source of the fields the detector uses",
+      "url": "https://docs.zeek.org/en/master/logs/conn.html",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

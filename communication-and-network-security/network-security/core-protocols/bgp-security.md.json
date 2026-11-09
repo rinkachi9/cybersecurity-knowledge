@@ -1,0 +1,63 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.bgp-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-4271-a-border-gateway-protocol-4-bgp-4",
+      "type": "standard",
+      "title": "RFC 4271, A Border Gateway Protocol 4 (BGP-4)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-189-resilient-interdomain-traffic-exch",
+      "type": "standard",
+      "title": "NIST SP 800-189, Resilient Interdomain Traffic Exchange / BGP Security and Resilience (Rev. 1 initial public draft, 2025)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/189/r1/ipd",
+      "verified": false
+    },
+    {
+      "key": "rfc-6811-bgp-prefix-origin-validation-and-rfc-6480",
+      "type": "standard",
+      "title": "RFC 6811, BGP Prefix Origin Validation, and RFC 6480, RPKI",
+      "url": "https://www.rfc-editor.org/rfc/rfc6811",
+      "verified": false
+    },
+    {
+      "key": "rfc-7908-problem-definition-and-classification-of",
+      "type": "standard",
+      "title": "RFC 7908, Problem Definition and Classification of BGP Route Leaks",
+      "url": "https://www.rfc-editor.org/rfc/rfc7908",
+      "verified": false
+    },
+    {
+      "key": "manrs-mutually-agreed-norms-for-routing-security",
+      "type": "documentation",
+      "title": "MANRS, Mutually Agreed Norms for Routing Security",
+      "url": "https://www.manrs.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

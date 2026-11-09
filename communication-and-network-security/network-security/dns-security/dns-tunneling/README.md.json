@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.dns-security.dns-tunneling",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "dns-security"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.dns-security.dns-threat-landscape",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.data-exfiltration",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.command-and-control-traffic",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "mitre-att-ck-application-layer-protocol",
+      "type": "documentation",
+      "title": "MITRE ATT&CK, Application Layer Protocol",
+      "url": "https://attack.mitre.org/techniques/T1048/",
+      "verified": false
+    },
+    {
+      "key": "farnham-g-detecting-dns-tunneling-sans-institute-2",
+      "type": "documentation",
+      "title": "Farnham, G., \"Detecting DNS Tunneling\", SANS Institute (2013)",
+      "url": "https://www.sans.org/white-papers/34152/",
+      "verified": false
+    },
+    {
+      "key": "nist-sp-800-81r3-secure-domain-name-system-dns-dep",
+      "type": "standard",
+      "title": "NIST SP 800-81r3, Secure Domain Name System (DNS) Deployment Guide (2026), on resolver control and query-information minimization",
+      "url": "https://doi.org/10.6028/NIST.SP.800-81r3",
+      "verified": false
+    },
+    {
+      "key": "the-public-suffix-list-needed-to-find-registrable",
+      "type": "documentation",
+      "title": "The Public Suffix List, needed to find registrable domains correctly",
+      "url": "https://publicsuffix.org/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

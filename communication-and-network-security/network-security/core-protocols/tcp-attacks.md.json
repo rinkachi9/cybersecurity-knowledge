@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.tcp-attacks",
+    "kind": "note",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.syn-flood",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-793-rfc-9293-transmission-control-protocol-the",
+      "type": "standard",
+      "title": "RFC 793 / RFC 9293, Transmission Control Protocol (the base specification)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293",
+      "verified": false
+    },
+    {
+      "key": "rfc-5961-improving-tcp-s-robustness-to-blind-in-wi",
+      "type": "standard",
+      "title": "RFC 5961, Improving TCP's Robustness to Blind In-Window Attacks (2010)",
+      "url": "https://www.rfc-editor.org/rfc/rfc5961",
+      "verified": false
+    },
+    {
+      "key": "rfc-6528-defending-against-sequence-number-attacks",
+      "type": "standard",
+      "title": "RFC 6528, Defending Against Sequence Number Attacks (2012)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6528",
+      "verified": false
+    },
+    {
+      "key": "rfc-5925-the-tcp-authentication-option-2010",
+      "type": "standard",
+      "title": "RFC 5925, The TCP Authentication Option (2010)",
+      "url": "https://www.rfc-editor.org/rfc/rfc5925",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

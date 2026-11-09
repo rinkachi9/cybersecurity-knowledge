@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.network-attacks",
+    "kind": "index",
+    "status": "draft",
+    "order": 9,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "network-attacks"
+    ]
+  },
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

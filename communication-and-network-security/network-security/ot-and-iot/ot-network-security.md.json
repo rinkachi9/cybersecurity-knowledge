@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.ot-and-iot.ot-network-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "ot-and-iot"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.protocol-design-weaknesses",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.insecure-legacy-protocols",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-threat-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-82-rev-3-guide-to-operational-technolo",
+      "type": "standard",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security (2023)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-82r3",
+      "verified": false
+    },
+    {
+      "key": "cisa-ics-advisories-and-the-mitre-att-ck-for-ics-m",
+      "type": "documentation",
+      "title": "CISA ICS advisories and the MITRE ATT&CK for ICS matrix",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

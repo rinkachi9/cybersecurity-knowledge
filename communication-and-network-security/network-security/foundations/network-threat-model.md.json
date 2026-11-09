@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.foundations.network-threat-model",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "foundations"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.stride",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-207-zero-trust-architecture-2020-secti",
+      "type": "standard",
+      "title": "NIST SP 800-207, Zero Trust Architecture (2020), section 2",
+      "url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "verified": false
+    },
+    {
+      "key": "rfc-3552-guidelines-for-writing-rfc-text-on-securi",
+      "type": "standard",
+      "title": "RFC 3552, Guidelines for Writing RFC Text on Security Considerations (2003)",
+      "url": "https://www.rfc-editor.org/rfc/rfc3552",
+      "verified": false
+    },
+    {
+      "key": "rfc-7258-pervasive-monitoring-is-an-attack-2014",
+      "type": "standard",
+      "title": "RFC 7258, Pervasive Monitoring Is an Attack (2014)",
+      "url": "https://www.rfc-editor.org/rfc/rfc7258",
+      "verified": false
+    },
+    {
+      "key": "mitre-att-ck-t1557-adversary-in-the-middle",
+      "type": "documentation",
+      "title": "MITRE ATT&CK T1557, Adversary-in-the-Middle",
+      "url": "https://attack.mitre.org/techniques/T1557/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

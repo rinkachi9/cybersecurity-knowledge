@@ -163,6 +163,30 @@
         "software-development-security/application-security/supply-chain/supply-chain-attacks/README.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "pcap",
+      "title": "Packet capture analysis",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/README.md",
+        "communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md"
+      ],
+      "externalSources": [
+        "https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-pcapng",
+        "https://www.rfc-editor.org/rfc/rfc7011"
+      ]
+    },
+    {
+      "id": "net-ir",
+      "title": "Network incident response",
+      "group": "Communication and network security",
+      "documentation": [
+        "communication-and-network-security/network-security/operations-and-assurance/network-incident-response.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-86"
+      ]
     }
   ],
   "edges": [
@@ -244,6 +268,16 @@
     {
       "from": "ir",
       "to": "supply-attacks",
+      "type": "branch"
+    },
+    {
+      "from": "detection",
+      "to": "pcap",
+      "type": "branch"
+    },
+    {
+      "from": "ir",
+      "to": "net-ir",
       "type": "branch"
     }
   ]

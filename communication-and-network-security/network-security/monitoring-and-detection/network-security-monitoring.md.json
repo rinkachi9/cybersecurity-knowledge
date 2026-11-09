@@ -1,0 +1,43 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.monitoring-and-detection.network-security-monitoring",
+    "kind": "note",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "monitoring-and-detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.network-security-controls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.packet-capture-analysis",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.monitoring-and-detection.flow-monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-137-information-security-continuous-mo",
+      "type": "standard",
+      "title": "NIST SP 800-137, Information Security Continuous Monitoring (ISCM)",
+      "url": "https://doi.org/10.6028/NIST.SP.800-137",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}

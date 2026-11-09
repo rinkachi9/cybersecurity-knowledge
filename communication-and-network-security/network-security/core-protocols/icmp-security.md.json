@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "communication-and-network-security.network-security.core-protocols.icmp-security",
+    "kind": "note",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "communication-and-network-security",
+      "network-security",
+      "core-protocols"
+    ]
+  },
+  "links": [
+    {
+      "to": "communication-and-network-security.network-security.foundations.attack-surface-by-layer",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.network-attacks.denial-of-service.icmp-flood",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.core-protocols.ip-spoofing-and-source-validation",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-792-internet-control-message-protocol-ipv4-and",
+      "type": "standard",
+      "title": "RFC 792, Internet Control Message Protocol (IPv4), and RFC 4443, ICMPv6",
+      "url": "https://www.rfc-editor.org/rfc/rfc4443",
+      "verified": false
+    },
+    {
+      "key": "rfc-4890-recommendations-for-filtering-icmpv6-mess",
+      "type": "standard",
+      "title": "RFC 4890, Recommendations for Filtering ICMPv6 Messages in Firewalls (2007)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4890",
+      "verified": false
+    },
+    {
+      "key": "rfc-1191-path-mtu-discovery-on-why-ptb-messages-mu",
+      "type": "standard",
+      "title": "RFC 1191, Path MTU Discovery, on why PTB messages must pass",
+      "url": "https://www.rfc-editor.org/rfc/rfc1191",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "communication-and-network-security"
+  }
+}
