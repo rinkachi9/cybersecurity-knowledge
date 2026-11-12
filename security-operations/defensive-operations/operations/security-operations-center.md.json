@@ -3,13 +3,102 @@
     "id": "system-security.defensive-operations.operations.security-operations-center",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 1,
     "tags": [
       "security-operations",
       "defensive-operations",
-      "operations"
+      "operations",
+      "soc",
+      "metrics",
+      "staffing"
+    ],
+    "aliases": [
+      "SOC"
     ]
   },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.detection.ids",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.siem",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "first-csirt-sf-2-1",
+      "type": "standard",
+      "title": "Computer Security Incident Response Team (CSIRT) Services Framework, version 2.1",
+      "year": 2019,
+      "publisher": "FIRST",
+      "url": "https://www.first.org/standards/frameworks/csirts/FIRST_CSIRT_Services_Framework_v2.1.0.pdf",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-61r3",
+      "type": "standard",
+      "title": "SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+      "year": 2025,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-61r2",
+      "type": "standard",
+      "title": "SP 800-61 Rev. 2, Computer Security Incident Handling Guide",
+      "year": 2012,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mitre-11-strategies",
+      "type": "book",
+      "title": "11 Strategies of a World-Class Cybersecurity Operations Center (2nd ed.)",
+      "authors": [
+        "Kathryn Knerler",
+        "Ingrid Parker",
+        "Carson Zimmerman"
+      ],
+      "year": 2022,
+      "publisher": "MITRE",
+      "url": "https://www.mitre.org/news-insights/news-release/mitre-publishes-11-strategies-world-class-cybersecurity-operations",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Security operations center",
+      "anchor": "#definition",
+      "definition": "The capability that monitors, detects, triages and initiates response to security events for defined assets, continuously and with authority to act."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "apply",
+      "q": "How many FTE does one 24/7 seat need?",
+      "a": "About 5.1 (8,760 hours divided by about 1,700 productive hours).",
+      "anchor": "#worked-example",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Why report median time to detect?",
+      "a": "Detection times are skewed; one long incident inflates the mean.",
+      "anchor": "#metrics",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-operations"
   }

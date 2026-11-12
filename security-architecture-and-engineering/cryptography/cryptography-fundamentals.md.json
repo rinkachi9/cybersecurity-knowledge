@@ -1,0 +1,117 @@
+{
+  "node": {
+    "id": "data-security.cryptography.cryptography-fundamentals",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 0,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "fundamentals",
+      "post-quantum"
+    ],
+    "aliases": [
+      "cryptography",
+      "cryptology"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.hashing.hashing-algorithms",
+      "rel": "related"
+    },
+    {
+      "to": "data-security.cryptography.cryptographic-attacks",
+      "rel": "related",
+      "note": "Where cryptography fails in practice"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-57p1r5",
+      "type": "standard",
+      "title": "SP 800-57 Part 1 Rev. 5, Recommendation for Key Management: Part 1 - General",
+      "year": 2020,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-57pt1r5",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-ir-8547",
+      "type": "report",
+      "title": "IR 8547, Transition to Post-Quantum Cryptography Standards",
+      "year": 2026,
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/pubs/ir/8547/final",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-fips-203-205",
+      "type": "website",
+      "title": "NIST releases first 3 finalized post-quantum encryption standards (FIPS 203, 204, 205)",
+      "year": 2024,
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-131ar2",
+      "type": "standard",
+      "title": "SP 800-131A Rev. 2, Transitioning the Use of Cryptographic Algorithms and Key Lengths",
+      "year": 2019,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-131Ar2",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Security strength",
+      "anchor": "#how-strength-is-measured",
+      "definition": "The base-2 logarithm of the work the best known attack needs."
+    },
+    {
+      "term": "Non-repudiation",
+      "anchor": "#security-services-and-the-primitives-that-provide-them",
+      "definition": "Evidence that a specific key holder produced data, provided by signatures, not by MACs."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Which service does a signature provide that a MAC cannot?",
+      "a": "Non-repudiation, because only one party holds the signing key.",
+      "anchor": "#security-services-and-the-primitives-that-provide-them",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "When will NIST deprecate and disallow quantum-vulnerable public key algorithms?",
+      "a": "Deprecated after 2030 and disallowed after 2035 (NIST IR 8547, October 2026).",
+      "anchor": "#quantum-computing",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "recall",
+      "q": "What is the security strength of 3TDEA?",
+      "a": "112 bits.",
+      "anchor": "#how-strength-is-measured",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

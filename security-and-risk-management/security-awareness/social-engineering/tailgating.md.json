@@ -3,13 +3,77 @@
     "id": "human-security.social-engineering.tailgating",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 7,
     "tags": [
       "security-and-risk-management",
       "security-awareness",
-      "social-engineering"
+      "social-engineering",
+      "physical-security",
+      "piggybacking"
+    ],
+    "aliases": [
+      "piggybacking"
     ]
   },
+  "links": [
+    {
+      "to": "human-security.social-engineering.social-engineering",
+      "rel": "part-of"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "applies",
+      "note": "Physical security as one layer"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-53r5-catalog",
+      "type": "standard",
+      "title": "SP 800-53 Rev. 5 control catalog (OSCAL, version 5.2.0)",
+      "year": 2026,
+      "publisher": "NIST",
+      "url": "https://github.com/usnistgov/oscal-content/tree/main/nist.gov/SP800-53/rev5",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Tailgating",
+      "anchor": "#definition",
+      "definition": "Unauthorized entry by following an authorized person through an access point."
+    },
+    {
+      "term": "Security vestibule",
+      "anchor": "#controls",
+      "definition": "Two interlocked doors that admit one person at a time, also called a mantrap."
+    },
+    {
+      "term": "Anti-passback",
+      "anchor": "#controls",
+      "definition": "Rejects a badge used for entry twice without an exit."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why does anti-passback not stop classic tailgating?",
+      "a": "The tailgater uses no badge; anti-passback only stops reuse of one badge.",
+      "anchor": "#controls",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "Which SP 800-53 control guidance names tailgating?",
+      "a": "AT-2(3) Social Engineering and Mining.",
+      "anchor": "#definition",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-and-risk-management"
   }

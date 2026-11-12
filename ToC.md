@@ -38,18 +38,39 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **reference/**
       - **organizations/**
         - [nist-incident-response-planning.png](_assets/security-and-risk-management/reference/organizations/nist-incident-response-planning.png): Asset: nist incident response planning.
+    - **threat-modeling/**
+      - [pasta-risk-heat-map.svg](_assets/security-and-risk-management/threat-modeling/pasta-risk-heat-map.svg): PASTA stage 7 likelihood and impact heat map for the clinic example.
+      - [stride-per-element.svg](_assets/security-and-risk-management/threat-modeling/stride-per-element.svg): STRIDE categories that apply to each DFD element type.
+      - [trike-actor-asset-action-matrix.svg](_assets/security-and-risk-management/threat-modeling/trike-actor-asset-action-matrix.svg): Trike actor-asset-action CRUD matrix for the clinic example.
   - **security-architecture-and-engineering/**
     - **cloud-and-infrastructure-security/**
       - [cspm-poc-scorecard.csv](_assets/security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-poc-scorecard.csv): Weighted scorecard with gates for a CSPM proof of concept.
       - [cspm-poc-seeded-misconfigurations.csv](_assets/security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-poc-seeded-misconfigurations.csv): 24 seeded misconfigurations for a CSPM proof of concept.
+    - **cryptography/**
+      - [aes-vs-3des-throughput.svg](_assets/security-architecture-and-engineering/cryptography/aes-vs-3des-throughput.svg): Measured AES-128-GCM vs 3DES-CBC throughput with OpenSSL 3.0.2.
+      - [block-size-birthday-bound.svg](_assets/security-architecture-and-engineering/cryptography/block-size-birthday-bound.svg): Ciphertext block collision probability for 64-bit and 128-bit blocks (Sweet32).
+      - [caesar-chi-squared-by-key.svg](_assets/security-architecture-and-engineering/cryptography/caesar-chi-squared-by-key.svg): Chi-squared score for each of the 26 Caesar keys.
+      - [caesar-letter-frequencies.svg](_assets/security-architecture-and-engineering/cryptography/caesar-letter-frequencies.svg): English letter frequencies vs Caesar ciphertext frequencies.
+      - [key-size-for-equal-security-strength.svg](_assets/security-architecture-and-engineering/cryptography/key-size-for-equal-security-strength.svg): Symmetric, ECC and RSA key sizes per security strength (SP 800-57 Table 2).
+    - **design-principles/**
+      - [defense-in-depth-layers-vs-breach-probability.svg](_assets/security-architecture-and-engineering/design-principles/defense-in-depth-layers-vs-breach-probability.svg): Breach probability vs number of layers with and without common-mode failure.
+      - [defense-in-depth-layers.svg](_assets/security-architecture-and-engineering/design-principles/defense-in-depth-layers.svg): Concentric defense in depth layers with example controls.
   - **security-operations/**
     - **defensive-operations/**
+      - [first-csirt-services-framework.svg](_assets/security-operations/defensive-operations/first-csirt-services-framework.svg): FIRST CSIRT Services Framework 2.1 service areas and services.
+      - [ids-base-rate-precision.svg](_assets/security-operations/defensive-operations/ids-base-rate-precision.svg): IDS precision versus base rate for three false positive rates.
       - [nist-sp-800-61r3-lifecycle.png](_assets/security-operations/defensive-operations/nist-sp-800-61r3-lifecycle.png): Incident response life cycle model based on CSF 2.0 Functions (NIST SP 800-61 Rev. 3, Fig. 2).
+      - [soc-tier1-fte-vs-alert-volume.svg](_assets/security-operations/defensive-operations/soc-tier1-fte-vs-alert-volume.svg): Tier 1 FTE needed for 24/7 triage versus daily alert volume.
+      - [soc-time-to-detect-per-incident.svg](_assets/security-operations/defensive-operations/soc-time-to-detect-per-incident.svg): Time to detect per incident, showing why medians are reported.
+    - **threats-and-attacks/**
+      - [fileless-malware-sample-4104-events.jsonl](_assets/security-operations/threats-and-attacks/fileless-malware-sample-4104-events.jsonl): Synthetic PowerShell 4104 events for the fileless malware hunt.
   - **software-development-security/**
     - **application-security/**
+      - [cwe-top25-2025-top3.svg](_assets/software-development-security/application-security/cwe-top25-2025-top3.svg): Top three scores of the 2025 CWE Top 25 (CWE-79, CWE-89, CWE-352).
       - [owasp-security-principles-design-review.csv](_assets/software-development-security/application-security/owasp-security-principles-design-review.csv): Design review checklist with one question per principle.
       - [owasp-security-principles-map.svg](_assets/software-development-security/application-security/owasp-security-principles-map.svg): The 16 OWASP principles grouped into four questions (original drawing).
       - [xss-overview.png](_assets/software-development-security/application-security/xss-overview.png): Asset: xss overview.
+      - [xss-taxonomy-matrix.svg](_assets/software-development-security/application-security/xss-taxonomy-matrix.svg): XSS 2 x 2 matrix: stored or reflected, server or client XSS, with fixes.
 - **_roadmaps/**
   - [appsec-and-devsecops.json](_roadmaps/appsec-and-devsecops.json): Path: application security and DevSecOps.
   - [cissp-study-map.json](_roadmaps/cissp-study-map.json): CISSP study map: the credential, the eight domains and the notes that serve each.
@@ -98,7 +119,7 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [google-security-and-resilience-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/google-security-and-resilience-framework.md.json): Librarian OS metadata for google-security-and-resilience-framework.md.
       - [nist-ai-risk-management-framework.md](security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md): NIST AI Risk Management Framework (AI RMF) - Govern, Map, Measure and Manage for trustworthy AI.
       - [nist-ai-risk-management-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md.json): Librarian OS metadata for nist-ai-risk-management-framework.md.
-      - [nist-cybersecurity-framework.md](security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md): NIST Cybersecurity Framework (CSF) - The CSF 2.0 Core, Profiles, Tiers, a worked gap analysis and a Profile template.
+      - [nist-cybersecurity-framework.md](security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md): NIST Cybersecurity Framework (CSF) - The NIST Cybersecurity Framework (CSF) is a catalog of cybersecurity outcomes, written in plain language, that any organization can use to describe wh...
       - [nist-cybersecurity-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md.json): Librarian OS metadata for nist-cybersecurity-framework.md.
       - [nist-frameworks-overview.md](security-and-risk-management/governance-and-compliance/frameworks/nist-frameworks-overview.md): NIST frameworks and key publications - Map of the NIST framework family and which document answers which question.
       - [nist-frameworks-overview.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-frameworks-overview.md.json): Librarian OS metadata for nist-frameworks-overview.md.
@@ -146,7 +167,7 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **certifications/**
       - [README.md](security-and-risk-management/reference/certifications/README.md): Certifications - Professional security certifications and the bodies that issue them.
       - [README.md.json](security-and-risk-management/reference/certifications/README.md.json): Librarian OS metadata for README.md.
-      - [cissp-security-domains.md](security-and-risk-management/reference/certifications/cissp-security-domains.md): CISSP security domains - The eight domains, weights and 62 sections of the CISSP outline, with the location of each topic in this repository.
+      - [cissp-security-domains.md](security-and-risk-management/reference/certifications/cissp-security-domains.md): CISSP security domains - The CISSP common body of knowledge is split into eight domains. ISC2 publishes the split in the *CISSP Certification Exam Outline*, together with 62 n...
       - [cissp-security-domains.md.json](security-and-risk-management/reference/certifications/cissp-security-domains.md.json): Librarian OS metadata for cissp-security-domains.md.
       - [cissp.md](security-and-risk-management/reference/certifications/cissp.md): Certified Information Systems Security Professional (CISSP) - Exam format, experience rules, ethics and how the credential relates to others.
       - [cissp.md.json](security-and-risk-management/reference/certifications/cissp.md.json): Librarian OS metadata for cissp.md.
@@ -167,6 +188,8 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **social-engineering/**
       - [README.md](security-and-risk-management/security-awareness/social-engineering/README.md): Social engineering - Attacks on people and physical access.
       - [README.md.json](security-and-risk-management/security-awareness/social-engineering/README.md.json): Librarian OS metadata for README.md.
+      - [angler-phishing.md](security-and-risk-management/security-awareness/social-engineering/angler-phishing.md): Angler phishing - Angler phishing is a social media scam in which attackers pose as a company's customer support account and reply to customers who have publicly compla...
+      - [angler-phishing.md.json](security-and-risk-management/security-awareness/social-engineering/angler-phishing.md.json): Librarian OS metadata for angler-phishing.md.
       - [dumpster-diving.md](security-and-risk-management/security-awareness/social-engineering/dumpster-diving.md): Dumpster diving - Searching discarded material for sensitive information.
       - [dumpster-diving.md.json](security-and-risk-management/security-awareness/social-engineering/dumpster-diving.md.json): Librarian OS metadata for dumpster-diving.md.
       - [impersonation.md](security-and-risk-management/security-awareness/social-engineering/impersonation.md): Impersonation - Pretending to be a trusted person, entity or role.
@@ -175,13 +198,15 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [phishing.md.json](security-and-risk-management/security-awareness/social-engineering/phishing.md.json): Librarian OS metadata for phishing.md.
       - [psychology-of-cyberattacks.md](security-and-risk-management/security-awareness/social-engineering/psychology-of-cyberattacks.md): Psychology of cyberattacks - Psychological principles that attackers exploit and how to defend.
       - [psychology-of-cyberattacks.md.json](security-and-risk-management/security-awareness/social-engineering/psychology-of-cyberattacks.md.json): Librarian OS metadata for psychology-of-cyberattacks.md.
+      - [quid-pro-quo.md](security-and-risk-management/security-awareness/social-engineering/quid-pro-quo.md): Quid pro quo - A quid pro quo attack ("something for something") is social engineering in which the attacker offers a service or benefit in exchange for information...
+      - [quid-pro-quo.md.json](security-and-risk-management/security-awareness/social-engineering/quid-pro-quo.md.json): Librarian OS metadata for quid-pro-quo.md.
       - [shoulder-surfing.md](security-and-risk-management/security-awareness/social-engineering/shoulder-surfing.md): Shoulder surfing - Watching a screen or keyboard to capture sensitive information.
       - [shoulder-surfing.md.json](security-and-risk-management/security-awareness/social-engineering/shoulder-surfing.md.json): Librarian OS metadata for shoulder-surfing.md.
       - [social-engineering.md](security-and-risk-management/security-awareness/social-engineering/social-engineering.md): Social engineering - Manipulating people instead of exploiting technical flaws.
       - [social-engineering.md.json](security-and-risk-management/security-awareness/social-engineering/social-engineering.md.json): Librarian OS metadata for social-engineering.md.
       - [spam.md](security-and-risk-management/security-awareness/social-engineering/spam.md): Spam - Mass unsolicited messages and their security impact.
       - [spam.md.json](security-and-risk-management/security-awareness/social-engineering/spam.md.json): Librarian OS metadata for spam.md.
-      - [tailgating.md](security-and-risk-management/security-awareness/social-engineering/tailgating.md): Tailgating - Following an authorized person into a restricted area.
+      - [tailgating.md](security-and-risk-management/security-awareness/social-engineering/tailgating.md): Tailgating - Tailgating is gaining physical entry to a controlled area by following someone who is authorized to enter, so that the intruder passes the door, turns...
       - [tailgating.md.json](security-and-risk-management/security-awareness/social-engineering/tailgating.md.json): Librarian OS metadata for tailgating.md.
     - [user-based-attacks.md](security-and-risk-management/security-awareness/user-based-attacks.md): User-based attacks - Attacks that target users instead of software.
     - [user-based-attacks.md.json](security-and-risk-management/security-awareness/user-based-attacks.md.json): Librarian OS metadata for user-based-attacks.md.
@@ -197,15 +222,17 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [attack-trees.md.json](security-and-risk-management/threat-modeling/methods/attack-trees.md.json): Librarian OS metadata for attack-trees.md.
       - [hybrid-threat-modeling-method.md](security-and-risk-management/threat-modeling/methods/hybrid-threat-modeling-method.md): Hybrid Threat Modeling Method (hTMM) - Combining several methodologies in one process.
       - [hybrid-threat-modeling-method.md.json](security-and-risk-management/threat-modeling/methods/hybrid-threat-modeling-method.md.json): Librarian OS metadata for hybrid-threat-modeling-method.md.
-      - [pasta.md](security-and-risk-management/threat-modeling/methods/pasta.md): Attack Simulation and Threat Analysis (PASTA) - Risk-centric, attacker-focused methodology.
+      - [pasta.md](security-and-risk-management/threat-modeling/methods/pasta.md): Process for Attack Simulation and Threat Analysis (PASTA) - PASTA is a seven-stage, risk-centric threat modeling methodology that starts from business objectives and ends with a prioritized list of risks and co...
       - [pasta.md.json](security-and-risk-management/threat-modeling/methods/pasta.md.json): Librarian OS metadata for pasta.md.
       - [security-cards.md](security-and-risk-management/threat-modeling/methods/security-cards.md): Security Cards - Card-based, collaborative threat discovery.
       - [security-cards.md.json](security-and-risk-management/threat-modeling/methods/security-cards.md.json): Librarian OS metadata for security-cards.md.
-      - [stride.md](security-and-risk-management/threat-modeling/methods/stride.md): STRIDE - Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
+      - [stride.md](security-and-risk-management/threat-modeling/methods/stride.md): STRIDE - STRIDE is a mnemonic for six categories of security threats: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service and Elevation...
       - [stride.md.json](security-and-risk-management/threat-modeling/methods/stride.md.json): Librarian OS metadata for stride.md.
-      - [trike.md](security-and-risk-management/threat-modeling/methods/trike.md): Trike - Risk-based methodology built around acceptable risk levels.
+      - [trike.md](security-and-risk-management/threat-modeling/methods/trike.md): Trike - Trike is a risk-based threat modeling methodology that starts from a formal model of what the system is supposed to allow: who (actors) may do what (c...
       - [trike.md.json](security-and-risk-management/threat-modeling/methods/trike.md.json): Librarian OS metadata for trike.md.
-    - [threat-modeling.md](security-and-risk-management/threat-modeling/threat-modeling.md): Threat Modeling - What threat modeling is, why it matters and how it differs from risk management.
+      - [vast.md](security-and-risk-management/threat-modeling/methods/vast.md): VAST - VAST (Visual, Agile and Simple Threat modeling) is a threat modeling approach built for large organizations that must model hundreds of applications c...
+      - [vast.md.json](security-and-risk-management/threat-modeling/methods/vast.md.json): Librarian OS metadata for vast.md.
+    - [threat-modeling.md](security-and-risk-management/threat-modeling/threat-modeling.md): Threat modeling - Threat modeling is the structured analysis of a system's design to find what can go wrong with its security and privacy, before attackers or incidents...
     - [threat-modeling.md.json](security-and-risk-management/threat-modeling/threat-modeling.md.json): Librarian OS metadata for threat-modeling.md.
 - **asset-security/**
   - [README.md](asset-security/README.md): Asset security - This CISSP domain covers the classification, ownership, handling, retention and lifecycle of information and other assets. The current material covers asset management, data protection (DLP and DSPM) and privacy; classification and data lifecycle topics remain to be written.
@@ -268,11 +295,28 @@ Full tree of every file in the repository. Every file has a link and a short des
   - **cryptography/**
     - [README.md](security-architecture-and-engineering/cryptography/README.md): Cryptography - Cryptographic building blocks and the infrastructure around them.
     - [README.md.json](security-architecture-and-engineering/cryptography/README.md.json): Librarian OS metadata for README.md.
+    - **classical-ciphers/**
+      - [README.md](security-architecture-and-engineering/cryptography/classical-ciphers/README.md): Classical ciphers - Historical pen-and-paper ciphers, kept for the concepts they teach and for CTF and forensic recognition.
+      - [README.md.json](security-architecture-and-engineering/cryptography/classical-ciphers/README.md.json): Librarian OS metadata for README.md.
+      - **caesar-cipher/**
+        - [README.md](security-architecture-and-engineering/cryptography/classical-ciphers/caesar-cipher/README.md): Caesar cipher - The Caesar cipher replaces each letter with the letter a fixed number of positions further along the alphabet, wrapping around from Z to A. With a shi...
+        - [README.md.json](security-architecture-and-engineering/cryptography/classical-ciphers/caesar-cipher/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [caesar.py](security-architecture-and-engineering/cryptography/classical-ciphers/caesar-cipher/scripts/caesar.py): Caesar cipher encrypt, decrypt and chi-squared break.
     - **cryptographic-attacks/**
       - [README.md](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md): Cryptographic attacks - Attacks by attacker knowledge and by weakness place, with five tested toy demonstrations.
       - [README.md.json](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md.json): Librarian OS metadata for README.md.
       - **scripts/**
         - [crypto-attack-demos.py](security-architecture-and-engineering/cryptography/cryptographic-attacks/scripts/crypto-attack-demos.py): Frequency analysis, known plaintext, keystream reuse, birthday collision and timing leak on toy parameters.
+    - [cryptography-fundamentals.md](security-architecture-and-engineering/cryptography/cryptography-fundamentals.md): Cryptography fundamentals - Cryptography is the use of mathematics and secret keys to protect information from people who should not read or change it, even when they hold a copy...
+    - [cryptography-fundamentals.md.json](security-architecture-and-engineering/cryptography/cryptography-fundamentals.md.json): Librarian OS metadata for cryptography-fundamentals.md.
+    - **encryption/**
+      - [README.md](security-architecture-and-engineering/cryptography/encryption/README.md): Encryption - Symmetric and asymmetric encryption algorithms, their modes, key sizes and retirement schedules.
+      - [README.md.json](security-architecture-and-engineering/cryptography/encryption/README.md.json): Librarian OS metadata for README.md.
+      - [symmetric-and-asymmetric-encryption.md](security-architecture-and-engineering/cryptography/encryption/symmetric-and-asymmetric-encryption.md): Symmetric and asymmetric encryption - Symmetric encryption uses one secret key for both encryption and decryption. It is fast enough for gigabytes per second, but both sides must already s...
+      - [symmetric-and-asymmetric-encryption.md.json](security-architecture-and-engineering/cryptography/encryption/symmetric-and-asymmetric-encryption.md.json): Librarian OS metadata for symmetric-and-asymmetric-encryption.md.
+      - [triple-des.md](security-architecture-and-engineering/cryptography/encryption/triple-des.md): Triple DES (3DES) - Triple DES, officially the Triple Data Encryption Algorithm (TDEA), applies the old DES block cipher three times with up to three different keys to st...
+      - [triple-des.md.json](security-architecture-and-engineering/cryptography/encryption/triple-des.md.json): Librarian OS metadata for triple-des.md.
     - **hashing/**
       - [README.md](security-architecture-and-engineering/cryptography/hashing/README.md): Hashing - Hash functions and password hashing.
       - [README.md.json](security-architecture-and-engineering/cryptography/hashing/README.md.json): Librarian OS metadata for README.md.
@@ -284,12 +328,14 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [hashing-algorithms.md.json](security-architecture-and-engineering/cryptography/hashing/hashing-algorithms.md.json): Librarian OS metadata for hashing-algorithms.md.
       - [sha.md](security-architecture-and-engineering/cryptography/hashing/sha.md): SHA - The Secure Hash Algorithm family.
       - [sha.md.json](security-architecture-and-engineering/cryptography/hashing/sha.md.json): Librarian OS metadata for sha.md.
+    - [kerckhoffs-principle.md](security-architecture-and-engineering/cryptography/kerckhoffs-principle.md): Kerckhoffs's principle - Kerckhoffs's principle says that a cryptographic system must stay secure even if everything about it except the key is known to the enemy. Auguste Ker...
+    - [kerckhoffs-principle.md.json](security-architecture-and-engineering/cryptography/kerckhoffs-principle.md.json): Librarian OS metadata for kerckhoffs-principle.md.
     - [public-key-infrastructure.md](security-architecture-and-engineering/cryptography/public-key-infrastructure.md): Public Key Infrastructure (PKI) - Roles, components, processes and best practices for issuing and managing digital certificates.
     - [public-key-infrastructure.md.json](security-architecture-and-engineering/cryptography/public-key-infrastructure.md.json): Librarian OS metadata for public-key-infrastructure.md.
   - **design-principles/**
-    - [README.md](security-architecture-and-engineering/design-principles/README.md): Design principles - Security design principles help limit the effect of a failed control. The current note explains defense in depth, while other design principles are covered in related...
+    - [README.md](security-architecture-and-engineering/design-principles/README.md): Design principles - Security design principles help limit the effect of a failed control. The current note explains defense in depth. Kerckhoffs's principle covers the re...
     - [README.md.json](security-architecture-and-engineering/design-principles/README.md.json): Librarian OS metadata for README.md.
-    - [defense-in-depth.md](security-architecture-and-engineering/design-principles/defense-in-depth.md): Defense in depth - Layering several security controls so that one failure does not lead to a full compromise.
+    - [defense-in-depth.md](security-architecture-and-engineering/design-principles/defense-in-depth.md): Defense in depth - Defense in depth is the design principle of placing several independent controls between a threat and an asset, so that the failure or bypass of one c...
     - [defense-in-depth.md.json](security-architecture-and-engineering/design-principles/defense-in-depth.md.json): Librarian OS metadata for defense-in-depth.md.
   - **operating-system-security/**
     - [README.md](security-architecture-and-engineering/operating-system-security/README.md): Operating system security - Security mechanisms that operating systems provide.
@@ -355,37 +401,42 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [README.md.json](communication-and-network-security/network-security/dns-security/README.md.json): Librarian OS metadata for README.md.
       - [dns-threat-landscape.md](communication-and-network-security/network-security/dns-security/dns-threat-landscape.md): DNS threat landscape - Spoofing, cache poisoning (Kaminsky), hijacking, amplification and the resolution path. Read first.
       - [dns-threat-landscape.md.json](communication-and-network-security/network-security/dns-security/dns-threat-landscape.md.json): Librarian OS metadata for dns-threat-landscape.md.
-      - [dnssec.md](communication-and-network-security/network-security/dns-security/dnssec.md): DNSSEC - Signing records so forgeries are detected, with a tested validation example.
-      - [dnssec.md.json](communication-and-network-security/network-security/dns-security/dnssec.md.json): Librarian OS metadata for dnssec.md.
-      - [encrypted-dns.md](communication-and-network-security/network-security/dns-security/encrypted-dns.md): Encrypted DNS - DoT, DoH and DoQ, and the enterprise visibility tension.
-      - [encrypted-dns.md.json](communication-and-network-security/network-security/dns-security/encrypted-dns.md.json): Librarian OS metadata for encrypted-dns.md.
-      - [protective-dns.md](communication-and-network-security/network-security/dns-security/protective-dns.md): Protective DNS - Using the resolver to block malicious lookups and to detect infection.
-      - [protective-dns.md.json](communication-and-network-security/network-security/dns-security/protective-dns.md.json): Librarian OS metadata for protective-dns.md.
       - **dns-tunneling/**
         - [README.md](communication-and-network-security/network-security/dns-security/dns-tunneling/README.md): DNS tunneling - Data smuggled through query names, with a tested detector.
         - [README.md.json](communication-and-network-security/network-security/dns-security/dns-tunneling/README.md.json): Librarian OS metadata for README.md.
         - **scripts/**
           - [detect-dns-tunneling.py](communication-and-network-security/network-security/dns-security/dns-tunneling/scripts/detect-dns-tunneling.py): Groups resolver logs by parent domain and measures how much information clients push into query names.
           - [generate-dns-log.py](communication-and-network-security/network-security/dns-security/dns-tunneling/scripts/generate-dns-log.py): Writes one hour of synthetic resolver query logs (timestamp, client, query name, query type).
+      - [dnssec.md](communication-and-network-security/network-security/dns-security/dnssec.md): DNSSEC - Signing records so forgeries are detected, with a tested validation example.
+      - [dnssec.md.json](communication-and-network-security/network-security/dns-security/dnssec.md.json): Librarian OS metadata for dnssec.md.
+      - [encrypted-dns.md](communication-and-network-security/network-security/dns-security/encrypted-dns.md): Encrypted DNS - DoT, DoH and DoQ, and the enterprise visibility tension.
+      - [encrypted-dns.md.json](communication-and-network-security/network-security/dns-security/encrypted-dns.md.json): Librarian OS metadata for encrypted-dns.md.
+      - [protective-dns.md](communication-and-network-security/network-security/dns-security/protective-dns.md): Protective DNS - Using the resolver to block malicious lookups and to detect infection.
+      - [protective-dns.md.json](communication-and-network-security/network-security/dns-security/protective-dns.md.json): Librarian OS metadata for protective-dns.md.
     - **foundations/**
       - [README.md](communication-and-network-security/network-security/foundations/README.md): Network security foundations - Attacker positions, why the core protocols trust by default, attacks and controls by layer, the control taxonomy and the namespace lab used by the tested examples. Read first.
       - [README.md.json](communication-and-network-security/network-security/foundations/README.md.json): Librarian OS metadata for README.md.
       - [attack-surface-by-layer.md](communication-and-network-security/network-security/foundations/attack-surface-by-layer.md): Attack surface by layer - The map from TCP/IP layers to their attacks and controls.
       - [attack-surface-by-layer.md.json](communication-and-network-security/network-security/foundations/attack-surface-by-layer.md.json): Librarian OS metadata for attack-surface-by-layer.md.
-      - [network-security-controls.md](communication-and-network-security/network-security/foundations/network-security-controls.md): Network security controls - The prevent, detect, respond taxonomy and placement, mapped to NIST CSF and D3FEND.
+      - [network-security-controls.md](communication-and-network-security/network-security/foundations/network-security-controls.md): Network security controls - A network security control is a safeguard that reduces network risk by preventing, detecting or responding to an attack. This note organizes the contr...
       - [network-security-controls.md.json](communication-and-network-security/network-security/foundations/network-security-controls.md.json): Librarian OS metadata for network-security-controls.md.
-      - [network-threat-model.md](communication-and-network-security/network-security/foundations/network-threat-model.md): Network threat model - Attacker positions (off-path, adjacent, on-path, insider) and what each can do. The lens for every other note.
-      - [network-threat-model.md.json](communication-and-network-security/network-security/foundations/network-threat-model.md.json): Librarian OS metadata for network-threat-model.md.
-      - [protocol-design-weaknesses.md](communication-and-network-security/network-security/foundations/protocol-design-weaknesses.md): Protocol design weaknesses - Why IP, ARP, DNS and BGP trust by default, and how the security add-ons map to each weakness.
-      - [protocol-design-weaknesses.md.json](communication-and-network-security/network-security/foundations/protocol-design-weaknesses.md.json): Librarian OS metadata for protocol-design-weaknesses.md.
       - **network-security-lab/**
         - [README.md](communication-and-network-security/network-security/foundations/network-security-lab/README.md): Network security lab - A rootless Linux namespace lab used for the tested examples throughout the area.
         - [README.md.json](communication-and-network-security/network-security/foundations/network-security-lab/README.md.json): Librarian OS metadata for README.md.
         - **scripts/**
           - [start-lab.sh](communication-and-network-security/network-security/foundations/network-security-lab/scripts/start-lab.sh): Builds a throwaway network out of Linux network namespaces inside a user namespace, so it cannot touch the host network and disappears when the shell exits: client 192.0.2.10 ---+                        +--- server 198.51.100.20 |-- switch --- fw ---| attacker 192.0.2.66 -+   (bridge)  (router,   (198.51.100.0/24, "inside")
+      - [network-threat-model.md](communication-and-network-security/network-security/foundations/network-threat-model.md): Network threat model - Attacker positions (off-path, adjacent, on-path, insider) and what each can do. The lens for every other note.
+      - [network-threat-model.md.json](communication-and-network-security/network-security/foundations/network-threat-model.md.json): Librarian OS metadata for network-threat-model.md.
+      - [protocol-design-weaknesses.md](communication-and-network-security/network-security/foundations/protocol-design-weaknesses.md): Protocol design weaknesses - Why IP, ARP, DNS and BGP trust by default, and how the security add-ons map to each weakness.
+      - [protocol-design-weaknesses.md.json](communication-and-network-security/network-security/foundations/protocol-design-weaknesses.md.json): Librarian OS metadata for protocol-design-weaknesses.md.
     - **link-layer/**
       - [README.md](communication-and-network-security/network-security/link-layer/README.md): Link layer security - Switch security, ARP spoofing, MAC flooding, VLAN hopping, DHCP attacks and 802.1X.
       - [README.md.json](communication-and-network-security/network-security/link-layer/README.md.json): Librarian OS metadata for README.md.
+      - **arp-spoofing/**
+        - [README.md](communication-and-network-security/network-security/link-layer/arp-spoofing/README.md): ARP spoofing - Forging ARP to become on-path, with a tested lab showing host resistance and the switch-side fix.
+        - [README.md.json](communication-and-network-security/network-security/link-layer/arp-spoofing/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [arp-cache-demo.py](communication-and-network-security/network-security/link-layer/arp-spoofing/scripts/arp-cache-demo.py): Sends ONE unsolicited ("gratuitous") ARP reply telling the victim that <ip_to_claim> is at this host's MAC address, to demonstrate why unauthenticated ARP lets any host on a segment redirect traffic.
       - [dhcp-attacks.md](communication-and-network-security/network-security/link-layer/dhcp-attacks.md): DHCP attacks - Rogue DHCP servers and starvation, stopped by DHCP snooping.
       - [dhcp-attacks.md.json](communication-and-network-security/network-security/link-layer/dhcp-attacks.md.json): Librarian OS metadata for dhcp-attacks.md.
       - [mac-flooding.md](communication-and-network-security/network-security/link-layer/mac-flooding.md): MAC flooding - Overflowing the MAC table to force a switch to fail open.
@@ -396,42 +447,37 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [switch-security.md.json](communication-and-network-security/network-security/link-layer/switch-security.md.json): Librarian OS metadata for switch-security.md.
       - [vlan-hopping.md](communication-and-network-security/network-security/link-layer/vlan-hopping.md): VLAN hopping - Switch spoofing and double tagging across VLAN boundaries.
       - [vlan-hopping.md.json](communication-and-network-security/network-security/link-layer/vlan-hopping.md.json): Librarian OS metadata for vlan-hopping.md.
-      - **arp-spoofing/**
-        - [README.md](communication-and-network-security/network-security/link-layer/arp-spoofing/README.md): ARP spoofing - Forging ARP to become on-path, with a tested lab showing host resistance and the switch-side fix.
-        - [README.md.json](communication-and-network-security/network-security/link-layer/arp-spoofing/README.md.json): Librarian OS metadata for README.md.
-        - **scripts/**
-          - [arp-cache-demo.py](communication-and-network-security/network-security/link-layer/arp-spoofing/scripts/arp-cache-demo.py): Sends ONE unsolicited ("gratuitous") ARP reply telling the victim that <ip_to_claim> is at this host's MAC address, to demonstrate why unauthenticated ARP lets any host on a segment redirect traffic.
     - **monitoring-and-detection/**
-      - [README.md](communication-and-network-security/network-security/monitoring-and-detection/README.md): Monitoring and detection - Network security monitoring, packet capture, flows, Zeek, Suricata, encrypted traffic analysis, beaconing, NDR, hunting and deception.
+      - [README.md](communication-and-network-security/network-security/monitoring-and-detection/README.md): Monitoring and detection - Seeing what happens on the network and finding the attacks that got past prevention. These notes cover the data to collect, the tools that produce and...
       - [README.md.json](communication-and-network-security/network-security/monitoring-and-detection/README.md.json): Librarian OS metadata for README.md.
-      - [deception-and-honeypots.md](communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md): Deception and honeypots - High-fidelity detection from decoys and honeytokens.
-      - [deception-and-honeypots.md.json](communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md.json): Librarian OS metadata for deception-and-honeypots.md.
-      - [encrypted-traffic-analysis.md](communication-and-network-security/network-security/monitoring-and-detection/encrypted-traffic-analysis.md): Encrypted traffic analysis - JA3/JA4, SNI and certificate metadata, detecting threats without decryption.
-      - [encrypted-traffic-analysis.md.json](communication-and-network-security/network-security/monitoring-and-detection/encrypted-traffic-analysis.md.json): Librarian OS metadata for encrypted-traffic-analysis.md.
-      - [flow-monitoring.md](communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md): Flow monitoring - NetFlow/IPFIX/sFlow and cloud flow logs, the backbone of long-term visibility.
-      - [flow-monitoring.md.json](communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md.json): Librarian OS metadata for flow-monitoring.md.
-      - [network-detection-and-response.md](communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md): Network detection and response - The NDR product category, analytics plus response.
-      - [network-detection-and-response.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md.json): Librarian OS metadata for network-detection-and-response.md.
-      - [network-security-monitoring.md](communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md): Network security monitoring - Data types, sensor placement, blind spots. The foundation.
-      - [network-security-monitoring.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md.json): Librarian OS metadata for network-security-monitoring.md.
-      - [network-threat-hunting.md](communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md): Network threat hunting - Proactive, hypothesis-driven search.
-      - [network-threat-hunting.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md.json): Librarian OS metadata for network-threat-hunting.md.
-      - [suricata-and-snort.md](communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md): Suricata and Snort - Signature-based detection and prevention engines.
-      - [suricata-and-snort.md.json](communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md.json): Librarian OS metadata for suricata-and-snort.md.
-      - [zeek.md](communication-and-network-security/network-security/monitoring-and-detection/zeek.md): Zeek - Turning traffic into structured transaction logs.
-      - [zeek.md.json](communication-and-network-security/network-security/monitoring-and-detection/zeek.md.json): Librarian OS metadata for zeek.md.
       - **beaconing-detection/**
         - [README.md](communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/README.md): Beaconing detection - Finding C2 check-ins statistically. Tested scripts.
         - [README.md.json](communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/README.md.json): Librarian OS metadata for README.md.
         - **scripts/**
           - [generate-conn-log.py](communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/scripts/generate-conn-log.py): Writes 24 hours of synthetic connection records (a small subset of Zeek conn.log fields) for three hosts.
           - [score-beaconing.py](communication-and-network-security/network-security/monitoring-and-detection/beaconing-detection/scripts/score-beaconing.py): Scores every (source, destination, port) pair in a Zeek-style conn log for beaconing.
+      - [deception-and-honeypots.md](communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md): Deception and honeypots - High-fidelity detection from decoys and honeytokens.
+      - [deception-and-honeypots.md.json](communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md.json): Librarian OS metadata for deception-and-honeypots.md.
+      - [encrypted-traffic-analysis.md](communication-and-network-security/network-security/monitoring-and-detection/encrypted-traffic-analysis.md): Encrypted traffic analysis - JA3/JA4, SNI and certificate metadata, detecting threats without decryption.
+      - [encrypted-traffic-analysis.md.json](communication-and-network-security/network-security/monitoring-and-detection/encrypted-traffic-analysis.md.json): Librarian OS metadata for encrypted-traffic-analysis.md.
+      - [flow-monitoring.md](communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md): Flow monitoring - NetFlow/IPFIX/sFlow and cloud flow logs, the backbone of long-term visibility.
+      - [flow-monitoring.md.json](communication-and-network-security/network-security/monitoring-and-detection/flow-monitoring.md.json): Librarian OS metadata for flow-monitoring.md.
+      - [network-detection-and-response.md](communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md): Network detection and response - Network detection and response (NDR) is a category of security product that combines network monitoring, behavioral and machine-learning detection, an...
+      - [network-detection-and-response.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-detection-and-response.md.json): Librarian OS metadata for network-detection-and-response.md.
+      - [network-security-monitoring.md](communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md): Network security monitoring - Data types, sensor placement, blind spots. The foundation.
+      - [network-security-monitoring.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-security-monitoring.md.json): Librarian OS metadata for network-security-monitoring.md.
+      - [network-threat-hunting.md](communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md): Network threat hunting - Proactive, hypothesis-driven search.
+      - [network-threat-hunting.md.json](communication-and-network-security/network-security/monitoring-and-detection/network-threat-hunting.md.json): Librarian OS metadata for network-threat-hunting.md.
       - **packet-capture-analysis/**
         - [README.md](communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/README.md): Packet capture analysis - Reading packets, BPF filters, triage. Tested scripts.
         - [README.md.json](communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/README.md.json): Librarian OS metadata for README.md.
         - **scripts/**
           - [generate-sample-pcap.py](communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/scripts/generate-sample-pcap.py): Writes a small synthetic capture for the packet capture analysis note: one HTTP session, a few DNS lookups, one ping and a SYN scan.
           - [summarize-pcap.py](communication-and-network-security/network-security/monitoring-and-detection/packet-capture-analysis/scripts/summarize-pcap.py): First-pass triage of a classic pcap file (Ethernet, IPv4): protocol mix, top talkers, TCP conversations with their handshake state, DNS query names and hosts that look like they are scanning.
+      - [suricata-and-snort.md](communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md): Suricata and Snort - Suricata and Snort are the two dominant open-source network intrusion detection and prevention engines. They inspect traffic against *rules* (signatur...
+      - [suricata-and-snort.md.json](communication-and-network-security/network-security/monitoring-and-detection/suricata-and-snort.md.json): Librarian OS metadata for suricata-and-snort.md.
+      - [zeek.md](communication-and-network-security/network-security/monitoring-and-detection/zeek.md): Zeek - Turning traffic into structured transaction logs.
+      - [zeek.md.json](communication-and-network-security/network-security/monitoring-and-detection/zeek.md.json): Librarian OS metadata for zeek.md.
     - **network-attacks/**
       - [README.md](communication-and-network-security/network-security/network-attacks/README.md): Network attacks - Man-in-the-middle, scanning, lateral movement, command and control, exfiltration and denial of service.
       - [README.md.json](communication-and-network-security/network-security/network-attacks/README.md.json): Librarian OS metadata for README.md.
@@ -439,12 +485,6 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [command-and-control-traffic.md.json](communication-and-network-security/network-security/network-attacks/command-and-control-traffic.md.json): Librarian OS metadata for command-and-control-traffic.md.
       - [data-exfiltration.md](communication-and-network-security/network-security/network-attacks/data-exfiltration.md): Data exfiltration - Getting stolen data out, and the outbound controls that stop it.
       - [data-exfiltration.md.json](communication-and-network-security/network-security/network-attacks/data-exfiltration.md.json): Librarian OS metadata for data-exfiltration.md.
-      - [lateral-movement.md](communication-and-network-security/network-security/network-attacks/lateral-movement.md): Lateral movement - Spreading from one host to others east-west, and containing it.
-      - [lateral-movement.md.json](communication-and-network-security/network-security/network-attacks/lateral-movement.md.json): Librarian OS metadata for lateral-movement.md.
-      - [man-in-the-middle.md](communication-and-network-security/network-security/network-attacks/man-in-the-middle.md): Man-in-the-middle (adversary-in-the-middle) - The on-path position, how it is reached, and why end-to-end encryption is the defense.
-      - [man-in-the-middle.md.json](communication-and-network-security/network-security/network-attacks/man-in-the-middle.md.json): Librarian OS metadata for man-in-the-middle.md.
-      - [network-scanning.md](communication-and-network-security/network-security/network-attacks/network-scanning.md): Network scanning - Host, port and service discovery, and detecting scans.
-      - [network-scanning.md.json](communication-and-network-security/network-security/network-attacks/network-scanning.md.json): Librarian OS metadata for network-scanning.md.
       - **denial-of-service/**
         - [README.md](communication-and-network-security/network-security/network-attacks/denial-of-service/README.md): Denial of service - Volumetric, protocol and application attacks on availability, with SYN flood, ICMP flood, ping of death and DDoS.
         - [README.md.json](communication-and-network-security/network-security/network-attacks/denial-of-service/README.md.json): Librarian OS metadata for README.md.
@@ -458,6 +498,12 @@ Full tree of every file in the repository. Every file has a link and a short des
         - [ping-of-death.md.json](communication-and-network-security/network-security/network-attacks/denial-of-service/ping-of-death.md.json): Librarian OS metadata for ping-of-death.md.
         - [syn-flood.md](communication-and-network-security/network-security/network-attacks/denial-of-service/syn-flood.md): SYN flood - TCP state exhaustion and SYN cookies.
         - [syn-flood.md.json](communication-and-network-security/network-security/network-attacks/denial-of-service/syn-flood.md.json): Librarian OS metadata for syn-flood.md.
+      - [lateral-movement.md](communication-and-network-security/network-security/network-attacks/lateral-movement.md): Lateral movement - Spreading from one host to others east-west, and containing it.
+      - [lateral-movement.md.json](communication-and-network-security/network-security/network-attacks/lateral-movement.md.json): Librarian OS metadata for lateral-movement.md.
+      - [man-in-the-middle.md](communication-and-network-security/network-security/network-attacks/man-in-the-middle.md): Man-in-the-middle (adversary-in-the-middle) - The on-path position, how it is reached, and why end-to-end encryption is the defense.
+      - [man-in-the-middle.md.json](communication-and-network-security/network-security/network-attacks/man-in-the-middle.md.json): Librarian OS metadata for man-in-the-middle.md.
+      - [network-scanning.md](communication-and-network-security/network-security/network-attacks/network-scanning.md): Network scanning - Host, port and service discovery, and detecting scans.
+      - [network-scanning.md.json](communication-and-network-security/network-security/network-attacks/network-scanning.md.json): Librarian OS metadata for network-scanning.md.
     - **operations-and-assurance/**
       - [README.md](communication-and-network-security/network-security/operations-and-assurance/README.md): Operations and assurance - Device hardening, network security assessment and network incident response.
       - [README.md.json](communication-and-network-security/network-security/operations-and-assurance/README.md.json): Librarian OS metadata for README.md.
@@ -492,12 +538,6 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [README.md.json](communication-and-network-security/network-security/traffic-filtering/README.md.json): Librarian OS metadata for README.md.
       - [egress-filtering.md](communication-and-network-security/network-security/traffic-filtering/egress-filtering.md): Egress filtering - Controlling outbound traffic to break download, C2 and exfiltration.
       - [egress-filtering.md.json](communication-and-network-security/network-security/traffic-filtering/egress-filtering.md.json): Librarian OS metadata for egress-filtering.md.
-      - [firewalls.md](communication-and-network-security/network-security/traffic-filtering/firewalls.md): Firewalls - Stateless, stateful and next-generation firewalls, the policy model, with a tested lab policy.
-      - [firewalls.md.json](communication-and-network-security/network-security/traffic-filtering/firewalls.md.json): Librarian OS metadata for firewalls.md.
-      - [proxies-and-secure-web-gateways.md](communication-and-network-security/network-security/traffic-filtering/proxies-and-secure-web-gateways.md): Proxies and secure web gateways - Forward proxies that filter, scan and log web traffic.
-      - [proxies-and-secure-web-gateways.md.json](communication-and-network-security/network-security/traffic-filtering/proxies-and-secure-web-gateways.md.json): Librarian OS metadata for proxies-and-secure-web-gateways.md.
-      - [web-application-firewalls.md](communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md): Web application firewalls - Layer-7 filtering for web applications and virtual patching.
-      - [web-application-firewalls.md.json](communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md.json): Librarian OS metadata for web-application-firewalls.md.
       - **firewall-rule-design/**
         - [README.md](communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/README.md): Firewall rule design - Rule order, state, anti-spoofing, and auditing a rule set for anomalies, with tested scripts.
         - [README.md.json](communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/README.md.json): Librarian OS metadata for README.md.
@@ -505,6 +545,12 @@ Full tree of every file in the repository. Every file has a link and a short des
           - [audit-acl.py](communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/scripts/audit-acl.py): Audits a first-match access control list for the anomalies classified by Al-Shaer and Hamed (shadowing, redundancy, generalization, correlation) and for overly broad rules.
           - [fw-baseline.nft](communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/scripts/fw-baseline.nft): Baseline nftables policy for the lab firewall: default deny, an explicit allow list, state tracking and rate-limited drop logging.
           - [sample-acl.csv](communication-and-network-security/network-security/traffic-filtering/firewall-rule-design/scripts/sample-acl.csv): Sample first-match access control list audited by audit-acl.py.
+      - [firewalls.md](communication-and-network-security/network-security/traffic-filtering/firewalls.md): Firewalls - Stateless, stateful and next-generation firewalls, the policy model, with a tested lab policy.
+      - [firewalls.md.json](communication-and-network-security/network-security/traffic-filtering/firewalls.md.json): Librarian OS metadata for firewalls.md.
+      - [proxies-and-secure-web-gateways.md](communication-and-network-security/network-security/traffic-filtering/proxies-and-secure-web-gateways.md): Proxies and secure web gateways - Forward proxies that filter, scan and log web traffic.
+      - [proxies-and-secure-web-gateways.md.json](communication-and-network-security/network-security/traffic-filtering/proxies-and-secure-web-gateways.md.json): Librarian OS metadata for proxies-and-secure-web-gateways.md.
+      - [web-application-firewalls.md](communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md): Web application firewalls - A web application firewall (WAF) inspects HTTP and HTTPS traffic to a web application and blocks requests that match attack patterns or violate policy...
+      - [web-application-firewalls.md.json](communication-and-network-security/network-security/traffic-filtering/web-application-firewalls.md.json): Librarian OS metadata for web-application-firewalls.md.
     - **wireless/**
       - [README.md](communication-and-network-security/network-security/wireless/README.md): Wireless security - Wi-Fi security protocols, enterprise Wi-Fi, wireless attacks and Bluetooth.
       - [README.md.json](communication-and-network-security/network-security/wireless/README.md.json): Librarian OS metadata for README.md.
@@ -516,298 +562,6 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [wifi-security-protocols.md.json](communication-and-network-security/network-security/wireless/wifi-security-protocols.md.json): Librarian OS metadata for wifi-security-protocols.md.
       - [wireless-attacks.md](communication-and-network-security/network-security/wireless/wireless-attacks.md): Wireless attacks - Evil twin, rogue AP, deauthentication, handshake capture, with detection and mitigation.
       - [wireless-attacks.md.json](communication-and-network-security/network-security/wireless/wireless-attacks.md.json): Librarian OS metadata for wireless-attacks.md.
-- **identity-and-access-management/**
-    - **identity-and-access/**
-      - [jwt-vs-session-comparison.png](_assets/identity-and-access-management/identity-and-access/jwt-vs-session-comparison.png): Asset: jwt vs session comparison.
-  - **security-and-risk-management/**
-    - **foundations/**
-      - [cia-triad-controls-and-failures.svg](_assets/security-and-risk-management/foundations/cia-triad-controls-and-failures.svg): CIA triad with failures and controls (original drawing).
-      - [cia-triad-overview.png](_assets/security-and-risk-management/foundations/cia-triad-overview.png): Asset: cia triad overview.
-    - **governance-and-compliance/**
-      - [nist-ai-rmf-core-functions.png](_assets/security-and-risk-management/governance-and-compliance/nist-ai-rmf-core-functions.png): AI RMF Core functions (NIST AI 100-1, Fig. 5).
-      - [nist-ai-rmf-trustworthy-characteristics.png](_assets/security-and-risk-management/governance-and-compliance/nist-ai-rmf-trustworthy-characteristics.png): Characteristics of trustworthy AI (NIST AI 100-1, Fig. 4).
-      - [nist-csf-2-core-structure.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-core-structure.png): CSF Core structure (NIST CSWP 29, Fig. 1).
-      - [nist-csf-2-cybersecurity-privacy-risk.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-cybersecurity-privacy-risk.png): Cybersecurity and privacy risk relationship (NIST CSWP 29, Fig. 6).
-      - [nist-csf-2-functions-wheel.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-functions-wheel.png): CSF Functions wheel (NIST CSWP 29, Fig. 2).
-      - [nist-csf-2-profile-steps.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-profile-steps.png): Steps for creating a Profile (NIST CSWP 29, Fig. 3).
-      - [nist-csf-2-profile-template.csv](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-profile-template.csv): All 106 CSF 2.0 Subcategories as a Profile worksheet.
-      - [nist-csf-2-risk-communication.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-risk-communication.png): Risk communication flow (NIST CSWP 29, Fig. 5).
-      - [nist-csf-2-tiers.png](_assets/security-and-risk-management/governance-and-compliance/nist-csf-2-tiers.png): CSF Tiers (NIST CSWP 29, Fig. 4).
-      - [nist-rmf-multilevel-risk-management.png](_assets/security-and-risk-management/governance-and-compliance/nist-rmf-multilevel-risk-management.png): Three-level risk management approach (NIST SP 800-37 Rev. 2, Fig. 1).
-      - [nist-rmf-steps.png](_assets/security-and-risk-management/governance-and-compliance/nist-rmf-steps.png): The seven RMF steps (NIST SP 800-37 Rev. 2, Fig. 2).
-      - [nist-sp-800-53-rev5-control-index.csv](_assets/security-and-risk-management/governance-and-compliance/nist-sp-800-53-rev5-control-index.csv): Index of the 300 active SP 800-53 Rev. 5.2.0 base controls with baseline membership.
-    - **reference/**
-      - **organizations/**
-        - [nist-incident-response-planning.png](_assets/security-and-risk-management/reference/organizations/nist-incident-response-planning.png): Asset: nist incident response planning.
-  - **security-architecture-and-engineering/**
-    - **cloud-and-infrastructure-security/**
-      - [cspm-poc-scorecard.csv](_assets/security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-poc-scorecard.csv): Weighted scorecard with gates for a CSPM proof of concept.
-      - [cspm-poc-seeded-misconfigurations.csv](_assets/security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-poc-seeded-misconfigurations.csv): 24 seeded misconfigurations for a CSPM proof of concept.
-  - **security-operations/**
-    - **defensive-operations/**
-      - [nist-sp-800-61r3-lifecycle.png](_assets/security-operations/defensive-operations/nist-sp-800-61r3-lifecycle.png): Incident response life cycle model based on CSF 2.0 Functions (NIST SP 800-61 Rev. 3, Fig. 2).
-  - **software-development-security/**
-    - **application-security/**
-      - [owasp-security-principles-design-review.csv](_assets/software-development-security/application-security/owasp-security-principles-design-review.csv): Design review checklist with one question per principle.
-      - [owasp-security-principles-map.svg](_assets/software-development-security/application-security/owasp-security-principles-map.svg): The 16 OWASP principles grouped into four questions (original drawing).
-      - [xss-overview.png](_assets/software-development-security/application-security/xss-overview.png): Asset: xss overview.
-- **_roadmaps/**
-  - [appsec-and-devsecops.json](_roadmaps/appsec-and-devsecops.json): Path: application security and DevSecOps.
-  - [cissp-study-map.json](_roadmaps/cissp-study-map.json): CISSP study map: the credential, the eight domains and the notes that serve each.
-  - [cloud-and-kubernetes-posture.json](_roadmaps/cloud-and-kubernetes-posture.json): Thematic roadmap: posture management, CSPM, tools and KSPM.
-  - [cybersecurity.json](_roadmaps/cybersecurity.json): Main roadmap: common foundations and one hub per CISSP domain.
-  - [d1-security-and-risk-management.json](_roadmaps/d1-security-and-risk-management.json): Sub-roadmap for Domain 1.
-  - [d2-asset-security.json](_roadmaps/d2-asset-security.json): Sub-roadmap for Domain 2.
-  - [d3-security-architecture-and-engineering.json](_roadmaps/d3-security-architecture-and-engineering.json): Sub-roadmap for Domain 3.
-  - [d4-communication-and-network-security.json](_roadmaps/d4-communication-and-network-security.json): Sub-roadmap for Domain 4.
-  - [d5-identity-and-access-management.json](_roadmaps/d5-identity-and-access-management.json): Sub-roadmap for Domain 5.
-  - [d6-security-assessment-and-testing.json](_roadmaps/d6-security-assessment-and-testing.json): Sub-roadmap for Domain 6.
-  - [d7-security-operations.json](_roadmaps/d7-security-operations.json): Sub-roadmap for Domain 7.
-  - [d8-software-development-security.json](_roadmaps/d8-software-development-security.json): Sub-roadmap for Domain 8.
-  - [defensive-security.json](_roadmaps/defensive-security.json): Path: defensive security (blue team).
-  - [grc-and-privacy.json](_roadmaps/grc-and-privacy.json): Path: governance, risk, compliance and privacy.
-  - [incident-response-and-forensics.json](_roadmaps/incident-response-and-forensics.json): Thematic roadmap: detection, NIST incident response and chain of custody.
-  - [offensive-security.json](_roadmaps/offensive-security.json): Path: offensive security, authorized contexts only.
-  - [purple-team.json](_roadmaps/purple-team.json): Path: purple team, attack and detection side by side.
-  - [security-architecture-path.json](_roadmaps/security-architecture-path.json): Path: security architecture and engineering.
-- **security-and-risk-management/**
-  - [README.md](security-and-risk-management/README.md): Security and risk management - This CISSP domain covers security concepts, governance, law, risk, threat modeling and security awareness. It also covers business continuity requirements. The notes b...
-  - [README.md.json](security-and-risk-management/README.md.json): Librarian OS metadata for README.md.
-  - **foundations/**
-    - [README.md](security-and-risk-management/foundations/README.md): Foundations - Core security concepts that the rest of the repository builds on: what cybersecurity is and the confidentiality, integrity and availability model.
-    - [README.md.json](security-and-risk-management/foundations/README.md.json): Librarian OS metadata for README.md.
-    - **cia-triad/**
-      - [README.md](security-and-risk-management/foundations/cia-triad/README.md): CIA triad - The CIA triad names three properties that information security tries to preserve: confidentiality (only the right parties can read the data), integrity (the data is co...
-      - [README.md.json](security-and-risk-management/foundations/cia-triad/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [categorize-system.py](security-and-risk-management/foundations/cia-triad/scripts/categorize-system.py): FIPS 199 high-water mark categorization and baseline impact level.
-        - [compute-availability.py](security-and-risk-management/foundations/cia-triad/scripts/compute-availability.py): Availability arithmetic, nines, series and parallel composition, correlated failure.
-        - [verify-hash-chain-log.py](security-and-risk-management/foundations/cia-triad/scripts/verify-hash-chain-log.py): Tamper-evident hash chain log and the role of an external anchor.
-    - [security-overview.md](security-and-risk-management/foundations/security-overview.md): Security overview - Definition, purposes, key concepts, types and importance of cybersecurity.
-    - [security-overview.md.json](security-and-risk-management/foundations/security-overview.md.json): Librarian OS metadata for security-overview.md.
-  - **governance-and-compliance/**
-    - [README.md](security-and-risk-management/governance-and-compliance/README.md): Governance and compliance - Managing security as an organizational discipline: risk, control frameworks and standards.
-    - [README.md.json](security-and-risk-management/governance-and-compliance/README.md.json): Librarian OS metadata for README.md.
-    - **frameworks/**
-      - [README.md](security-and-risk-management/governance-and-compliance/frameworks/README.md): Frameworks - Control and security frameworks.
-      - [README.md.json](security-and-risk-management/governance-and-compliance/frameworks/README.md.json): Librarian OS metadata for README.md.
-      - [cis-controls.md](security-and-risk-management/governance-and-compliance/frameworks/cis-controls.md): Center for Internet Security (CIS) Controls Framework - The CIS Controls prioritized safeguards.
-      - [cis-controls.md.json](security-and-risk-management/governance-and-compliance/frameworks/cis-controls.md.json): Librarian OS metadata for cis-controls.md.
-      - [csa-cloud-controls-matrix.md](security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md): Cloud Security Alliance Cloud Controls Matrix (CSA CCM) - The CSA control framework for cloud computing.
-      - [csa-cloud-controls-matrix.md.json](security-and-risk-management/governance-and-compliance/frameworks/csa-cloud-controls-matrix.md.json): Librarian OS metadata for csa-cloud-controls-matrix.md.
-      - [google-security-and-resilience-framework.md](security-and-risk-management/governance-and-compliance/frameworks/google-security-and-resilience-framework.md): Google Security and Resilience Framework (SRF) - The Google Cloud security and resilience framework.
-      - [google-security-and-resilience-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/google-security-and-resilience-framework.md.json): Librarian OS metadata for google-security-and-resilience-framework.md.
-      - [nist-ai-risk-management-framework.md](security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md): NIST AI Risk Management Framework (AI RMF) - Govern, Map, Measure and Manage for trustworthy AI.
-      - [nist-ai-risk-management-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-ai-risk-management-framework.md.json): Librarian OS metadata for nist-ai-risk-management-framework.md.
-      - [nist-cybersecurity-framework.md](security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md): NIST Cybersecurity Framework (CSF) - The CSF 2.0 Core, Profiles, Tiers, a worked gap analysis and a Profile template.
-      - [nist-cybersecurity-framework.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-cybersecurity-framework.md.json): Librarian OS metadata for nist-cybersecurity-framework.md.
-      - [nist-frameworks-overview.md](security-and-risk-management/governance-and-compliance/frameworks/nist-frameworks-overview.md): NIST frameworks and key publications - Map of the NIST framework family and which document answers which question.
-      - [nist-frameworks-overview.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-frameworks-overview.md.json): Librarian OS metadata for nist-frameworks-overview.md.
-      - **nist-sp-800-53/**
-        - [README.md](security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md): NIST SP 800-53 security and privacy controls - NIST SP 800-53 is the most widely used catalog of security and privacy controls: a numbered list of safeguards, from account management to supply chain risk, written s...
-        - [README.md.json](security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/README.md.json): Librarian OS metadata for README.md.
-        - **scripts/**
-          - [count-baselines.py](security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/scripts/count-baselines.py): Controls per family and baseline from NIST OSCAL data.
-          - [render-control.py](security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/scripts/render-control.py): Print a control, its parameters and enhancements with baseline membership.
-          - [tailor-baseline.py](security-and-risk-management/governance-and-compliance/frameworks/nist-sp-800-53/scripts/tailor-baseline.py): Tailoring a baseline as data (designation, additions, parameters).
-      - [security-controls.md](security-and-risk-management/governance-and-compliance/frameworks/security-controls.md): Security controls - How the CSF functions translate into concrete controls.
-      - [security-controls.md.json](security-and-risk-management/governance-and-compliance/frameworks/security-controls.md.json): Librarian OS metadata for security-controls.md.
-    - **risk-management/**
-      - [README.md](security-and-risk-management/governance-and-compliance/risk-management/README.md): Risk management - Risk management notes.
-      - [README.md.json](security-and-risk-management/governance-and-compliance/risk-management/README.md.json): Librarian OS metadata for README.md.
-      - [information-risk-management.md](security-and-risk-management/governance-and-compliance/risk-management/information-risk-management.md): Information Risk Management (IRM) - Risk as a decision-making discipline for information.
-      - [information-risk-management.md.json](security-and-risk-management/governance-and-compliance/risk-management/information-risk-management.md.json): Librarian OS metadata for information-risk-management.md.
-      - [risk-management-framework.md](security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md): NIST Risk Management Framework (RMF) - SP 800-37 Rev. 2: seven steps, 47 tasks and the authorizing official's risk decision.
-      - [risk-management-framework.md.json](security-and-risk-management/governance-and-compliance/risk-management/risk-management-framework.md.json): Librarian OS metadata for risk-management-framework.md.
-    - **standards/**
-      - [README.md](security-and-risk-management/governance-and-compliance/standards/README.md): Standards - Formal standards.
-      - [README.md.json](security-and-risk-management/governance-and-compliance/standards/README.md.json): Librarian OS metadata for README.md.
-      - [iso-iec-27001.md](security-and-risk-management/governance-and-compliance/standards/iso-iec-27001.md): ISO/IEC 27001 - The international standard for information security management systems.
-      - [iso-iec-27001.md.json](security-and-risk-management/governance-and-compliance/standards/iso-iec-27001.md.json): Librarian OS metadata for iso-iec-27001.md.
-  - **privacy-regulations/**
-    - [README.md](security-and-risk-management/privacy-regulations/README.md): Regulations - Laws that govern personal data.
-    - [README.md.json](security-and-risk-management/privacy-regulations/README.md.json): Librarian OS metadata for README.md.
-    - [coppa.md](security-and-risk-management/privacy-regulations/coppa.md): Children’s Online Privacy Protection Rule (COPPA) - U.S. rules on online data collection from children.
-    - [coppa.md.json](security-and-risk-management/privacy-regulations/coppa.md.json): Librarian OS metadata for coppa.md.
-    - [ftc-act.md](security-and-risk-management/privacy-regulations/ftc-act.md): Federal Trade Commission (FTC) Act - The Federal Trade Commission role in privacy and data security.
-    - [ftc-act.md.json](security-and-risk-management/privacy-regulations/ftc-act.md.json): Librarian OS metadata for ftc-act.md.
-    - [gdpr.md](security-and-risk-management/privacy-regulations/gdpr.md): General Data Protection Regulation (GDPR) - The European Union General Data Protection Regulation.
-    - [gdpr.md.json](security-and-risk-management/privacy-regulations/gdpr.md.json): Librarian OS metadata for gdpr.md.
-    - [glba.md](security-and-risk-management/privacy-regulations/glba.md): Gramm-Leach-Bliley Act (GLBA) - U.S. law on protecting customer financial information.
-    - [glba.md.json](security-and-risk-management/privacy-regulations/glba.md.json): Librarian OS metadata for glba.md.
-    - [hipaa.md](security-and-risk-management/privacy-regulations/hipaa.md): Health Insurance Portability and Accountability Act (HIPAA) - U.S. law protecting health information.
-    - [hipaa.md.json](security-and-risk-management/privacy-regulations/hipaa.md.json): Librarian OS metadata for hipaa.md.
-    - [pipeda.md](security-and-risk-management/privacy-regulations/pipeda.md): Personal Information Protection and Electronic Documents Act (PIPEDA) - Canada federal private-sector privacy law.
-    - [pipeda.md.json](security-and-risk-management/privacy-regulations/pipeda.md.json): Librarian OS metadata for pipeda.md.
-    - [privacy-regulations-overview.md](security-and-risk-management/privacy-regulations/privacy-regulations-overview.md): Data protection and privacy regulations - What privacy regulations are and how they compare.
-    - [privacy-regulations-overview.md.json](security-and-risk-management/privacy-regulations/privacy-regulations-overview.md.json): Librarian OS metadata for privacy-regulations-overview.md.
-  - **reference/**
-    - [README.md](security-and-risk-management/reference/README.md): Reference - These notes identify organizations and certifications cited elsewhere in the repository. They are supporting reference material, not a separate CISSP domain.
-    - [README.md.json](security-and-risk-management/reference/README.md.json): Librarian OS metadata for README.md.
-    - **certifications/**
-      - [README.md](security-and-risk-management/reference/certifications/README.md): Certifications - Professional security certifications and the bodies that issue them.
-      - [README.md.json](security-and-risk-management/reference/certifications/README.md.json): Librarian OS metadata for README.md.
-      - [cissp-security-domains.md](security-and-risk-management/reference/certifications/cissp-security-domains.md): CISSP security domains - The eight domains, weights and 62 sections of the CISSP outline, with the location of each topic in this repository.
-      - [cissp-security-domains.md.json](security-and-risk-management/reference/certifications/cissp-security-domains.md.json): Librarian OS metadata for cissp-security-domains.md.
-      - [cissp.md](security-and-risk-management/reference/certifications/cissp.md): Certified Information Systems Security Professional (CISSP) - Exam format, experience rules, ethics and how the credential relates to others.
-      - [cissp.md.json](security-and-risk-management/reference/certifications/cissp.md.json): Librarian OS metadata for cissp.md.
-      - [isc2.md](security-and-risk-management/reference/certifications/isc2.md): International Information System Security Certification Consortium (ISC2) - ISC2 and its certifications.
-      - [isc2.md.json](security-and-risk-management/reference/certifications/isc2.md.json): Librarian OS metadata for isc2.md.
-    - **organizations/**
-      - [README.md](security-and-risk-management/reference/organizations/README.md): Organizations - Institutions that shape the field: standards bodies, training and research organizations and incident response firms. MITRE is covered under threat intelligence.
-      - [README.md.json](security-and-risk-management/reference/organizations/README.md.json): Librarian OS metadata for README.md.
-      - [mandiant.md](security-and-risk-management/reference/organizations/mandiant.md): Mandiant - Mandiant and its incident response and threat research.
-      - [mandiant.md.json](security-and-risk-management/reference/organizations/mandiant.md.json): Librarian OS metadata for mandiant.md.
-      - [nist.md](security-and-risk-management/reference/organizations/nist.md): National Institute of Standards and Technology (NIST) - The agency, its role, publication series and how to read the status of a NIST document.
-      - [nist.md.json](security-and-risk-management/reference/organizations/nist.md.json): Librarian OS metadata for nist.md.
-      - [sans.md](security-and-risk-management/reference/organizations/sans.md): SANS - The SANS Institute and its training and research.
-      - [sans.md.json](security-and-risk-management/reference/organizations/sans.md.json): Librarian OS metadata for sans.md.
-  - **security-awareness/**
-    - [README.md](security-and-risk-management/security-awareness/README.md): Security awareness - Security awareness helps people recognize and respond to attacks that target human decisions. These notes explain social engineering and user focused attacks. Credenti...
-    - [README.md.json](security-and-risk-management/security-awareness/README.md.json): Librarian OS metadata for README.md.
-    - **social-engineering/**
-      - [README.md](security-and-risk-management/security-awareness/social-engineering/README.md): Social engineering - Attacks on people and physical access.
-      - [README.md.json](security-and-risk-management/security-awareness/social-engineering/README.md.json): Librarian OS metadata for README.md.
-      - [dumpster-diving.md](security-and-risk-management/security-awareness/social-engineering/dumpster-diving.md): Dumpster diving - Searching discarded material for sensitive information.
-      - [dumpster-diving.md.json](security-and-risk-management/security-awareness/social-engineering/dumpster-diving.md.json): Librarian OS metadata for dumpster-diving.md.
-      - [impersonation.md](security-and-risk-management/security-awareness/social-engineering/impersonation.md): Impersonation - Pretending to be a trusted person, entity or role.
-      - [impersonation.md.json](security-and-risk-management/security-awareness/social-engineering/impersonation.md.json): Librarian OS metadata for impersonation.md.
-      - [phishing.md](security-and-risk-management/security-awareness/social-engineering/phishing.md): Phishing - Impersonating trusted senders to obtain information or actions.
-      - [phishing.md.json](security-and-risk-management/security-awareness/social-engineering/phishing.md.json): Librarian OS metadata for phishing.md.
-      - [psychology-of-cyberattacks.md](security-and-risk-management/security-awareness/social-engineering/psychology-of-cyberattacks.md): Psychology of cyberattacks - Psychological principles that attackers exploit and how to defend.
-      - [psychology-of-cyberattacks.md.json](security-and-risk-management/security-awareness/social-engineering/psychology-of-cyberattacks.md.json): Librarian OS metadata for psychology-of-cyberattacks.md.
-      - [shoulder-surfing.md](security-and-risk-management/security-awareness/social-engineering/shoulder-surfing.md): Shoulder surfing - Watching a screen or keyboard to capture sensitive information.
-      - [shoulder-surfing.md.json](security-and-risk-management/security-awareness/social-engineering/shoulder-surfing.md.json): Librarian OS metadata for shoulder-surfing.md.
-      - [social-engineering.md](security-and-risk-management/security-awareness/social-engineering/social-engineering.md): Social engineering - Manipulating people instead of exploiting technical flaws.
-      - [social-engineering.md.json](security-and-risk-management/security-awareness/social-engineering/social-engineering.md.json): Librarian OS metadata for social-engineering.md.
-      - [spam.md](security-and-risk-management/security-awareness/social-engineering/spam.md): Spam - Mass unsolicited messages and their security impact.
-      - [spam.md.json](security-and-risk-management/security-awareness/social-engineering/spam.md.json): Librarian OS metadata for spam.md.
-      - [tailgating.md](security-and-risk-management/security-awareness/social-engineering/tailgating.md): Tailgating - Following an authorized person into a restricted area.
-      - [tailgating.md.json](security-and-risk-management/security-awareness/social-engineering/tailgating.md.json): Librarian OS metadata for tailgating.md.
-    - [user-based-attacks.md](security-and-risk-management/security-awareness/user-based-attacks.md): User-based attacks - Attacks that target users instead of software.
-    - [user-based-attacks.md.json](security-and-risk-management/security-awareness/user-based-attacks.md.json): Librarian OS metadata for user-based-attacks.md.
-  - **threat-modeling/**
-    - [README.md](security-and-risk-management/threat-modeling/README.md): Threat modeling - How to think about what can go wrong in a system, and the main methodologies for doing it in a structured way.
-    - [README.md.json](security-and-risk-management/threat-modeling/README.md.json): Librarian OS metadata for README.md.
-    - [methodologies.md](security-and-risk-management/threat-modeling/methodologies.md): Threat modeling methodologies - Comparison of the main methodologies and their strengths and weaknesses.
-    - [methodologies.md.json](security-and-risk-management/threat-modeling/methodologies.md.json): Librarian OS metadata for methodologies.md.
-    - **methods/**
-      - [README.md](security-and-risk-management/threat-modeling/methods/README.md): Methods - Individual threat modeling methods.
-      - [README.md.json](security-and-risk-management/threat-modeling/methods/README.md.json): Librarian OS metadata for README.md.
-      - [attack-trees.md](security-and-risk-management/threat-modeling/methods/attack-trees.md): Attack Trees - Representing how an attacker can reach a goal as a tree of steps.
-      - [attack-trees.md.json](security-and-risk-management/threat-modeling/methods/attack-trees.md.json): Librarian OS metadata for attack-trees.md.
-      - [hybrid-threat-modeling-method.md](security-and-risk-management/threat-modeling/methods/hybrid-threat-modeling-method.md): Hybrid Threat Modeling Method (hTMM) - Combining several methodologies in one process.
-      - [hybrid-threat-modeling-method.md.json](security-and-risk-management/threat-modeling/methods/hybrid-threat-modeling-method.md.json): Librarian OS metadata for hybrid-threat-modeling-method.md.
-      - [pasta.md](security-and-risk-management/threat-modeling/methods/pasta.md): Attack Simulation and Threat Analysis (PASTA) - Risk-centric, attacker-focused methodology.
-      - [pasta.md.json](security-and-risk-management/threat-modeling/methods/pasta.md.json): Librarian OS metadata for pasta.md.
-      - [security-cards.md](security-and-risk-management/threat-modeling/methods/security-cards.md): Security Cards - Card-based, collaborative threat discovery.
-      - [security-cards.md.json](security-and-risk-management/threat-modeling/methods/security-cards.md.json): Librarian OS metadata for security-cards.md.
-      - [stride.md](security-and-risk-management/threat-modeling/methods/stride.md): STRIDE - Microsoft threat classification: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
-      - [stride.md.json](security-and-risk-management/threat-modeling/methods/stride.md.json): Librarian OS metadata for stride.md.
-      - [trike.md](security-and-risk-management/threat-modeling/methods/trike.md): Trike - Risk-based methodology built around acceptable risk levels.
-      - [trike.md.json](security-and-risk-management/threat-modeling/methods/trike.md.json): Librarian OS metadata for trike.md.
-    - [threat-modeling.md](security-and-risk-management/threat-modeling/threat-modeling.md): Threat Modeling - What threat modeling is, why it matters and how it differs from risk management.
-    - [threat-modeling.md.json](security-and-risk-management/threat-modeling/threat-modeling.md.json): Librarian OS metadata for threat-modeling.md.
-- **asset-security/**
-  - [README.md](asset-security/README.md): Asset security - This CISSP domain covers the classification, ownership, handling, retention and lifecycle of information and other assets. The current material covers asset management, data protection (DLP and DSPM) and privacy; classification and data lifecycle topics remain to be written.
-  - [README.md.json](asset-security/README.md.json): Librarian OS metadata for README.md.
-  - **asset-management/**
-    - [README.md](asset-security/asset-management/README.md): Asset management - Inventory, ownership, criticality and lifecycle of assets, with the NIST CSF ID.AM outcomes and a tested reconciliation script.
-    - [README.md.json](asset-security/asset-management/README.md.json): Librarian OS metadata for README.md.
-    - **scripts/**
-      - [reconcile-inventory.py](asset-security/asset-management/scripts/reconcile-inventory.py): Reconciles five synthetic asset sources and reports shadow assets, ghost records, ownerless assets and end-of-life software.
-  - **data-protection/**
-    - [README.md](asset-security/data-protection/README.md): Data protection - Controls that protect information according to its classification (scaffold).
-    - [README.md.json](asset-security/data-protection/README.md.json): Librarian OS metadata for README.md.
-    - **data-loss-prevention/**
-      - [README.md](asset-security/data-protection/data-loss-prevention/README.md): Data loss prevention (DLP) - Detection methods, channels, rollout and a tested comparison of naive and validated detectors.
-      - [README.md.json](asset-security/data-protection/data-loss-prevention/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [dlp-detectors.py](asset-security/data-protection/data-loss-prevention/scripts/dlp-detectors.py): Luhn and IBAN validated detectors with keyword proximity, precision and recall on a labeled corpus.
-    - **data-security-posture-management/**
-      - [README.md](asset-security/data-protection/data-security-posture-management/README.md): Data security posture management (DSPM) - Data discovery, sampling, exposure and risk ranking for cloud and SaaS data.
-      - [README.md.json](asset-security/data-protection/data-security-posture-management/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [dspm-sampling-risk.py](asset-security/data-protection/data-security-posture-management/scripts/dspm-sampling-risk.py): Simulation of sampled sensitive data discovery and a data store risk ranking.
-  - **privacy-and-data-protection/**
-    - [README.md](asset-security/privacy-and-data-protection/README.md): Privacy and data protection - Privacy frameworks and data protection concepts that help identify and manage risks to personal information.
-    - [README.md.json](asset-security/privacy-and-data-protection/README.md.json): Librarian OS metadata for README.md.
-    - [nist-privacy-framework.md](asset-security/privacy-and-data-protection/nist-privacy-framework.md): NIST Privacy Framework - Privacy risk, the five Functions of version 1.0, Profiles and Tiers, with a data minimization example.
-    - [nist-privacy-framework.md.json](asset-security/privacy-and-data-protection/nist-privacy-framework.md.json): Librarian OS metadata for nist-privacy-framework.md.
-- **security-architecture-and-engineering/**
-  - [README.md](security-architecture-and-engineering/README.md): Security architecture and engineering - This CISSP domain covers secure design principles, security models, system architecture, cryptography and security capabilities of infrastructure. The current notes co...
-  - [README.md.json](security-architecture-and-engineering/README.md.json): Librarian OS metadata for README.md.
-  - **ai-security/**
-    - [README.md](security-architecture-and-engineering/ai-security/README.md): AI security - Security of artificial intelligence and machine learning systems.
-    - [README.md.json](security-architecture-and-engineering/ai-security/README.md.json): Librarian OS metadata for README.md.
-    - **adversarial-machine-learning/**
-      - [README.md](security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md): Adversarial artificial intelligence - The NIST AI 100-2 E2025 taxonomy, four toy attacks and defenses.
-      - [README.md.json](security-architecture-and-engineering/ai-security/adversarial-machine-learning/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [aml-toy-attacks.py](security-architecture-and-engineering/ai-security/adversarial-machine-learning/scripts/aml-toy-attacks.py): Evasion, label flipping, model extraction and membership inference on a toy logistic regression.
-    - [google-secure-ai-framework.md](security-architecture-and-engineering/ai-security/google-secure-ai-framework.md): Google’s Secure AI Framework (SAIF) - Google framework for securing AI and ML systems.
-    - [google-secure-ai-framework.md.json](security-architecture-and-engineering/ai-security/google-secure-ai-framework.md.json): Librarian OS metadata for google-secure-ai-framework.md.
-  - **cloud-and-infrastructure-security/**
-    - [README.md](security-architecture-and-engineering/cloud-and-infrastructure-security/README.md): Cloud and infrastructure security - Security of cloud platforms, containers and infrastructure.
-    - [README.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/README.md.json): Librarian OS metadata for README.md.
-    - [cloud-security-posture-management.md](security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md): Cloud security posture management (CSPM) - Mechanism, rules, prioritization, drift, native services, operations and a working mini engine.
-    - [cloud-security-posture-management.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/cloud-security-posture-management.md.json): Librarian OS metadata for cloud-security-posture-management.md.
-    - [cspm-tools.md](security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md): CSPM tools - Prisma Cloud and Cortex Cloud, CrowdStrike Falcon Cloud Security, Orca, Check Point CloudGuard and Netskope, with a PoC method.
-    - [cspm-tools.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/cspm-tools.md.json): Librarian OS metadata for cspm-tools.md.
-    - **kubernetes-security-posture-management/**
-      - [README.md](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md): Kubernetes security posture management (KSPM) - Configuration posture of Kubernetes clusters: Pod Security Standards, RBAC, network policy, benchmarks, tools and a tested evaluation script.
-      - [README.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [evaluate-cluster-posture.py](security-architecture-and-engineering/cloud-and-infrastructure-security/kubernetes-security-posture-management/scripts/evaluate-cluster-posture.py): Synthetic cluster snapshot evaluated against Pod Security Standards, RBAC and namespace rules, with toxic combinations and drift.
-    - [multicloud-cspm.md](security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md): Multicloud CSPM - Hierarchies, normalization, architecture patterns, connectors, operating model and a normalization example.
-    - [multicloud-cspm.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/multicloud-cspm.md.json): Librarian OS metadata for multicloud-cspm.md.
-    - [security-posture-management.md](security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md): Security Posture Management (SPM) - Continuous measurement and improvement of security posture, including CSPM and related variants.
-    - [security-posture-management.md.json](security-architecture-and-engineering/cloud-and-infrastructure-security/security-posture-management.md.json): Librarian OS metadata for security-posture-management.md.
-  - **component-security/** (planned)
-    - [README.md](security-architecture-and-engineering/component-security/README.md): Component security - This section is planned for hardware and firmware security. Component security sits within the CISSP security architecture and engineering domain because the exam outl...
-    - [README.md.json](security-architecture-and-engineering/component-security/README.md.json): Librarian OS metadata for README.md.
-  - **cryptography/**
-    - [README.md](security-architecture-and-engineering/cryptography/README.md): Cryptography - Cryptographic building blocks and the infrastructure around them.
-    - [README.md.json](security-architecture-and-engineering/cryptography/README.md.json): Librarian OS metadata for README.md.
-    - **cryptographic-attacks/**
-      - [README.md](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md): Cryptographic attacks - Attacks by attacker knowledge and by weakness place, with five tested toy demonstrations.
-      - [README.md.json](security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md.json): Librarian OS metadata for README.md.
-      - **scripts/**
-        - [crypto-attack-demos.py](security-architecture-and-engineering/cryptography/cryptographic-attacks/scripts/crypto-attack-demos.py): Frequency analysis, known plaintext, keystream reuse, birthday collision and timing leak on toy parameters.
-    - **hashing/**
-      - [README.md](security-architecture-and-engineering/cryptography/hashing/README.md): Hashing - Hash functions and password hashing.
-      - [README.md.json](security-architecture-and-engineering/cryptography/hashing/README.md.json): Librarian OS metadata for README.md.
-      - [argon2.md](security-architecture-and-engineering/cryptography/hashing/argon2.md): Argon2 - The Argon2 password hashing function.
-      - [argon2.md.json](security-architecture-and-engineering/cryptography/hashing/argon2.md.json): Librarian OS metadata for argon2.md.
-      - [bcrypt.md](security-architecture-and-engineering/cryptography/hashing/bcrypt.md): Bcrypt - The bcrypt password hashing algorithm.
-      - [bcrypt.md.json](security-architecture-and-engineering/cryptography/hashing/bcrypt.md.json): Librarian OS metadata for bcrypt.md.
-      - [hashing-algorithms.md](security-architecture-and-engineering/cryptography/hashing/hashing-algorithms.md): Hashing algorithms - What hashing is, its properties, how it differs from encryption and where it is used.
-      - [hashing-algorithms.md.json](security-architecture-and-engineering/cryptography/hashing/hashing-algorithms.md.json): Librarian OS metadata for hashing-algorithms.md.
-      - [sha.md](security-architecture-and-engineering/cryptography/hashing/sha.md): SHA - The Secure Hash Algorithm family.
-      - [sha.md.json](security-architecture-and-engineering/cryptography/hashing/sha.md.json): Librarian OS metadata for sha.md.
-    - [public-key-infrastructure.md](security-architecture-and-engineering/cryptography/public-key-infrastructure.md): Public Key Infrastructure (PKI) - Roles, components, processes and best practices for issuing and managing digital certificates.
-    - [public-key-infrastructure.md.json](security-architecture-and-engineering/cryptography/public-key-infrastructure.md.json): Librarian OS metadata for public-key-infrastructure.md.
-  - **design-principles/**
-    - [README.md](security-architecture-and-engineering/design-principles/README.md): Design principles - Security design principles help limit the effect of a failed control. The current note explains defense in depth, while other design principles are covered in related...
-    - [README.md.json](security-architecture-and-engineering/design-principles/README.md.json): Librarian OS metadata for README.md.
-    - [defense-in-depth.md](security-architecture-and-engineering/design-principles/defense-in-depth.md): Defense in depth - Layering several security controls so that one failure does not lead to a full compromise.
-    - [defense-in-depth.md.json](security-architecture-and-engineering/design-principles/defense-in-depth.md.json): Librarian OS metadata for defense-in-depth.md.
-  - **operating-system-security/**
-    - [README.md](security-architecture-and-engineering/operating-system-security/README.md): Operating system security - Security mechanisms that operating systems provide.
-    - [README.md.json](security-architecture-and-engineering/operating-system-security/README.md.json): Librarian OS metadata for README.md.
-    - **linux/**
-      - [README.md](security-architecture-and-engineering/operating-system-security/linux/README.md): Linux - Linux mechanisms.
-      - [README.md.json](security-architecture-and-engineering/operating-system-security/linux/README.md.json): Librarian OS metadata for README.md.
-      - [seccomp.md](security-architecture-and-engineering/operating-system-security/linux/seccomp.md): Seccomp - Restricting the system calls a Linux process can make.
-      - [seccomp.md.json](security-architecture-and-engineering/operating-system-security/linux/seccomp.md.json): Librarian OS metadata for seccomp.md.
-- **communication-and-network-security/**
-  - [README.md](communication-and-network-security/README.md): Communication and network security - This CISSP domain covers secure network architecture, network components and communication channels. The current network section contains a note on zero trust architec...
-  - [README.md.json](communication-and-network-security/README.md.json): Librarian OS metadata for README.md.
-  - **network-security/**
-    - [README.md](communication-and-network-security/network-security/README.md): Network security - Network security protects systems and data while they communicate. The current note explains zero trust architecture; the protocol and network control topics below rem...
-    - [README.md.json](communication-and-network-security/network-security/README.md.json): Librarian OS metadata for README.md.
-    - [nist-zero-trust-architecture.md](communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md): NIST zero trust architecture (SP 800-207) - Tenets, logical components, trust algorithms and threats.
-    - [nist-zero-trust-architecture.md.json](communication-and-network-security/network-security/architecture/nist-zero-trust-architecture.md.json): Librarian OS metadata for nist-zero-trust-architecture.md.
 - **identity-and-access-management/**
   - [README.md](identity-and-access-management/README.md): Identity and access management - This CISSP domain covers identification, authentication, authorization, federation and the lifecycle of access rights. Credential attack notes explain failures that id...
   - [README.md.json](identity-and-access-management/README.md.json): Librarian OS metadata for README.md.
@@ -876,8 +630,12 @@ Full tree of every file in the repository. Every file has a link and a short des
       - [README.md.json](security-operations/defensive-operations/detection/README.md.json): Librarian OS metadata for README.md.
       - [false-positive-false-negative.md](security-operations/defensive-operations/detection/false-positive-false-negative.md): False Negative / False Positive - Detection errors, their cost and how to balance them.
       - [false-positive-false-negative.md.json](security-operations/defensive-operations/detection/false-positive-false-negative.md.json): Librarian OS metadata for false-positive-false-negative.md.
-      - [ids.md](security-operations/defensive-operations/detection/ids.md): Intrusion Detection System (IDS) - Intrusion detection systems.
-      - [ids.md.json](security-operations/defensive-operations/detection/ids.md.json): Librarian OS metadata for ids.md.
+      - **ids/**
+        - [README.md](security-operations/defensive-operations/detection/ids/README.md): Intrusion detection system (IDS) - An intrusion detection system (IDS) watches network traffic or host activity, compares what it sees with known attack patterns or with a model of norm...
+        - [README.md.json](security-operations/defensive-operations/detection/ids/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [ids-lab.rules](security-operations/defensive-operations/detection/ids/scripts/ids-lab.rules): Three local Suricata rules used in the IDS lab.
+          - [make-ids-lab-pcap.py](security-operations/defensive-operations/detection/ids/scripts/make-ids-lab-pcap.py): Writes a synthetic pcap with three HTTP sessions for IDS testing.
       - [ips.md](security-operations/defensive-operations/detection/ips.md): Intrusion Prevention System (IPS) - Intrusion prevention systems.
       - [ips.md.json](security-operations/defensive-operations/detection/ips.md.json): Librarian OS metadata for ips.md.
       - [true-positive-true-negative.md](security-operations/defensive-operations/detection/true-positive-true-negative.md): True Negative / True Positive - Correct detection outcomes and why they matter.
@@ -885,6 +643,8 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **operations/**
       - [README.md](security-operations/defensive-operations/operations/README.md): Operations - Teams, technology and procedures of security operations.
       - [README.md.json](security-operations/defensive-operations/operations/README.md.json): Librarian OS metadata for README.md.
+      - [computer-security-incident-response-team.md](security-operations/defensive-operations/operations/computer-security-incident-response-team.md): Computer security incident response team (CSIRT) - A computer security incident response team (CSIRT) is the team, or the organizational capability, that handles security incidents for a defined group...
+      - [computer-security-incident-response-team.md.json](security-operations/defensive-operations/operations/computer-security-incident-response-team.md.json): Librarian OS metadata for computer-security-incident-response-team.md.
       - **nist-incident-response/**
         - [README.md](security-operations/defensive-operations/operations/nist-incident-response/README.md): NIST incident response lifecycle (SP 800-61) - NIST SP 800-61 is the U.S. government's reference for handling cybersecurity incidents. For 13 years its Revision 2 (August 2012) defined the model that most of the in...
         - [README.md.json](security-operations/defensive-operations/operations/nist-incident-response/README.md.json): Librarian OS metadata for README.md.
@@ -894,9 +654,9 @@ Full tree of every file in the repository. Every file has a link and a short des
           - [triage-phishing-email.py](security-operations/defensive-operations/operations/nist-incident-response/scripts/triage-phishing-email.py): Easy example, triage of a reported phishing email.
       - [secops.md](security-operations/defensive-operations/operations/secops.md): SecOps - The collaboration of IT operations and security teams.
       - [secops.md.json](security-operations/defensive-operations/operations/secops.md.json): Librarian OS metadata for secops.md.
-      - [security-operations-center.md](security-operations/defensive-operations/operations/security-operations-center.md): Security Operations Center (SOC) - Purpose, roles, technology and workflow of a SOC.
+      - [security-operations-center.md](security-operations/defensive-operations/operations/security-operations-center.md): Security operations center (SOC) - A security operations center (SOC) is the team, together with its processes and tools, that continuously monitors an organization's systems for attack...
       - [security-operations-center.md.json](security-operations/defensive-operations/operations/security-operations-center.md.json): Librarian OS metadata for security-operations-center.md.
-      - [siem.md](security-operations/defensive-operations/operations/siem.md): Security information and event management (SIEM) - Pipeline from collection to alerting, detection approaches, SP 800-53 AU controls and a tested normalization and correlation example.
+      - [siem.md](security-operations/defensive-operations/operations/siem.md): Security information and event management (SIEM) - A SIEM collects log and event data from across an environment, normalizes it into a common shape, stores it, correlates events from different sources...
       - [siem.md.json](security-operations/defensive-operations/operations/siem.md.json): Librarian OS metadata for siem.md.
       - [soar.md](security-operations/defensive-operations/operations/soar.md): SOAR - Security orchestration, automation and response.
       - [soar.md.json](security-operations/defensive-operations/operations/soar.md.json): Librarian OS metadata for soar.md.
@@ -960,10 +720,26 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **malware/**
       - [README.md](security-operations/threats-and-attacks/malware/README.md): Malware - Malicious software.
       - [README.md.json](security-operations/threats-and-attacks/malware/README.md.json): Librarian OS metadata for README.md.
+      - [dropper.md](security-operations/threats-and-attacks/malware/dropper.md): Dropper - A dropper is malware whose job is to install other malware: it carries one or more payloads inside itself, writes ("drops") them onto the system and s...
+      - [dropper.md.json](security-operations/threats-and-attacks/malware/dropper.md.json): Librarian OS metadata for dropper.md.
+      - **fileless-malware/**
+        - [README.md](security-operations/threats-and-attacks/malware/fileless-malware/README.md): Fileless malware - Fileless malware is malicious code that runs without a traditional malicious executable on disk. It lives in memory, in places that are not ordinary f...
+        - [README.md.json](security-operations/threats-and-attacks/malware/fileless-malware/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [hunt-fileless-indicators.py](security-operations/threats-and-attacks/malware/fileless-malware/scripts/hunt-fileless-indicators.py): Read-only hunts for memfd and deleted executables and risky PowerShell 4104 events.
       - [malware-definition-and-purpose.md](security-operations/threats-and-attacks/malware/malware-definition-and-purpose.md): Malware definition and purpose - What malware is and what it is used for.
       - [malware-definition-and-purpose.md.json](security-operations/threats-and-attacks/malware/malware-definition-and-purpose.md.json): Librarian OS metadata for malware-definition-and-purpose.md.
       - [malware.md](security-operations/threats-and-attacks/malware/malware.md): Malware - Classification, techniques, detection and prevention of malware.
       - [malware.md.json](security-operations/threats-and-attacks/malware/malware.md.json): Librarian OS metadata for malware.md.
+      - [potentially-unwanted-application.md](security-operations/threats-and-attacks/malware/potentially-unwanted-application.md): Potentially unwanted application (PUA) - A potentially unwanted application (PUA), also called a potentially unwanted program (PUP), is software that is not clearly malicious but behaves in w...
+      - [potentially-unwanted-application.md.json](security-operations/threats-and-attacks/malware/potentially-unwanted-application.md.json): Librarian OS metadata for potentially-unwanted-application.md.
+      - **rootkit/**
+        - [README.md](security-operations/threats-and-attacks/malware/rootkit/README.md): Rootkit - A rootkit is malicious software whose main job is to hide: it conceals itself and other malware, files, processes, network connections and registry ke...
+        - [README.md.json](security-operations/threats-and-attacks/malware/rootkit/README.md.json): Librarian OS metadata for README.md.
+        - **scripts/**
+          - [check-rootkit-indicators.py](security-operations/threats-and-attacks/malware/rootkit/scripts/check-rootkit-indicators.py): Read-only Linux cross-view checks for rootkit indicators.
+      - [scareware.md](security-operations/threats-and-attacks/malware/scareware.md): Scareware - Scareware is software or web content that frightens people with false or exaggerated warnings, usually that their computer is infected or broken, so t...
+      - [scareware.md.json](security-operations/threats-and-attacks/malware/scareware.md.json): Librarian OS metadata for scareware.md.
     - [threats-and-attacks-overview.md](security-operations/threats-and-attacks/threats-and-attacks-overview.md): Threats & attacks - Threat classifications, categories, impact and defenses.
     - [threats-and-attacks-overview.md.json](security-operations/threats-and-attacks/threats-and-attacks-overview.md.json): Librarian OS metadata for threats-and-attacks-overview.md.
     - **web-attacks/**
@@ -1034,5 +810,15 @@ Full tree of every file in the repository. Every file has a link and a short des
     - **vulnerabilities/**
       - [README.md](software-development-security/application-security/vulnerabilities/README.md): Vulnerabilities - Vulnerability classes.
       - [README.md.json](software-development-security/application-security/vulnerabilities/README.md.json): Librarian OS metadata for README.md.
-      - [xss.md](software-development-security/application-security/vulnerabilities/xss.md): XSS - Cross-site scripting: types, impact and defenses.
-      - [xss.md.json](software-development-security/application-security/vulnerabilities/xss.md.json): Librarian OS metadata for xss.md.
+      - **cross-site-scripting/**
+        - [README.md](software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md): Cross-site scripting (XSS) - Cross-site scripting (XSS) is a web vulnerability in which an application lets attacker-controlled data be interpreted as code in another user's brows...
+        - [README.md.json](software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md.json): Librarian OS metadata for README.md.
+        - [dom-based-xss.md](software-development-security/application-security/vulnerabilities/cross-site-scripting/dom-based-xss.md): DOM-based XSS - DOM-based XSS (also Type 0 or client-side XSS) happens when the page's own JavaScript takes data from a source the attacker can influence, such as the...
+        - [dom-based-xss.md.json](software-development-security/application-security/vulnerabilities/cross-site-scripting/dom-based-xss.md.json): Librarian OS metadata for dom-based-xss.md.
+        - [reflected-xss.md](software-development-security/application-security/vulnerabilities/cross-site-scripting/reflected-xss.md): Reflected XSS - Reflected XSS (also non-persistent or Type I XSS) happens when an application takes data from the current request, for example a search term in the UR...
+        - [reflected-xss.md.json](software-development-security/application-security/vulnerabilities/cross-site-scripting/reflected-xss.md.json): Librarian OS metadata for reflected-xss.md.
+        - **scripts/**
+          - [check-xss-lab.sh](software-development-security/application-security/vulnerabilities/cross-site-scripting/scripts/check-xss-lab.sh): Headless Chrome check that reports which lab payloads execute.
+          - [run-xss-lab.py](software-development-security/application-security/vulnerabilities/cross-site-scripting/scripts/run-xss-lab.py): Local-only vulnerable lab with reflected, stored and DOM XSS and fixed twins.
+        - [stored-xss.md](software-development-security/application-security/vulnerabilities/cross-site-scripting/stored-xss.md): Stored XSS - Stored XSS (also persistent or Type II XSS) happens when an application saves attacker-supplied data, for example a comment, a profile field or a supp...
+        - [stored-xss.md.json](software-development-security/application-security/vulnerabilities/cross-site-scripting/stored-xss.md.json): Librarian OS metadata for stored-xss.md.

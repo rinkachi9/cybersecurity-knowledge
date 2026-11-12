@@ -3,13 +3,98 @@
     "id": "cross-cutting-concepts.threat-modeling.methods.pasta",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 3,
     "tags": [
       "security-and-risk-management",
       "threat-modeling",
-      "methods"
+      "pasta",
+      "risk-centric"
     ]
   },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threat-modeling.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.stride",
+      "rel": "related",
+      "note": "STRIDE is often used in stage 4"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.attack-trees",
+      "rel": "related",
+      "note": "Attack trees are used in stage 6"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ucedavelez-morana-2015",
+      "type": "book",
+      "title": "Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis",
+      "authors": [
+        "Tony UcedaVelez",
+        "Marco M. Morana"
+      ],
+      "year": 2015,
+      "publisher": "Wiley",
+      "url": "https://www.wiley.com/en-us/Risk+Centric+Threat+Modeling%3A+Process+for+Attack+Simulation+and+Threat+Analysis-p-9780470500965",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "versprite-pasta",
+      "type": "website",
+      "title": "What is PASTA threat modeling",
+      "authors": [
+        "Tony UcedaVelez"
+      ],
+      "year": 2021,
+      "publisher": "VerSprite",
+      "url": "https://versprite.com/blog/what-is-pasta-threat-modeling/",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sei-tm-12-methods",
+      "type": "website",
+      "title": "Threat Modeling: 12 Available Methods",
+      "authors": [
+        "Nataliya Shevchenko"
+      ],
+      "year": 2018,
+      "publisher": "Carnegie Mellon University Software Engineering Institute",
+      "url": "https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "PASTA",
+      "anchor": "#definition",
+      "definition": "Seven-stage, risk-centric threat modeling methodology that joins business objectives with attack simulation."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "Name the seven PASTA stages in order.",
+      "a": "Define objectives, define technical scope, application decomposition, threat analysis, vulnerability and weakness analysis, attack modeling, risk and impact analysis.",
+      "anchor": "#the-seven-stages",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Why does stage 7 depend on stage 1?",
+      "a": "Stage 1 defines the business impact scale against which risks are ranked.",
+      "anchor": "#common-mistakes",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-and-risk-management"
   }

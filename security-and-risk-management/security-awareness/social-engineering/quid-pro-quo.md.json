@@ -1,0 +1,86 @@
+{
+  "node": {
+    "id": "human-security.social-engineering.quid-pro-quo",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 10,
+    "tags": [
+      "security-and-risk-management",
+      "security-awareness",
+      "social-engineering",
+      "vishing",
+      "help-desk"
+    ]
+  },
+  "links": [
+    {
+      "to": "human-security.social-engineering.social-engineering",
+      "rel": "part-of"
+    },
+    {
+      "to": "human-security.social-engineering.impersonation",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cisa-aa23-320a",
+      "type": "report",
+      "title": "Scattered Spider (AA23-320A)",
+      "year": 2023,
+      "publisher": "CISA",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-53r5-catalog",
+      "type": "standard",
+      "title": "SP 800-53 Rev. 5 control catalog (OSCAL, version 5.2.0)",
+      "year": 2026,
+      "publisher": "NIST",
+      "url": "https://github.com/usnistgov/oscal-content/tree/main/nist.gov/SP800-53/rev5",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mitre-attack-v20",
+      "type": "documentation",
+      "title": "MITRE ATT&CK Enterprise v20.1 (STIX data)",
+      "year": 2026,
+      "publisher": "MITRE",
+      "url": "https://github.com/mitre-attack/attack-stix-data",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Quid pro quo",
+      "anchor": "#definition",
+      "definition": "Social engineering that offers a service or benefit in exchange for information or access."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "compare",
+      "q": "Quid pro quo versus baiting?",
+      "a": "Quid pro quo is an exchange in a conversation; baiting is a lure taken without exchange.",
+      "anchor": "#definition",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Describe the reverse quid pro quo against help desks.",
+      "a": "The attacker poses as an employee needing help and gets a password reset or MFA re-enrollment.",
+      "anchor": "#variants",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "node": {
+    "id": "software-security.application-security.vulnerabilities.xss",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "xss",
+      "cwe-79"
+    ],
+    "aliases": [
+      "XSS",
+      "cross site scripting"
+    ]
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.owasp.owasp-top-10",
+      "rel": "part-of",
+      "note": "XSS is part of the injection category"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cwe-79",
+      "type": "documentation",
+      "title": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/data/definitions/79.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-top25-2025",
+      "type": "report",
+      "title": "2025 CWE Top 25 Most Dangerous Software Weaknesses",
+      "year": 2025,
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/top25/archive/2025/2025_cwe_top25.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-xss-cs",
+      "type": "documentation",
+      "title": "Cross Site Scripting Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-xss-types",
+      "type": "documentation",
+      "title": "Types of Cross-Site Scripting",
+      "publisher": "OWASP",
+      "url": "https://owasp.org/www-community/Types_of_Cross-Site_Scripting",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-dom-xss-cs",
+      "type": "documentation",
+      "title": "DOM based XSS Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mdn-trusted-types",
+      "type": "documentation",
+      "title": "Trusted Types API",
+      "publisher": "MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Cross-site scripting",
+      "anchor": "#definition",
+      "definition": "Attacker-controlled data interpreted as code in another user's browser within the vulnerable site's origin."
+    },
+    {
+      "term": "Server XSS and client XSS",
+      "anchor": "#the-three-types-and-the-2-x-2-view",
+      "definition": "Whether the unsafe insertion happens in the server response or in browser JavaScript."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why does HttpOnly not fix XSS?",
+      "a": "It only stops reading the cookie; the script can still send authenticated requests and read the page.",
+      "anchor": "#what-an-attacker-can-do-with-xss",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "Which XSS type can a server-side WAF never see?",
+      "a": "DOM-based XSS with the payload in the URL fragment.",
+      "anchor": "#practice",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "explain",
+      "q": "Where should encoding happen and why?",
+      "a": "At output, because only then is the context known.",
+      "anchor": "#common-mistakes",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

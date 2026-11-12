@@ -1,0 +1,86 @@
+{
+  "node": {
+    "id": "human-security.social-engineering.angler-phishing",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 9,
+    "tags": [
+      "security-and-risk-management",
+      "security-awareness",
+      "social-engineering",
+      "phishing",
+      "social-media"
+    ]
+  },
+  "links": [
+    {
+      "to": "human-security.social-engineering.phishing",
+      "rel": "extends"
+    },
+    {
+      "to": "human-security.social-engineering.impersonation",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "proofpoint-angler-2016",
+      "type": "report",
+      "title": "Fraudulent Social Media Accounts Continue to Phish for Banking Credentials",
+      "year": 2016,
+      "publisher": "Proofpoint",
+      "url": "https://www.proofpoint.com/us/threat-insight/post/fraudulent-social-media-accounts-continue-phish-banking-credentials",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mitre-attack-v20",
+      "type": "documentation",
+      "title": "MITRE ATT&CK Enterprise v20.1 (STIX data)",
+      "year": 2026,
+      "publisher": "MITRE",
+      "url": "https://github.com/mitre-attack/attack-stix-data",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-53r5-catalog",
+      "type": "standard",
+      "title": "SP 800-53 Rev. 5 control catalog (OSCAL, version 5.2.0)",
+      "year": 2026,
+      "publisher": "NIST",
+      "url": "https://github.com/usnistgov/oscal-content/tree/main/nist.gov/SP800-53/rev5",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Angler phishing",
+      "anchor": "#definition",
+      "definition": "Phishing in which fake customer support accounts on social media answer customers who asked a brand for help."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "compare",
+      "q": "How does angler phishing differ from email phishing?",
+      "a": "The victim starts the contact by asking a brand for help; the attacker replies as fake support.",
+      "anchor": "#definition",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Why does SMS MFA not stop it?",
+      "a": "The attacker relays the code in real time from the fake page.",
+      "anchor": "#mechanism",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

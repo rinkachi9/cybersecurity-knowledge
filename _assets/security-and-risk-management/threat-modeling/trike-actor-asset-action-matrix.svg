@@ -1,0 +1,129 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='940' height='470' viewBox='0 0 940 470' role='img' aria-label='Trike actor asset action matrix'>
+<title>Trike actor-asset-action matrix for the clinic booking portal</title>
+<rect width='940' height='470' fill='#ffffff'/>
+<text x='470.0' y='30' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Trike requirements model: actor-asset-action matrix (CRUD)</text>
+<text x='270' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Appointment</text>
+<text x='180.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>C</text>
+<text x='240.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>R</text>
+<text x='300.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>U</text>
+<text x='360.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>D</text>
+<text x='530' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Patient profile</text>
+<text x='440.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>C</text>
+<text x='500.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>R</text>
+<text x='560.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>U</text>
+<text x='620.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>D</text>
+<text x='790' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Slot calendar</text>
+<text x='700.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>C</text>
+<text x='760.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>R</text>
+<text x='820.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>U</text>
+<text x='880.0' y='108' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#374151'>D</text>
+<text x='138' y='152.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Anonymous</text>
+<rect x='152' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='180.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='212' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='240.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='272' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='300.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='332' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='360.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='412' y='122' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='440.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='472' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='500.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='532' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='560.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='592' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='620.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='672' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='700.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='732' y='122' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='760.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='792' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='820.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='852' y='122' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='880.0' y='152.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<text x='138' y='206.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Patient</text>
+<rect x='152' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='180.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='212' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='240.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='272' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='300.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='332' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='360.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='412' y='176' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='440.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='472' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='500.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='532' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='560.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='592' y='176' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='620.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='672' y='176' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='700.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='732' y='176' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='760.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='792' y='176' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='820.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='852' y='176' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='880.0' y='206.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<text x='138' y='260.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Staff</text>
+<rect x='152' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='180.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='212' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='240.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='272' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='300.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='332' y='230' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='360.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='412' y='230' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='440.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='472' y='230' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='500.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='532' y='230' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='560.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='592' y='230' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='620.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='672' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='700.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='732' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='760.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='792' y='230' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='820.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='852' y='230' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='880.0' y='260.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<text x='138' y='314.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Admin</text>
+<rect x='152' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='180.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='212' y='284' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='240.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='272' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='300.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='332' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='360.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='412' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='440.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='472' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='500.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='532' y='284' width='56' height='50' rx='5' fill='#e5e7eb'/>
+<text x='560.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#9ca3af'>-</text>
+<rect x='592' y='284' width='56' height='50' rx='5' fill='#f59e0b'/>
+<text x='620.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>R</text>
+<rect x='672' y='284' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='700.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='732' y='284' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='760.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='792' y='284' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='820.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='852' y='284' width='56' height='50' rx='5' fill='#16a34a'/>
+<text x='880.0' y='314.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#ffffff'>A</text>
+<rect x='150' y='366' width='16' height='16' fill='#16a34a'/>
+<text x='172' y='379' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>allowed</text>
+<rect x='340' y='366' width='16' height='16' fill='#f59e0b'/>
+<text x='362' y='379' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>allowed with rules</text>
+<rect x='530' y='366' width='16' height='16' fill='#e5e7eb'/>
+<text x='552' y='379' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>disallowed</text>
+<text x='20' y='412' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#4b5563'>Example rules: Patient reads or changes only own appointments, cancels more than 24 h ahead, max 3 open bookings.</text>
+<text x='20' y='430' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#4b5563'>Threat generation: every grey cell done by anyone is elevation of privilege; every green or amber cell that</text>
+<text x='20' y='448' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#4b5563'>a legitimate actor cannot complete is denial of service. Elevation also covers breaking the rules of an amber cell.</text>
+</svg>

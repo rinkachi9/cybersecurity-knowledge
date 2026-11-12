@@ -19,6 +19,6 @@ Read [network security monitoring](network-security-monitoring.md) first; it fra
 
 Scripts: pcap generation and triage under [packet-capture-analysis/scripts](packet-capture-analysis/scripts/); beacon log generation and scoring under [beaconing-detection/scripts](beaconing-detection/scripts/).
 
-Related: [IDS](../../../security-operations/defensive-operations/detection/ids.md), [IPS](../../../security-operations/defensive-operations/detection/ips.md), [SIEM](../../../security-operations/defensive-operations/operations/siem.md) and [SOAR](../../../security-operations/defensive-operations/operations/soar.md) in defensive operations.
+Related: [IDS](../../../security-operations/defensive-operations/detection/ids/README.md), [IPS](../../../security-operations/defensive-operations/detection/ips.md), [SIEM](../../../security-operations/defensive-operations/operations/siem.md) and [SOAR](../../../security-operations/defensive-operations/operations/soar.md) in defensive operations.
 
 Back to [Network security](../README.md).

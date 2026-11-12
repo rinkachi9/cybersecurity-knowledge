@@ -95,7 +95,10 @@
       "title": "Cross-site scripting",
       "group": "Software development security",
       "documentation": [
-        "software-development-security/application-security/vulnerabilities/xss.md"
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md",
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/stored-xss.md",
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/reflected-xss.md",
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/dom-based-xss.md"
       ],
       "externalSources": []
     },
@@ -153,7 +156,10 @@
       "documentation": [
         "security-and-risk-management/security-awareness/social-engineering/README.md",
         "security-and-risk-management/security-awareness/social-engineering/phishing.md",
-        "security-and-risk-management/security-awareness/social-engineering/impersonation.md"
+        "security-and-risk-management/security-awareness/social-engineering/impersonation.md",
+        "security-and-risk-management/security-awareness/social-engineering/angler-phishing.md",
+        "security-and-risk-management/security-awareness/social-engineering/quid-pro-quo.md",
+        "security-and-risk-management/security-awareness/social-engineering/tailgating.md"
       ],
       "externalSources": []
     },
@@ -162,7 +168,10 @@
       "title": "Malware",
       "group": "Security operations",
       "documentation": [
-        "security-operations/threats-and-attacks/malware/README.md"
+        "security-operations/threats-and-attacks/malware/README.md",
+        "security-operations/threats-and-attacks/malware/dropper.md",
+        "security-operations/threats-and-attacks/malware/fileless-malware/README.md",
+        "security-operations/threats-and-attacks/malware/rootkit/README.md"
       ],
       "externalSources": []
     },
@@ -267,7 +276,8 @@
       "title": "Cryptographic attacks",
       "group": "Security architecture and engineering",
       "documentation": [
-        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md",
+        "security-architecture-and-engineering/cryptography/classical-ciphers/caesar-cipher/README.md"
       ],
       "externalSources": []
     },

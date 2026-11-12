@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='820' height='480' viewBox='0 0 820 480' role='img' aria-label='Chance of a ciphertext block collision vs data under one key'>
+<title>Chance of a ciphertext block collision vs data under one key</title>
+<rect width='820' height='480' fill='#ffffff'/>
+<text x='410.0' y='26' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Chance of a ciphertext block collision vs data under one key</text>
+<rect x='80' y='50' width='710' height='360' fill='#f9fafb' stroke='#9ca3af'/>
+<line x1='80' y1='410.0' x2='790' y2='410.0' stroke='#e5e7eb'/>
+<text x='72' y='414.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1e-24</text>
+<line x1='80' y1='320.0' x2='790' y2='320.0' stroke='#e5e7eb'/>
+<text x='72' y='324.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1e-18</text>
+<line x1='80' y1='230.0' x2='790' y2='230.0' stroke='#e5e7eb'/>
+<text x='72' y='234.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1e-12</text>
+<line x1='80' y1='140.0' x2='790' y2='140.0' stroke='#e5e7eb'/>
+<text x='72' y='144.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1e-6</text>
+<line x1='80' y1='50.0' x2='790' y2='50.0' stroke='#e5e7eb'/>
+<text x='72' y='54.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1</text>
+<line x1='80.0' y1='50' x2='80.0' y2='410' stroke='#e5e7eb'/>
+<text x='80.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 MiB</text>
+<line x1='257.5' y1='50' x2='257.5' y2='410' stroke='#e5e7eb'/>
+<text x='257.5' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 GiB</text>
+<line x1='435.0' y1='50' x2='435.0' y2='410' stroke='#e5e7eb'/>
+<text x='435.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 TiB</text>
+<line x1='612.5' y1='50' x2='612.5' y2='410' stroke='#e5e7eb'/>
+<text x='612.5' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 PiB</text>
+<line x1='790.0' y1='50' x2='790.0' y2='410' stroke='#e5e7eb'/>
+<text x='790.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 EiB</text>
+<line x1='133.2' y1='50' x2='133.2' y2='410' stroke='#6b7280' stroke-dasharray='4 3'/>
+<text x='137.2' y='64' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#374151' transform='rotate(90 137.2 64)'>NIST limit 2^20 blocks = 8 MiB</text>
+<line x1='346.3' y1='50' x2='346.3' y2='410' stroke='#6b7280' stroke-dasharray='4 3'/>
+<text x='350.3' y='64' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#374151' transform='rotate(90 350.3 64)'>2^32 blocks = 32 GiB</text>
+<line x1='426.4' y1='50' x2='426.4' y2='410' stroke='#6b7280' stroke-dasharray='4 3'/>
+<text x='430.4' y='64' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#374151' transform='rotate(90 430.4 64)'>Sweet32 785 GB</text>
+<path d='M80.0,190.0 L84.4,187.7 L88.9,185.5 L93.3,183.2 L97.8,180.9 L102.2,178.7 L106.6,176.4 L111.1,174.2 L115.5,171.9 L119.9,169.7 L124.4,167.4 L128.8,165.1 L133.2,162.9 L137.7,160.6 L142.1,158.4 L146.6,156.1 L151.0,153.9 L155.4,151.6 L159.9,149.3 L164.3,147.1 L168.7,144.8 L173.2,142.6 L177.6,140.3 L182.1,138.1 L186.5,135.8 L190.9,133.5 L195.4,131.3 L199.8,129.0 L204.2,126.8 L208.7,124.5 L213.1,122.2 L217.6,120.0 L222.0,117.7 L226.4,115.5 L230.9,113.2 L235.3,111.0 L239.8,108.7 L244.2,106.4 L248.6,104.2 L253.1,101.9 L257.5,99.7 L261.9,97.4 L266.4,95.2 L270.8,92.9 L275.2,90.6 L279.7,88.4 L284.1,86.1 L288.6,83.9 L293.0,81.6 L297.4,79.4 L301.9,77.1 L306.3,74.9 L310.8,72.7 L315.2,70.5 L319.6,68.3 L324.1,66.1 L328.5,63.9 L332.9,61.9 L337.4,59.8 L341.8,57.9 L346.3,56.1 L350.7,54.4 L355.1,53.0 L359.6,51.8 L364.0,50.9 L368.4,50.4 L372.9,50.1 L377.3,50.0 L381.8,50.0 L386.2,50.0 L390.6,50.0 L395.1,50.0 L399.5,50.0 L403.9,50.0 L408.4,50.0 L412.8,50.0 L417.3,50.0 L421.7,50.0 L426.1,50.0 L430.6,50.0 L435.0,50.0 L439.4,50.0 L443.9,50.0 L448.3,50.0 L452.8,50.0 L457.2,50.0 L461.6,50.0 L466.1,50.0 L470.5,50.0 L474.9,50.0 L479.4,50.0 L483.8,50.0 L488.3,50.0 L492.7,50.0 L497.1,50.0 L501.6,50.0 L506.0,50.0 L510.4,50.0 L514.9,50.0 L519.3,50.0 L523.8,50.0 L528.2,50.0 L532.6,50.0 L537.1,50.0 L541.5,50.0 L545.9,50.0 L550.4,50.0 L554.8,50.0 L559.2,50.0 L563.7,50.0 L568.1,50.0 L572.6,50.0 L577.0,50.0 L581.4,50.0 L585.9,50.0 L590.3,50.0 L594.7,50.0 L599.2,50.0 L603.6,50.0 L608.1,50.0 L612.5,50.0 L616.9,50.0 L621.4,50.0 L625.8,50.0 L630.2,50.0 L634.7,50.0 L639.1,50.0 L643.6,50.0 L648.0,50.0 L652.4,50.0 L656.9,50.0 L661.3,50.0 L665.8,50.0 L670.2,50.0 L674.6,50.0 L679.1,50.0 L683.5,50.0 L687.9,50.0 L692.4,50.0 L696.8,50.0 L701.2,50.0 L705.7,50.0 L710.1,50.0 L714.6,50.0 L719.0,50.0 L723.4,50.0 L727.9,50.0 L732.3,50.0 L736.8,50.0 L741.2,50.0 L745.6,50.0 L750.1,50.0 L754.5,50.0 L758.9,50.0 L763.4,50.0 L767.8,50.0 L772.2,50.0 L776.7,50.0 L781.1,50.0 L785.6,50.0 L790.0,50.0' fill='none' stroke='#2563eb' stroke-width='2.5'/>
+<path d='M80.0,410.0 L84.4,410.0 L88.9,410.0 L93.3,410.0 L97.8,410.0 L102.2,410.0 L106.6,410.0 L111.1,410.0 L115.5,410.0 L119.9,410.0 L124.4,410.0 L128.8,410.0 L133.2,410.0 L137.7,410.0 L142.1,410.0 L146.6,410.0 L151.0,410.0 L155.4,410.0 L159.9,410.0 L164.3,410.0 L168.7,410.0 L173.2,410.0 L177.6,410.0 L182.1,410.0 L186.5,410.0 L190.9,410.0 L195.4,410.0 L199.8,410.0 L204.2,410.0 L208.7,410.0 L213.1,410.0 L217.6,410.0 L222.0,410.0 L226.4,410.0 L230.9,410.0 L235.3,409.0 L239.8,406.7 L244.2,404.5 L248.6,402.2 L253.1,399.9 L257.5,397.7 L261.9,395.4 L266.4,393.2 L270.8,390.9 L275.2,388.7 L279.7,386.4 L284.1,384.1 L288.6,381.9 L293.0,379.6 L297.4,377.4 L301.9,375.1 L306.3,372.9 L310.8,370.6 L315.2,368.3 L319.6,366.1 L324.1,363.8 L328.5,361.6 L332.9,359.3 L337.4,357.1 L341.8,354.8 L346.3,352.5 L350.7,350.3 L355.1,348.0 L359.6,345.8 L364.0,343.5 L368.4,341.2 L372.9,339.0 L377.3,336.7 L381.8,334.5 L386.2,332.2 L390.6,330.0 L395.1,327.7 L399.5,325.4 L403.9,323.2 L408.4,320.9 L412.8,318.7 L417.3,316.4 L421.7,314.2 L426.1,311.9 L430.6,309.6 L435.0,307.4 L439.4,305.1 L443.9,302.9 L448.3,300.6 L452.8,298.3 L457.2,296.1 L461.6,293.8 L466.1,291.6 L470.5,289.3 L474.9,287.1 L479.4,284.8 L483.8,282.5 L488.3,280.3 L492.7,278.0 L497.1,275.8 L501.6,273.5 L506.0,271.3 L510.4,269.0 L514.9,266.7 L519.3,264.5 L523.8,262.2 L528.2,260.0 L532.6,257.7 L537.1,255.5 L541.5,253.2 L545.9,250.9 L550.4,248.7 L554.8,246.4 L559.2,244.2 L563.7,241.9 L568.1,239.6 L572.6,237.4 L577.0,235.1 L581.4,232.9 L585.9,230.6 L590.3,228.4 L594.7,226.1 L599.2,223.8 L603.6,221.6 L608.1,219.3 L612.5,217.1 L616.9,214.8 L621.4,212.6 L625.8,210.3 L630.2,208.0 L634.7,205.8 L639.1,203.5 L643.6,201.3 L648.0,199.0 L652.4,196.8 L656.9,194.5 L661.3,192.2 L665.8,190.0 L670.2,187.7 L674.6,185.5 L679.1,183.2 L683.5,180.9 L687.9,178.7 L692.4,176.4 L696.8,174.2 L701.2,171.9 L705.7,169.7 L710.1,167.4 L714.6,165.1 L719.0,162.9 L723.4,160.6 L727.9,158.4 L732.3,156.1 L736.8,153.9 L741.2,151.6 L745.6,149.3 L750.1,147.1 L754.5,144.8 L758.9,142.6 L763.4,140.3 L767.8,138.1 L772.2,135.8 L776.7,133.5 L781.1,131.3 L785.6,129.0 L790.0,126.8' fill='none' stroke='#dc2626' stroke-width='2.5' stroke-dasharray='6 4'/>
+<rect x='88' y='356' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='94' y1='367' x2='120' y2='367' stroke='#2563eb' stroke-width='3'/>
+<text x='128' y='371' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>64-bit block (3DES, Blowfish)</text>
+<rect x='88' y='378' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='94' y1='389' x2='120' y2='389' stroke='#dc2626' stroke-width='3'/>
+<text x='128' y='393' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>128-bit block (AES)</text>
+<text x='435.0' y='458' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>Data encrypted under one key (log scale)</text>
+<text x='20' y='230.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827' transform='rotate(-90 20 230.0)'>Collision probability (log scale)</text>
+</svg>

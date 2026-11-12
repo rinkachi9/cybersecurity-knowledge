@@ -7,7 +7,7 @@ A web application firewall (WAF) inspects HTTP and HTTPS traffic to a web applic
 ## Prerequisites
 
 - [Firewalls](firewalls.md): the network-firewall contrast.
-- [OWASP Top 10](../../../software-development-security/application-security/owasp/owasp-top-10.md) and [XSS](../../../software-development-security/application-security/vulnerabilities/xss.md): the attacks a WAF targets.
+- [OWASP Top 10](../../../software-development-security/application-security/owasp/owasp-top-10.md) and [XSS](../../../software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md): the attacks a WAF targets.
 - [TLS in network security](../secure-transport/tls-in-network-security.md): a WAF must see decrypted traffic.
 
 ## Core concepts
@@ -96,5 +96,5 @@ The example shows the right posture: the WAF is a strong, fast-acting layer and 
 
 - OWASP, Web Application Firewall and the OWASP Core Rule Set: https://owasp.org/www-project-modsecurity-core-rule-set/
 - OWASP Top 10, the vulnerability classes WAFs target: https://owasp.org/www-project-top-ten/
-- [XSS](../../../software-development-security/application-security/vulnerabilities/xss.md) and the application-security area for the real fixes a WAF complements.
+- [XSS](../../../software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md) and the application-security area for the real fixes a WAF complements.
 - NIST SP 800-41 Rev. 1 for firewall context: https://doi.org/10.6028/NIST.SP.800-41r1

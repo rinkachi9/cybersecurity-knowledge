@@ -1,0 +1,107 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.detection.ids",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "detection",
+      "ids",
+      "suricata"
+    ],
+    "aliases": [
+      "IDS",
+      "IDPS",
+      "NIDS",
+      "HIDS"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.detection.false-positive-false-negative",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "applies",
+      "note": "Detection as a layer"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-94",
+      "type": "standard",
+      "title": "SP 800-94, Guide to Intrusion Detection and Prevention Systems (IDPS)",
+      "year": 2007,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-94",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "suricata-docs",
+      "type": "documentation",
+      "title": "Suricata documentation",
+      "publisher": "OISF",
+      "url": "https://docs.suricata.io/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "axelsson-2000",
+      "type": "paper",
+      "title": "The Base-Rate Fallacy and the Difficulty of Intrusion Detection",
+      "authors": [
+        "Stefan Axelsson"
+      ],
+      "year": 2000,
+      "publisher": "ACM TISSEC",
+      "url": "https://dl.acm.org/doi/10.1145/357830.357849",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Intrusion detection",
+      "anchor": "#definition",
+      "definition": "Monitoring events in a system or network and analyzing them for signs of possible incidents."
+    },
+    {
+      "term": "Base rate problem",
+      "anchor": "#detection-outcomes-and-the-base-rate-problem",
+      "definition": "When attacks are rare, most alerts are false positives even for accurate detectors."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "Name NIST's four IDPS types.",
+      "a": "Network-based, wireless, network behavior analysis, host-based.",
+      "anchor": "#types",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "apply",
+      "q": "TPR 99%, FPR 0.1%, base rate 1 in 1,000: share of real alerts?",
+      "a": "About 50 percent.",
+      "anchor": "#detection-outcomes-and-the-base-rate-problem",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "recall",
+      "q": "Name NIST's three detection methods.",
+      "a": "Signature-based, anomaly-based, stateful protocol analysis.",
+      "anchor": "#detection-methods",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-operations"
+  }
+}

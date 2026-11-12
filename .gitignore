@@ -37,6 +37,19 @@ samples/
 **/malware/*
 !**/malware/*.md
 !**/malware/*.md.json
+# Topic directories under malware/: only the note, its sidecar and Python scripts are tracked.
+!**/malware/rootkit/
+!**/malware/fileless-malware/
+**/malware/rootkit/**
+**/malware/fileless-malware/**
+!**/malware/rootkit/**/
+!**/malware/fileless-malware/**/
+!**/malware/rootkit/README.md
+!**/malware/rootkit/README.md.json
+!**/malware/rootkit/scripts/*.py
+!**/malware/fileless-malware/README.md
+!**/malware/fileless-malware/README.md.json
+!**/malware/fileless-malware/scripts/*.py
 loot/
 dumps/
 *.ovpn

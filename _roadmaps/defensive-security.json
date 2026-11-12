@@ -67,7 +67,10 @@
       "title": "Security awareness",
       "group": "Security and risk management",
       "documentation": [
-        "security-and-risk-management/security-awareness/README.md"
+        "security-and-risk-management/security-awareness/README.md",
+        "security-and-risk-management/security-awareness/social-engineering/tailgating.md",
+        "security-and-risk-management/security-awareness/social-engineering/angler-phishing.md",
+        "security-and-risk-management/security-awareness/social-engineering/quid-pro-quo.md"
       ],
       "externalSources": []
     },
@@ -76,7 +79,7 @@
       "title": "IDS and IPS",
       "group": "Security operations",
       "documentation": [
-        "security-operations/defensive-operations/detection/ids.md",
+        "security-operations/defensive-operations/detection/ids/README.md",
         "security-operations/defensive-operations/detection/ips.md"
       ],
       "externalSources": []
@@ -132,7 +135,9 @@
         "security-operations/defensive-operations/operations/security-operations-center.md",
         "security-operations/defensive-operations/operations/secops.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://www.first.org/standards/frameworks/csirts/FIRST_CSIRT_Services_Framework_v2.1.0.pdf"
+      ]
     },
     {
       "id": "soar",
@@ -343,6 +348,30 @@
         "communication-and-network-security/network-security/monitoring-and-detection/deception-and-honeypots.md"
       ],
       "externalSources": []
+    },
+    {
+      "id": "malware-hunting",
+      "title": "Hunting droppers, fileless malware and rootkits",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/threats-and-attacks/malware/dropper.md",
+        "security-operations/threats-and-attacks/malware/fileless-malware/README.md",
+        "security-operations/threats-and-attacks/malware/rootkit/README.md",
+        "security-operations/threats-and-attacks/malware/potentially-unwanted-application.md"
+      ],
+      "externalSources": []
+    },
+    {
+      "id": "csirt",
+      "title": "CSIRT",
+      "group": "Security operations",
+      "documentation": [
+        "security-operations/defensive-operations/operations/computer-security-incident-response-team.md"
+      ],
+      "externalSources": [
+        "https://www.first.org/standards/frameworks/csirts/FIRST_CSIRT_Services_Framework_v2.1.0.pdf",
+        "https://www.rfc-editor.org/rfc/rfc2350"
+      ]
     }
   ],
   "edges": [
@@ -515,6 +544,21 @@
       "from": "nsm",
       "to": "ndr",
       "type": "branch"
+    },
+    {
+      "from": "edr",
+      "to": "malware-hunting",
+      "type": "next"
+    },
+    {
+      "from": "soc",
+      "to": "csirt",
+      "type": "next"
+    },
+    {
+      "from": "csirt",
+      "to": "ir",
+      "type": "next"
     }
   ]
 }

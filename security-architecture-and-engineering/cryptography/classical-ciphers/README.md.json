@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.cryptography.classical-ciphers",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "classical-ciphers"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

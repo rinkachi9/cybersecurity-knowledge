@@ -1,0 +1,83 @@
+{
+  "node": {
+    "id": "data-security.cryptography.classical-ciphers.caesar-cipher",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "classical-ciphers",
+      "substitution-cipher",
+      "frequency-analysis",
+      "ctf"
+    ],
+    "aliases": [
+      "ROT13",
+      "shift cipher"
+    ]
+  },
+  "links": [
+    {
+      "to": "data-security.cryptography.cryptography-fundamentals",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.kerckhoffs-principle",
+      "rel": "related"
+    },
+    {
+      "to": "data-security.cryptography.cryptographic-attacks",
+      "rel": "example-of",
+      "note": "Brute force and frequency analysis on a real cipher"
+    }
+  ],
+  "sources": [
+    {
+      "key": "suetonius-julius-56",
+      "type": "book",
+      "title": "The Lives of the Caesars: The Life of Julius Caesar, chapter 56 (Loeb Classical Library)",
+      "authors": [
+        "Suetonius"
+      ],
+      "year": 1913,
+      "publisher": "Loeb Classical Library",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius*.html",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Monoalphabetic substitution",
+      "anchor": "#definition",
+      "definition": "Every occurrence of a plaintext letter becomes the same ciphertext letter."
+    },
+    {
+      "term": "Chi-squared statistic",
+      "anchor": "#why-it-is-weak-two-independent-attacks",
+      "definition": "Score that measures how far observed letter counts are from English expectations."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "apply",
+      "q": "E encrypts to R. What is the key?",
+      "a": "13 (ROT13).",
+      "anchor": "#practice",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Why does encrypting twice with Caesar not add security?",
+      "a": "Two shifts compose into one shift, so the key space stays 26.",
+      "anchor": "#common-mistakes",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

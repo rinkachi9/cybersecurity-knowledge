@@ -23,7 +23,7 @@ Detection systems and detection quality.
 
 Entry point: [detection](detection/README.md).
 
-- [Intrusion Detection System (IDS)](detection/ids.md): Intrusion detection systems.
+- [Intrusion Detection System (IDS)](detection/ids/README.md): Intrusion detection systems.
 - [Intrusion Prevention System (IPS)](detection/ips.md): Intrusion prevention systems.
 - [False Negative / False Positive](detection/false-positive-false-negative.md): Detection errors, their cost and how to balance them.
 - [True Negative / True Positive](detection/true-positive-true-negative.md): Correct detection outcomes and why they matter.

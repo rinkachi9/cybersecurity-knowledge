@@ -209,7 +209,7 @@ Outcome: possible cybersecurity attacks and compromises are found and analyzed.
 | Continuous Monitoring | DE.CM | Networks, physical environment, personnel activity, service providers and runtime environments are monitored |
 | Adverse Event Analysis | DE.AE | Events are analyzed, correlated, enriched with threat intelligence, and declared as incidents against defined criteria |
 
-Examples: `DE.CM-01` (networks and network services are monitored), `DE.AE-03` (information is correlated from multiple sources), `DE.AE-08` (incidents are declared when adverse events meet the defined incident criteria). Link: [SIEM](../../../security-operations/defensive-operations/operations/siem.md), [security operations center](../../../security-operations/defensive-operations/operations/security-operations-center.md), [IDS](../../../security-operations/defensive-operations/detection/ids.md).
+Examples: `DE.CM-01` (networks and network services are monitored), `DE.AE-03` (information is correlated from multiple sources), `DE.AE-08` (incidents are declared when adverse events meet the defined incident criteria). Link: [SIEM](../../../security-operations/defensive-operations/operations/siem.md), [security operations center](../../../security-operations/defensive-operations/operations/security-operations-center.md), [IDS](../../../security-operations/defensive-operations/detection/ids/README.md).
 
 #### Respond (RS)
 

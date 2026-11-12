@@ -3,13 +3,85 @@
     "id": "cross-cutting-concepts.threat-modeling.methods.trike",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 4,
     "tags": [
       "security-and-risk-management",
       "threat-modeling",
-      "methods"
+      "trike",
+      "requirements-model"
     ]
   },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threat-modeling.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.stride",
+      "rel": "contrasts",
+      "note": "Trike derives threats from requirements, STRIDE from categories"
+    }
+  ],
+  "sources": [
+    {
+      "key": "trike-v1",
+      "type": "report",
+      "title": "Trike v.1 Methodology Document [Draft]",
+      "authors": [
+        "Paul Saitta",
+        "Brenda Larcom",
+        "Michael Eddington"
+      ],
+      "year": 2005,
+      "url": "https://web.archive.org/web/2016/http://www.octotrike.org/papers/Trike_v1_Methodology_Document-draft.pdf",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sei-tm-12-methods",
+      "type": "website",
+      "title": "Threat Modeling: 12 Available Methods",
+      "authors": [
+        "Nataliya Shevchenko"
+      ],
+      "year": 2018,
+      "publisher": "Carnegie Mellon University Software Engineering Institute",
+      "url": "https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Actor-asset-action matrix",
+      "anchor": "#requirements-model",
+      "definition": "Roles by assets, each cell split into CRUD actions marked allowed, disallowed or allowed with rules."
+    },
+    {
+      "term": "Threat exposure",
+      "anchor": "#risk-model",
+      "definition": "Asset value multiplied by the action-specific risk."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "What are Trike's two threat classes?",
+      "a": "Denial of service and elevation of privilege.",
+      "anchor": "#threat-generation",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "apply",
+      "q": "Asset value 250, action risk 5. What is the exposure?",
+      "a": "1,250.",
+      "anchor": "#risk-model",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-and-risk-management"
   }

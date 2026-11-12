@@ -1,0 +1,70 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='420' viewBox='0 0 900 420' role='img' aria-label='STRIDE per element matrix'>
+<title>STRIDE per element: which threat categories apply to which DFD element</title>
+<rect width='900' height='420' fill='#ffffff'/>
+<text x='188' y='122' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Property violated:</text>
+<text x='450.0' y='30' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#111827'>STRIDE per element</text>
+<text x='256.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>S</text>
+<text x='256.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Spoofing</text>
+<text x='256.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Authentication</text>
+<text x='368.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>T</text>
+<text x='368.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Tampering</text>
+<text x='368.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Integrity</text>
+<text x='480.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>R</text>
+<text x='480.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Repudiation</text>
+<text x='480.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Non-repudiation</text>
+<text x='592.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>I</text>
+<text x='592.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Information disclosure</text>
+<text x='592.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Confidentiality</text>
+<text x='704.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>D</text>
+<text x='704.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Denial of service</text>
+<text x='704.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Availability</text>
+<text x='816.0' y='80' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#1f2937'>E</text>
+<text x='816.0' y='104' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#111827'>Elevation of privilege</text>
+<text x='816.0' y='122' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#6b7280'>Authorization</text>
+<text x='188' y='181.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>External entity</text>
+<rect x='203' y='153' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='256.0' y='182.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='315' y='153' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='427' y='153' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='480.0' y='182.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='539' y='153' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='651' y='153' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='763' y='153' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<text x='188' y='233.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Process</text>
+<rect x='203' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='256.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='315' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='368.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='427' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='480.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='539' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='592.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='651' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='704.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='763' y='205' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='816.0' y='234.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<text x='188' y='285.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Data store</text>
+<rect x='203' y='257' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='315' y='257' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='368.0' y='286.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='427' y='257' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='480.0' y='280.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<text x='480.0' y='296.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='10.5' fill='#dbeafe'>if it holds logs</text>
+<rect x='539' y='257' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='592.0' y='286.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='651' y='257' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='704.0' y='286.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='763' y='257' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<text x='188' y='337.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#111827'>Data flow</text>
+<rect x='203' y='309' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='315' y='309' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='368.0' y='338.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='427' y='309' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<rect x='539' y='309' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='592.0' y='338.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='651' y='309' width='106' height='46' rx='6' fill='#2563eb' stroke='#d1d5db'/>
+<text x='704.0' y='338.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#ffffff'>applies</text>
+<rect x='763' y='309' width='106' height='46' rx='6' fill='#f3f4f6' stroke='#d1d5db'/>
+<text x='200' y='388' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#4b5563'>Source: STRIDE per element as described by Shostack (2014) and the Microsoft SDL. Use it as a prompt, not as a limit:</text>
+<text x='200' y='406' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#4b5563'>a threat outside the blue cells is still a threat if it is real for your system.</text>
+</svg>

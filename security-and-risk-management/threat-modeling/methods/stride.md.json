@@ -3,13 +3,108 @@
     "id": "cross-cutting-concepts.threat-modeling.methods.stride",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 1,
     "tags": [
       "security-and-risk-management",
       "threat-modeling",
-      "methods"
+      "stride",
+      "microsoft"
     ]
   },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threat-modeling.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.attack-trees",
+      "rel": "related",
+      "note": "Attack trees add the attacker's chaining that STRIDE lacks"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kohnfelder-garg-1999",
+      "type": "report",
+      "title": "The threats to our products",
+      "authors": [
+        "Loren Kohnfelder",
+        "Praerit Garg"
+      ],
+      "year": 1999,
+      "publisher": "Microsoft",
+      "url": "https://shostack.org/files/microsoft/The-Threats-To-Our-Products.docx",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ms-tmt-threats",
+      "type": "documentation",
+      "title": "Threats - Microsoft Threat Modeling Tool",
+      "publisher": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-tm-cs",
+      "type": "documentation",
+      "title": "Threat Modeling Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-api-top10-2023",
+      "type": "documentation",
+      "title": "OWASP API Security Top 10 2023",
+      "year": 2023,
+      "publisher": "OWASP",
+      "url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "STRIDE",
+      "anchor": "#the-six-categories",
+      "definition": "Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege."
+    },
+    {
+      "term": "STRIDE per element",
+      "anchor": "#stride-per-element",
+      "definition": "Applying only the relevant STRIDE categories to each DFD element type."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "Which property does each STRIDE letter violate?",
+      "a": "Authentication, integrity, non-repudiation, confidentiality, availability, authorization.",
+      "anchor": "#the-six-categories",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "apply",
+      "q": "Which STRIDE categories apply to a data flow?",
+      "a": "Tampering, information disclosure and denial of service.",
+      "anchor": "#stride-per-element",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "explain",
+      "q": "Why does STRIDE alone not prioritize threats?",
+      "a": "It classifies threats but has no notion of likelihood or business impact.",
+      "anchor": "#trade-offs-and-when-to-use-it",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-and-risk-management"
   }

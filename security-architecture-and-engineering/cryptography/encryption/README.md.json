@@ -1,0 +1,16 @@
+{
+  "node": {
+    "id": "data-security.cryptography.encryption",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "encryption"
+    ]
+  },
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

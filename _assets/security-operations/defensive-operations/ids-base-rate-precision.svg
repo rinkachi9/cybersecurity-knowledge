@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='820' height='480' viewBox='0 0 820 480' role='img' aria-label='Share of IDS alerts that are real attacks (precision) vs base rate'>
+<title>Share of IDS alerts that are real attacks (precision) vs base rate</title>
+<rect width='820' height='480' fill='#ffffff'/>
+<text x='410.0' y='26' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Share of IDS alerts that are real attacks (precision) vs base rate</text>
+<rect x='80' y='50' width='710' height='360' fill='#f9fafb' stroke='#9ca3af'/>
+<line x1='80' y1='410.0' x2='790' y2='410.0' stroke='#e5e7eb'/>
+<text x='72' y='414.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>0.01%</text>
+<line x1='80' y1='320.0' x2='790' y2='320.0' stroke='#e5e7eb'/>
+<text x='72' y='324.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>0.1%</text>
+<line x1='80' y1='230.0' x2='790' y2='230.0' stroke='#e5e7eb'/>
+<text x='72' y='234.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1%</text>
+<line x1='80' y1='140.0' x2='790' y2='140.0' stroke='#e5e7eb'/>
+<text x='72' y='144.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>10%</text>
+<line x1='80' y1='50.0' x2='790' y2='50.0' stroke='#e5e7eb'/>
+<text x='72' y='54.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>100%</text>
+<line x1='80.0' y1='50' x2='80.0' y2='410' stroke='#e5e7eb'/>
+<text x='80.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 1M</text>
+<line x1='222.0' y1='50' x2='222.0' y2='410' stroke='#e5e7eb'/>
+<text x='222.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 100k</text>
+<line x1='364.0' y1='50' x2='364.0' y2='410' stroke='#e5e7eb'/>
+<text x='364.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 10k</text>
+<line x1='506.0' y1='50' x2='506.0' y2='410' stroke='#e5e7eb'/>
+<text x='506.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 1k</text>
+<line x1='648.0' y1='50' x2='648.0' y2='410' stroke='#e5e7eb'/>
+<text x='648.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 100</text>
+<line x1='790.0' y1='50' x2='790.0' y2='410' stroke='#e5e7eb'/>
+<text x='790.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1 in 10</text>
+<path d='M80.0,410.0 L87.1,405.9 L94.2,401.4 L101.3,396.9 L108.4,392.4 L115.5,387.9 L122.6,383.4 L129.7,378.9 L136.8,374.4 L143.9,369.9 L151.0,365.4 L158.1,360.9 L165.2,356.4 L172.3,351.9 L179.4,347.4 L186.5,342.9 L193.6,338.4 L200.7,333.9 L207.8,329.4 L214.9,324.9 L222.0,320.4 L229.1,315.9 L236.2,311.4 L243.3,306.9 L250.4,302.5 L257.5,298.0 L264.6,293.5 L271.7,289.0 L278.8,284.5 L285.9,280.0 L293.0,275.5 L300.1,271.0 L307.2,266.5 L314.3,262.1 L321.4,257.6 L328.5,253.1 L335.6,248.6 L342.7,244.2 L349.8,239.7 L356.9,235.2 L364.0,230.8 L371.1,226.3 L378.2,221.9 L385.3,217.4 L392.4,213.0 L399.5,208.6 L406.6,204.1 L413.7,199.7 L420.8,195.3 L427.9,191.0 L435.0,186.6 L442.1,182.2 L449.2,177.9 L456.3,173.6 L463.4,169.3 L470.5,165.0 L477.6,160.7 L484.7,156.5 L491.8,152.3 L498.9,148.2 L506.0,144.0 L513.1,140.0 L520.2,135.9 L527.3,132.0 L534.4,128.0 L541.5,124.2 L548.6,120.4 L555.7,116.6 L562.8,113.0 L569.9,109.4 L577.0,105.9 L584.1,102.6 L591.2,99.3 L598.3,96.1 L605.4,93.0 L612.5,90.1 L619.6,87.2 L626.7,84.5 L633.8,81.9 L640.9,79.4 L648.0,77.1 L655.1,74.9 L662.2,72.8 L669.3,70.9 L676.4,69.0 L683.5,67.3 L690.6,65.7 L697.7,64.3 L704.8,62.9 L711.9,61.7 L719.0,60.5 L726.1,59.5 L733.2,58.5 L740.3,57.6 L747.4,56.8 L754.5,56.1 L761.6,55.5 L768.7,54.9 L775.8,54.3 L782.9,53.8 L790.0,53.4' fill='none' stroke='#2563eb' stroke-width='2.5'/>
+<path d='M80.0,320.4 L87.1,315.9 L94.2,311.4 L101.3,306.9 L108.4,302.5 L115.5,298.0 L122.6,293.5 L129.7,289.0 L136.8,284.5 L143.9,280.0 L151.0,275.5 L158.1,271.0 L165.2,266.5 L172.3,262.1 L179.4,257.6 L186.5,253.1 L193.6,248.6 L200.7,244.2 L207.8,239.7 L214.9,235.2 L222.0,230.8 L229.1,226.3 L236.2,221.9 L243.3,217.4 L250.4,213.0 L257.5,208.6 L264.6,204.2 L271.7,199.7 L278.8,195.4 L285.9,191.0 L293.0,186.6 L300.1,182.2 L307.2,177.9 L314.3,173.6 L321.4,169.3 L328.5,165.0 L335.6,160.8 L342.7,156.5 L349.8,152.3 L356.9,148.2 L364.0,144.1 L371.1,140.0 L378.2,136.0 L385.3,132.0 L392.4,128.1 L399.5,124.2 L406.6,120.4 L413.7,116.7 L420.8,113.1 L427.9,109.5 L435.0,106.0 L442.1,102.6 L449.2,99.4 L456.3,96.2 L463.4,93.1 L470.5,90.2 L477.6,87.3 L484.7,84.6 L491.8,82.1 L498.9,79.6 L506.0,77.3 L513.1,75.1 L520.2,73.0 L527.3,71.1 L534.4,69.2 L541.5,67.6 L548.6,66.0 L555.7,64.5 L562.8,63.2 L569.9,61.9 L577.0,60.8 L584.1,59.8 L591.2,58.8 L598.3,57.9 L605.4,57.1 L612.5,56.4 L619.6,55.8 L626.7,55.2 L633.8,54.6 L640.9,54.2 L648.0,53.7 L655.1,53.3 L662.2,53.0 L669.3,52.7 L676.4,52.4 L683.5,52.1 L690.6,51.9 L697.7,51.7 L704.8,51.5 L711.9,51.3 L719.0,51.2 L726.1,51.1 L733.2,50.9 L740.3,50.8 L747.4,50.7 L754.5,50.7 L761.6,50.6 L768.7,50.5 L775.8,50.5 L782.9,50.4 L790.0,50.4' fill='none' stroke='#dc2626' stroke-width='2.5'/>
+<path d='M80.0,230.8 L87.1,226.3 L94.2,221.9 L101.3,217.4 L108.4,213.0 L115.5,208.6 L122.6,204.2 L129.7,199.7 L136.8,195.4 L143.9,191.0 L151.0,186.6 L158.1,182.2 L165.2,177.9 L172.3,173.6 L179.4,169.3 L186.5,165.0 L193.6,160.8 L200.7,156.5 L207.8,152.4 L214.9,148.2 L222.0,144.1 L229.1,140.0 L236.2,136.0 L243.3,132.0 L250.4,128.1 L257.5,124.2 L264.6,120.4 L271.7,116.7 L278.8,113.1 L285.9,109.5 L293.0,106.0 L300.1,102.7 L307.2,99.4 L314.3,96.2 L321.4,93.1 L328.5,90.2 L335.6,87.4 L342.7,84.7 L349.8,82.1 L356.9,79.6 L364.0,77.3 L371.1,75.1 L378.2,73.0 L385.3,71.1 L392.4,69.3 L399.5,67.6 L406.6,66.0 L413.7,64.6 L420.8,63.2 L427.9,62.0 L435.0,60.8 L442.1,59.8 L449.2,58.8 L456.3,58.0 L463.4,57.2 L470.5,56.5 L477.6,55.8 L484.7,55.2 L491.8,54.7 L498.9,54.2 L506.0,53.8 L513.1,53.4 L520.2,53.0 L527.3,52.7 L534.4,52.4 L541.5,52.2 L548.6,51.9 L555.7,51.7 L562.8,51.5 L569.9,51.4 L577.0,51.2 L584.1,51.1 L591.2,51.0 L598.3,50.9 L605.4,50.8 L612.5,50.7 L619.6,50.6 L626.7,50.5 L633.8,50.5 L640.9,50.4 L648.0,50.4 L655.1,50.3 L662.2,50.3 L669.3,50.3 L676.4,50.2 L683.5,50.2 L690.6,50.2 L697.7,50.2 L704.8,50.2 L711.9,50.1 L719.0,50.1 L726.1,50.1 L733.2,50.1 L740.3,50.1 L747.4,50.1 L754.5,50.1 L761.6,50.1 L768.7,50.1 L775.8,50.0 L782.9,50.0 L790.0,50.0' fill='none' stroke='#16a34a' stroke-width='2.5'/>
+<rect x='484' y='334' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='490' y1='345' x2='516' y2='345' stroke='#2563eb' stroke-width='3'/>
+<text x='524' y='349' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>Detection rate 99%, FPR 1%</text>
+<rect x='484' y='356' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='490' y1='367' x2='516' y2='367' stroke='#dc2626' stroke-width='3'/>
+<text x='524' y='371' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>Detection rate 99%, FPR 0.1%</text>
+<rect x='484' y='378' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='490' y1='389' x2='516' y2='389' stroke='#16a34a' stroke-width='3'/>
+<text x='524' y='393' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>Detection rate 99%, FPR 0.01%</text>
+<text x='435.0' y='458' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>Fraction of events that are attacks (base rate, log scale)</text>
+<text x='20' y='230.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827' transform='rotate(-90 20 230.0)'>Precision (log scale)</text>
+</svg>

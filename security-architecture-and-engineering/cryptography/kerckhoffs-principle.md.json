@@ -1,0 +1,82 @@
+{
+  "node": {
+    "id": "data-security.cryptography.kerckhoffs-principle",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 1,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "design-principles",
+      "open-design"
+    ],
+    "aliases": [
+      "Shannon's maxim",
+      "open design"
+    ]
+  },
+  "links": [
+    {
+      "to": "data-security.cryptography.cryptography-fundamentals",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "related",
+      "note": "Obscurity is acceptable only as an extra layer"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kerckhoffs-1883",
+      "type": "paper",
+      "title": "La cryptographie militaire",
+      "authors": [
+        "Auguste Kerckhoffs"
+      ],
+      "year": 1883,
+      "publisher": "Journal des sciences militaires",
+      "url": "https://www.petitcolas.net/kerckhoffs/index.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-656",
+      "type": "documentation",
+      "title": "CWE-656: Reliance on Security Through Obscurity",
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/data/definitions/656.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Kerckhoffs's principle",
+      "anchor": "#definition-and-original-wording",
+      "definition": "A cryptosystem must remain secure when everything except the key is known to the enemy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why is a key hard-coded in a mobile app a violation of Kerckhoffs's principle?",
+      "a": "The key ships with every copy, so it is part of the system that will fall into the enemy's hands.",
+      "anchor": "#common-mistakes",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "In which year and journal did Kerckhoffs publish his six requirements?",
+      "a": "1883, Journal des sciences militaires.",
+      "anchor": "#definition-and-original-wording",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

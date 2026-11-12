@@ -150,7 +150,9 @@
         "security-and-risk-management/threat-modeling/README.md",
         "security-and-risk-management/threat-modeling/threat-modeling.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://www.threatmodelingmanifesto.org/"
+      ]
     },
     {
       "id": "tm-methods",
@@ -169,7 +171,9 @@
       "documentation": [
         "security-and-risk-management/threat-modeling/methods/stride.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://shostack.org/files/microsoft/The-Threats-To-Our-Products.docx"
+      ]
     },
     {
       "id": "pasta",
@@ -187,7 +191,9 @@
       "documentation": [
         "security-and-risk-management/threat-modeling/methods/trike.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://web.archive.org/web/2016/http://www.octotrike.org/papers/Trike_v1_Methodology_Document-draft.pdf"
+      ]
     },
     {
       "id": "attack-trees",
@@ -383,6 +389,39 @@
       "description": "Planned. CISSP section 1.7: business impact analysis and external dependencies.",
       "documentation": [],
       "externalSources": []
+    },
+    {
+      "id": "vast",
+      "title": "VAST",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/threat-modeling/methods/vast.md"
+      ],
+      "externalSources": [
+        "https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/"
+      ]
+    },
+    {
+      "id": "angler-phishing",
+      "title": "Angler phishing",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/angler-phishing.md"
+      ],
+      "externalSources": [
+        "https://www.proofpoint.com/us/threat-insight/post/fraudulent-social-media-accounts-continue-phish-banking-credentials"
+      ]
+    },
+    {
+      "id": "quid-pro-quo",
+      "title": "Quid pro quo",
+      "group": "Security and risk management",
+      "documentation": [
+        "security-and-risk-management/security-awareness/social-engineering/quid-pro-quo.md"
+      ],
+      "externalSources": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"
+      ]
     }
   ],
   "edges": [
@@ -579,6 +618,21 @@
     {
       "from": "risk",
       "to": "bcp",
+      "type": "branch"
+    },
+    {
+      "from": "tm-methods",
+      "to": "vast",
+      "type": "branch"
+    },
+    {
+      "from": "phishing",
+      "to": "angler-phishing",
+      "type": "next"
+    },
+    {
+      "from": "social",
+      "to": "quid-pro-quo",
       "type": "branch"
     }
   ]

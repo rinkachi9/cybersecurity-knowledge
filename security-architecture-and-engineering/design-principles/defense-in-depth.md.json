@@ -3,12 +3,118 @@
     "id": "cross-cutting-concepts.foundations.defense-in-depth",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 1,
     "tags": [
       "security-architecture-and-engineering",
-      "design-principles"
+      "design-principles",
+      "defense-in-depth",
+      "layered-security"
+    ],
+    "aliases": [
+      "layered security",
+      "DiD"
     ]
   },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "communication-and-network-security.network-security.architecture.network-segmentation",
+      "rel": "related",
+      "note": "Segmentation is one of the inner layers"
+    },
+    {
+      "to": "system-security.cloud-and-infrastructure-security.nist-zero-trust-architecture",
+      "rel": "related",
+      "note": "Zero trust strengthens the inner layers"
+    },
+    {
+      "to": "system-security.defensive-operations.detection.ids",
+      "rel": "related",
+      "note": "IDS is a detection layer"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-glossary-did",
+      "type": "documentation",
+      "title": "Glossary: defense-in-depth",
+      "publisher": "NIST CSRC",
+      "url": "https://csrc.nist.gov/glossary/term/defense_in_depth",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cisa-ics-did-2016",
+      "type": "report",
+      "title": "Recommended Practice: Improving Industrial Control System Cybersecurity with Defense-in-Depth Strategies",
+      "year": 2016,
+      "publisher": "DHS NCCIC ICS-CERT",
+      "url": "https://www.cisa.gov/sites/default/files/2023-01/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-53r5",
+      "type": "standard",
+      "title": "SP 800-53 Rev. 5, Security and Privacy Controls for Information Systems and Organizations",
+      "year": 2020,
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-sqli-cs",
+      "type": "documentation",
+      "title": "SQL Injection Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Defense in depth",
+      "anchor": "#definition",
+      "definition": "Several independent controls between a threat and an asset so that one failure does not cause a full compromise."
+    },
+    {
+      "term": "Common-mode failure",
+      "anchor": "#mechanism-why-independent-layers-multiply-protection",
+      "definition": "A single cause that defeats several layers at once, such as a shared administrator credential."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why does adding layers stop helping when layers share a common-mode failure?",
+      "a": "The pass probability c + (1 - c) q^n cannot fall below c, the chance of a bypass that defeats every layer at once.",
+      "anchor": "#mechanism-why-independent-layers-multiply-protection",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "apply",
+      "q": "Four security products are all administered through one SSO account without MFA. How many independent layers exist against an attacker who phishes that account?",
+      "a": "Effectively one, because the account can disable all four.",
+      "anchor": "#common-mistakes",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "compare",
+      "q": "How does defense in depth differ from defense in breadth?",
+      "a": "Depth stacks several controls on one attack path, breadth covers every attack path with at least one control.",
+      "anchor": "#definition",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-architecture-and-engineering"
   }

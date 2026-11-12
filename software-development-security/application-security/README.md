@@ -20,7 +20,7 @@ Vulnerability classes.
 
 Entry point: [vulnerabilities](vulnerabilities/README.md).
 
-- [XSS](vulnerabilities/xss.md): Cross-site scripting: types, impact and defenses.
+- [Cross-site scripting (XSS)](vulnerabilities/cross-site-scripting/README.md): Types (stored, reflected, DOM-based), impact, defense layers and a tested local lab.
 
 ### Testing
 

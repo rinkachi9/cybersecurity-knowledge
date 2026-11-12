@@ -7,7 +7,7 @@ A SIEM collects log and event data from across an environment, normalizes it int
 ## Prerequisites
 
 - [Security operations center (SOC)](security-operations-center.md) and [SecOps](secops.md), the teams that use a SIEM.
-- [IDS](../detection/ids.md), [IPS](../detection/ips.md) and [true and false positives](../detection/false-positive-false-negative.md), because alert quality is the main operating problem.
+- [IDS](../detection/ids/README.md), [IPS](../detection/ips.md) and [true and false positives](../detection/false-positive-false-negative.md), because alert quality is the main operating problem.
 - [SOAR](soar.md), which automates responses to SIEM alerts, and [SOPs](sop.md).
 - Basic knowledge of logs, syslog, time zones and regular expressions.
 

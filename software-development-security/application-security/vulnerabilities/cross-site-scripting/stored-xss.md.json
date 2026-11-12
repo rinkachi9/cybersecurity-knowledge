@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "software-security.application-security.vulnerabilities.xss.stored-xss",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 1,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "xss",
+      "cwe-79",
+      "stored-xss",
+      "persistent-xss"
+    ],
+    "aliases": [
+      "persistent XSS",
+      "Type II XSS"
+    ]
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.vulnerabilities.xss",
+      "rel": "part-of"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-xss-types",
+      "type": "documentation",
+      "title": "Types of Cross-Site Scripting",
+      "publisher": "OWASP",
+      "url": "https://owasp.org/www-community/Types_of_Cross-Site_Scripting",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-xss-cs",
+      "type": "documentation",
+      "title": "Cross Site Scripting Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-79",
+      "type": "documentation",
+      "title": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/data/definitions/79.html",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Stored XSS",
+      "anchor": "#definition",
+      "definition": "Payload saved by the application and rendered unsafely to later viewers."
+    },
+    {
+      "term": "Blind XSS",
+      "anchor": "#mechanism",
+      "definition": "Stored payload that fires in a view the attacker cannot see, such as an admin console."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why is stored XSS usually more severe than reflected XSS?",
+      "a": "No lure per victim, reaches every viewer, often privileged users.",
+      "anchor": "#mechanism",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

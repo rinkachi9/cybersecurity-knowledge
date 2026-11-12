@@ -6,7 +6,7 @@ Suricata and Snort are the two dominant open-source network intrusion detection 
 
 ## Prerequisites
 
-- [IDS](../../../security-operations/defensive-operations/detection/ids.md) and [IPS](../../../security-operations/defensive-operations/detection/ips.md): the detection/prevention concepts.
+- [IDS](../../../security-operations/defensive-operations/detection/ids/README.md) and [IPS](../../../security-operations/defensive-operations/detection/ips.md): the detection/prevention concepts.
 - [Network security monitoring](network-security-monitoring.md): where alerts fit among data types.
 - [Network scanning](../network-attacks/network-scanning.md) and the attacks these rules detect.
 
@@ -102,4 +102,4 @@ The example shows the engine as the sharp known-threat layer, corroborated by an
 - Suricata documentation and rule format: https://docs.suricata.io/
 - Snort 3 documentation and the Talos ruleset: https://www.snort.org/
 - Emerging Threats open ruleset: https://rules.emergingthreats.net/
-- [IDS](../../../security-operations/defensive-operations/detection/ids.md) and [IPS](../../../security-operations/defensive-operations/detection/ips.md) for the detection/prevention concepts.
+- [IDS](../../../security-operations/defensive-operations/detection/ids/README.md) and [IPS](../../../security-operations/defensive-operations/detection/ips.md) for the detection/prevention concepts.

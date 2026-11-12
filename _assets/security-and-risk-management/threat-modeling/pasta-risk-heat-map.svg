@@ -1,0 +1,93 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='760' height='560' viewBox='0 0 760 560' role='img' aria-label='PASTA stage 7 risk heat map'>
+<title>PASTA stage 7: residual risk heat map for the clinic booking portal</title>
+<rect width='760' height='560' fill='#ffffff'/>
+<text x='380.0' y='32' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Clinic portal threats before mitigation: likelihood x impact</text>
+<rect x='150' y='390' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='224' y='406' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>1</text>
+<rect x='150' y='310' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='224' y='326' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>2</text>
+<rect x='150' y='230' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='224' y='246' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>3</text>
+<rect x='150' y='150' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='224' y='166' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>4</text>
+<rect x='150' y='70' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='224' y='86' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>5</text>
+<rect x='230' y='390' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='304' y='406' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>2</text>
+<rect x='230' y='310' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='304' y='326' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>4</text>
+<rect x='230' y='230' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='304' y='246' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>6</text>
+<rect x='230' y='150' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='304' y='166' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>8</text>
+<rect x='230' y='70' width='80' height='80' fill='#f97316' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='304' y='86' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>10</text>
+<rect x='310' y='390' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='384' y='406' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>3</text>
+<rect x='310' y='310' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='384' y='326' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>6</text>
+<rect x='310' y='230' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='384' y='246' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>9</text>
+<rect x='310' y='150' width='80' height='80' fill='#f97316' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='384' y='166' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>12</text>
+<rect x='310' y='70' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='384' y='86' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>15</text>
+<rect x='390' y='390' width='80' height='80' fill='#86efac' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='464' y='406' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>4</text>
+<rect x='390' y='310' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='464' y='326' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>8</text>
+<rect x='390' y='230' width='80' height='80' fill='#f97316' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='464' y='246' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>12</text>
+<rect x='390' y='150' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='464' y='166' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>16</text>
+<rect x='390' y='70' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='464' y='86' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>20</text>
+<rect x='470' y='390' width='80' height='80' fill='#facc15' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='544' y='406' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>5</text>
+<rect x='470' y='310' width='80' height='80' fill='#f97316' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='544' y='326' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>10</text>
+<rect x='470' y='230' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='544' y='246' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>15</text>
+<rect x='470' y='150' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='544' y='166' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>20</text>
+<rect x='470' y='70' width='80' height='80' fill='#dc2626' opacity='0.55' stroke='#ffffff' stroke-width='2'/>
+<text x='544' y='86' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='10' fill='#374151'>25</text>
+<circle cx='430.0' cy='114.0' r='22' fill='#111827'/>
+<text x='430.0' y='119.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T1</text>
+<circle cx='430.0' cy='274.0' r='22' fill='#111827'/>
+<text x='430.0' y='279.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T2</text>
+<circle cx='270.0' cy='194.0' r='22' fill='#111827'/>
+<text x='270.0' y='199.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T3</text>
+<circle cx='270.0' cy='274.0' r='22' fill='#111827'/>
+<text x='270.0' y='279.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T4</text>
+<circle cx='350.0' cy='354.0' r='22' fill='#111827'/>
+<text x='350.0' y='359.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T5</text>
+<circle cx='350.0' cy='114.0' r='22' fill='#111827'/>
+<text x='350.0' y='119.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#ffffff'>T6</text>
+<text x='190.0' y='490' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>1</text>
+<text x='138' y='435.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>1</text>
+<text x='270.0' y='490' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>2</text>
+<text x='138' y='355.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>2</text>
+<text x='350.0' y='490' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>3</text>
+<text x='138' y='275.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>3</text>
+<text x='430.0' y='490' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>4</text>
+<text x='138' y='195.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>4</text>
+<text x='510.0' y='490' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>5</text>
+<text x='138' y='115.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>5</text>
+<text x='350.0' y='514' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>Likelihood (1 rare to 5 almost certain)</text>
+<text x='40' y='270.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827' transform='rotate(-90 40 270.0)'>Business impact (1 minor to 5 severe)</text>
+<rect x='580' y='90' width='16' height='16' fill='#dc2626' opacity='0.7'/>
+<text x='602' y='103' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#111827'>15-25 treat now</text>
+<rect x='580' y='118' width='16' height='16' fill='#f97316' opacity='0.7'/>
+<text x='602' y='131' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#111827'>10-14 treat this release</text>
+<rect x='580' y='146' width='16' height='16' fill='#facc15' opacity='0.7'/>
+<text x='602' y='159' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#111827'>5-9 plan</text>
+<rect x='580' y='174' width='16' height='16' fill='#86efac' opacity='0.7'/>
+<text x='602' y='187' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#111827'>1-4 accept or monitor</text>
+<text x='580' y='240' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T1 broken object authorization</text>
+<text x='580' y='260' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T2 credential stuffing</text>
+<text x='580' y='280' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T3 leaked email API key</text>
+<text x='580' y='300' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T4 missing audit trail</text>
+<text x='580' y='320' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T5 slot hoarding bots</text>
+<text x='580' y='340' font-family='Helvetica, Arial, sans-serif' font-size='11.5' fill='#374151'>T6 exposed admin console</text>
+</svg>

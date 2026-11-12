@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='820' height='480' viewBox='0 0 820 480' role='img' aria-label='Tier 1 analysts (FTE) needed for 24/7 triage vs daily alert volume'>
+<title>Tier 1 analysts (FTE) needed for 24/7 triage vs daily alert volume</title>
+<rect width='820' height='480' fill='#ffffff'/>
+<text x='410.0' y='26' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Tier 1 analysts (FTE) needed for 24/7 triage vs daily alert volume</text>
+<rect x='80' y='50' width='710' height='360' fill='#f9fafb' stroke='#9ca3af'/>
+<line x1='80' y1='410.0' x2='790' y2='410.0' stroke='#e5e7eb'/>
+<text x='72' y='414.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>0</text>
+<line x1='80' y1='344.5' x2='790' y2='344.5' stroke='#e5e7eb'/>
+<text x='72' y='348.5' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>20</text>
+<line x1='80' y1='279.1' x2='790' y2='279.1' stroke='#e5e7eb'/>
+<text x='72' y='283.1' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>40</text>
+<line x1='80' y1='213.6' x2='790' y2='213.6' stroke='#e5e7eb'/>
+<text x='72' y='217.6' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>60</text>
+<line x1='80' y1='148.2' x2='790' y2='148.2' stroke='#e5e7eb'/>
+<text x='72' y='152.2' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>80</text>
+<line x1='80' y1='82.7' x2='790' y2='82.7' stroke='#e5e7eb'/>
+<text x='72' y='86.7' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>100</text>
+<line x1='80.0' y1='50' x2='80.0' y2='410' stroke='#e5e7eb'/>
+<text x='80.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>0</text>
+<line x1='168.8' y1='50' x2='168.8' y2='410' stroke='#e5e7eb'/>
+<text x='168.8' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>250</text>
+<line x1='257.5' y1='50' x2='257.5' y2='410' stroke='#e5e7eb'/>
+<text x='257.5' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>500</text>
+<line x1='346.2' y1='50' x2='346.2' y2='410' stroke='#e5e7eb'/>
+<text x='346.2' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>750</text>
+<line x1='435.0' y1='50' x2='435.0' y2='410' stroke='#e5e7eb'/>
+<text x='435.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1000</text>
+<line x1='523.8' y1='50' x2='523.8' y2='410' stroke='#e5e7eb'/>
+<text x='523.8' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1250</text>
+<line x1='612.5' y1='50' x2='612.5' y2='410' stroke='#e5e7eb'/>
+<text x='612.5' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1500</text>
+<line x1='701.2' y1='50' x2='701.2' y2='410' stroke='#e5e7eb'/>
+<text x='701.2' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1750</text>
+<line x1='790.0' y1='50' x2='790.0' y2='410' stroke='#e5e7eb'/>
+<text x='790.0' y='428' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>2000</text>
+<line x1='80' y1='393.3' x2='790' y2='393.3' stroke='#6b7280' stroke-dasharray='4 3'/>
+<text x='786' y='389.3' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#374151'>one 24/7 seat = 5.12 FTE</text>
+<path d='M80.0,410.0 L115.5,404.6 L151.0,399.3 L186.5,393.9 L222.0,388.5 L257.5,383.2 L293.0,377.8 L328.5,372.4 L364.0,367.1 L399.5,361.7 L435.0,356.3 L470.5,351.0 L506.0,345.6 L541.5,340.2 L577.0,334.9 L612.5,329.5 L648.0,324.1 L683.5,318.8 L719.0,313.4 L754.5,308.0 L790.0,302.7' fill='none' stroke='#2563eb' stroke-width='2.5'/>
+<path d='M80.0,410.0 L115.5,399.3 L151.0,388.5 L186.5,377.8 L222.0,367.1 L257.5,356.3 L293.0,345.6 L328.5,334.9 L364.0,324.1 L399.5,313.4 L435.0,302.7 L470.5,291.9 L506.0,281.2 L541.5,270.5 L577.0,259.7 L612.5,249.0 L648.0,238.2 L683.5,227.5 L719.0,216.8 L754.5,206.0 L790.0,195.3' fill='none' stroke='#dc2626' stroke-width='2.5'/>
+<path d='M80.0,410.0 L115.5,392.1 L151.0,374.2 L186.5,356.3 L222.0,338.4 L257.5,320.5 L293.0,302.7 L328.5,284.8 L364.0,266.9 L399.5,249.0 L435.0,231.1 L470.5,213.2 L506.0,195.3 L541.5,177.4 L577.0,159.5 L612.5,141.6 L648.0,123.7 L683.5,105.9 L719.0,88.0 L754.5,70.1 L790.0,52.2' fill='none' stroke='#16a34a' stroke-width='2.5'/>
+<rect x='88' y='60' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='94' y1='71' x2='120' y2='71' stroke='#2563eb' stroke-width='3'/>
+<text x='128' y='75' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>3 min per alert</text>
+<rect x='88' y='82' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='94' y1='93' x2='120' y2='93' stroke='#dc2626' stroke-width='3'/>
+<text x='128' y='97' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>6 min per alert</text>
+<rect x='88' y='104' width='300' height='22' fill='#ffffff' opacity='0.85'/>
+<line x1='94' y1='115' x2='120' y2='115' stroke='#16a34a' stroke-width='3'/>
+<text x='128' y='119' font-family='Helvetica, Arial, sans-serif' font-size='12.5' fill='#111827'>10 min per alert</text>
+<text x='435.0' y='458' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827'>Alerts per day</text>
+<text x='20' y='230.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827' transform='rotate(-90 20 230.0)'>FTE (65% utilization, 5.12 FTE per 24/7 seat)</text>
+</svg>

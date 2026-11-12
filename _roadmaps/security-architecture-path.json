@@ -131,7 +131,11 @@
       "title": "Threat modeling",
       "group": "Security and risk management",
       "documentation": [
-        "security-and-risk-management/threat-modeling/threat-modeling.md"
+        "security-and-risk-management/threat-modeling/threat-modeling.md",
+        "security-and-risk-management/threat-modeling/methods/stride.md",
+        "security-and-risk-management/threat-modeling/methods/pasta.md",
+        "security-and-risk-management/threat-modeling/methods/trike.md",
+        "security-and-risk-management/threat-modeling/methods/vast.md"
       ],
       "externalSources": []
     },
@@ -222,6 +226,20 @@
       ],
       "externalSources": [
         "https://doi.org/10.6028/NIST.SP.800-207"
+      ]
+    },
+    {
+      "id": "crypto-fundamentals",
+      "title": "Cryptography fundamentals and encryption",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptography-fundamentals.md",
+        "security-architecture-and-engineering/cryptography/kerckhoffs-principle.md",
+        "security-architecture-and-engineering/cryptography/encryption/symmetric-and-asymmetric-encryption.md",
+        "security-architecture-and-engineering/cryptography/encryption/triple-des.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-57pt1r5"
       ]
     }
   ],
@@ -335,6 +353,16 @@
       "from": "zta",
       "to": "sase",
       "type": "next"
+    },
+    {
+      "from": "crypto-fundamentals",
+      "to": "pki",
+      "type": "next"
+    },
+    {
+      "from": "did",
+      "to": "crypto-fundamentals",
+      "type": "branch"
     }
   ]
 }

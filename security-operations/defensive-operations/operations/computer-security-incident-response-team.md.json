@@ -1,0 +1,140 @@
+{
+  "node": {
+    "id": "system-security.defensive-operations.operations.computer-security-incident-response-team",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "security-operations",
+      "defensive-operations",
+      "operations",
+      "csirt",
+      "incident-response",
+      "nis2"
+    ],
+    "aliases": [
+      "CSIRT",
+      "CERT",
+      "CIRT",
+      "PSIRT"
+    ]
+  },
+  "links": [
+    {
+      "to": "system-security.defensive-operations.operations.nist-incident-response",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "system-security.defensive-operations.operations.security-operations-center",
+      "rel": "related",
+      "note": "The SOC feeds the CSIRT"
+    }
+  ],
+  "sources": [
+    {
+      "key": "first-csirt-sf-2-1",
+      "type": "standard",
+      "title": "Computer Security Incident Response Team (CSIRT) Services Framework, version 2.1",
+      "year": 2019,
+      "publisher": "FIRST",
+      "url": "https://www.first.org/standards/frameworks/csirts/FIRST_CSIRT_Services_Framework_v2.1.0.pdf",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc-2350",
+      "type": "standard",
+      "title": "Expectations for Computer Security Incident Response (RFC 2350, BCP 21)",
+      "authors": [
+        "N. Brownlee",
+        "E. Guttman"
+      ],
+      "year": 1998,
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc2350",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-61r2",
+      "type": "standard",
+      "title": "SP 800-61 Rev. 2, Computer Security Incident Handling Guide",
+      "year": 2012,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-61r3",
+      "type": "standard",
+      "title": "SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+      "year": 2025,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "enisa-csirts-network",
+      "type": "website",
+      "title": "CSIRTs Network",
+      "publisher": "ENISA",
+      "url": "https://www.enisa.europa.eu/topics/eu-incident-response-and-cyber-crisis-management/csirts-network",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nis2",
+      "type": "standard",
+      "title": "Directive (EU) 2022/2555 (NIS2)",
+      "year": 2022,
+      "publisher": "European Union",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "CSIRT",
+      "anchor": "#definition",
+      "definition": "An organizational unit or capability that provides services to a defined constituency for preventing, detecting, handling and responding to security incidents."
+    },
+    {
+      "term": "Constituency",
+      "anchor": "#definition",
+      "definition": "The users and systems a CSIRT serves."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "Name NIST SP 800-61 Rev. 2's three team models.",
+      "a": "Central, distributed, coordinating.",
+      "anchor": "#team-models-and-staffing",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "compare",
+      "q": "PSIRT versus enterprise CSIRT?",
+      "a": "A PSIRT handles security of the vendor's products; an enterprise CSIRT the organization's own systems.",
+      "anchor": "#types-of-csirts",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "recall",
+      "q": "Which RFC 2350 section states a CSIRT's authority?",
+      "a": "Section 3.4 Authority.",
+      "anchor": "#describing-a-csirt-rfc-2350",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-operations"
+  }
+}

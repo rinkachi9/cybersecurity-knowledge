@@ -453,7 +453,7 @@
       "title": "Network detection (Domain 7)",
       "group": "Security operations",
       "documentation": [
-        "security-operations/defensive-operations/detection/ids.md",
+        "security-operations/defensive-operations/detection/ids/README.md",
         "security-operations/defensive-operations/detection/ips.md"
       ],
       "externalSources": []

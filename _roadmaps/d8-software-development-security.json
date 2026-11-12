@@ -60,9 +60,12 @@
       "title": "Cross-site scripting",
       "group": "Software development security",
       "documentation": [
-        "software-development-security/application-security/vulnerabilities/xss.md"
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/README.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cwe.mitre.org/data/definitions/79.html"
+      ]
     },
     {
       "id": "testing",
@@ -157,6 +160,39 @@
       "externalSources": [
         "https://attack.mitre.org/techniques/T1195/"
       ]
+    },
+    {
+      "id": "stored-xss",
+      "title": "Stored XSS",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/stored-xss.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/www-community/Types_of_Cross-Site_Scripting"
+      ]
+    },
+    {
+      "id": "reflected-xss",
+      "title": "Reflected XSS",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/reflected-xss.md"
+      ],
+      "externalSources": [
+        "https://owasp.org/www-community/Types_of_Cross-Site_Scripting"
+      ]
+    },
+    {
+      "id": "dom-xss",
+      "title": "DOM-based XSS",
+      "group": "Software development security",
+      "documentation": [
+        "software-development-security/application-security/vulnerabilities/cross-site-scripting/dom-based-xss.md"
+      ],
+      "externalSources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html"
+      ]
     }
   ],
   "edges": [
@@ -234,6 +270,21 @@
       "from": "supply",
       "to": "supply-attacks",
       "type": "next"
+    },
+    {
+      "from": "xss",
+      "to": "stored-xss",
+      "type": "branch"
+    },
+    {
+      "from": "xss",
+      "to": "reflected-xss",
+      "type": "branch"
+    },
+    {
+      "from": "xss",
+      "to": "dom-xss",
+      "type": "branch"
     }
   ]
 }

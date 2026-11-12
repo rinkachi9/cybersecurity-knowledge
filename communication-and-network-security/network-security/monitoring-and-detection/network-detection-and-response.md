@@ -7,7 +7,7 @@ Network detection and response (NDR) is a category of security product that comb
 ## Prerequisites
 
 - [Network security monitoring](network-security-monitoring.md): the data foundation NDR builds on.
-- [IDS](../../../security-operations/defensive-operations/detection/ids.md)/[IPS](../../../security-operations/defensive-operations/detection/ips.md) and [SIEM](../../../security-operations/defensive-operations/operations/siem.md)/[SOAR](../../../security-operations/defensive-operations/operations/soar.md): neighboring categories.
+- [IDS](../../../security-operations/defensive-operations/detection/ids/README.md)/[IPS](../../../security-operations/defensive-operations/detection/ips.md) and [SIEM](../../../security-operations/defensive-operations/operations/siem.md)/[SOAR](../../../security-operations/defensive-operations/operations/soar.md): neighboring categories.
 - [Encrypted traffic analysis](encrypted-traffic-analysis.md) and [beaconing detection](beaconing-detection/README.md): techniques NDR automates.
 
 ## Core concepts

@@ -1,0 +1,101 @@
+{
+  "node": {
+    "id": "cross-cutting-concepts.threat-modeling.methods.vast",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 7,
+    "tags": [
+      "security-and-risk-management",
+      "threat-modeling",
+      "vast",
+      "devsecops",
+      "agile"
+    ],
+    "aliases": [
+      "Visual, Agile and Simple Threat modeling"
+    ]
+  },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.threat-modeling.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cross-cutting-concepts.threat-modeling.methods.stride",
+      "rel": "related",
+      "note": "VAST tools reuse STRIDE-style categories"
+    },
+    {
+      "to": "cross-cutting-concepts.foundations.defense-in-depth",
+      "rel": "related",
+      "note": "The operational model exposes common-mode failures"
+    }
+  ],
+  "sources": [
+    {
+      "key": "sei-tm-12-methods",
+      "type": "website",
+      "title": "Threat Modeling: 12 Available Methods",
+      "authors": [
+        "Nataliya Shevchenko"
+      ],
+      "year": 2018,
+      "publisher": "Carnegie Mellon University Software Engineering Institute",
+      "url": "https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "threatmodeler-vast-glossary",
+      "type": "website",
+      "title": "VAST Threat Methodology (glossary)",
+      "publisher": "ThreatModeler",
+      "url": "https://www.threatmodeler.ai/glossary/vast-threat-methodology",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "threatmodeler-vast-lab",
+      "type": "website",
+      "title": "VAST (innovation lab)",
+      "publisher": "ThreatModeler",
+      "url": "https://www.threatmodeler.ai/innovation-lab/vast",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Application threat model",
+      "anchor": "#two-model-types",
+      "definition": "Process flow diagram of an application, owned by its development team."
+    },
+    {
+      "term": "Operational threat model",
+      "anchor": "#two-model-types",
+      "definition": "Data flow diagram of shared infrastructure from the attacker's view."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "What are VAST's two model types and their diagrams?",
+      "a": "Application threat models with process flow diagrams, operational threat models with attacker-view DFDs.",
+      "anchor": "#two-model-types",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "explain",
+      "q": "Why label VAST performance claims as vendor statements?",
+      "a": "They come from the company selling the platform and are not independently measured.",
+      "anchor": "#definition-and-source-situation",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-and-risk-management"
+  }
+}

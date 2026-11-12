@@ -1,0 +1,70 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='480' viewBox='0 0 900 480' role='img' aria-label='Chi-squared distance to English for each candidate key (lower is better)'>
+<title>Chi-squared distance to English for each candidate key (lower is better)</title>
+<rect width='900' height='480' fill='#ffffff'/>
+<text x='450.0' y='26' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#111827'>Chi-squared distance to English for each candidate key (lower is better)</text>
+<rect x='80' y='50' width='790' height='340' fill='#f9fafb' stroke='#9ca3af'/>
+<line x1='80' y1='390.0' x2='870' y2='390.0' stroke='#e5e7eb'/>
+<text x='72' y='394.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>10</text>
+<line x1='80' y1='305.0' x2='870' y2='305.0' stroke='#e5e7eb'/>
+<text x='72' y='309.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>100</text>
+<line x1='80' y1='220.0' x2='870' y2='220.0' stroke='#e5e7eb'/>
+<text x='72' y='224.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1000</text>
+<line x1='80' y1='135.0' x2='870' y2='135.0' stroke='#e5e7eb'/>
+<text x='72' y='139.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>10000</text>
+<line x1='80' y1='50.0' x2='870' y2='50.0' stroke='#e5e7eb'/>
+<text x='72' y='54.0' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>100000</text>
+<text x='95.2' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>0</text>
+<rect x='83.0' y='208.3' width='22.3' height='181.7' fill='#2563eb'/>
+<text x='125.6' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>1</text>
+<rect x='113.4' y='186.4' width='22.3' height='203.6' fill='#2563eb'/>
+<text x='156.0' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>2</text>
+<rect x='143.8' y='188.2' width='22.3' height='201.8' fill='#2563eb'/>
+<text x='186.3' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>3</text>
+<rect x='174.2' y='213.1' width='22.3' height='176.9' fill='#2563eb'/>
+<text x='216.7' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>4</text>
+<rect x='204.6' y='220.3' width='22.3' height='169.7' fill='#2563eb'/>
+<text x='247.1' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>5</text>
+<rect x='235.0' y='193.6' width='22.3' height='196.4' fill='#2563eb'/>
+<text x='277.5' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>6</text>
+<rect x='265.3' y='254.0' width='22.3' height='136.0' fill='#2563eb'/>
+<text x='307.9' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>7</text>
+<rect x='295.7' y='357.9' width='22.3' height='32.1' fill='#2563eb'/>
+<text x='338.3' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>8</text>
+<rect x='326.1' y='238.5' width='22.3' height='151.5' fill='#2563eb'/>
+<text x='368.7' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>9</text>
+<rect x='356.5' y='213.8' width='22.3' height='176.2' fill='#2563eb'/>
+<text x='399.0' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>10</text>
+<rect x='386.9' y='192.7' width='22.3' height='197.3' fill='#2563eb'/>
+<text x='429.4' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>11</text>
+<rect x='417.3' y='211.6' width='22.3' height='178.4' fill='#2563eb'/>
+<text x='459.8' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>12</text>
+<rect x='447.7' y='168.5' width='22.3' height='221.5' fill='#2563eb'/>
+<text x='490.2' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>13</text>
+<rect x='478.0' y='230.9' width='22.3' height='159.1' fill='#2563eb'/>
+<text x='520.6' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>14</text>
+<rect x='508.4' y='204.2' width='22.3' height='185.8' fill='#2563eb'/>
+<text x='551.0' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>15</text>
+<rect x='538.8' y='230.2' width='22.3' height='159.8' fill='#2563eb'/>
+<text x='581.3' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>16</text>
+<rect x='569.2' y='215.6' width='22.3' height='174.4' fill='#2563eb'/>
+<text x='611.7' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>17</text>
+<rect x='599.6' y='209.6' width='22.3' height='180.4' fill='#2563eb'/>
+<text x='642.1' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>18</text>
+<rect x='630.0' y='278.4' width='22.3' height='111.6' fill='#2563eb'/>
+<text x='672.5' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>19</text>
+<rect x='660.3' y='230.2' width='22.3' height='159.8' fill='#2563eb'/>
+<text x='702.9' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>20</text>
+<rect x='690.7' y='234.0' width='22.3' height='156.0' fill='#2563eb'/>
+<text x='733.3' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>21</text>
+<rect x='721.1' y='173.4' width='22.3' height='216.6' fill='#2563eb'/>
+<text x='763.7' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>22</text>
+<rect x='751.5' y='185.1' width='22.3' height='204.9' fill='#2563eb'/>
+<text x='794.0' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>23</text>
+<rect x='781.9' y='228.5' width='22.3' height='161.5' fill='#2563eb'/>
+<text x='824.4' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>24</text>
+<rect x='812.3' y='205.4' width='22.3' height='184.6' fill='#2563eb'/>
+<text x='854.8' y='408' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='12' fill='#374151'>25</text>
+<rect x='842.7' y='233.2' width='22.3' height='156.8' fill='#2563eb'/>
+<text x='80' y='466' font-family='Helvetica, Arial, sans-serif' font-size='11' fill='#4b5563'>Key 7 scores 23.8; the next best key (18) scores 205.7.</text>
+<text x='20' y='220.0' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='13' fill='#111827' transform='rotate(-90 20 220.0)'>Chi-squared (log scale)</text>
+</svg>

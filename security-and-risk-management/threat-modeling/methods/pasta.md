@@ -1,464 +1,165 @@
-# Attack Simulation and Threat Analysis (PASTA)
-
-## Prerequisites
-
-TODO: link the notes a reader should know first and state the assumed knowledge.
-
-
-
-## What it is?
-
-PASTA (Process for Attack Simulation and Threat Analysis) is a **risk-centric, attacker-focused threat modeling methodology** designed to:
-
-- Align security analysis with **business impact and risk**
-- Simulate **real-world attack scenarios**
-- Identify **exploitable weaknesses before attackers do**
-- Enable **informed security decision-making**
-
-**Core objective:**
-
-To model how real attackers would compromise a system and evaluate the **business impact of those attacks**, enabling **prioritized and risk-driven security controls**.
-
-## Importance
-
-Traditional threat modeling approaches (e.g., STRIDE):
-
-- Focus on categorizing threats
-- Often lack deep **business context**
-- Do not simulate real attack paths
-- Can be too abstract or theoretical
-
-PASTA addresses these gaps by:
-
-- Starting from **business objectives and risk**
-- Simulating **real attack scenarios**
-- Mapping **technical vulnerabilities to business impact**
-
-This makes it:
-
-- Highly aligned with **DevSecOps and risk management**
-- Suitable for **modern distributed systems (microservices, cloud)**
-- Effective for **security testing and validation**
-
-## Core philosophy
-
-PASTA is built around:
-
-### Risk-Driven Security
-
-Security decisions are based on:
-
-- Business impact
-- Threat likelihood
-- Real attacker capabilities
-
-#### Attacker-Centric Modeling
-
-Instead of asking:
-
-> “What threats exist?”
-
-PASTA asks:
-
-> “How would a real attacker compromise this system?”
-
-#### Simulation-Based Approach
-
-PASTA emphasizes:
-
-- Attack path simulation
-- Exploit chaining
-- Realistic adversarial thinking
-
-#### Business Context Integration
-
-Security is evaluated in terms of:
-
-- Financial loss
-- Operational disruption
-- Regulatory impact
-- Reputation damage
-
-## Key concepts
-
-### Assets
-
-Anything of value:
-
-- Sensitive data (PII, financial data)
-- APIs and services
-- Infrastructure (cloud, containers, networks)
-
-#### Threat Actors
-
-Entities that may attack the system:
-
-- External attackers
-- Insider threats
-- Automated bots
-- Advanced Persistent Threats (APTs)
-
-#### Attack Surface
-
-All entry points into the system:
-
-- APIs
-- Web interfaces
-- Network endpoints
-- CI/CD pipelines
-- Supply chain dependencies
-
-#### Vulnerabilities
-
-Weaknesses that can be exploited:
-
-- Misconfigurations (e.g., IAM, Kubernetes)
-- Software flaws (OWASP Top 10)
-- Weak authentication/authorization
-
-#### Attack Paths
-
-Sequences of actions an attacker can take:
-
-Example:
-
-```text
-Phishing → Credential theft → API access → Privilege escalation → Data exfiltration
-```
-
-#### Risk
-
-Defined as:
-
-- Likelihood of attack success
-- Impact on business
-
-PASTA explicitly connects:
-
-> Technical exploit → Business consequence
-
-## PASTA Model Structure
-
-PASTA is a **7-stage process** that moves from business context to technical validation.
-
-It combines:
-
-- Business analysis
-- System decomposition
-- Threat intelligence
-- Attack simulation
-
-### PASTA Process
-
-#### Stage 1 - Define Business Objectives
-
-Identify:
-
-- Business goals
-- Critical processes
-- Compliance requirements (e.g., ISO 27001, GDPR)
-
-**Output:**
-
-- Business impact criteria
-- Risk tolerance
-
-#### Stage 2 - Define Technical Scope
-
-Identify:
-
-- Application boundaries
-- Architecture components
-- Data flows
-
-Includes:
-
-- APIs
-- Microservices
-- Cloud infrastructure
-- External integrations
-
-#### Stage 3 - Application Decomposition
-
-Break down the system into:
-
-- Components
-- Trust boundaries
-- Data flows
-
-Tools:
-
-- Data Flow Diagrams (DFD)
-- Architecture diagrams
-
-#### Stage 4 - Threat Analysis
-
-Identify threats using:
-
-- Threat intelligence
-- MITRE ATT&CK framework
-- OWASP Top 10
-
-Focus:
-
-- Real-world attack techniques
-- Known adversary behaviors
-
-#### Stage 5 - Vulnerability Analysis
-
-Map:
-
-- Known vulnerabilities (CVEs)
-- Misconfigurations
-- Weak controls
-
-Sources:
-
-- SAST/DAST
-- Dependency scanning
-- Cloud security tools (CSPM)
-
-#### Stage 6 - Attack Simulation
-
-This is the **core differentiator of PASTA**.
-
-Simulate:
-
-- Attack scenarios
-- Exploit chains
-- Lateral movement
-
-Techniques:
-
-- Red teaming
-- Penetration testing
-- Attack path modeling
-
-#### Stage 7 - Risk Analysis & Mitigation
-
-Evaluate:
-
-- Likelihood of attack success
-- Business impact
-
-Define:
-
-- Security controls
-- Mitigation strategies
-- Risk prioritization
-
-## PASTA vs STRIDE
-
-| Aspect | PASTA | STRIDE |
-| --- | --- | --- |
-| Approach | Risk-driven | Threat category-based |
-| Focus | Real attack simulation | Threat identification |
-| Business alignment | Strong | Limited |
-| Complexity | High | Moderate |
-| Use case | Enterprise, critical systems | General threat modeling |
-
-## PASTA vs Risk Management Framework (RMF)
-
-| Aspect | PASTA | RMF |
-| --- | --- | --- |
-| Scope | Threat modeling | Governance & compliance |
-| Focus | Attack simulation | Risk lifecycle |
-| Output | Attack paths & mitigations | Risk decisions |
-| Integration | Tactical/operational | Strategic |
-
-## Practical Example
-
-**System:**
-
-Cloud-based financial API (microservices on Kubernetes)
-
-**Assets:**
-
-- Transaction data
-- User credentials
-- Payment processing service
-
-**Threat Actor:**
-
-- External attacker
-
-**Attack Path:**
-
-1. Exploit API misconfiguration
-2. Bypass authentication
-3. Access internal service
-4. Escalate privileges
-5. Extract financial data
-
-**Vulnerabilities:**
-
-- Weak API authentication
-- Misconfigured IAM roles
-- Lack of network segmentation
-
-**Business Impact:**
-
-- Financial loss
-- Regulatory penalties (GDPR)
-- Reputation damage
-
-**Mitigations:**
-
-- Strong authentication (OAuth2 + mTLS)
-- Zero Trust architecture
-- Network policies (Kubernetes)
-- API Gateway (e.g., Apigee)
-- Runtime security monitoring
-
-## PASTA in DevSecOps
-
-PASTA integrates naturally into **Secure SDLC**:
-
-### Design Phase
-
-- Threat modeling using PASTA stages 1-4
-
-#### Build Phase
-
-- SAST, SCA, IaC scanning
-
-#### Test Phase
-
-- DAST
-- Pen testing
-- Attack simulations
-
-#### Deploy Phase
-
-- Security gates in CI/CD
-
-#### Operate Phase
-
-- Runtime monitoring
-- Threat detection (SIEM, EDR)
-
-**Example:**
-
-- Define attack scenarios → implement detection rules in SIEM
-- Simulate attacks → validate security controls in pipeline
-
-## PASTA in Cloud Environments
-
-Highly relevant for:
-
-- Kubernetes (GKE, EKS)
-- Serverless (Cloud Run, Lambda)
-- API-driven architectures
-
-Use cases:
-
-- IAM misconfiguration analysis
-- API attack surface modeling
-- Multi-tenant isolation validation
-
-PASTA helps:
-
-- Prevent privilege escalation
-- Identify lateral movement paths
-- Validate Zero Trust architecture
-
-## Strengths
-
-- Strong alignment with **real-world attacks**
-- Deep integration with **business risk**
-- Highly effective for **advanced threat modeling**
-- Supports **red teaming and simulation**
-- Works well with **MITRE ATT&CK**
-
-## Weaknesses
-
-- Complex and time-consuming
-- Requires high expertise
-- Heavy initial investment
-- Not ideal for small teams/projects
-
-## Common pitfalls
-
-- Skipping business context (Stage 1)
-- Treating it as theoretical (no simulation)
-- Lack of threat intelligence integration
-- Overcomplicating attack paths
-- Not integrating results into CI/CD
-
-## Skills Required
-
-- Threat modeling
-- Security architecture
-- Cloud security (IAM, Kubernetes)
-- Risk analysis
-- Penetration testing
-- Knowledge of MITRE ATT&CK
-
-## When to Use PASTA
-
-Best suited for:
-
-- Financial systems
-- Healthcare systems
-- Cloud-native architectures
-- High-risk applications
-- Systems requiring **deep security validation**
-
-## When NOT to Use
-
-Avoid if:
-
-- Small/simple applications
-- Early-stage prototypes
-- Low-risk systems
-- Limited security maturity
-
-## Integration with Other Frameworks
-
-PASTA works well with:
-
-- **NIST RMF (Risk Management Framework)** → governance
-- **ISO 27001** → compliance
-- **CIS Controls** → implementation
-- **MITRE ATT&CK** → threat intelligence
-- **OWASP** → vulnerability classification
-
-## Strategic Value
-
-PASTA transforms threat modeling from:
-
-> “List possible threats”
-
-into:
-
-> “Simulate real attacks and measure business impact.”
+# Process for Attack Simulation and Threat Analysis (PASTA)
 
 ## Summary
 
-PASTA is one of the most **advanced and realistic threat modeling methodologies**, designed for:
+PASTA is a seven-stage, risk-centric threat modeling methodology that starts from business objectives and ends with a prioritized list of risks and countermeasures. In between, it decomposes the application, gathers threat intelligence, maps real vulnerabilities and simulates how an attacker would chain them into attacks. Its value is that every technical finding is tied to a business impact, so leaders can decide what to fix first. Its cost is effort: a full PASTA analysis needs business owners, architects, developers, threat intelligence and testers, and can take weeks. It was published by Tony UcedaVelez and Marco M. Morana in *Risk Centric Threat Modeling* (Wiley, 2015).
 
-- Modern cloud-native systems
-- High-risk environments
-- Security-driven organizations
+## Prerequisites
 
-It provides:
+- [Threat modeling](../threat-modeling.md): the four questions and the clinic booking portal example.
+- [STRIDE](stride.md), often used inside stage 4.
+- [Attack trees](attack-trees.md), used in stage 6.
+- Basic risk concepts (likelihood, impact, residual risk).
 
-- Deep attacker perspective
-- Strong business alignment
-- Practical, simulation-based insights
+## Core concepts
 
-However:
+### Definition
 
-- It requires maturity, expertise, and investment
+PASTA (Process for Attack Simulation and Threat Analysis) is a methodology that "aims to bring business objectives and technical requirements together" (SEI, Shevchenko 2018). It is risk-centric: the output is not a list of threats but a ranked list of risks with business impact. It is attacker-centric in its analysis: stages 4 to 6 ask what real adversaries would do and simulate their attack paths. The SEI summary describes it as dating from 2012, and the full method was published in the 2015 Wiley book by UcedaVelez and Morana.
+
+### Analogy
+
+PASTA is a bank's robbery risk assessment done by a team that includes the branch manager, the architect of the building, the security company, the police liaison and a former burglar. They start with "what would hurt the bank most" (cash, customer deposit boxes, reputation), study the building plans, review recent robberies in the region, list weak points in the alarms and doors, then walk through concrete robbery plans step by step. The final report tells the board which three changes buy the most risk reduction for the money.
+
+The analogy holds for the business-first framing and the realistic attack simulation. It breaks in scale: a bank branch changes rarely, while software changes every sprint. A process designed for thorough, slow analysis struggles to keep up, which is PASTA's main practical weakness.
+
+### The seven stages
+
+```mermaid
+flowchart TD
+    S1["Stage 1: Define objectives<br/>business goals, compliance, impact"] --> S2["Stage 2: Define technical scope<br/>components, dependencies, boundaries"]
+    S2 --> S3["Stage 3: Application decomposition<br/>use cases, DFDs, actors, assets, trust boundaries"]
+    S3 --> S4["Stage 4: Threat analysis<br/>threat intelligence, likely threat scenarios"]
+    S4 --> S5["Stage 5: Vulnerability and weakness analysis<br/>CVE, CWE, scan and test results mapped to threats"]
+    S5 --> S6["Stage 6: Attack modeling<br/>attack trees, attack paths, attack libraries"]
+    S6 --> S7["Stage 7: Risk and impact analysis<br/>residual risk, countermeasures, priorities"]
+    S7 -.->|risk accepted or changed design| S1
+```
+
+The stages narrow from business context (1 and 2) through system understanding (3) to the attacker's view (4 to 6) and back to business decisions (7). Stage names follow VerSprite's description of the method by Tony UcedaVelez (checked 2026-11). The activities listed per stage below are my summary of common descriptions of PASTA; I did not have the 2015 book at hand to check every detail.
+
+| Stage | Key question | Typical inputs | Outputs |
+| --- | --- | --- | --- |
+| 1. Define objectives | What must the business protect, and what would a breach cost? | Business goals, regulations (GDPR, PCI DSS), data classification | Business impact analysis, security and compliance requirements |
+| 2. Define technical scope | What is in scope, and what does it depend on? | Architecture diagrams, cloud accounts, third parties, libraries | Inventory of components, boundaries and dependencies |
+| 3. Application decomposition | How does the system work and where is trust decided? | Use cases, DFDs, roles and permissions | Annotated DFDs, actors, assets, entry points, trust boundaries |
+| 4. Threat analysis | Who would attack this and how, based on evidence? | Threat intelligence, incident history, sector reports, logs | Ranked threat scenarios relevant to the business |
+| 5. Vulnerability and weakness analysis | Which weaknesses would those threats use? | Scanner and SAST results, pentest reports, CWE, CVE, design flaws | Vulnerabilities mapped to threats and to DFD elements |
+| 6. Attack modeling | Can the attacker actually chain these weaknesses into an attack? | Attack trees, CAPEC, ATT&CK, exploit availability | Attack paths with feasibility, test cases for pentesters |
+| 7. Risk and impact analysis | What is the residual risk and what do we change first? | Outputs of stages 1 to 6, control costs | Risk register, countermeasures, priorities, residual risk accepted by owners |
+
+### What makes PASTA different
+
+- **Business impact first.** Stage 1 sets the scale against which every later finding is measured.
+- **Evidence-based threats.** Stage 4 uses threat intelligence rather than imagination alone.
+- **Joins design threats with real vulnerabilities.** Stage 5 connects the threat model to scan and test results, so that known weaknesses are rated by the threats that would exploit them.
+- **Simulation.** Stage 6 tests whether an attack is feasible end to end, which filters out theoretical threats and feeds pentest scope.
+
+## Worked example
+
+The clinic booking portal from [threat modeling](../threat-modeling.md#worked-example), shortened to one or two lines per stage.
+
+**Stage 1, objectives.** Patients must be able to book 24/7. Appointment data is health-related personal data (GDPR Article 9), and a breach must be reported to the supervisory authority within 72 hours (GDPR Article 33). Business impact scale: 5 = breach of health data or more than one day of outage, 1 = minor inconvenience.
+
+**Stage 2, technical scope.** Booking API and admin console in one cloud account, managed PostgreSQL, third-party email SaaS, a single sign-on provider for staff. Out of scope: the clinic's medical records system (a separate future assessment).
+
+**Stage 3, decomposition.** The DFD from the threat modeling note with seven flows, three external entities (patient, staff, email provider) and two trust boundaries.
+
+**Stage 4, threat analysis.** Evidence used: healthcare is a frequent ransomware and data theft target; credential stuffing is constant against any public login; API authorization flaws (OWASP API1:2023) are the most common API weakness class. The team ranks six threat scenarios, T1 to T6, the same IDs as in the threat modeling note.
+
+**Stage 5, vulnerability analysis.** A DAST run and a code review find two real weaknesses: `GET /appointments/{id}` returns any appointment without an ownership check (CWE-639, authorization bypass through user-controlled key), and the email provider API key is in a `.env` file committed to a private repository (CWE-798, hard-coded credentials).
+
+**Stage 6, attack modeling.** The team models the most dangerous goal, "attacker exfiltrates many patients' appointment data", as an attack tree:
+
+```mermaid
+flowchart TD
+    G["Goal: exfiltrate appointment data of many patients"] --> O1["OR: abuse booking API"]
+    G --> O2["OR: take over admin console"]
+    G --> O3["OR: read database or backups directly"]
+    O1 --> A1["AND: get any patient account<br/>(register or credential stuffing)"]
+    O1 --> A2["AND: iterate appointment IDs<br/>CWE-639, confirmed in stage 5"]
+    O1 --> A3["AND: avoid rate limits<br/>(none present)"]
+    O2 --> B1["phish staff password"]
+    O2 --> B2["console exposed without MFA"]
+    O3 --> C1["stolen cloud credentials"]
+```
+
+The left branch is feasible today with no special skill: every AND node is satisfied. The team writes a pentest case for it, and the tester confirms it in a staging environment by reading 500 appointments with one patient account.
+
+**Stage 7, risk and impact.** Likelihood and impact on 1 to 5 scales, product as score:
+
+![Heat map with likelihood on the x-axis and impact on the y-axis: T1 at likelihood 4 impact 5 and T6 at 3 and 5 in the red zone, T2 at 4 and 3 in orange, T3, T4 and T5 in yellow](../../../_assets/security-and-risk-management/threat-modeling/pasta-risk-heat-map.svg)
+
+| ID | Threat | L | I | Score | Decision |
+| --- | --- | --- | --- | --- | --- |
+| T1 | Broken object level authorization on appointments | 4 | 5 | 20 | Fix before next release, add authorization tests, add detection for ID enumeration |
+| T6 | Admin console exposed without MFA | 3 | 5 | 15 | Fix now: SSO with MFA and network restriction |
+| T2 | Credential stuffing | 4 | 3 | 12 | Rate limiting and breached password check this release |
+| T3 | Leaked email API key | 2 | 4 | 8 | Rotate key, move to secret manager, plan scope reduction |
+| T4 | Missing audit trail for staff | 2 | 3 | 6 | Plan for next quarter |
+| T5 | Slot hoarding by bots | 3 | 2 | 6 | Plan, monitor booking rates |
+
+The clinic manager signs the residual risk for T4 and T5 with a review date. The ranking is what STRIDE alone did not provide.
 
 ## Trade offs and when to use it
 
-TODO: cover benefits, costs, alternatives and the situations where this is the wrong choice.
+**Strengths.**
+
+- Speaks the language of executives: risk, impact, priorities.
+- Uses evidence: threat intelligence and real vulnerability data.
+- Produces outputs that other teams use: pentest cases (stage 6), detection use cases, a risk register.
+- Fits regulated environments where risk decisions must be justified.
+
+**Weaknesses and costs.**
+
+- Heavy. Seven stages with many participants. For a small feature, it is overkill.
+- Needs skills that many teams lack: threat intelligence, attack modeling, risk analysis.
+- Depends on stage 1. If business impact is guessed rather than agreed, the whole ranking is unreliable.
+- Hard to repeat every sprint. Organizations often run full PASTA for a new system and lighter STRIDE reviews for later changes.
+
+**When to use PASTA.**
+
+- New high value or regulated systems: payments, health data, critical infrastructure.
+- When leadership must decide on large security investments.
+- When pentest and detection engineering need a threat-driven scope.
+
+**When not to.**
+
+- Small features or low risk internal tools: use [STRIDE](stride.md).
+- Teams without access to business owners: the risk ranking will be fiction.
+- When the deadline allows hours, not weeks.
+
+**Relation to other frameworks.** PASTA stage 7 feeds an organizational risk process such as the NIST Risk Management Framework (SP 800-37). Stage 4 can use MITRE ATT&CK, stage 6 CAPEC and ATT&CK techniques, stage 5 CWE and CVE.
+
+## Common mistakes
+
+- **Skipping stage 1.** Fix: get the business owner to agree on the impact scale before any technical work.
+- **Copying generic threat intelligence.** "APT groups target healthcare" is not a threat scenario. Fix: write scenarios specific to this system's entry points and assets.
+- **Treating vulnerabilities as threats.** A CVE in a library matters only if a threat scenario can reach it. Fix: map each vulnerability to a threat and a DFD element in stage 5.
+- **Attack trees that stop at one level.** Fix: refine until each leaf is something a tester can try.
+- **Never closing the loop.** Fix: verify mitigations with tests and re-run stages 5 to 7 after major changes.
 
 ## Practice
 
-TODO: add questions or small exercises, with answers or hints at the bottom.
+1. Which PASTA stage connects scanner results to threat scenarios?
+2. Why can stage 7 not be done well if stage 1 was skipped?
+3. In the attack tree, why is the "abuse booking API" branch rated feasible?
+4. Name one output of stage 6 that a different team can use directly.
+5. When would you choose STRIDE instead of PASTA for the clinic portal?
+
+Answers:
+
+1. Stage 5, vulnerability and weakness analysis.
+2. Because impact has no agreed scale. Rankings then reflect the analyst's guess, not business priorities.
+3. All its AND children are satisfied: accounts can be created freely, the ownership check is missing (confirmed), and no rate limit stops enumeration.
+4. Attack paths turned into penetration test cases, or detection use cases for the SOC.
+5. For the next small change, such as adding an "add to calendar" button, where the design change is small and contained in one trust zone.
 
 ## Further reading
 
-TODO: add annotated links to primary sources.
+- Tony UcedaVelez and Marco M. Morana, *Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis*, Wiley, 2015: the primary source for PASTA.
+- [VerSprite, What is PASTA threat modeling (Tony UcedaVelez)](https://versprite.com/blog/what-is-pasta-threat-modeling/): stage names and goals from the method's co-author. Vendor source. Checked 2026-11.
+- [SEI, Threat Modeling: 12 Available Methods (Shevchenko, 2018)](https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/): neutral short description of PASTA among other methods. Checked 2026-11.
+- [MITRE CAPEC](https://capec.mitre.org/) and [MITRE ATT&CK](https://attack.mitre.org/): attack libraries for stages 4 and 6.
+- [GDPR, Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj): Articles 9 and 33 used in stage 1 of the example.
+- Related notes: [STRIDE](stride.md), [Trike](trike.md), [attack trees](attack-trees.md), [threat modeling methodologies](../methodologies.md).

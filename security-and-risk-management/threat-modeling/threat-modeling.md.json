@@ -3,12 +3,120 @@
     "id": "cross-cutting-concepts.threat-modeling.threat-modeling",
     "kind": "note",
     "status": "draft",
+    "level": "advanced",
     "order": 1,
     "tags": [
       "security-and-risk-management",
-      "threat-modeling"
+      "threat-modeling",
+      "dfd",
+      "trust-boundary"
     ]
   },
+  "links": [
+    {
+      "to": "cross-cutting-concepts.foundations.cia-triad",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "tm-manifesto",
+      "type": "website",
+      "title": "Threat Modeling Manifesto",
+      "publisher": "Threat Modeling Manifesto working group",
+      "url": "https://www.threatmodelingmanifesto.org/",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "kohnfelder-garg-1999",
+      "type": "report",
+      "title": "The threats to our products",
+      "authors": [
+        "Loren Kohnfelder",
+        "Praerit Garg"
+      ],
+      "year": 1999,
+      "publisher": "Microsoft",
+      "url": "https://shostack.org/files/microsoft/The-Threats-To-Our-Products.docx",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sei-tm-12-methods",
+      "type": "website",
+      "title": "Threat Modeling: 12 Available Methods",
+      "authors": [
+        "Nataliya Shevchenko"
+      ],
+      "year": 2018,
+      "publisher": "Carnegie Mellon University Software Engineering Institute",
+      "url": "https://www.sei.cmu.edu/blog/threat-modeling-12-available-methods/",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ms-tmt-threats",
+      "type": "documentation",
+      "title": "Threats - Microsoft Threat Modeling Tool",
+      "publisher": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-tm-cs",
+      "type": "documentation",
+      "title": "Threat Modeling Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Threat modeling",
+      "anchor": "#definition",
+      "definition": "Analyzing representations of a system to highlight concerns about security and privacy characteristics."
+    },
+    {
+      "term": "Trust boundary",
+      "anchor": "#definition",
+      "definition": "A place where the level of trust, privilege or ownership changes."
+    },
+    {
+      "term": "Data flow diagram",
+      "anchor": "#the-model-data-flow-diagrams",
+      "definition": "Model with external entities, processes, data stores, data flows and trust boundaries."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "recall",
+      "q": "What are the four questions of threat modeling?",
+      "a": "What are we working on? What can go wrong? What are we going to do about it? Did we do a good enough job?",
+      "anchor": "#the-four-questions",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "compare",
+      "q": "Distinguish threat, vulnerability and attack.",
+      "a": "Threat: potential undesirable occurrence. Vulnerability: characteristic that makes it possible. Attack: action that exploits a vulnerability to enact the threat.",
+      "anchor": "#definition",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "recall",
+      "q": "Name the four responses to a threat.",
+      "a": "Mitigate, eliminate, transfer, accept.",
+      "anchor": "#responses-to-a-threat",
+      "origin": "ai"
+    }
+  ],
   "map": {
     "group": "security-and-risk-management"
   }

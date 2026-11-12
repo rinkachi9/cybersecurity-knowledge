@@ -1,0 +1,75 @@
+{
+  "node": {
+    "id": "software-security.application-security.vulnerabilities.xss.reflected-xss",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "xss",
+      "cwe-79",
+      "reflected-xss"
+    ],
+    "aliases": [
+      "non-persistent XSS",
+      "Type I XSS"
+    ]
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.vulnerabilities.xss",
+      "rel": "part-of"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-xss-types",
+      "type": "documentation",
+      "title": "Types of Cross-Site Scripting",
+      "publisher": "OWASP",
+      "url": "https://owasp.org/www-community/Types_of_Cross-Site_Scripting",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-xss-cs",
+      "type": "documentation",
+      "title": "Cross Site Scripting Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-79",
+      "type": "documentation",
+      "title": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/data/definitions/79.html",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Reflected XSS",
+      "anchor": "#definition",
+      "definition": "Request data echoed unsafely in the immediate response."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "apply",
+      "q": "Why is encoding < and > not enough in an unquoted attribute?",
+      "a": "A space ends the value and a new attribute such as an event handler can be added.",
+      "anchor": "#contexts-determine-the-payload",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

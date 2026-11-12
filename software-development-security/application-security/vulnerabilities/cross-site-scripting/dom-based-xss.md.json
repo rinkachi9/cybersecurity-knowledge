@@ -1,0 +1,104 @@
+{
+  "node": {
+    "id": "software-security.application-security.vulnerabilities.xss.dom-based-xss",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "software-development-security",
+      "application-security",
+      "xss",
+      "cwe-79",
+      "dom-xss",
+      "trusted-types"
+    ],
+    "aliases": [
+      "DOM XSS",
+      "Type 0 XSS",
+      "client-side XSS"
+    ]
+  },
+  "links": [
+    {
+      "to": "software-security.application-security.vulnerabilities.xss",
+      "rel": "part-of"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-dom-xss-cs",
+      "type": "documentation",
+      "title": "DOM based XSS Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-xss-types",
+      "type": "documentation",
+      "title": "Types of Cross-Site Scripting",
+      "publisher": "OWASP",
+      "url": "https://owasp.org/www-community/Types_of_Cross-Site_Scripting",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mdn-trusted-types",
+      "type": "documentation",
+      "title": "Trusted Types API",
+      "publisher": "MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-79",
+      "type": "documentation",
+      "title": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+      "publisher": "MITRE",
+      "url": "https://cwe.mitre.org/data/definitions/79.html",
+      "verified": true,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Source",
+      "anchor": "#definition",
+      "definition": "JavaScript property or API that returns attacker-influenced data."
+    },
+    {
+      "term": "Sink",
+      "anchor": "#definition",
+      "definition": "Function or property that interprets data as HTML, script or a URL."
+    },
+    {
+      "term": "Trusted Types",
+      "anchor": "#trusted-types",
+      "definition": "Browser enforcement that dangerous sinks accept only typed values created by named policies."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "apply",
+      "q": "Fix el.innerHTML = params.get('m').",
+      "a": "Use el.textContent = params.get('m').",
+      "anchor": "#practice",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "What does require-trusted-types-for 'script' do?",
+      "a": "Assigning a plain string to an injection sink throws a TypeError.",
+      "anchor": "#trusted-types",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "software-development-security"
+  }
+}

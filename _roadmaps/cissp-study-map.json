@@ -52,7 +52,11 @@
       "title": "D1: threat modeling",
       "group": "Security and risk management",
       "documentation": [
-        "security-and-risk-management/threat-modeling/threat-modeling.md"
+        "security-and-risk-management/threat-modeling/threat-modeling.md",
+        "security-and-risk-management/threat-modeling/methods/stride.md",
+        "security-and-risk-management/threat-modeling/methods/pasta.md",
+        "security-and-risk-management/threat-modeling/methods/trike.md",
+        "security-and-risk-management/threat-modeling/methods/vast.md"
       ],
       "externalSources": []
     },
@@ -75,7 +79,11 @@
       "documentation": [
         "security-architecture-and-engineering/design-principles/defense-in-depth.md",
         "security-architecture-and-engineering/cryptography/public-key-infrastructure.md",
-        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md"
+        "security-architecture-and-engineering/cryptography/cryptographic-attacks/README.md",
+        "security-architecture-and-engineering/cryptography/cryptography-fundamentals.md",
+        "security-architecture-and-engineering/cryptography/kerckhoffs-principle.md",
+        "security-architecture-and-engineering/cryptography/encryption/symmetric-and-asymmetric-encryption.md",
+        "security-architecture-and-engineering/cryptography/encryption/triple-des.md"
       ],
       "externalSources": []
     },
@@ -131,7 +139,9 @@
         "security-operations/threats-and-attacks/attack-vectors/README.md",
         "security-operations/vulnerability-management/vulnerability-remediation/README.md",
         "security-operations/attack-surface-management/cloud-attack-surface-management/README.md",
-        "security-operations/configuration-management/secure-configuration/README.md"
+        "security-operations/configuration-management/secure-configuration/README.md",
+        "security-operations/defensive-operations/operations/computer-security-incident-response-team.md",
+        "security-operations/defensive-operations/operations/security-operations-center.md"
       ],
       "externalSources": []
     },

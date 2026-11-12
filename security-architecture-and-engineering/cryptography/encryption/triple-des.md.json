@@ -1,0 +1,130 @@
+{
+  "node": {
+    "id": "data-security.cryptography.encryption.triple-des",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "security-architecture-and-engineering",
+      "cryptography",
+      "encryption",
+      "3des",
+      "tdea",
+      "legacy"
+    ],
+    "aliases": [
+      "3DES",
+      "TDEA",
+      "Triple DES"
+    ]
+  },
+  "links": [
+    {
+      "to": "data-security.cryptography.encryption.symmetric-and-asymmetric-encryption",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "data-security.cryptography.cryptographic-attacks",
+      "rel": "related",
+      "note": "Birthday and meet-in-the-middle attacks"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-sp-800-67r2",
+      "type": "standard",
+      "title": "SP 800-67 Rev. 2, Recommendation for the Triple Data Encryption Algorithm (TDEA) Block Cipher (withdrawn)",
+      "year": 2017,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-67r2",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-withdraw-800-67",
+      "type": "website",
+      "title": "NIST to Withdraw Special Publication 800-67 Revision 2",
+      "year": 2023,
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/news/2023/nist-to-withdraw-sp-800-67-rev-2",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sweet32",
+      "type": "paper",
+      "title": "Sweet32: Birthday attacks on 64-bit block ciphers in TLS and OpenVPN",
+      "authors": [
+        "Karthikeyan Bhargavan",
+        "Gaetan Leurent"
+      ],
+      "year": 2016,
+      "publisher": "ACM CCS",
+      "url": "https://sweet32.info/",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-57p1r5",
+      "type": "standard",
+      "title": "SP 800-57 Part 1 Rev. 5, Recommendation for Key Management: Part 1 - General",
+      "year": 2020,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-57pt1r5",
+      "verified": true,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-sp-800-131ar2",
+      "type": "standard",
+      "title": "SP 800-131A Rev. 2, Transitioning the Use of Cryptographic Algorithms and Key Lengths",
+      "year": 2019,
+      "publisher": "NIST",
+      "url": "https://doi.org/10.6028/NIST.SP.800-131Ar2",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "EDE",
+      "anchor": "#definition",
+      "definition": "Encrypt with K1, decrypt with K2, encrypt with K3."
+    },
+    {
+      "term": "Sweet32",
+      "anchor": "#the-64-bit-block-problem-and-sweet32",
+      "definition": "Birthday attack on 64-bit block ciphers in long-lived TLS and OpenVPN sessions."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "explain",
+      "q": "Why does 3TDEA give 112 and not 168 bits of security?",
+      "a": "A meet-in-the-middle attack reduces the work to about 2^112.",
+      "anchor": "#why-it-exists-and-why-ede",
+      "origin": "ai"
+    },
+    {
+      "id": "q2",
+      "type": "recall",
+      "q": "What is the SP 800-67 Rev. 2 data limit per 3TDEA key bundle?",
+      "a": "2^20 64-bit blocks, 8 MiB.",
+      "anchor": "#the-64-bit-block-problem-and-sweet32",
+      "origin": "ai"
+    },
+    {
+      "id": "q3",
+      "type": "recall",
+      "q": "When was 3TDEA disallowed for applying protection?",
+      "a": "After December 31, 2023.",
+      "anchor": "#keying-options",
+      "origin": "ai"
+    }
+  ],
+  "map": {
+    "group": "security-architecture-and-engineering"
+  }
+}

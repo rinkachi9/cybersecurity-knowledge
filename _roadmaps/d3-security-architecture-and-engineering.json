@@ -20,7 +20,10 @@
       "documentation": [
         "security-architecture-and-engineering/design-principles/defense-in-depth.md"
       ],
-      "externalSources": []
+      "externalSources": [
+        "https://csrc.nist.gov/glossary/term/defense_in_depth",
+        "https://www.cisa.gov/sites/default/files/2023-01/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      ]
     },
     {
       "id": "models",
@@ -206,6 +209,64 @@
       "externalSources": [
         "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
       ]
+    },
+    {
+      "id": "crypto-fundamentals",
+      "title": "Cryptography fundamentals",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/cryptography-fundamentals.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-57pt1r5",
+        "https://csrc.nist.gov/pubs/ir/8547/final"
+      ]
+    },
+    {
+      "id": "kerckhoffs",
+      "title": "Kerckhoffs's principle",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/kerckhoffs-principle.md"
+      ],
+      "externalSources": [
+        "https://www.petitcolas.net/kerckhoffs/index.html"
+      ]
+    },
+    {
+      "id": "sym-asym",
+      "title": "Symmetric and asymmetric encryption",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/encryption/README.md",
+        "security-architecture-and-engineering/cryptography/encryption/symmetric-and-asymmetric-encryption.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-57pt1r5",
+        "https://www.rfc-editor.org/rfc/rfc8446"
+      ]
+    },
+    {
+      "id": "triple-des",
+      "title": "Triple DES (3DES)",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/encryption/triple-des.md"
+      ],
+      "externalSources": [
+        "https://doi.org/10.6028/NIST.SP.800-67r2",
+        "https://sweet32.info/"
+      ]
+    },
+    {
+      "id": "caesar",
+      "title": "Caesar cipher",
+      "group": "Security architecture and engineering",
+      "documentation": [
+        "security-architecture-and-engineering/cryptography/classical-ciphers/README.md",
+        "security-architecture-and-engineering/cryptography/classical-ciphers/caesar-cipher/README.md"
+      ],
+      "externalSources": []
     }
   ],
   "edges": [
@@ -317,6 +378,36 @@
     {
       "from": "ai",
       "to": "adv-ai",
+      "type": "next"
+    },
+    {
+      "from": "crypto",
+      "to": "crypto-fundamentals",
+      "type": "next"
+    },
+    {
+      "from": "crypto-fundamentals",
+      "to": "kerckhoffs",
+      "type": "next"
+    },
+    {
+      "from": "kerckhoffs",
+      "to": "sym-asym",
+      "type": "next"
+    },
+    {
+      "from": "sym-asym",
+      "to": "triple-des",
+      "type": "next"
+    },
+    {
+      "from": "crypto-fundamentals",
+      "to": "caesar",
+      "type": "branch"
+    },
+    {
+      "from": "sym-asym",
+      "to": "pki",
       "type": "next"
     }
   ]

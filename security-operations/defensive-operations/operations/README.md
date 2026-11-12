@@ -4,7 +4,8 @@ Teams, technology and procedures of security operations.
 
 ## Notes
 
-- [Security Operations Center (SOC)](security-operations-center.md): Purpose, roles, technology and workflow of a SOC.
+- [Security operations center (SOC)](security-operations-center.md): Functions, structure and sourcing models, metrics, and a tested 24/7 staffing and alert workload model.
+- [Computer security incident response team (CSIRT)](computer-security-incident-response-team.md): Constituency, mandate, CSIRT types, FIRST services, RFC 2350 profile and reporting deadlines.
 - [SecOps](secops.md): The collaboration of IT operations and security teams.
 - [SIEM](siem.md): Pipeline from collection to alerting, detection approaches, SP 800-53 AU controls and a tested normalization and correlation example.
 - [SOAR](soar.md): Security orchestration, automation and response.
